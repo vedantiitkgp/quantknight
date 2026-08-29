@@ -135,6 +135,22 @@ def _run_full_scan(client: YFClient, mode: str) -> List[Dict]:
             rec["sentiment_score"] = sent["sentiment_score"]
             rec["sentiment_label"] = sent["sentiment_label"]
             rec["top_headlines"]   = sent["top_headlines"]
+            # Forward full articles (headline + body snippet) so agents can
+            # correlate specific news events with the fundamental data
+            raw = sent.get("raw_articles", [])
+            if raw:
+                scored_raw = [a for a in raw if a.get("sentiment") is not None]
+                scored_raw.sort(key=lambda x: abs(x["sentiment"]), reverse=True)
+                rec["full_news"] = [
+                    {
+                        "headline":  a["headline"],
+                        "summary":   (a.get("summary") or "")[:250].strip(),
+                        "sentiment": round(a["sentiment"], 3),
+                        "source":    a.get("source", ""),
+                        "published": str(a.get("published", ""))[:10],
+                    }
+                    for a in scored_raw[:12]
+                ]
         except Exception as exc:
             rec["sentiment_score"] = 0.0
             rec["sentiment_label"] = "Neutral"
