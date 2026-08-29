@@ -118,7 +118,17 @@ jobs:
       run: |
         bash scripts/commit_state.sh "${{ steps.mode.outputs.mode }}"
 
-    # ── 9. Upload logs as artifact ────────────────────────────────────────────
+    # ── 9. Deploy dashboard to GitHub Pages (every run — live 5× daily) ─────────
+    - name: Deploy dashboard to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./data/reports
+        force_orphan: true
+        commit_message: "dashboard: ${{ steps.mode.outputs.mode }} — ${{ github.run_number }}"
+
+    # ── 10. Upload logs as artifact ───────────────────────────────────────────
     - name: Upload run logs
       if: always()
       uses: actions/upload-artifact@v4

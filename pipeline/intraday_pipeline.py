@@ -38,6 +38,7 @@ from src.factors.composite_scorer import score_universe
 from src.agents.orchestrator import AgentOrchestrator
 from src.portfolio.manager import PortfolioManager
 from src.portfolio.reporter import generate_daily, generate_weekly, generate_monthly
+from src.portfolio.dashboard import generate_dashboard
 from src.models.database import (
     init_db, get_session, PipelineRun, Recommendation, Ticker, DailyPnL,
 )
@@ -363,6 +364,13 @@ def run(mode: str) -> None:
 
         # Print portfolio state after every run
         _print_portfolio_table(pm)
+
+        # Regenerate dashboard after every run so it reflects live state
+        try:
+            path = generate_dashboard(pm.portfolio, pm.today_trades)
+            console.print(f"  Dashboard updated → {path}")
+        except Exception as exc:
+            logger.warning(f"Dashboard generation failed: {exc}")
 
         elapsed = time.time() - t_start
         run_record.status       = "ok"
