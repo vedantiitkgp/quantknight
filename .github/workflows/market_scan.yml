@@ -126,6 +126,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./data/reports
         force_orphan: true
+        enable_jekyll: false
         commit_message: "dashboard: ${{ steps.mode.outputs.mode }} — ${{ github.run_number }}"
 
     # ── 10. Upload logs as artifact ───────────────────────────────────────────
