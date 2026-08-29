@@ -128,6 +128,36 @@ class FundamentalAnalyser:
             result["analyst_target_high"] = _safe(pt.get("targetHigh"))
             result["analyst_count"]       = _safe(pt.get("totalAnalysts"))
 
+            # ── Beta & forward P/E (market sensitivity + earnings expectation) ─
+            result["beta"]       = ttm.get("_beta")
+            result["forward_pe"] = ttm.get("_forwardPE")
+
+            # ── Sector / industry / description (for agent context) ────────────
+            try:
+                profile = self.client.get_company_profile(symbol)
+                result["sector"]      = profile.get("sector", "")
+                result["industry"]    = profile.get("industry", "")
+                desc = profile.get("description", "") or ""
+                result["company_description"] = desc[:400].strip()
+            except Exception:
+                pass
+
+            # ── Short interest (squeeze potential / distribution signal) ───────
+            try:
+                si = self.client.get_short_interest(symbol)
+                result["short_pct_float"] = si.get("short_pct_float")
+                result["short_ratio"]     = si.get("short_ratio")
+            except Exception:
+                pass
+
+            # ── Next earnings date (binary event / catalyst proximity) ─────────
+            try:
+                ed = self.client.get_next_earnings_date(symbol)
+                result["next_earnings_date"] = ed.get("next_earnings_date")
+                result["days_to_earnings"]   = ed.get("days_to_earnings")
+            except Exception:
+                pass
+
         except Exception as exc:
             logger.error(f"Fundamental analysis failed for {symbol}: {exc}")
 

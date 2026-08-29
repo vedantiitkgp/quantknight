@@ -304,6 +304,69 @@ class YFClient:
             logger.debug(f"Insider transactions failed for {symbol}: {exc}")
             return []
 
+    def get_short_interest(self, symbol: str) -> Dict:
+        """Return short interest metrics from yfinance."""
+        try:
+            info = self._ticker(symbol).info
+            pct_raw = info.get("shortPercentOfFloat")
+            ratio_raw = info.get("shortRatio")
+            shares_short = info.get("sharesShort")
+            return {
+                "short_pct_float": round(float(pct_raw) * 100, 2) if pct_raw is not None else None,
+                "short_ratio":     round(float(ratio_raw), 1)      if ratio_raw is not None else None,
+                "shares_short":    int(shares_short)                if shares_short else None,
+            }
+        except Exception as exc:
+            logger.debug(f"Short interest failed for {symbol}: {exc}")
+            return {}
+
+    def get_next_earnings_date(self, symbol: str) -> Dict:
+        """Return next scheduled earnings date and days until it."""
+        from datetime import date as _date, datetime as _dt
+        try:
+            tk = self._ticker(symbol)
+            # Try .calendar (DataFrame or dict depending on yfinance version)
+            cal = tk.calendar
+            dates = []
+            if cal is not None:
+                if hasattr(cal, "loc") and "Earnings Date" in (cal.index if hasattr(cal, "index") else []):
+                    raw = cal.loc["Earnings Date"]
+                    dates = list(raw) if hasattr(raw, "__iter__") else [raw]
+                elif isinstance(cal, dict):
+                    raw = cal.get("Earnings Date", [])
+                    dates = list(raw) if hasattr(raw, "__iter__") else [raw]
+
+            # Fallback: earningsDate from info (Unix timestamp or ISO string)
+            if not dates:
+                ed = tk.info.get("earningsDate")
+                if ed:
+                    dates = [ed] if not isinstance(ed, list) else ed
+
+            today = _date.today()
+            future = []
+            for d in dates:
+                try:
+                    if isinstance(d, (int, float)):
+                        dt = _dt.utcfromtimestamp(d).date()
+                    elif hasattr(d, "date"):
+                        dt = d.date()
+                    else:
+                        dt = _dt.strptime(str(d)[:10], "%Y-%m-%d").date()
+                    if dt >= today:
+                        future.append(dt)
+                except Exception:
+                    pass
+
+            if future:
+                next_d = min(future)
+                return {
+                    "next_earnings_date": str(next_d),
+                    "days_to_earnings":   (next_d - today).days,
+                }
+        except Exception as exc:
+            logger.debug(f"Earnings date failed for {symbol}: {exc}")
+        return {}
+
     def get_analyst_estimates(self, symbol: str, **kwargs) -> List[Dict]:
         try:
             info = self._ticker(symbol).info
