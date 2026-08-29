@@ -31,6 +31,12 @@ env:
   PYTHON_VERSION: "3.12"
   TZ: "America/New_York"
 
+# ── Permissions ────────────────────────────────────────────────────────────────
+permissions:
+  contents: write   # needed for git push (state commit + gh-pages deploy)
+  pages: write      # needed for GitHub Pages deployment
+  id-token: write   # needed for OIDC token (Pages)
+
 jobs:
   quantknight:
     name: "${{ github.event.inputs.mode || 'scheduled' }}"
