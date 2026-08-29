@@ -1,0 +1,50 @@
+# ── Core Data & Math ─────────────────────────────────────────────────────────
+pandas>=2.1.0
+numpy>=1.26.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# ── Technical Indicators ──────────────────────────────────────────────────────
+# pandas-ta 0.4.x + numba 0.61 work on Python 3.12 (not 3.14)
+pandas-ta>=0.4.0
+
+# ── Market Data & APIs ───────────────────────────────────────────────────────
+yfinance>=0.2.40
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# ── Database ─────────────────────────────────────────────────────────────────
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+alembic>=1.13.0
+
+# ── NLP / Sentiment (local FinBERT — no API key needed) ──────────────────────
+torch>=2.2.0
+transformers>=4.40.0
+
+# ── LLM Providers ────────────────────────────────────────────────────────────
+anthropic>=0.25.0
+openai>=1.30.0
+
+# ── Backtesting (pure-Python walk-forward — no vectorbt needed) ───────────────
+# vectorbt removed: incompatible with Python 3.14+; our own simulator is used.
+
+# ── Visualization ────────────────────────────────────────────────────────────
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# ── Notifications ────────────────────────────────────────────────────────────
+python-telegram-bot>=20.7
+
+# ── Scheduler / Task Queue ───────────────────────────────────────────────────
+celery>=5.3.0
+redis>=5.0.0
+
+# ── Config & Utilities ───────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+loguru>=0.7.0
+rich>=13.7.0
+tqdm>=4.66.0
+pydantic>=2.5.0
+tabulate>=0.9.0

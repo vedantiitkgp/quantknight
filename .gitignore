@@ -1,0 +1,44 @@
+# Secrets — never commit
+.env
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Logs (too large/noisy; uploaded as Actions artifacts instead)
+logs/
+*.log
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+
+# Torch / HuggingFace model cache (huge, runner-local)
+# NOTE: the models cache lives in ~/.cache — not in the repo
+
+# data/ is intentionally NOT ignored.
+# portfolio.json, trades/, reports/, and quant_engine.db are committed
+# after each run so state persists across GitHub Actions runner restarts.
