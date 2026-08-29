@@ -96,14 +96,37 @@ You are the BULL ANALYST. Your job is to make the strongest INVESTMENT CASE for 
 STOCK DATA PACKET:
 {data_json}
 
-Write a structured BULL CASE covering:
-1. **Fundamental Strength** (cite ROIC, FCF yield, EPS growth from the data)
-2. **Technical Setup** (cite exact EMA alignment, RSI, entry setup, ATR-based entry zone)
-3. **Momentum & Catalyst** (cite price momentum, earnings surprise, analyst targets if present)
-4. **Short-Term Entry Thesis** (cite entry price, stop-loss, and short-term target from data)
-5. **Long-Term Thesis** (cite long-term target and fundamental justification)
+Write a structured BULL CASE covering ALL of the following sections.
+For each section, you MUST cite specific numbers or quotes from the data packet above.
 
-Keep each section to 2–3 sentences. Use professional financial language.
+1. **Fundamental Strength**
+   - Cite ROIC, ROE, FCF yield, net margin, and gross margin.
+   - Cite EPS growth (YoY and QoQ) and whether there is acceleration.
+   - Cite revenue growth trend. Is the business compounding?
+
+2. **Valuation**
+   - Cite PEG, EV/EBITDA, P/FCF, and P/E from the data.
+   - Are these metrics cheap, fair, or expensive vs. typical quality thresholds (PEG < 1.5, EV/EBITDA < 15)?
+
+3. **Technical Setup**
+   - Cite the exact entry_setup name and setup_confidence.
+   - Cite EMA alignment, RSI level, MACD histogram direction, and volume ratio.
+   - Describe what the setup means: e.g., "RSI 48 on a pullback to rising 21-EMA signals a healthy reset before continuation."
+
+4. **News Catalysts** (use the recent_news headlines from the data packet)
+   - Quote or paraphrase the 2–3 most bullish headlines by name.
+   - Explain HOW each piece of news supports the investment case (earnings beat → guidance raise → re-rating potential, etc.).
+   - Cite the FinBERT sentiment score (e.g., +0.72 = strongly positive).
+
+5. **Analyst & Institutional Conviction**
+   - Cite analyst_target_mean / analyst_target_high and the analyst_count.
+   - Cite institutional_holders_count and insider_net direction (positive = buying).
+
+6. **Entry / Exit Plan**
+   - Cite entry price (close), stop_loss, target_short, and target_long from the data.
+   - Cite the risk_reward ratio.
+
+Keep each section to 2–4 sentences. Use professional financial language.
 """
 
 _BEAR_PROMPT = """
@@ -112,23 +135,48 @@ You are the BEAR ANALYST. Your job is to identify ALL material RISKS for {symbol
 STOCK DATA PACKET:
 {data_json}
 
-Write a structured BEAR CASE covering:
-1. **Valuation Risk** (cite PEG, EV/EBITDA, P/FCF from the data — flag if elevated)
-2. **Fundamental Weakness** (cite any negative: high debt, weak FCF, slowing EPS, etc.)
-3. **Technical Risk** (cite RSI if overbought, poor EMA alignment, or low volume)
-4. **Downside Scenario** (cite the stop-loss price from data; what triggers it?)
-5. **Macro / Sector Risk** (flag any relevant concern from the data — insider selling, low institutional count, etc.)
+Write a structured BEAR CASE covering ALL of the following sections.
+For each section, you MUST cite specific numbers or facts from the data packet above.
 
-Be honest and rigorous. If fundamentals are strong, say so but still enumerate risks.
+1. **Valuation Risk**
+   - Cite PEG, EV/EBITDA, P/FCF, and P/E from the data.
+   - Are any elevated vs. historical norms or sector peers? Flag explicitly.
+   - At what price level would valuation become unjustifiable given current earnings?
+
+2. **Fundamental Weaknesses**
+   - Cite debt_equity and current_ratio. Is leverage a concern?
+   - Are there signs of slowing EPS (low eps_acceleration, negative eps_growth_qoq)?
+   - Cite any weak FCF yield or compressing margins.
+
+3. **Technical & Momentum Risk**
+   - Is RSI overbought (> 70)? Is volume below average (vol_ratio < 1)?
+   - Cite MACD histogram trend — is momentum fading?
+   - What technical break would invalidate the bull setup?
+
+4. **News & Sentiment Risks** (use the recent_news headlines from the data packet)
+   - Quote or paraphrase the 1–2 most bearish or concerning headlines by name.
+   - Explain the risk they represent: regulatory pressure, margin squeeze, industry headwind, etc.
+   - If all headlines are positive, note that the stock may already have priced in the good news (mean reversion risk).
+
+5. **Macro / Sector / Structural Risks**
+   - Based on the sector/industry field, identify macro risks relevant to this sector
+     (e.g., rising rates → insurance liabilities; energy price drop → E&P revenue; FDA approvals → biotech binary risk).
+   - Cite insider_net if negative (selling pressure) or institutional_holders_count if low.
+
+6. **Downside Scenario**
+   - Cite the stop_loss price from the data. What price action triggers it?
+   - Quantify the downside from current close to stop_loss as a percentage.
+
+Be honest and rigorous. If fundamentals are genuinely strong, say so — but still enumerate every material risk.
 """
 
 _RISK_PROMPT = """
-You are the RISK MANAGER and final decision authority.
+You are the RISK MANAGER and final decision authority for the investment committee.
 
-You have reviewed the BULL and BEAR cases below. Your job is to:
-1. Adjudicate the debate objectively.
-2. Issue a VERDICT: APPROVED / WATCH / REJECTED.
-3. Write the final consolidated TRADE MEMO for the investment committee.
+You have reviewed the BULL and BEAR analyst cases below. Your job is to:
+1. Adjudicate the debate objectively and issue a VERDICT.
+2. Write the final consolidated TRADE MEMO for the investment committee.
+3. Include all context a portfolio manager needs to monitor the position.
 
 BULL CASE:
 {bull_case}
@@ -139,17 +187,40 @@ BEAR CASE:
 STOCK DATA PACKET:
 {data_json}
 
-Your final TRADE MEMO must include:
-- **VERDICT**: APPROVED / WATCH / REJECTED (with one-sentence rationale)
-- **Short-Term Trade Setup** (entry range, stop-loss, target — must match data exactly)
-- **Long-Term Investment Thesis** (3–6 month outlook)
-- **Key Risk to Monitor** (single most important risk from the bear case)
-- **Position Sizing Note**: Given the ATR and stop-loss in the data, suggest relative position sizing (e.g., "smaller than usual given wide ATR")
+Your final TRADE MEMO must include ALL of the following sections:
+
+**VERDICT**: APPROVED / WATCH / REJECTED
+- One sentence explaining the decisive factor that drove the verdict.
+
+**Why This Stock, Why Now**
+- 2–3 sentences summarising the core investment thesis in plain English.
+- Reference the specific news catalyst(s) and fundamental driver(s) that make the timing relevant TODAY.
+- Mention the sector/industry and whether sector tailwinds or headwinds apply.
+
+**Trade Setup (Exact Numbers)**
+- Entry: [close from data]
+- Stop-loss: [stop_loss from data] — explain what technical level it represents
+- Short-term target: [target_short from data] | Risk/Reward: [risk_reward from data]
+- Long-term target: [target_long from data]
+
+**Fundamental Snapshot**
+- List 4–6 key metrics from the data (ROIC, EPS growth, FCF yield, PEG, debt_equity, rev_growth_yoy).
+- One sentence interpreting whether the fundamentals support the entry price.
+
+**News Context**
+- Summarise the 2–3 most relevant recent headlines from the data packet.
+- Explain how each headline affects the investment thesis (positive catalyst, priced-in risk, ongoing uncertainty, etc.).
+
+**Key Risk to Monitor**
+- Single most important risk from the bear case — with a specific price level or data trigger that would prompt an early exit.
+
+**Position Sizing Note**
+- Based on ATR and stop_loss distance, recommend sizing (full / 60% / 40%) with rationale.
 
 VERDICT CRITERIA:
-- APPROVED:  Bull factors clearly outweigh bear risks; setup is technically clean.
-- WATCH:     Mixed signals — worth monitoring but no clean entry now.
-- REJECTED:  Bear risks dominate or no valid technical entry setup detected.
+- APPROVED:  Bull factors clearly outweigh bear risks; setup is technically clean; news is supportive.
+- WATCH:     Mixed signals — fundamentals or news are good but entry setup is not ideal; monitor for cleaner entry.
+- REJECTED:  Bear risks dominate, news is negative/concerning, or no valid technical entry setup detected.
 """
 
 
@@ -193,7 +264,7 @@ class AgentOrchestrator:
                 system=_SYSTEM_STRICT,
                 user=_BULL_PROMPT.format(symbol=symbol, data_json=data_json),
                 model=CLAUDE_MODEL_BULL,
-                max_tokens=900,
+                max_tokens=1400,
             )
             result["bull_thesis"] = bull
             logger.debug(f"  {symbol} — Bull case complete (Haiku)")
@@ -203,7 +274,7 @@ class AgentOrchestrator:
                 system=_SYSTEM_STRICT,
                 user=_BEAR_PROMPT.format(symbol=symbol, data_json=data_json),
                 model=CLAUDE_MODEL_BEAR,
-                max_tokens=900,
+                max_tokens=1400,
             )
             result["bear_risks"] = bear
             logger.debug(f"  {symbol} — Bear case complete (Haiku)")
@@ -217,7 +288,7 @@ class AgentOrchestrator:
                     data_json=data_json,
                 ),
                 model=CLAUDE_MODEL_RISK,
-                max_tokens=1400,
+                max_tokens=2000,
             )
             result["full_memo"] = memo
             result["verdict"]   = _extract_verdict(memo)
@@ -254,6 +325,7 @@ def _clean_snapshot(candidate: Dict) -> Dict:
         "sentiment_score", "sentiment_label",
         "composite_score", "quality_score", "momentum_score",
         "technical_score", "value_score",
+        "sector", "industry",
     }
 
     snap = {}
@@ -262,6 +334,18 @@ def _clean_snapshot(candidate: Dict) -> Dict:
         if v is not None:
             # Round floats for readability
             snap[k] = round(v, 4) if isinstance(v, float) else v
+
+    # Include top news headlines so agents can cite specific catalysts
+    headlines = candidate.get("top_headlines", [])
+    if headlines:
+        snap["recent_news"] = [
+            {
+                "headline": h.get("headline", ""),
+                "sentiment": round(h.get("sentiment", 0.0), 3),
+                "source": h.get("source", ""),
+            }
+            for h in headlines[:5]
+        ]
 
     snap["analysis_date"] = str(date.today())
     return snap
