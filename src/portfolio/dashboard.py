@@ -176,9 +176,17 @@ def _build_html(data_json: str) -> str:
   .tab-content {{ display: none; }}
   .tab-content.active {{ display: block; }}
 
-  /* ── Reason text ── */
+  /* ── Reason / thesis text ── */
   .reason {{ color: var(--muted); font-size: 0.8rem; margin-top: 4px; line-height: 1.4; }}
   .mono {{ font-family: 'SF Mono', SFMono-Regular, Consolas, monospace; }}
+  .thesis-row td {{ padding: 0 16px 12px 16px !important; border-bottom: 1px solid var(--border); }}
+  .thesis {{ background: rgba(31,111,235,0.05); border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0; padding: 10px 14px; margin-bottom: 6px; font-size: 0.82rem; line-height: 1.55; }}
+  .thesis-bull {{ border-left-color: var(--green); }}
+  .thesis-bear {{ border-left-color: var(--red); }}
+  .thesis-label {{ font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; opacity: 0.7; }}
+  details summary {{ cursor: pointer; color: var(--blue); font-size: 0.78rem; padding: 4px 0; user-select: none; }}
+  details summary:hover {{ opacity: 0.8; }}
+  details[open] summary {{ margin-bottom: 8px; }}
 </style>
 </head>
 <body>
@@ -383,7 +391,16 @@ if (positions.length > 0) {{
         <td>${{p.composite_score ? Number(p.composite_score).toFixed(1) : '—'}}</td>
         <td>${{p.entry_date || '—'}}</td>
       </tr>
-      ${{p.reason ? `<tr><td></td><td colspan="7"><div class="reason">${{p.reason}}</div></td></tr>` : ''}}
+      ${{(p.bull_thesis || p.reason) ? `
+      <tr class="thesis-row"><td colspan="8">
+        <div class="reason">${{p.reason || ''}}</div>
+        ${{p.bull_thesis || p.bear_risks ? `
+        <details>
+          <summary>Agent analysis ▸</summary>
+          ${{p.bull_thesis ? `<div class="thesis thesis-bull"><div class="thesis-label">Bull case</div>${{p.bull_thesis}}</div>` : ''}}
+          ${{p.bear_risks  ? `<div class="thesis thesis-bear"><div class="thesis-label">Bear risks</div>${{p.bear_risks}}</div>` : ''}}
+        </details>` : ''}}
+      </td></tr>` : ''}}
     `).join('')}}
     </tbody>
   </table>`;
@@ -411,7 +428,13 @@ function renderEntries(entries, container) {{
         <td class="mono">${{e.stop_loss ? '$$' + Number(e.stop_loss).toFixed(2) : '—'}}</td>
         <td class="mono">${{e.target    ? '$$' + Number(e.target).toFixed(2)    : '—'}}</td>
       </tr>
-      ${{e.reason ? `<tr><td colspan="7"><div class="reason">${{e.reason}}</div></td></tr>` : ''}}
+      ${{(e.reason || e.bull_thesis) ? `
+      <tr class="thesis-row"><td colspan="7">
+        <div class="reason">${{e.reason || ''}}</div>
+        ${{e.bull_thesis ? `<div class="thesis thesis-bull" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{e.bull_thesis}}</div>` : ''}}
+        ${{e.bear_risks  ? `<div class="thesis thesis-bear" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{e.bear_risks}}</div>` : ''}}
+        ${{e.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis" style="margin-top:6px;white-space:pre-wrap">${{e.full_memo}}</div></details>` : ''}}
+      </td></tr>` : ''}}
     `).join('')}}
     </tbody>
   </table>`;

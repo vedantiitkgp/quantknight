@@ -206,6 +206,10 @@ class PortfolioManager:
                 f"RSI {rec.get('rsi', 0):.0f}, "
                 f"EPS growth {rec.get('eps_growth_yoy', 0):.0f}%"
             ),
+            # Agent debate explanations — persisted so dashboard can display them
+            "bull_thesis": rec.get("bull_thesis", ""),
+            "bear_risks":  rec.get("bear_risks", ""),
+            "full_memo":   rec.get("full_memo", ""),
         }
 
         self.portfolio["positions"].append(position)
