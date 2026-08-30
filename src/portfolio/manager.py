@@ -27,6 +27,19 @@ _PORTFOLIO_PATH = "data/portfolio.json"
 _TRADES_DIR     = "data/trades"
 
 
+def _fmt_pct(val) -> str:
+    """Format a percentage value, handling None and NaN gracefully."""
+    try:
+        if val is None:
+            return "N/A"
+        f = float(val)
+        if f != f:  # NaN check
+            return "N/A"
+        return f"{f:.0f}%"
+    except (TypeError, ValueError):
+        return "N/A"
+
+
 # ── Portfolio state helpers ───────────────────────────────────────────────────
 
 def _default_portfolio() -> Dict:
@@ -204,12 +217,14 @@ class PortfolioManager:
                 f"{rec.get('entry_setup','?')} setup, "
                 f"score {rec.get('composite_score', 0):.1f}, "
                 f"RSI {rec.get('rsi', 0):.0f}, "
-                f"EPS growth {rec.get('eps_growth_yoy', 0):.0f}%"
+                f"EPS growth {_fmt_pct(rec.get('eps_growth_yoy'))}"
             ),
             # Agent debate explanations — persisted so dashboard can display them
             "bull_thesis": rec.get("bull_thesis", ""),
             "bear_risks":  rec.get("bear_risks", ""),
             "full_memo":   rec.get("full_memo", ""),
+            # News articles at time of entry (headline + body + sentiment)
+            "full_news":   rec.get("full_news", []),
         }
 
         self.portfolio["positions"].append(position)
@@ -224,6 +239,28 @@ class PortfolioManager:
         )
         self._save()
         return position
+
+    # ── Update position analysis ──────────────────────────────────────────────
+
+    def update_position_analysis(self, symbol: str, bull_thesis: str,
+                                  bear_risks: str, full_memo: str,
+                                  full_news: list = None) -> bool:
+        """
+        Backfill thesis/news fields for an existing position.
+        Called when agents re-analyse a symbol that is already held.
+        Returns True if the position was found and updated.
+        """
+        for pos in self.portfolio["positions"]:
+            if pos["symbol"] == symbol:
+                pos["bull_thesis"] = bull_thesis
+                pos["bear_risks"]  = bear_risks
+                pos["full_memo"]   = full_memo
+                if full_news is not None:
+                    pos["full_news"] = full_news
+                logger.info(f"  Updated analysis for existing position: {symbol}")
+                self._save()
+                return True
+        return False
 
     # ── Close position ────────────────────────────────────────────────────────
 

@@ -200,6 +200,15 @@ def _enter_positions(pm: PortfolioManager, picks: List[Dict], mode: str,
         verdict = rec.get("verdict", "WATCH")
         position = pm.open_position(rec, mode=mode)
         if position is None:
+            # Position already open — backfill thesis data if agents produced it
+            if rec.get("bull_thesis") or rec.get("full_memo"):
+                pm.update_position_analysis(
+                    rec["symbol"],
+                    rec.get("bull_thesis", ""),
+                    rec.get("bear_risks", ""),
+                    rec.get("full_memo", ""),
+                    rec.get("full_news"),
+                )
             continue
 
         # Persist to DB

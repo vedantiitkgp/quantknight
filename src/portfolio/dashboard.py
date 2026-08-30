@@ -187,6 +187,18 @@ def _build_html(data_json: str) -> str:
   details summary {{ cursor: pointer; color: var(--blue); font-size: 0.78rem; padding: 4px 0; user-select: none; }}
   details summary:hover {{ opacity: 0.8; }}
   details[open] summary {{ margin-bottom: 8px; }}
+
+  /* ── News Articles ── */
+  .news-list {{ display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }}
+  .news-item {{ display: flex; gap: 10px; align-items: flex-start; padding: 8px 12px; background: rgba(255,255,255,0.02); border-radius: 6px; border: 1px solid var(--border); }}
+  .news-sentiment {{ font-size: 0.75rem; font-weight: 700; padding: 2px 6px; border-radius: 10px; white-space: nowrap; flex-shrink: 0; }}
+  .news-positive {{ background: rgba(63,185,80,0.15); color: var(--green); }}
+  .news-negative {{ background: rgba(248,81,73,0.15); color: var(--red); }}
+  .news-neutral  {{ background: rgba(125,133,144,0.15); color: var(--muted); }}
+  .news-body {{ flex: 1; min-width: 0; }}
+  .news-headline {{ font-size: 0.82rem; font-weight: 500; line-height: 1.35; }}
+  .news-meta {{ font-size: 0.72rem; color: var(--muted); margin-top: 2px; }}
+  .news-summary {{ font-size: 0.78rem; color: var(--muted); margin-top: 4px; line-height: 1.4; }}
 </style>
 </head>
 <body>
@@ -386,21 +398,36 @@ if (positions.length > 0) {{
         <td>${{dirBadge(p.direction)}}</td>
         <td class="mono">${{p.shares}}</td>
         <td class="mono">$${{Number(p.entry_price).toFixed(2)}}</td>
-        <td class="mono">${{p.stop_loss ? '$$' + Number(p.stop_loss).toFixed(2) : '—'}}</td>
-        <td class="mono">${{p.target    ? '$$' + Number(p.target).toFixed(2)    : '—'}}</td>
+        <td class="mono">${{p.stop_loss ? '$' + Number(p.stop_loss).toFixed(2) : '—'}}</td>
+        <td class="mono">${{p.target    ? '$' + Number(p.target).toFixed(2)    : '—'}}</td>
         <td>${{p.composite_score ? Number(p.composite_score).toFixed(1) : '—'}}</td>
         <td>${{p.entry_date || '—'}}</td>
       </tr>
-      ${{(p.bull_thesis || p.reason) ? `
       <tr class="thesis-row"><td colspan="8">
         <div class="reason">${{p.reason || ''}}</div>
-        ${{p.bull_thesis || p.bear_risks ? `
-        <details>
-          <summary>Agent analysis ▸</summary>
-          ${{p.bull_thesis ? `<div class="thesis thesis-bull"><div class="thesis-label">Bull case</div>${{p.bull_thesis}}</div>` : ''}}
-          ${{p.bear_risks  ? `<div class="thesis thesis-bear"><div class="thesis-label">Bear risks</div>${{p.bear_risks}}</div>` : ''}}
+        ${{p.bull_thesis ? `<div class="thesis thesis-bull" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{p.bull_thesis}}</div>` : ''}}
+        ${{p.bear_risks  ? `<div class="thesis thesis-bear" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{p.bear_risks}}</div>` : ''}}
+        ${{p.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis" style="margin-top:6px;white-space:pre-wrap">${{p.full_memo}}</div></details>` : ''}}
+        ${{(p.full_news && p.full_news.length) ? `
+        <details style="margin-top:8px">
+          <summary>News articles at entry (${{p.full_news.length}}) ▸</summary>
+          <div class="news-list" style="margin-top:8px">
+            ${{p.full_news.map(n => {{
+              const sc = n.sentiment || 0;
+              const cls = sc > 0.05 ? 'news-positive' : sc < -0.05 ? 'news-negative' : 'news-neutral';
+              const lbl = sc > 0.05 ? '▲ ' + sc.toFixed(2) : sc < -0.05 ? '▼ ' + Math.abs(sc).toFixed(2) : '● ' + sc.toFixed(2);
+              return `<div class="news-item">
+                <span class="news-sentiment ${{cls}}">${{lbl}}</span>
+                <div class="news-body">
+                  <div class="news-headline">${{n.headline}}</div>
+                  <div class="news-meta">${{n.source || ''}}${{n.published ? ' · ' + n.published : ''}}</div>
+                  ${{n.summary ? '<div class="news-summary">' + n.summary + '</div>' : ''}}
+                </div>
+              </div>`;
+            }}).join('')}}
+          </div>
         </details>` : ''}}
-      </td></tr>` : ''}}
+      </td></tr>
     `).join('')}}
     </tbody>
   </table>`;
@@ -425,8 +452,8 @@ function renderEntries(entries, container) {{
         <td class="mono">${{e.shares}}</td>
         <td class="mono">$${{Number(e.entry_price).toFixed(2)}}</td>
         <td class="mono">$${{e.cost ? Number(e.cost).toLocaleString('en-US', {{maximumFractionDigits:0}}) : '—'}}</td>
-        <td class="mono">${{e.stop_loss ? '$$' + Number(e.stop_loss).toFixed(2) : '—'}}</td>
-        <td class="mono">${{e.target    ? '$$' + Number(e.target).toFixed(2)    : '—'}}</td>
+        <td class="mono">${{e.stop_loss ? '$' + Number(e.stop_loss).toFixed(2) : '—'}}</td>
+        <td class="mono">${{e.target    ? '$' + Number(e.target).toFixed(2)    : '—'}}</td>
       </tr>
       ${{(e.reason || e.bull_thesis) ? `
       <tr class="thesis-row"><td colspan="7">
@@ -475,10 +502,17 @@ function renderRecentTrades(trades, container) {{
     container.innerHTML = '<div class="empty-state">No recent trades</div>';
     return;
   }}
-  // Show exits (P&L) first then entries
   const exits   = trades.filter(t => t._type === 'exit').slice(0, 50);
   const entries = trades.filter(t => t._type === 'entry').slice(0, 50);
-  renderExits(exits, container);  // reuse exits table (most useful view)
+  if (exits.length > 0) {{
+    // Show exits with P&L when available
+    renderExits(exits, container);
+  }} else if (entries.length > 0) {{
+    // Fall back to showing entries if no exits yet
+    renderEntries(entries, container);
+  }} else {{
+    container.innerHTML = '<div class="empty-state">No recent trades</div>';
+  }}
 }}
 
 renderEntries(today.entries || [], document.getElementById('entries-container'));
