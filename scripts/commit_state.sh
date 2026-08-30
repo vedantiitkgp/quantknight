@@ -36,9 +36,16 @@ git commit -m "chore(state): ${MODE} run — ${TODAY} ${TIME_UTC} UTC
 Automated portfolio state commit by QuantKnight intraday engine.
 Mode: ${MODE} | Date: ${TODAY} | Time: ${TIME_UTC} UTC"
 
-# ── Push ──────────────────────────────────────────────────────────────────────
+# ── Push (with rebase to handle concurrent pushes) ────────────────────────────
 # GITHUB_TOKEN is injected by Actions; set the remote URL to use it.
 REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+# Fetch and rebase in case another push (e.g. a code fix) landed while this
+# run was executing.  Data files (portfolio.json, trades/, reports/) have no
+# meaningful merge conflicts — rebase always wins cleanly.
+git fetch "${REPO_URL}" main 2>/dev/null || true
+git rebase "FETCH_HEAD" 2>/dev/null || git rebase --abort
+
 git push "${REPO_URL}" HEAD:main
 
 echo "State committed and pushed (mode: ${MODE})."
