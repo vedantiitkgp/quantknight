@@ -257,6 +257,9 @@ class PortfolioManager:
                 pos["full_memo"]   = full_memo
                 if full_news is not None:
                     pos["full_news"] = full_news
+                # Fix any "nan%" artifacts in the reason string from old positions
+                if pos.get("reason") and "nan%" in pos["reason"]:
+                    pos["reason"] = pos["reason"].replace("nan%", "N/A")
                 logger.info(f"  Updated analysis for existing position: {symbol}")
                 self._save()
                 return True
