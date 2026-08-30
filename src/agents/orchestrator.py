@@ -515,6 +515,7 @@ class AgentOrchestrator:
             memo = _llm(
                 system=_SYSTEM_STRICT,
                 user=_RISK_PROMPT.format(
+                    symbol=symbol,
                     bull_case=bull,
                     bear_case=bear,
                     data_json=data_json,
