@@ -141,13 +141,23 @@ def _run_full_scan(client: YFClient, mode: str) -> List[Dict]:
             if raw:
                 scored_raw = [a for a in raw if a.get("sentiment") is not None]
                 scored_raw.sort(key=lambda x: abs(x["sentiment"]), reverse=True)
+                def _fmt_pub(pub) -> str:
+                    """Convert Unix timestamp int or date string to YYYY-MM-DD."""
+                    try:
+                        if isinstance(pub, (int, float)) and pub > 1_000_000_000:
+                            from datetime import datetime as _dt
+                            return _dt.utcfromtimestamp(pub).strftime("%Y-%m-%d")
+                    except Exception:
+                        pass
+                    return str(pub)[:10] if pub else ""
+
                 rec["full_news"] = [
                     {
                         "headline":  a["headline"],
                         "summary":   (a.get("summary") or "")[:250].strip(),
                         "sentiment": round(a["sentiment"], 3),
                         "source":    a.get("source", ""),
-                        "published": str(a.get("published", ""))[:10],
+                        "published": _fmt_pub(a.get("published", "")),
                     }
                     for a in scored_raw[:12]
                 ]
