@@ -104,7 +104,7 @@ def _build_html(data_json: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuantKnight Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
 <style>
   /* ── Markdown content inside thesis cards ── */
   .md h1, .md h2, .md h3 {{ font-size: 0.85rem; font-weight: 700; margin: 10px 0 4px; color: var(--text); }}
@@ -295,7 +295,26 @@ const recent = D.recent_trades;
 // ── Markdown + date helpers ────────────────────────────────────────────────────
 function md(text) {{
   if (!text) return '';
-  try {{ return marked.parse(String(text)); }} catch(e) {{ return String(text); }}
+  const s = String(text);
+  try {{
+    if (typeof marked !== 'undefined' && typeof marked.parse === 'function') {{
+      return marked.parse(s);
+    }}
+  }} catch(e) {{}}
+  // Inline fallback: convert the most common LLM Markdown patterns
+  return s
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/^[═─=*]{{3,}}$/gm, '<hr>')
+    .replace(/^### (.+)$/gm,'<h4>$1</h4>')
+    .replace(/^## (.+)$/gm,'<h3>$1</h3>')
+    .replace(/^# (.+)$/gm,'<h2>$1</h2>')
+    .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*([^*\n]+)\*/g,'<em>$1</em>')
+    .replace(/^[-*•] (.+)$/gm,'<li>$1</li>')
+    .replace(/(<\/li>\n<li>)/g,'$1')
+    .replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>')
+    .replace(/\n{2,}/g,'</p><p>')
+    .replace(/\n/g,'<br>');
 }}
 function fmtDate(d) {{
   if (!d) return '';
