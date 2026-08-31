@@ -104,7 +104,21 @@ def _build_html(data_json: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuantKnight Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@14/marked.min.js"></script>
 <style>
+  /* ── Markdown content inside thesis cards ── */
+  .md h1, .md h2, .md h3 {{ font-size: 0.85rem; font-weight: 700; margin: 10px 0 4px; color: var(--text); }}
+  .md h4 {{ font-size: 0.8rem; font-weight: 600; margin: 8px 0 2px; color: var(--text); }}
+  .md p {{ margin: 4px 0 8px; }}
+  .md ul, .md ol {{ margin: 4px 0 8px; padding-left: 20px; }}
+  .md li {{ margin: 2px 0; }}
+  .md strong {{ color: var(--text); }}
+  .md em {{ opacity: 0.85; }}
+  .md hr {{ border: none; border-top: 1px solid var(--border); margin: 8px 0; }}
+  .md table {{ width: 100%; border-collapse: collapse; font-size: 0.78rem; margin: 6px 0; }}
+  .md th {{ background: rgba(255,255,255,0.04); padding: 4px 8px; text-align: left; border: 1px solid var(--border); }}
+  .md td {{ padding: 4px 8px; border: 1px solid var(--border); }}
+  .md code {{ background: rgba(255,255,255,0.06); padding: 1px 4px; border-radius: 3px; font-family: monospace; font-size: 0.85em; }}</style>
   :root {{
     --bg:      #0d1117;
     --surface: #161b22;
@@ -278,6 +292,21 @@ const today  = D.today_trades;
 const curve  = D.equity_curve;
 const recent = D.recent_trades;
 
+// ── Markdown + date helpers ────────────────────────────────────────────────────
+function md(text) {{
+  if (!text) return '';
+  try {{ return marked.parse(String(text)); }} catch(e) {{ return String(text); }}
+}}
+function fmtDate(d) {{
+  if (!d) return '';
+  const s = String(d);
+  // Convert Unix timestamp (10 digits) to YYYY-MM-DD
+  if (/^\d{{10}}$/.test(s)) {{
+    return new Date(parseInt(s) * 1000).toISOString().slice(0, 10);
+  }}
+  return s.slice(0, 10);
+}}
+
 // ── Formatters ────────────────────────────────────────────────────────────────
 const fmt$ = v => v == null ? '—' : '$' + Math.abs(v).toLocaleString('en-US', {{minimumFractionDigits:0, maximumFractionDigits:0}});
 const fmtPnl = v => {{
@@ -405,9 +434,9 @@ if (positions.length > 0) {{
       </tr>
       <tr class="thesis-row"><td colspan="8">
         <div class="reason">${{p.reason || ''}}</div>
-        ${{p.bull_thesis ? `<div class="thesis thesis-bull" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{p.bull_thesis}}</div>` : ''}}
-        ${{p.bear_risks  ? `<div class="thesis thesis-bear" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{p.bear_risks}}</div>` : ''}}
-        ${{p.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis" style="margin-top:6px;white-space:pre-wrap">${{p.full_memo}}</div></details>` : ''}}
+        ${{p.bull_thesis ? `<div class="thesis thesis-bull md" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{md(p.bull_thesis)}}</div>` : ''}}
+        ${{p.bear_risks  ? `<div class="thesis thesis-bear md" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{md(p.bear_risks)}}</div>` : ''}}
+        ${{p.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis md" style="margin-top:6px">${{md(p.full_memo)}}</div></details>` : ''}}
         ${{(p.full_news && p.full_news.length) ? `
         <details style="margin-top:8px">
           <summary>News articles at entry (${{p.full_news.length}}) ▸</summary>
@@ -420,7 +449,7 @@ if (positions.length > 0) {{
                 <span class="news-sentiment ${{cls}}">${{lbl}}</span>
                 <div class="news-body">
                   <div class="news-headline">${{n.headline}}</div>
-                  <div class="news-meta">${{n.source || ''}}${{n.published ? ' · ' + n.published : ''}}</div>
+                  <div class="news-meta">${{n.source || ''}}${{n.published ? ' · ' + fmtDate(n.published) : ''}}</div>
                   ${{n.summary ? '<div class="news-summary">' + n.summary + '</div>' : ''}}
                 </div>
               </div>`;
@@ -458,9 +487,9 @@ function renderEntries(entries, container) {{
       ${{(e.reason || e.bull_thesis) ? `
       <tr class="thesis-row"><td colspan="7">
         <div class="reason">${{e.reason || ''}}</div>
-        ${{e.bull_thesis ? `<div class="thesis thesis-bull" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{e.bull_thesis}}</div>` : ''}}
-        ${{e.bear_risks  ? `<div class="thesis thesis-bear" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{e.bear_risks}}</div>` : ''}}
-        ${{e.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis" style="margin-top:6px;white-space:pre-wrap">${{e.full_memo}}</div></details>` : ''}}
+        ${{e.bull_thesis ? `<div class="thesis thesis-bull md" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{md(e.bull_thesis)}}</div>` : ''}}
+        ${{e.bear_risks  ? `<div class="thesis thesis-bear md" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{md(e.bear_risks)}}</div>` : ''}}
+        ${{e.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis md" style="margin-top:6px">${{md(e.full_memo)}}</div></details>` : ''}}
       </td></tr>` : ''}}
     `).join('')}}
     </tbody>
