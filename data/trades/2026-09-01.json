@@ -888,7 +888,7 @@
   ],
   "exits": [],
   "realized_pnl": 0.0,
-  "unrealized_pnl": 0.0,
+  "unrealized_pnl": 1219.07,
   "daily_pnl": 0.0,
   "cumulative_pnl": 0.0
 }
