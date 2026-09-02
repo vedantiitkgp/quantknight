@@ -577,31 +577,12 @@ function renderRecentTrades(trades, container) {{
   }}
 }}
 
-// ── Render trade tabs — fall back to recent data when today is empty ──────────
+// ── Render trade tabs ─────────────────────────────────────────────────────────
 const todayEntries = today.entries || [];
 const todayExits   = today.exits   || [];
-const recentEntries = recent.filter(t => t._type === 'entry').slice(0, 40);
-const recentExits   = recent.filter(t => t._type === 'exit').slice(0, 40);
 
-// Entries tab
-if (todayEntries.length > 0) {{
-  renderEntries(todayEntries, document.getElementById('entries-container'));
-}} else if (recentEntries.length > 0) {{
-  document.querySelector('.tab[onclick*="entries"]').textContent = 'Entries (recent)';
-  renderEntries(recentEntries, document.getElementById('entries-container'));
-}} else {{
-  document.getElementById('entries-container').innerHTML = '<div class="empty-state">No entries yet</div>';
-}}
-
-// Exits tab
-if (todayExits.length > 0) {{
-  renderExits(todayExits, document.getElementById('exits-container'));
-}} else if (recentExits.length > 0) {{
-  document.querySelector('.tab[onclick*="exits"]').textContent = 'Exits (recent)';
-  renderExits(recentExits, document.getElementById('exits-container'));
-}} else {{
-  document.getElementById('exits-container').innerHTML = '<div class="empty-state">No exits yet</div>';
-}}
+renderEntries(todayEntries, document.getElementById('entries-container'));
+renderExits(todayExits,     document.getElementById('exits-container'));
 
 renderRecentTrades(recent, document.getElementById('recent-container'));
 
