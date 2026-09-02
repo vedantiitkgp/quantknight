@@ -13,6 +13,13 @@ import os
 from datetime import date, datetime, timedelta
 from typing import Dict, List
 
+# Load .env for local runs (no-op if python-dotenv not installed or file absent)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 _TRADES_DIR  = "data/trades"
 _REPORTS_DIR = "data/reports"
 
@@ -102,14 +109,15 @@ def generate_dashboard(portfolio: Dict, today_trades: Dict) -> str:
         "generated_at":  datetime.utcnow().isoformat() + "Z",
     }, default=str)
 
-    html = _build_html(data_json)
+    finnhub_key = os.getenv("FINNHUB_API_KEY", "")
+    html = _build_html(data_json, finnhub_key)
     path = f"{_REPORTS_DIR}/index.html"
     with open(path, "w") as f:
         f.write(html)
     return path
 
 
-def _build_html(data_json: str) -> str:
+def _build_html(data_json: str, finnhub_key: str = "") -> str:
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -260,7 +268,7 @@ def _build_html(data_json: str) -> str:
 </style>
 </head>
 <body>
-<script>window.__DATA__ = {data_json};</script>
+<script>window.__DATA__ = {data_json}; window.__FH_KEY__ = "{finnhub_key}";</script>
 
 <header>
   <div class="logo">♞ Quant<span>Knight</span></div>
@@ -548,7 +556,7 @@ function newsItems(articles) {{
   return '<div class="news-list">' + articles.slice(0, 10).map(renderNewsItem).join('') + '</div>';
 }}
 
-// ── Live price fetch via Yahoo Finance ────────────────────────────────────────
+// ── Live price fetch via Finnhub (CORS-enabled) ───────────────────────────────
 function _applyQuotes(quotes) {{
   let unrealized = 0;
   let mktValue   = 0;
@@ -556,8 +564,8 @@ function _applyQuotes(quotes) {{
     const el     = document.getElementById('lp-' + q.symbol);
     const entry  = parseFloat(el?.dataset.entry  || '0');
     const shares = parseFloat(el?.dataset.shares || '0');
-    if (!el || !q.regularMarketPrice) return;
-    const price = q.regularMarketPrice;
+    if (!el || q.price == null) return;
+    const price = q.price;
     el.textContent = '$' + price.toFixed(2);
     el.className   = 'mono ' + (price >= entry ? 'positive' : 'negative');
     if (entry && shares) {{
@@ -565,44 +573,33 @@ function _applyQuotes(quotes) {{
       mktValue   += price * shares;
     }}
   }});
-  if (!mktValue) return;   // no quotes came back — leave cards unchanged
-  // Recompute live equity and total P&L
-  const cash        = port.cash || 0;
-  const realizedPnl = port.cumulative_pnl || 0;
-  const liveEquity  = cash + mktValue;
-  const totalPnl    = realizedPnl + unrealized;
-  const eqEl  = document.getElementById('equity');
+  if (!mktValue) return;
+  const cash       = port.cash || 0;
+  const realized   = port.cumulative_pnl || 0;
+  const liveEquity = cash + mktValue;
+  const totalPnl   = realized + unrealized;
+  document.getElementById('equity').textContent = fmt$(liveEquity);
   const pnlEl = document.getElementById('cum-pnl');
-  eqEl.textContent  = fmt$(liveEquity);
   pnlEl.textContent = fmtPnl(totalPnl);
   pnlEl.className   = 'card-value ' + colorClass(totalPnl);
-  // Sub-label: show unrealized breakdown
   const subEl = document.getElementById('equity-sub');
   if (subEl) subEl.textContent = 'Unrealized: ' + fmtPnl(unrealized);
 }}
 async function fetchLivePrices(syms) {{
-  if (!syms.length) return;
-  const symStr = syms.join(',');
-  // No custom headers → simple GET → no CORS preflight; Yahoo allows this.
-  const direct = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
-    + symStr + '&fields=regularMarketPrice&corsDomain=finance.yahoo.com';
-  try {{
-    const r = await fetch(direct);
-    if (r.ok) {{
-      const data = await r.json();
-      _applyQuotes(data?.quoteResponse?.result || []);
-      return;
-    }}
-  }} catch(_) {{}}
-  // Fallback: CORS proxy
-  try {{
-    const proxy = 'https://corsproxy.io/?' + encodeURIComponent(direct);
-    const r2 = await fetch(proxy);
-    if (r2.ok) {{
-      const data = await r2.json();
-      _applyQuotes(data?.quoteResponse?.result || []);
-    }}
-  }} catch(_) {{ /* stored price stays */ }}
+  const key = window.__FH_KEY__;
+  if (!syms.length || !key) return;
+  // Finnhub allows CORS from any origin — one request per symbol, all in parallel
+  const results = await Promise.allSettled(
+    syms.map(sym =>
+      fetch('https://finnhub.io/api/v1/quote?symbol=' + sym + '&token=' + key)
+        .then(r => r.ok ? r.json() : null)
+        .then(d => d && d.c ? {{ symbol: sym, price: d.c }} : null)
+    )
+  );
+  const quotes = results
+    .filter(r => r.status === 'fulfilled' && r.value)
+    .map(r => r.value);
+  if (quotes.length) _applyQuotes(quotes);
 }}
 
 // ── Open Positions Table ──────────────────────────────────────────────────────
