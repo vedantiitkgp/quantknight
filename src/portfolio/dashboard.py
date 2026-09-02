@@ -466,7 +466,7 @@ if (curve && curve.length > 0) {{
   // Prefer total_equity when recorded; fall back to baseline + cumulative_pnl
   const equities = curve.map(c => c.total_equity != null ? c.total_equity : baseline + (c.cumulative_pnl || 0));
 
-  new Chart(document.getElementById('equity-chart'), {{
+  window._eqChart = new Chart(document.getElementById('equity-chart'), {{
     type: 'line',
     data: {{
       labels,
@@ -584,6 +584,12 @@ function _applyQuotes(quotes) {{
   pnlEl.className   = 'card-value ' + colorClass(totalPnl);
   const subEl = document.getElementById('equity-sub');
   if (subEl) subEl.textContent = 'Unrealized: ' + fmtPnl(unrealized);
+  // Update today's (last) point on the equity curve chart
+  if (window._eqChart) {{
+    const ds = window._eqChart.data.datasets[0];
+    ds.data[ds.data.length - 1] = liveEquity;
+    window._eqChart.update('none');
+  }}
 }}
 async function fetchLivePrices(syms) {{
   const key = window.__FH_KEY__;
