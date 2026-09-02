@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 75950.86,
-  "total_equity": 151219.07,
-  "cumulative_pnl": 1219.07,
-  "as_of": "2026-09-01T22:47:28.431452",
+  "total_equity": 150000.0,
+  "cumulative_pnl": 0.0,
+  "as_of": "2026-08-29T14:33:49.021986",
   "positions": [
     {
       "symbol": "INCY",
@@ -17,8 +17,7 @@
       "entry_time": "14:33",
       "composite_score": 75.5514814268868,
       "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 75.6, RSI 53, EPS growth 45%",
-      "current_price": 125.01
+      "reason": "RSI_PULLBACK setup, score 75.6, RSI 53, EPS growth 45%"
     },
     {
       "symbol": "TRV",
@@ -32,8 +31,7 @@
       "entry_time": "14:33",
       "composite_score": 69.93878979952831,
       "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 69.9, RSI 53, EPS growth 46%",
-      "current_price": 363.92
+      "reason": "RSI_PULLBACK setup, score 69.9, RSI 53, EPS growth 46%"
     },
     {
       "symbol": "CF",
@@ -47,8 +45,7 @@
       "entry_time": "14:33",
       "composite_score": 68.78803066037736,
       "verdict": "APPROVED",
-      "reason": "SEPA_PULLBACK setup, score 68.8, RSI 57, EPS growth 88%",
-      "current_price": 135.6
+      "reason": "SEPA_PULLBACK setup, score 68.8, RSI 57, EPS growth 88%"
     },
     {
       "symbol": "ALL",
@@ -62,8 +59,7 @@
       "entry_time": "14:33",
       "composite_score": 68.70950029481132,
       "verdict": "APPROVED",
-      "reason": "RSI_PULLBACK setup, score 68.7, RSI 52, EPS growth 55%",
-      "current_price": 257.87
+      "reason": "RSI_PULLBACK setup, score 68.7, RSI 52, EPS growth 55%"
     },
     {
       "symbol": "EOG",
@@ -77,8 +73,7 @@
       "entry_time": "14:33",
       "composite_score": 64.728515625,
       "verdict": "APPROVED",
-      "reason": "RSI_PULLBACK setup, score 64.7, RSI 49, EPS growth nan%",
-      "current_price": 148.35
+      "reason": "RSI_PULLBACK setup, score 64.7, RSI 49, EPS growth nan%"
     },
     {
       "symbol": "NVDA",
@@ -92,8 +87,7 @@
       "entry_time": "14:33",
       "composite_score": 64.20367777122641,
       "verdict": "APPROVED",
-      "reason": "RSI_PULLBACK setup, score 64.2, RSI 52, EPS growth 211%",
-      "current_price": 217.44
+      "reason": "RSI_PULLBACK setup, score 64.2, RSI 52, EPS growth 211%"
     },
     {
       "symbol": "GM",
@@ -107,8 +101,7 @@
       "entry_time": "14:33",
       "composite_score": 63.45957399764151,
       "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 63.5, RSI 53, EPS growth -31%",
-      "current_price": 85.63
+      "reason": "RSI_PULLBACK setup, score 63.5, RSI 53, EPS growth -31%"
     },
     {
       "symbol": "OXY",
@@ -122,8 +115,7 @@
       "entry_time": "14:33",
       "composite_score": 62.861328125,
       "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 62.9, RSI 55, EPS growth 550%",
-      "current_price": 60.95
+      "reason": "SEPA_PULLBACK setup, score 62.9, RSI 55, EPS growth 550%"
     },
     {
       "symbol": "CAH",
@@ -137,8 +129,7 @@
       "entry_time": "14:33",
       "composite_score": 61.925007370283026,
       "verdict": "APPROVED",
-      "reason": "RSI_PULLBACK setup, score 61.9, RSI 52, EPS growth -21%",
-      "current_price": 239.35
+      "reason": "RSI_PULLBACK setup, score 61.9, RSI 52, EPS growth -21%"
     },
     {
       "symbol": "TRGP",
@@ -152,8 +143,7 @@
       "entry_time": "14:33",
       "composite_score": 60.07624557783019,
       "verdict": "APPROVED",
-      "reason": "SEPA_PULLBACK setup, score 60.1, RSI 55, EPS growth 22%",
-      "current_price": 296.06
+      "reason": "SEPA_PULLBACK setup, score 60.1, RSI 55, EPS growth 22%"
     }
   ]
 }
