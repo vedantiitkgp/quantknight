@@ -449,5 +449,9 @@ class PortfolioManager:
         }
 
     def _save(self):
+        # Keep today's trade file in sync with portfolio totals so the
+        # equity curve in the dashboard reflects the correct values.
+        self.today_trades["cumulative_pnl"] = self.portfolio.get("cumulative_pnl", 0.0)
+        self.today_trades["total_equity"]   = self.portfolio.get("total_equity", 0.0)
         save_portfolio(self.portfolio)
         save_today_trades(self.today_trades)

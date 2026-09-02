@@ -32,6 +32,7 @@ def _load_equity_curve(days: int = 90) -> List[Dict]:
             curve.append({
                 "date":           str(d),
                 "cumulative_pnl": t.get("cumulative_pnl", 0),
+                "total_equity":   t.get("total_equity"),   # None if not yet recorded
                 "daily_pnl":      t.get("daily_pnl", 0),
                 "realized_pnl":   t.get("realized_pnl", 0),
             })
@@ -79,6 +80,18 @@ def generate_dashboard(portfolio: Dict, today_trades: Dict) -> str:
     equity_curve   = _load_equity_curve(90)
     recent_trades  = _load_recent_trades(30)
     win_rate       = _win_rate(recent_trades)
+
+    # Always ensure today's live portfolio values appear as the last curve point.
+    # This matters on weekends / when no trade file exists yet for today.
+    today_str = str(date.today())
+    equity_curve = [c for c in equity_curve if c["date"] != today_str]
+    equity_curve.append({
+        "date":           today_str,
+        "cumulative_pnl": portfolio.get("cumulative_pnl", 0),
+        "total_equity":   portfolio.get("total_equity", 150000),
+        "daily_pnl":      today_trades.get("daily_pnl", 0) if today_trades else 0,
+        "realized_pnl":   today_trades.get("realized_pnl", 0) if today_trades else 0,
+    })
 
     data_json = json.dumps({
         "portfolio":     portfolio,
@@ -398,7 +411,8 @@ document.getElementById('win-bar-fill').style.width = Math.min(wr, 100) + '%';
 if (curve && curve.length > 0) {{
   const labels = curve.map(c => c.date);
   const baseline = 150000;
-  const equities = curve.map(c => baseline + (c.cumulative_pnl || 0));
+  // Prefer total_equity when recorded; fall back to baseline + cumulative_pnl
+  const equities = curve.map(c => c.total_equity != null ? c.total_equity : baseline + (c.cumulative_pnl || 0));
 
   new Chart(document.getElementById('equity-chart'), {{
     type: 'line',
