@@ -134,7 +134,20 @@ def _build_html(data_json: str) -> str:
   .md table {{ width: 100%; border-collapse: collapse; font-size: 0.78rem; margin: 6px 0; }}
   .md th {{ background: rgba(255,255,255,0.04); padding: 4px 8px; text-align: left; border: 1px solid var(--border); }}
   .md td {{ padding: 4px 8px; border: 1px solid var(--border); }}
-  .md code {{ background: rgba(255,255,255,0.06); padding: 1px 4px; border-radius: 3px; font-family: monospace; font-size: 0.85em; }}
+  .md code {{ background: rgba(88,166,255,0.1); color: var(--blue); border: 1px solid rgba(88,166,255,0.2); padding: 1px 5px; border-radius: 4px; font-family: 'SF Mono', Consolas, monospace; font-size: 0.80em; white-space: nowrap; }}
+  /* ── Conviction keyword highlights (injected by preprocess) ── */
+  mark.conv-bull    {{ background: rgba(63,185,80,0.15);   color: var(--green);  padding: 1px 5px; border-radius: 3px; font-weight: 700; font-style: normal; }}
+  mark.conv-bear    {{ background: rgba(248,81,73,0.15);   color: var(--red);    padding: 1px 5px; border-radius: 3px; font-weight: 700; font-style: normal; }}
+  mark.conv-neutral {{ background: rgba(125,133,144,0.12); color: var(--muted);  padding: 1px 5px; border-radius: 3px; font-weight: 700; font-style: normal; }}
+  /* ── Verdict callout banner at top of risk-manager memo ── */
+  .verdict-callout {{ border-radius: 6px; padding: 10px 16px; margin-bottom: 14px; font-size: 0.84rem; line-height: 1.55; border-left: 4px solid; font-weight: 600; }}
+  .verdict-callout strong {{ color: inherit; }}
+  .verdict-callout-approved {{ background: rgba(63,185,80,0.08);  border-color: var(--green);  color: var(--green); }}
+  .verdict-callout-rejected  {{ background: rgba(248,81,73,0.08);  border-color: var(--red);    color: var(--red);   }}
+  .verdict-callout-watch     {{ background: rgba(210,153,34,0.08); border-color: var(--yellow); color: var(--yellow);}}
+  /* ── Section headers inside memos get stronger visual weight ── */
+  .thesis-memo h3 {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-top: 18px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.07); }}
+  .thesis-memo h3:first-of-type {{ border-top: none; margin-top: 4px; }}
   :root {{
     --bg:      #0d1117;
     --surface: #161b22;
@@ -331,7 +344,20 @@ function preprocess(s) {{
     // Standalone ════════  →  ---
     .replace(/^[═─]{{3,}}\\s*$/gm, '---')
     // SECTION N — TITLE (without box chars)  →  ### SECTION N — TITLE
-    .replace(/^(SECTION\\s+\\d+\\s*[—–-]+\\s*.+)$/gm, '### $1');
+    .replace(/^(SECTION\\s+\\d+\\s*[—–-]+\\s*.+)$/gm, '### $1')
+    // ── Conviction keyword highlights ──────────────────────────────────────
+    // Bull signals: ADDS TO CONVICTION, CONFIRMS, ADDS TO
+    .replace(/\\b(ADDS TO CONVICTION|CONFIRMS THE BULL|CONFIRMS|ADDS TO)\\b/g, m =>
+      '<mark class="conv-bull">' + m + '</mark>')
+    // Bear signals: DETRACTS, CONTRADICTS, UNDERMINES, REDUCES
+    .replace(/\\b(DETRACTS FROM THESIS|DETRACTS|CONTRADICTS THE BULL|CONTRADICTS|UNDERMINES|REDUCES CONVICTION)\\b/g, m =>
+      '<mark class="conv-bear">' + m + '</mark>')
+    // Neutral signals
+    .replace(/\\b(NEUTRAL TO SLIGHTLY (?:NEGATIVE|POSITIVE)|NEUTRAL)\\b/g, m =>
+      '<mark class="conv-neutral">' + m + '</mark>')
+    // ── Inline metric=value pills (e.g. ROIC=3.5%, peg_ratio=20.69) ────────
+    .replace(/\\b([a-z][a-z_]{{2,}})\\s*=\\s*([-+]?\\d[\\d,.]*(\\s*[%×x])?)/gi,
+      '<code>$1=$2</code>');
 }}
 function md(text) {{
   if (!text) return '';
@@ -356,6 +382,24 @@ function md(text) {{
     .replace(/\\n{{2,}}/g,'</p><p>')
     .replace(/\\n/g,'<br>');
 }}
+// ── Risk-manager memo renderer ─────────────────────────────────────────────────
+// Extracts the opening VERDICT line and renders it as a colored callout banner,
+// then renders the remainder of the memo normally.
+function memoContent(memo) {{
+  if (!memo) return '';
+  const s = String(memo);
+  // Match: [APPROVED] — ... or APPROVED — ... on a line by itself
+  const vm = s.match(/^(\\[?(APPROVED|WATCH|REJECTED)\\]?\\s*[—–\\-][^\\n]*)/m);
+  if (vm) {{
+    const verdict = vm[2].toUpperCase();
+    const cls = verdict === 'APPROVED' ? 'approved' : verdict === 'REJECTED' ? 'rejected' : 'watch';
+    const callout = '<div class="verdict-callout verdict-callout-' + cls + '">' + vm[1].trim() + '</div>';
+    const body = s.slice(vm.index + vm[0].length).trimStart();
+    return callout + md(body);
+  }}
+  return md(s);
+}}
+
 function fmtDate(d) {{
   if (!d) return '';
   const s = String(d);
@@ -567,7 +611,7 @@ if (positions.length > 0) {{
         </div>
         ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(p.bull_thesis)}}</div>` : ''}}
         ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(p.bear_risks)}}</div>` : ''}}
-        ${{p.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{md(p.full_memo)}}</div>` : ''}}
+        ${{p.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{memoContent(p.full_memo)}}</div>` : ''}}
         ${{(p.full_news && p.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(p.full_news)}}</div>` : ''}}
       </td></tr>
       `;
@@ -614,7 +658,7 @@ function renderEntries(entries, container) {{
         </div>
         ${{e.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(e.bull_thesis)}}</div>` : ''}}
         ${{e.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(e.bear_risks)}}</div>` : ''}}
-        ${{e.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{md(e.full_memo)}}</div>` : ''}}
+        ${{e.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{memoContent(e.full_memo)}}</div>` : ''}}
         ${{(e.full_news && e.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(e.full_news)}}</div>` : ''}}
       </td></tr>` : ''}}
       `;
