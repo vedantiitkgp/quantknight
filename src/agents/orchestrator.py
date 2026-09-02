@@ -492,7 +492,7 @@ class AgentOrchestrator:
                 system=_SYSTEM_STRICT,
                 user=_BULL_PROMPT.format(symbol=symbol, data_json=data_json),
                 model=CLAUDE_MODEL_BULL,
-                max_tokens=2000,
+                max_tokens=6000,
             )
             result["bull_thesis"] = bull
             logger.debug(f"  {symbol} — Bull case complete (Haiku)")
@@ -502,7 +502,7 @@ class AgentOrchestrator:
                 system=_SYSTEM_STRICT,
                 user=_BEAR_PROMPT.format(symbol=symbol, data_json=data_json),
                 model=CLAUDE_MODEL_BEAR,
-                max_tokens=2000,
+                max_tokens=6000,
             )
             result["bear_risks"] = bear
             logger.debug(f"  {symbol} — Bear case complete (Haiku)")
@@ -517,7 +517,7 @@ class AgentOrchestrator:
                     data_json=data_json,
                 ),
                 model=CLAUDE_MODEL_RISK,
-                max_tokens=3000,
+                max_tokens=8000,
             )
             result["full_memo"] = memo
             result["verdict"]   = _extract_verdict(memo)
