@@ -496,7 +496,7 @@ class AgentOrchestrator:
                 system=_SYSTEM_STRICT,
                 user=_BULL_PROMPT.format(symbol=symbol, data_json=data_json),
                 model=CLAUDE_MODEL_BULL,
-                max_tokens=1400,
+                max_tokens=2000,
             )
             result["bull_thesis"] = bull
             logger.debug(f"  {symbol} — Bull case complete (Haiku)")
@@ -506,7 +506,7 @@ class AgentOrchestrator:
                 system=_SYSTEM_STRICT,
                 user=_BEAR_PROMPT.format(symbol=symbol, data_json=data_json),
                 model=CLAUDE_MODEL_BEAR,
-                max_tokens=1400,
+                max_tokens=2000,
             )
             result["bear_risks"] = bear
             logger.debug(f"  {symbol} — Bear case complete (Haiku)")
@@ -521,7 +521,7 @@ class AgentOrchestrator:
                     data_json=data_json,
                 ),
                 model=CLAUDE_MODEL_RISK,
-                max_tokens=2000,
+                max_tokens=3000,
             )
             result["full_memo"] = memo
             result["verdict"]   = _extract_verdict(memo)
@@ -595,9 +595,32 @@ def _clean_snapshot(candidate: Dict) -> Dict:
 
 
 def _extract_verdict(memo: str) -> str:
-    """Parse APPROVED / WATCH / REJECTED from the Risk Manager output."""
+    """
+    Parse APPROVED / WATCH / REJECTED from the Risk Manager output.
+
+    Strategy (in priority order):
+    1. Look for the explicit "VERDICT: WATCH" header line the prompt instructs.
+    2. Look for a line that STARTS with the verdict word (e.g. "WATCH — The bull…").
+    3. Find whichever verdict word appears FIRST in the text (position-based,
+       avoids false positives like "prevents APPROVED status").
+    """
+    import re
     upper = memo.upper()
-    for verdict in ("APPROVED", "REJECTED", "WATCH"):
-        if verdict in upper:
-            return verdict
+
+    # 1. Explicit header: "VERDICT: WATCH" or "VERDICT: **WATCH**"
+    m = re.search(r'VERDICT\s*:\s*\**(APPROVED|REJECTED|WATCH)\**', upper)
+    if m:
+        return m.group(1)
+
+    # 2. Line starts with the verdict word followed by space/dash/newline
+    m = re.search(r'^\s*(APPROVED|REJECTED|WATCH)\s*[—–\-\s]', upper, re.MULTILINE)
+    if m:
+        return m.group(1)
+
+    # 3. Earliest position in text (avoids picking up a word that appears
+    #    in a different context later, e.g. "prevents APPROVED status")
+    positions = {v: upper.find(v) for v in ("APPROVED", "REJECTED", "WATCH") if v in upper}
+    if positions:
+        return min(positions, key=positions.get)
+
     return "WATCH"
