@@ -209,9 +209,16 @@ def _build_html(data_json: str) -> str:
   details summary {{ cursor: pointer; color: var(--blue); font-size: 0.78rem; font-weight: 600; padding: 4px 0; user-select: none; }}
   details summary:hover {{ opacity: 0.8; }}
   details[open] summary {{ margin-bottom: 8px; }}
-  .thesis-summary-bull {{ color: var(--green) !important; }}
-  .thesis-summary-bear {{ color: var(--red) !important; }}
-  .thesis-summary-memo {{ color: var(--purple) !important; }}
+  /* ── Panel tab bar (horizontal row of thesis toggles) ── */
+  .panel-bar {{ display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }}
+  .panel-tab {{ background: none; border: 1px solid var(--border); border-radius: 12px; padding: 3px 12px; font-size: 0.75rem; font-weight: 600; cursor: pointer; color: var(--muted); transition: border-color 0.15s, color 0.15s, background 0.15s; user-select: none; }}
+  .panel-tab:hover {{ border-color: var(--text); color: var(--text); }}
+  .panel-tab.bull-tab.active {{ background: rgba(63,185,80,0.12); border-color: var(--green); color: var(--green); }}
+  .panel-tab.bear-tab.active {{ background: rgba(248,81,73,0.12); border-color: var(--red);   color: var(--red);   }}
+  .panel-tab.memo-tab.active {{ background: rgba(188,140,255,0.12); border-color: var(--purple); color: var(--purple); }}
+  .panel-tab.news-tab.active {{ background: rgba(88,166,255,0.12); border-color: var(--blue);  color: var(--blue);  }}
+  .panel-body {{ margin-top: 10px; display: none; }}
+  .panel-body.active {{ display: block; }}
 
   /* ── News Articles ── */
   .news-list {{ display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }}
@@ -449,12 +456,25 @@ if (curve && curve.length > 0) {{
     '<div class="empty-state">No historical data yet — runs after first EOD</div>';
 }}
 
+// ── Panel tab helpers ─────────────────────────────────────────────────────────
+function openPanel(btn, type, grp) {{
+  const allTabs    = document.querySelectorAll('[data-grp="' + grp + '"] .panel-tab');
+  const allBodies  = document.querySelectorAll('[data-grp="' + grp + '"] .panel-body');
+  const isActive   = btn.classList.contains('active');
+  allTabs.forEach(t => t.classList.remove('active'));
+  allBodies.forEach(b => b.classList.remove('active'));
+  if (!isActive) {{
+    btn.classList.add('active');
+    const body = document.getElementById(type + '-' + grp);
+    if (body) body.classList.add('active');
+  }}
+}}
+
 // ── News helpers ──────────────────────────────────────────────────────────────
 function renderNewsItem(n) {{
   const sc  = n.sentiment || 0;
   const cls = sc > 0.05 ? 'news-positive' : sc < -0.05 ? 'news-negative' : 'news-neutral';
   const lbl = sc > 0.05 ? '▲ ' + sc.toFixed(2) : sc < -0.05 ? '▼ ' + Math.abs(sc).toFixed(2) : '● ' + sc.toFixed(2);
-  // Use stored URL; fall back to a DuckDuckGo search so every headline is clickable
   const href = n.url || ('https://duckduckgo.com/?q=' + encodeURIComponent(n.headline || ''));
   const hl   = `<a href="${{href}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{n.headline || ''}}</a>`;
   return `<div class="news-item">
@@ -465,25 +485,10 @@ function renderNewsItem(n) {{
     </div>
   </div>`;
 }}
-function renderNewsList(articles, grp) {{
+function newsItems(articles) {{
   if (!articles || !articles.length) return '';
-  const ga   = grp ? ` data-group="${{grp}}"` : '';
-  const items = articles.slice(0, 10).map(renderNewsItem).join('');
-  return `<details style="margin-top:6px"${{ga}}>
-    <summary>News (${{articles.length}}) ▸</summary>
-    <div class="news-list" style="margin-top:8px">${{items}}</div>
-  </details>`;
+  return '<div class="news-list">' + articles.slice(0, 10).map(renderNewsItem).join('') + '</div>';
 }}
-
-// ── Accordion: opening one details closes siblings in the same group ────────
-document.addEventListener('toggle', function(ev) {{
-  if (!ev.target.matches('details') || !ev.target.open) return;
-  const grp = ev.target.dataset.group;
-  if (!grp) return;
-  document.querySelectorAll('details[data-group="' + grp + '"]').forEach(function(d) {{
-    if (d !== ev.target) d.removeAttribute('open');
-  }});
-}}, true);
 
 // ── Live price fetch via Yahoo Finance ────────────────────────────────────────
 async function fetchLivePrices(syms) {{
@@ -540,10 +545,16 @@ if (positions.length > 0) {{
       </tr>
       <tr class="thesis-row"><td colspan="10">
         <div class="reason">${{p.reason || ''}}</div>
-        ${{p.bull_thesis ? `<details style="margin-top:8px" data-group="${{grp}}"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(p.bull_thesis)}}</div></details>` : ''}}
-        ${{p.bear_risks  ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(p.bear_risks)}}</div></details>` : ''}}
-        ${{p.full_memo   ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(p.full_memo)}}</div></details>` : ''}}
-        ${{renderNewsList(p.full_news, grp)}}
+        <div class="panel-bar" data-grp="${{grp}}">
+          ${{p.bull_thesis ? `<button class="panel-tab bull-tab" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
+          ${{p.bear_risks  ? `<button class="panel-tab bear-tab" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
+          ${{p.full_memo   ? `<button class="panel-tab memo-tab" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
+          ${{(p.full_news && p.full_news.length) ? `<button class="panel-tab news-tab" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{p.full_news.length}})</button>` : ''}}
+        </div>
+        ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(p.bull_thesis)}}</div>` : ''}}
+        ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(p.bear_risks)}}</div>` : ''}}
+        ${{p.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{md(p.full_memo)}}</div>` : ''}}
+        ${{(p.full_news && p.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(p.full_news)}}</div>` : ''}}
       </td></tr>
       `;
     }}).join('')}}
@@ -581,10 +592,16 @@ function renderEntries(entries, container) {{
       ${{(e.reason || e.bull_thesis) ? `
       <tr class="thesis-row"><td colspan="8">
         <div class="reason">${{e.reason || ''}}</div>
-        ${{e.bull_thesis ? `<details style="margin-top:8px" data-group="${{grp}}"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(e.bull_thesis)}}</div></details>` : ''}}
-        ${{e.bear_risks  ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(e.bear_risks)}}</div></details>` : ''}}
-        ${{e.full_memo   ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(e.full_memo)}}</div></details>` : ''}}
-        ${{renderNewsList(e.full_news, grp)}}
+        <div class="panel-bar" data-grp="${{grp}}">
+          ${{e.bull_thesis ? `<button class="panel-tab bull-tab" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
+          ${{e.bear_risks  ? `<button class="panel-tab bear-tab" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
+          ${{e.full_memo   ? `<button class="panel-tab memo-tab" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
+          ${{(e.full_news && e.full_news.length) ? `<button class="panel-tab news-tab" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{e.full_news.length}})</button>` : ''}}
+        </div>
+        ${{e.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(e.bull_thesis)}}</div>` : ''}}
+        ${{e.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(e.bear_risks)}}</div>` : ''}}
+        ${{e.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{md(e.full_memo)}}</div>` : ''}}
+        ${{(e.full_news && e.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(e.full_news)}}</div>` : ''}}
       </td></tr>` : ''}}
       `;
     }}).join('')}}
