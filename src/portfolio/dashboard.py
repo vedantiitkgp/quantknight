@@ -118,7 +118,7 @@ def _build_html(data_json: str) -> str:
   .md table {{ width: 100%; border-collapse: collapse; font-size: 0.78rem; margin: 6px 0; }}
   .md th {{ background: rgba(255,255,255,0.04); padding: 4px 8px; text-align: left; border: 1px solid var(--border); }}
   .md td {{ padding: 4px 8px; border: 1px solid var(--border); }}
-  .md code {{ background: rgba(255,255,255,0.06); padding: 1px 4px; border-radius: 3px; font-family: monospace; font-size: 0.85em; }}</style>
+  .md code {{ background: rgba(255,255,255,0.06); padding: 1px 4px; border-radius: 3px; font-family: monospace; font-size: 0.85em; }}
   :root {{
     --bg:      #0d1117;
     --surface: #161b22;
@@ -308,19 +308,19 @@ function md(text) {{
     .replace(/^### (.+)$/gm,'<h4>$1</h4>')
     .replace(/^## (.+)$/gm,'<h3>$1</h3>')
     .replace(/^# (.+)$/gm,'<h2>$1</h2>')
-    .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
-    .replace(/\*([^*\n]+)\*/g,'<em>$1</em>')
+    .replace(/\\*\\*([^*\\n]+)\\*\\*/g,'<strong>$1</strong>')
+    .replace(/\\*([^*\\n]+)\\*/g,'<em>$1</em>')
     .replace(/^[-*•] (.+)$/gm,'<li>$1</li>')
-    .replace(/(<\/li>\n<li>)/g,'$1')
-    .replace(/(<li>[\s\S]*?<\/li>)/g,'<ul>$1</ul>')
-    .replace(/\n{2,}/g,'</p><p>')
-    .replace(/\n/g,'<br>');
+    .replace(/(<\\/li>\\n<li>)/g,'$1')
+    .replace(/(<li>[\\s\\S]*?<\\/li>)/g,'<ul>$1</ul>')
+    .replace(/\\n{{2,}}/g,'</p><p>')
+    .replace(/\\n/g,'<br>');
 }}
 function fmtDate(d) {{
   if (!d) return '';
   const s = String(d);
   // Convert Unix timestamp (10 digits) to YYYY-MM-DD
-  if (/^\d{{10}}$/.test(s)) {{
+  if (/^\\d{{10}}$/.test(s)) {{
     return new Date(parseInt(s) * 1000).toISOString().slice(0, 10);
   }}
   return s.slice(0, 10);
