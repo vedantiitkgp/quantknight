@@ -549,24 +549,60 @@ function newsItems(articles) {{
 }}
 
 // ── Live price fetch via Yahoo Finance ────────────────────────────────────────
+function _applyQuotes(quotes) {{
+  let unrealized = 0;
+  let mktValue   = 0;
+  quotes.forEach(q => {{
+    const el     = document.getElementById('lp-' + q.symbol);
+    const entry  = parseFloat(el?.dataset.entry  || '0');
+    const shares = parseFloat(el?.dataset.shares || '0');
+    if (!el || !q.regularMarketPrice) return;
+    const price = q.regularMarketPrice;
+    el.textContent = '$' + price.toFixed(2);
+    el.className   = 'mono ' + (price >= entry ? 'positive' : 'negative');
+    if (entry && shares) {{
+      unrealized += (price - entry) * shares;
+      mktValue   += price * shares;
+    }}
+  }});
+  if (!mktValue) return;   // no quotes came back — leave cards unchanged
+  // Recompute live equity and total P&L
+  const cash        = port.cash || 0;
+  const realizedPnl = port.cumulative_pnl || 0;
+  const liveEquity  = cash + mktValue;
+  const totalPnl    = realizedPnl + unrealized;
+  const eqEl  = document.getElementById('equity');
+  const pnlEl = document.getElementById('cum-pnl');
+  eqEl.textContent  = fmt$(liveEquity);
+  pnlEl.textContent = fmtPnl(totalPnl);
+  pnlEl.className   = 'card-value ' + colorClass(totalPnl);
+  // Sub-label: show unrealized breakdown
+  const subEl = document.getElementById('equity-sub');
+  if (subEl) subEl.textContent = 'Unrealized: ' + fmtPnl(unrealized);
+}}
 async function fetchLivePrices(syms) {{
   if (!syms.length) return;
-  const url = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
-    + syms.join(',') + '&fields=regularMarketPrice';
+  const symStr = syms.join(',');
+  // No custom headers → simple GET → no CORS preflight; Yahoo allows this.
+  const direct = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
+    + symStr + '&fields=regularMarketPrice&corsDomain=finance.yahoo.com';
   try {{
-    const r = await fetch(url, {{ headers: {{ 'Accept': 'application/json' }} }});
-    if (!r.ok) return;
-    const data = await r.json();
-    const quotes = data?.quoteResponse?.result || [];
-    quotes.forEach(q => {{
-      const el    = document.getElementById('lp-' + q.symbol);
-      const entry = parseFloat(el?.dataset.entry || '0');
-      if (!el || !q.regularMarketPrice) return;
-      const price = q.regularMarketPrice;
-      el.textContent = '$' + price.toFixed(2);
-      el.className   = 'mono ' + (price >= entry ? 'positive' : 'negative');
-    }});
-  }} catch(e) {{ /* CORS or network failure — stored price stays */ }}
+    const r = await fetch(direct);
+    if (r.ok) {{
+      const data = await r.json();
+      _applyQuotes(data?.quoteResponse?.result || []);
+      return;
+    }}
+  }} catch(_) {{}}
+  // Fallback: CORS proxy
+  try {{
+    const proxy = 'https://corsproxy.io/?' + encodeURIComponent(direct);
+    const r2 = await fetch(proxy);
+    if (r2.ok) {{
+      const data = await r2.json();
+      _applyQuotes(data?.quoteResponse?.result || []);
+    }}
+  }} catch(_) {{ /* stored price stays */ }}
 }}
 
 // ── Open Positions Table ──────────────────────────────────────────────────────
@@ -595,7 +631,7 @@ if (positions.length > 0) {{
         <td class="mono">${{p.shares}}</td>
         <td class="mono">$${{cost.toLocaleString('en-US', {{minimumFractionDigits:0, maximumFractionDigits:0}})}}</td>
         <td class="mono">$${{entry.toFixed(2)}}</td>
-        <td class="mono ${{curCls}}" id="lp-${{p.symbol}}" data-entry="${{entry}}">${{curTxt}}</td>
+        <td class="mono ${{curCls}}" id="lp-${{p.symbol}}" data-entry="${{entry}}" data-shares="${{p.shares}}">${{curTxt}}</td>
         <td class="mono">${{p.stop_loss ? '$' + Number(p.stop_loss).toFixed(2) : '—'}}</td>
         <td class="mono">${{p.target    ? '$' + Number(p.target).toFixed(2)    : '—'}}</td>
         <td>${{p.composite_score ? Number(p.composite_score).toFixed(1) : '—'}}</td>
