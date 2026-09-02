@@ -490,11 +490,12 @@ function renderEntries(entries, container) {{
   container.innerHTML = `
   <table>
     <thead><tr>
-      <th>Symbol</th><th>Verdict</th><th>Shares</th><th>Entry $</th><th>Cost</th><th>Stop</th><th>Target</th>
+      <th>Date</th><th>Symbol</th><th>Verdict</th><th>Shares</th><th>Entry $</th><th>Cost</th><th>Stop</th><th>Target</th>
     </tr></thead>
     <tbody>
     ${{entries.map(e => `
       <tr>
+        <td style="color:var(--muted);font-size:0.8rem">${{e._date || e.entry_date || '—'}}</td>
         <td><strong>${{e.symbol}}</strong> ${{dirBadge(e.direction)}}</td>
         <td>${{badge(e.verdict)}}</td>
         <td class="mono">${{e.shares}}</td>
@@ -504,7 +505,7 @@ function renderEntries(entries, container) {{
         <td class="mono">${{e.target    ? '$' + Number(e.target).toFixed(2)    : '—'}}</td>
       </tr>
       ${{(e.reason || e.bull_thesis) ? `
-      <tr class="thesis-row"><td colspan="7">
+      <tr class="thesis-row"><td colspan="8">
         <div class="reason">${{e.reason || ''}}</div>
         ${{e.bull_thesis ? `<div class="thesis thesis-bull md" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{md(e.bull_thesis)}}</div>` : ''}}
         ${{e.bear_risks  ? `<div class="thesis thesis-bear md" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{md(e.bear_risks)}}</div>` : ''}}
@@ -563,9 +564,33 @@ function renderRecentTrades(trades, container) {{
   }}
 }}
 
-renderEntries(today.entries || [], document.getElementById('entries-container'));
-renderExits(today.exits || [],     document.getElementById('exits-container'));
-renderRecentTrades(recent,         document.getElementById('recent-container'));
+// ── Render trade tabs — fall back to recent data when today is empty ──────────
+const todayEntries = today.entries || [];
+const todayExits   = today.exits   || [];
+const recentEntries = recent.filter(t => t._type === 'entry').slice(0, 40);
+const recentExits   = recent.filter(t => t._type === 'exit').slice(0, 40);
+
+// Entries tab
+if (todayEntries.length > 0) {{
+  renderEntries(todayEntries, document.getElementById('entries-container'));
+}} else if (recentEntries.length > 0) {{
+  document.querySelector('.tab[onclick*="entries"]').textContent = 'Entries (recent)';
+  renderEntries(recentEntries, document.getElementById('entries-container'));
+}} else {{
+  document.getElementById('entries-container').innerHTML = '<div class="empty-state">No entries yet</div>';
+}}
+
+// Exits tab
+if (todayExits.length > 0) {{
+  renderExits(todayExits, document.getElementById('exits-container'));
+}} else if (recentExits.length > 0) {{
+  document.querySelector('.tab[onclick*="exits"]').textContent = 'Exits (recent)';
+  renderExits(recentExits, document.getElementById('exits-container'));
+}} else {{
+  document.getElementById('exits-container').innerHTML = '<div class="empty-state">No exits yet</div>';
+}}
+
+renderRecentTrades(recent, document.getElementById('recent-container'));
 
 // ── Tabs ──────────────────────────────────────────────────────────────────────
 function switchTab(name) {{
