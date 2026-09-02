@@ -41,7 +41,8 @@ class TechnicalAnalyser:
     def __init__(self):
         pass
 
-    def compute(self, df: pd.DataFrame, symbol: str = "") -> Dict:
+    def compute(self, df: pd.DataFrame, symbol: str = "",
+                benchmark_return_12m: Optional[float] = None) -> Dict:
         """
         Compute all technical indicators and detect entry setup.
 
@@ -183,6 +184,19 @@ class TechnicalAnalyser:
                 result["momentum_3m"] = None
         else:
             result["momentum_3m"] = None
+
+        # ── Relative Strength vs benchmark (SPY) ──────────────────────────────
+        # RS ratio > 1.0 means stock outperforming the market (Qullamaggie filter)
+        stock_12m = result.get("momentum_12_1")
+        if benchmark_return_12m is not None and stock_12m is not None:
+            try:
+                bm_r  = 1 + benchmark_return_12m / 100
+                stk_r = 1 + stock_12m / 100
+                result["rs_vs_spy"] = round(stk_r / bm_r, 3) if bm_r != 0 else None
+            except Exception:
+                result["rs_vs_spy"] = None
+        else:
+            result["rs_vs_spy"] = None
 
         # ── Entry Setup Detection ─────────────────────────────────────────────
         setup, confidence = self._detect_entry_setup(

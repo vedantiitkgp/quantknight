@@ -326,6 +326,84 @@ class PortfolioManager:
         self._save()
         return exit_rec
 
+    # ── Trail stops on profitable swing positions ─────────────────────────────
+
+    def trail_stops(self, client) -> List[Dict]:
+        """
+        Raise stop-losses on profitable swing positions (Minervini-style tiers).
+        Only ever raises the stop — never lowers it. Called every pipeline run.
+
+        Tiers for LONG:
+          ≥10% gain → raise stop to entry (breakeven)
+          ≥20% gain → raise stop to entry + 10% (lock in half the move)
+          ≥30% gain → raise stop to entry + 20% (lock in two-thirds)
+
+        Tiers for SHORT (inverted):
+          ≥10% gain → lower stop to entry (breakeven)
+          ≥20% gain → lower stop to entry − 10%
+          ≥30% gain → lower stop to entry − 20%
+        """
+        trailed: List[Dict] = []
+        swing = [p for p in self.portfolio["positions"]
+                 if p.get("trade_type") != "intraday"]
+
+        for pos in swing:
+            sym       = pos["symbol"]
+            entry     = pos["entry_price"]
+            old_stop  = pos.get("stop_loss") or 0.0
+            direction = pos["direction"]
+
+            try:
+                df      = client.get_daily_ohlcv(sym, days=5)
+                current = float(df.iloc[-1]["Close"]) if not df.empty else None
+            except Exception:
+                continue
+
+            if current is None:
+                continue
+
+            if direction == "LONG":
+                gain_pct = (current - entry) / entry
+                if gain_pct >= 0.30:
+                    new_stop = round(entry * 1.20, 2)   # lock in ≥20%
+                elif gain_pct >= 0.20:
+                    new_stop = round(entry * 1.10, 2)   # lock in ≥10%
+                elif gain_pct >= 0.10:
+                    new_stop = round(entry, 2)           # breakeven
+                else:
+                    continue
+                if new_stop <= old_stop:                # never lower a long stop
+                    continue
+            else:  # SHORT
+                gain_pct = (entry - current) / entry
+                if gain_pct >= 0.30:
+                    new_stop = round(entry * 0.80, 2)
+                elif gain_pct >= 0.20:
+                    new_stop = round(entry * 0.90, 2)
+                elif gain_pct >= 0.10:
+                    new_stop = round(entry, 2)
+                else:
+                    continue
+                if new_stop >= old_stop:                # never raise a short stop
+                    continue
+
+            pos["stop_loss"] = new_stop
+            trailed.append({
+                "symbol":    sym,
+                "direction": direction,
+                "old_stop":  round(old_stop, 2),
+                "new_stop":  new_stop,
+                "gain_pct":  round(gain_pct * 100, 1),
+            })
+            logger.info(
+                f"  TRAIL {sym}: stop ${old_stop:.2f} → ${new_stop:.2f} "
+                f"(up {gain_pct * 100:.1f}%)"
+            )
+
+        if trailed:
+            self._save()
+        return trailed
+
     # ── Close all intraday shorts ─────────────────────────────────────────────
 
     def close_all_intraday(self, client) -> List[Dict]:

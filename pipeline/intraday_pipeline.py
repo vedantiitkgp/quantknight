@@ -50,12 +50,58 @@ from src.notifications.telegram_bot import (
 console = Console()
 
 # ── Logging ────────────────────────────────────────────────────────────────────
+from typing import Tuple, Optional
 logger.remove()
 logger.add(
     sys.stderr, level=LOG_LEVEL,
     format="<green>{time:HH:mm:ss}</green> | <level>{level}</level> | {message}",
 )
 logger.add(LOG_FILE, level="DEBUG", rotation="7 days", retention="30 days")
+
+
+# ── Market regime helper ───────────────────────────────────────────────────────
+
+def _get_market_regime(client: YFClient) -> Tuple[str, Optional[float]]:
+    """
+    Classify current market environment using SPY vs its 50/200-day EMAs.
+
+    Returns
+    -------
+    regime : "OFFENSE" | "DEFENSE" | "CASH"
+        OFFENSE  — SPY above 50-day EMA → trade normally
+        DEFENSE  — SPY between 50 and 200-day EMA → WATCH-only, 60% sizes
+        CASH     — SPY below 200-day EMA → skip all new entries
+    spy_return_12m : float | None
+        SPY 12-1 month price return (%), used for RS-vs-SPY calculation.
+    """
+    try:
+        spy_df = client.get_daily_ohlcv("SPY", days=260)
+        if spy_df.empty or len(spy_df) < 200:
+            return "OFFENSE", None
+
+        spy_close  = float(spy_df.iloc[-1]["Close"])
+        ema50      = spy_df["Close"].ewm(span=50,  adjust=False).mean().iloc[-1]
+        ema200     = spy_df["Close"].ewm(span=200, adjust=False).mean().iloc[-1]
+
+        if spy_close > ema50:
+            regime = "OFFENSE"
+        elif spy_close > ema200:
+            regime = "DEFENSE"
+        else:
+            regime = "CASH"
+
+        spy_return_12m = None
+        if len(spy_df) >= 252:
+            p_now = spy_df.iloc[-21]["Close"]   # 1 month ago (skip recency)
+            p_12m = spy_df.iloc[-252]["Close"]
+            if p_12m and p_12m != 0:
+                spy_return_12m = ((p_now / p_12m) - 1) * 100
+
+        return regime, spy_return_12m
+
+    except Exception as exc:
+        logger.warning(f"Market regime check failed: {exc}")
+        return "OFFENSE", None
 
 
 # ── Shared scan (Stages 1–7) ───────────────────────────────────────────────────
@@ -67,6 +113,17 @@ def _run_full_scan(client: YFClient, mode: str) -> List[Dict]:
     Includes APPROVED, WATCH, and REJECTED verdicts.
     """
     errors: List[str] = []
+
+    # Stage 0: Market regime (SPY direction model)
+    console.print(f"\n[bold]Stage 0[/bold]  Market direction check …")
+    market_regime, spy_return_12m = _get_market_regime(client)
+    regime_colour = {"OFFENSE": "green", "DEFENSE": "yellow", "CASH": "red"}[market_regime]
+    console.print(f"  Regime: [{regime_colour}]{market_regime}[/{regime_colour}]"
+                  + (f"  SPY 12m: {spy_return_12m:+.1f}%" if spy_return_12m is not None else ""))
+
+    if market_regime == "CASH":
+        logger.warning("SPY below 200-EMA — CASH regime: skipping all new entries")
+        return []
 
     # Stage 1: Universe
     console.print(f"\n[bold]Stage 1[/bold]  Building universe …")
@@ -108,8 +165,14 @@ def _run_full_scan(client: YFClient, mode: str) -> List[Dict]:
             df = client.get_daily_ohlcv(sym, days=400)
             if df.empty:
                 continue
-            tech = tech_engine.compute(df, symbol=sym)
+            tech = tech_engine.compute(df, symbol=sym,
+                                        benchmark_return_12m=spy_return_12m)
             if tech.get("entry_setup", "NONE") == "NONE":
+                continue
+            # RS filter: only trade stocks outperforming SPY (Qullamaggie)
+            rs = tech.get("rs_vs_spy")
+            if rs is not None and rs < 1.0:
+                logger.debug(f"  Skip {sym}: RS vs SPY {rs:.2f} (market laggard)")
                 continue
             combined.append({**rec, **tech})
         except Exception as exc:
@@ -190,6 +253,16 @@ def _run_full_scan(client: YFClient, mode: str) -> List[Dict]:
         final_picks.append(rec)
 
     final_picks = final_picks[:MAX_FINAL_PICKS]
+
+    # DEFENSE regime: downgrade APPROVED → WATCH (60% position sizes, no shorts)
+    if market_regime == "DEFENSE":
+        for p in final_picks:
+            if p.get("verdict") == "APPROVED":
+                p["verdict"] = "WATCH"
+            if p.get("verdict") == "REJECTED":
+                p["verdict"] = "WATCH"   # skip intraday shorts in weak market
+        console.print("  [yellow]DEFENSE: all positions sized at 60%, no new shorts[/yellow]")
+
     console.print(
         f"  APPROVED [green]{approved_n}[/green]  "
         f"WATCH [yellow]{watch_n}[/yellow]  "
@@ -321,6 +394,11 @@ def _mode_scan(client: YFClient, pm: PortfolioManager, mode: str,
     closed = pm.resolve_stops_and_targets(client)
     if closed:
         logger.info(f"  Resolved {len(closed)} stops/targets")
+    # Trail stops on profitable positions (Minervini tiers)
+    trailed = pm.trail_stops(client)
+    if trailed:
+        console.print(f"  Trailed {len(trailed)} stop(s): " +
+                      ", ".join(f"{t['symbol']} +{t['gain_pct']}%" for t in trailed))
 
 
 def _mode_preclose(client: YFClient, pm: PortfolioManager) -> None:
@@ -332,13 +410,23 @@ def _mode_preclose(client: YFClient, pm: PortfolioManager) -> None:
     closed_sw = pm.resolve_stops_and_targets(client)
     if closed_sw:
         logger.info(f"  Resolved {len(closed_sw)} swing stops/targets")
+    # Trail stops on profitable swings
+    trailed = pm.trail_stops(client)
+    if trailed:
+        console.print(f"  Trailed {len(trailed)} stop(s): " +
+                      ", ".join(f"{t['symbol']} +{t['gain_pct']}%" for t in trailed))
 
 
 def _mode_eod(client: YFClient, pm: PortfolioManager, session) -> None:
-    """End-of-day: mark to market, generate reports, persist P&L."""
+    """End-of-day: mark to market, trail stops, generate reports, persist P&L."""
     console.print("\n[bold cyan]EOD[/bold cyan]  Marking to market …")
     unrealized = pm.mark_to_market(client)
     console.print(f"  Unrealized P&L: ${unrealized:+,.0f}")
+    # Trail stops after mark-to-market prices are fresh
+    trailed = pm.trail_stops(client)
+    if trailed:
+        console.print(f"  Trailed {len(trailed)} stop(s): " +
+                      ", ".join(f"{t['symbol']} +{t['gain_pct']}%" for t in trailed))
 
     _persist_daily_pnl(pm, session)
 
