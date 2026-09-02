@@ -470,7 +470,7 @@ if (positions.length > 0) {{
   posEl.innerHTML = `
   <table>
     <thead><tr>
-      <th>Symbol</th><th>Direction</th><th>Shares</th>
+      <th>Symbol</th><th>Direction</th><th>Verdict</th><th>Shares</th>
       <th>Cost</th><th>Entry</th><th>Current</th><th>Stop</th><th>Target</th><th>Score</th><th>Entered</th>
     </tr></thead>
     <tbody>
@@ -484,6 +484,7 @@ if (positions.length > 0) {{
       <tr>
         <td><strong><a href="https://finance.yahoo.com/quote/${{p.symbol}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{p.symbol}}</a></strong></td>
         <td>${{dirBadge(p.direction)}}</td>
+        <td>${{badge(p.verdict)}}</td>
         <td class="mono">${{p.shares}}</td>
         <td class="mono">$${{cost.toLocaleString('en-US', {{minimumFractionDigits:0, maximumFractionDigits:0}})}}</td>
         <td class="mono">$${{entry.toFixed(2)}}</td>
@@ -493,7 +494,7 @@ if (positions.length > 0) {{
         <td>${{p.composite_score ? Number(p.composite_score).toFixed(1) : '—'}}</td>
         <td>${{p.entry_date || '—'}}</td>
       </tr>
-      <tr class="thesis-row"><td colspan="10">
+      <tr class="thesis-row"><td colspan="11">
         <div class="reason">${{p.reason || ''}}</div>
         ${{p.bull_thesis ? `<details style="margin-top:8px"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(p.bull_thesis)}}</div></details>` : ''}}
         ${{p.bear_risks  ? `<details style="margin-top:6px"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(p.bear_risks)}}</div></details>` : ''}}
