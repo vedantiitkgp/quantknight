@@ -301,10 +301,13 @@ const recent = D.recent_trades;
 
 // ── Markdown + date helpers ────────────────────────────────────────────────────
 function preprocess(s) {{
-  // ══════════ SECTION HEADER ══════════  →  ### SECTION HEADER
   return s
+    // ══════════ SECTION HEADER ══════════  →  ### SECTION HEADER
     .replace(/^[═─]{{3,}}\\s*(.+?)\\s*[═─]{{3,}}\\s*$/gm, '### $1')
-    .replace(/^[═─]{{3,}}\\s*$/gm, '---');
+    // Standalone ════════  →  ---
+    .replace(/^[═─]{{3,}}\\s*$/gm, '---')
+    // SECTION N — TITLE (without box chars)  →  ### SECTION N — TITLE
+    .replace(/^(SECTION\\s+\\d+\\s*[—–-]+\\s*.+)$/gm, '### $1');
 }}
 function md(text) {{
   if (!text) return '';

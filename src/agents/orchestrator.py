@@ -129,25 +129,37 @@ Be concrete — name the product, service, or market position. No generic statem
 ══════════════════════════════════════════════════════════════════
 SECTION 2 — FUNDAMENTAL QUALITY VERDICT
 ══════════════════════════════════════════════════════════════════
-For each metric below, cite the exact value and interpret it:
-• ROIC [val]% — Quality threshold is 15%. Above = pricing power / moat. Below = commodity business.
-• FCF yield [val]% — Represents the cash return at current price. Above 4% = cheap on cash.
-• EPS growth YoY [val]%, QoQ [val]%, acceleration [val] — Is growth rate SPEEDING UP or slowing?
-  If eps_acceleration > 0: "Earnings momentum IS accelerating — historically this leads to analyst
-  estimate upgrades → multiple expansion → price appreciation."
-• Revenue growth YoY [val]% — Is top-line driving EPS or is it cost cuts?
-• Net margin [val]% / Gross margin [val]% — Stable or expanding margins signal pricing power.
-CONCLUDE: "The fundamentals ARE [high/average/weak] quality. Here is why: [1 sentence with data]."
+Output a markdown table, then one concluding sentence:
+
+| Metric | Value | Signal | Why It Matters |
+|--------|-------|--------|----------------|
+| ROIC | X% | MOAT / COMMODITY | Threshold 15%; above = pricing power |
+| FCF Yield | X% | CHEAP / REINVESTING / COSTLY | >4% = cheap on cash |
+| EPS Growth YoY | X% | ACCELERATING / DECELERATING | Growth rate direction = multiple re-rating |
+| EPS Growth QoQ | X% | ACCELERATING / DECELERATING | Quarter trend |
+| Revenue Growth YoY | X% | ORGANIC / COST-DRIVEN | Is top-line driving EPS? |
+| Net Margin | X% | EXPANDING / STABLE / COMPRESSED | Pricing power |
+| Gross Margin | X% | EXPANDING / STABLE / COMPRESSED | Moat signal |
+
+Fill every X with the exact data value. Signal must be one of the options shown.
+CONCLUDE (1 sentence): "The fundamentals ARE [high/average/weak] quality. Here is why: [data]."
 
 ══════════════════════════════════════════════════════════════════
 SECTION 3 — VALUATION: IS THE PRICE JUSTIFIED?
 ══════════════════════════════════════════════════════════════════
-• PEG [val] — Below 1.0 = paying less than growth rate = cheap. Above 2.0 = growth already priced in.
-• EV/EBITDA [val] — Quality businesses deserve 12–18x. Cheap < 10x. Stretched > 20x.
-• P/FCF [val] — Paying [val]x for each dollar of free cash flow.
-• Forward P/E [val] vs Trailing P/E [val] — Expanding or contracting multiple?
-• Analyst mean target [val] vs current price [close] = [X]% upside implied by consensus.
-CONCLUDE: "At [close], the stock IS [cheap/fairly valued/expensive] because [reason]."
+Output a markdown table, then one concluding sentence:
+
+| Metric | Value | Signal | Interpretation |
+|--------|-------|--------|----------------|
+| PEG | X | CHEAP / FAIR / EXPENSIVE | <1.0 cheap; >2.0 fully priced |
+| EV/EBITDA | Xx | CHEAP / FAIR / STRETCHED | Quality biz 12–18x; stretched >20x |
+| P/FCF | Xx | LOW / FAIR / HIGH | Paying Xx per $1 of free cash |
+| Trailing P/E | Xx | — | Current earnings multiple |
+| Forward P/E | Xx | EXPANDING / CONTRACTING | vs trailing = multiple direction |
+| Analyst Target | $X | +X% upside | X analysts; high target $X |
+
+Fill every X with exact data. Signal must be one of the options shown.
+CONCLUDE (1 sentence): "At [close], the stock IS [cheap/fairly valued/expensive] because [reason]."
 
 ══════════════════════════════════════════════════════════════════
 SECTION 4 — EARNINGS REPORT ANALYSIS & PRICE IMPACT
@@ -234,26 +246,35 @@ STOCK DATA PACKET:
 ══════════════════════════════════════════════════════════════════
 SECTION 1 — VALUATION: IS THE PRICE ALREADY WRONG?
 ══════════════════════════════════════════════════════════════════
-• PEG [val]: Above 2.0 means the market IS paying more than 2× the growth rate — dangerous.
-• EV/EBITDA [val]: At this multiple, the market prices in [val] years of current EBITDA — is that justified?
-• P/FCF [val]: Paying [val]× for each dollar of free cash — what FCF growth rate makes this fair?
-• Forward P/E [val] vs trailing P/E [val]: Is the market pricing in acceleration that may NOT come?
-• Calculate: At analyst mean target [analyst_target_mean], implied P/E would be [calc]. Reasonable?
-CONCLUDE: "Valuation IS [a major risk / manageable / cheap] because [specific number + reason]."
+Output a markdown table, then one concluding sentence:
+
+| Metric | Value | Risk Level | Bear Interpretation |
+|--------|-------|------------|---------------------|
+| PEG | X | LOW / MODERATE / HIGH | >2.0 = paying 2× growth rate |
+| EV/EBITDA | Xx | CHEAP / FAIR / STRETCHED | Prices in X years of EBITDA |
+| P/FCF | Xx | LOW / FAIR / EXCESSIVE | Paying Xx per $1 FCF |
+| Trailing P/E | Xx | — | Current multiple |
+| Forward P/E | Xx | EXPANDING / CONTRACTING | Acceleration priced in? |
+| Analyst Target | $X | +X% / -X% | At target, implied P/E = X |
+
+Fill every X with exact data. Risk Level must be one of the options shown.
+CONCLUDE (1 sentence): "Valuation IS [a major risk / manageable / cheap] because [number + reason]."
 
 ══════════════════════════════════════════════════════════════════
 SECTION 2 — FUNDAMENTAL CRACKS: WHERE DOES THE BUSINESS BREAK?
 ══════════════════════════════════════════════════════════════════
-• Debt/Equity [val]: Above 1.5 is elevated. At current interest rates, interest expense competes
-  with earnings — model the impact: "If D/E=[val] and rates rise 1%, interest expense increases,
-  compressing net margin from [net_margin]% — this IS/IS NOT a meaningful risk."
-• EPS acceleration [val]: If negative, "The growth RATE is decelerating — this is the single
-  biggest red flag. Markets price CHANGE in growth rate, not the level. Deceleration = multiple
-  contraction even if EPS is still growing."
-• FCF yield [val]%: If below 2%, "Free cash barely covers cost of equity — the stock IS priced
-  for perfection. Any miss in cash generation triggers a de-rating."
-• Margins: gross_margin [val]%, net_margin [val]% — any compression is a warning of pricing power loss.
-CONCLUDE: "The biggest fundamental weakness IS [metric=val] because [1-sentence mechanism]."
+Output a markdown table, then one concluding sentence:
+
+| Metric | Value | Risk Level | Bear Interpretation |
+|--------|-------|------------|---------------------|
+| Debt/Equity | X | LOW / ELEVATED / DANGEROUS | >1.5 elevated; model rate-rise impact |
+| EPS Acceleration | X | POSITIVE / DECELERATING | Negative = multiple contraction risk |
+| FCF Yield | X% | ADEQUATE / THIN / PRICED-FOR-PERFECTION | <2% = no margin for error |
+| Gross Margin | X% | STABLE / COMPRESSING | Compression = pricing power loss |
+| Net Margin | X% | STABLE / COMPRESSING | Compression = earnings risk |
+
+Fill every X with exact data. Risk Level must be one of the options shown.
+CONCLUDE (1 sentence): "The biggest fundamental weakness IS [metric=val] because [mechanism]."
 
 ══════════════════════════════════════════════════════════════════
 SECTION 3 — NEWS RISK ANALYSIS (what the bulls are ignoring)
