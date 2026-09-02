@@ -458,9 +458,9 @@ if (curve && curve.length > 0) {{
 
 // ── Panel tab helpers ─────────────────────────────────────────────────────────
 function openPanel(btn, type, grp) {{
-  const allTabs    = document.querySelectorAll('[data-grp="' + grp + '"] .panel-tab');
-  const allBodies  = document.querySelectorAll('[data-grp="' + grp + '"] .panel-body');
-  const isActive   = btn.classList.contains('active');
+  const allTabs   = document.querySelectorAll('.panel-tab[data-grp="' + grp + '"]');
+  const allBodies = document.querySelectorAll('.panel-body[data-grp="' + grp + '"]');
+  const isActive  = btn.classList.contains('active');
   allTabs.forEach(t => t.classList.remove('active'));
   allBodies.forEach(b => b.classList.remove('active'));
   if (!isActive) {{
@@ -545,11 +545,11 @@ if (positions.length > 0) {{
       </tr>
       <tr class="thesis-row"><td colspan="10">
         <div class="reason">${{p.reason || ''}}</div>
-        <div class="panel-bar" data-grp="${{grp}}">
-          ${{p.bull_thesis ? `<button class="panel-tab bull-tab" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
-          ${{p.bear_risks  ? `<button class="panel-tab bear-tab" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
-          ${{p.full_memo   ? `<button class="panel-tab memo-tab" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
-          ${{(p.full_news && p.full_news.length) ? `<button class="panel-tab news-tab" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{p.full_news.length}})</button>` : ''}}
+        <div class="panel-bar">
+          ${{p.bull_thesis ? `<button class="panel-tab bull-tab" data-grp="${{grp}}" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
+          ${{p.bear_risks  ? `<button class="panel-tab bear-tab" data-grp="${{grp}}" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
+          ${{p.full_memo   ? `<button class="panel-tab memo-tab" data-grp="${{grp}}" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
+          ${{(p.full_news && p.full_news.length) ? `<button class="panel-tab news-tab" data-grp="${{grp}}" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{p.full_news.length}})</button>` : ''}}
         </div>
         ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(p.bull_thesis)}}</div>` : ''}}
         ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(p.bear_risks)}}</div>` : ''}}
@@ -592,11 +592,11 @@ function renderEntries(entries, container) {{
       ${{(e.reason || e.bull_thesis) ? `
       <tr class="thesis-row"><td colspan="8">
         <div class="reason">${{e.reason || ''}}</div>
-        <div class="panel-bar" data-grp="${{grp}}">
-          ${{e.bull_thesis ? `<button class="panel-tab bull-tab" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
-          ${{e.bear_risks  ? `<button class="panel-tab bear-tab" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
-          ${{e.full_memo   ? `<button class="panel-tab memo-tab" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
-          ${{(e.full_news && e.full_news.length) ? `<button class="panel-tab news-tab" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{e.full_news.length}})</button>` : ''}}
+        <div class="panel-bar">
+          ${{e.bull_thesis ? `<button class="panel-tab bull-tab" data-grp="${{grp}}" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
+          ${{e.bear_risks  ? `<button class="panel-tab bear-tab" data-grp="${{grp}}" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
+          ${{e.full_memo   ? `<button class="panel-tab memo-tab" data-grp="${{grp}}" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
+          ${{(e.full_news && e.full_news.length) ? `<button class="panel-tab news-tab" data-grp="${{grp}}" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{e.full_news.length}})</button>` : ''}}
         </div>
         ${{e.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(e.bull_thesis)}}</div>` : ''}}
         ${{e.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(e.bear_risks)}}</div>` : ''}}
