@@ -197,6 +197,7 @@ def _build_html(data_json: str) -> str:
   .thesis {{ background: rgba(31,111,235,0.05); border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0; padding: 10px 14px; margin-bottom: 6px; font-size: 0.82rem; line-height: 1.55; }}
   .thesis-bull {{ border-left-color: var(--green); }}
   .thesis-bear {{ border-left-color: var(--red); }}
+  .thesis-memo {{ border-left-color: var(--purple); }}
   .thesis-label {{ font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; opacity: 0.7; }}
   details summary {{ cursor: pointer; color: var(--blue); font-size: 0.78rem; padding: 4px 0; user-select: none; }}
   details summary:hover {{ opacity: 0.8; }}
@@ -455,7 +456,7 @@ if (positions.length > 0) {{
         <div class="reason">${{p.reason || ''}}</div>
         ${{p.bull_thesis ? `<div class="thesis thesis-bull md" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{md(p.bull_thesis)}}</div>` : ''}}
         ${{p.bear_risks  ? `<div class="thesis thesis-bear md" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{md(p.bear_risks)}}</div>` : ''}}
-        ${{p.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis md" style="margin-top:6px">${{md(p.full_memo)}}</div></details>` : ''}}
+        ${{p.full_memo   ? `<div class="thesis thesis-memo md" style="margin-top:6px"><div class="thesis-label">Risk Manager Verdict</div>${{md(p.full_memo)}}</div>` : ''}}
         ${{(p.full_news && p.full_news.length) ? `
         <details style="margin-top:8px">
           <summary>News articles at entry (${{p.full_news.length}}) ▸</summary>
@@ -509,7 +510,7 @@ function renderEntries(entries, container) {{
         <div class="reason">${{e.reason || ''}}</div>
         ${{e.bull_thesis ? `<div class="thesis thesis-bull md" style="margin-top:8px"><div class="thesis-label">Bull case</div>${{md(e.bull_thesis)}}</div>` : ''}}
         ${{e.bear_risks  ? `<div class="thesis thesis-bear md" style="margin-top:6px"><div class="thesis-label">Bear risks</div>${{md(e.bear_risks)}}</div>` : ''}}
-        ${{e.full_memo   ? `<details style="margin-top:6px"><summary>Full risk manager memo ▸</summary><div class="thesis md" style="margin-top:6px">${{md(e.full_memo)}}</div></details>` : ''}}
+        ${{e.full_memo   ? `<div class="thesis thesis-memo md" style="margin-top:6px"><div class="thesis-label">Risk Manager Verdict</div>${{md(e.full_memo)}}</div>` : ''}}
       </td></tr>` : ''}}
     `).join('')}}
     </tbody>
