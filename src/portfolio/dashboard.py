@@ -109,6 +109,9 @@ def _build_html(data_json: str) -> str:
   /* ── Markdown content inside thesis cards ── */
   .md h1, .md h2, .md h3 {{ font-size: 0.85rem; font-weight: 700; margin: 10px 0 4px; color: var(--text); }}
   .md h4 {{ font-size: 0.8rem; font-weight: 600; margin: 8px 0 2px; color: var(--text); }}
+  /* Section breaks inside thesis cards — separator above every h3 except the first */
+  .thesis h3 {{ margin-top: 20px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.07); }}
+  .thesis h3:first-child {{ border-top: none; margin-top: 6px; padding-top: 0; }}
   .md p {{ margin: 4px 0 8px; }}
   .md ul, .md ol {{ margin: 4px 0 8px; padding-left: 20px; }}
   .md li {{ margin: 2px 0; }}
