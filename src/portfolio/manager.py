@@ -373,6 +373,8 @@ class PortfolioManager:
             except Exception:
                 current = entry
 
+            pos["current_price"] = round(current, 2)
+
             if pos["direction"] == "LONG":
                 unreal = (current - entry) * shares
             else:

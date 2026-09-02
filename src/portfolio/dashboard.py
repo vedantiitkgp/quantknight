@@ -442,6 +442,27 @@ if (curve && curve.length > 0) {{
     '<div class="empty-state">No historical data yet — runs after first EOD</div>';
 }}
 
+// ── Live price fetch via Yahoo Finance ────────────────────────────────────────
+async function fetchLivePrices(syms) {{
+  if (!syms.length) return;
+  const url = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols='
+    + syms.join(',') + '&fields=regularMarketPrice';
+  try {{
+    const r = await fetch(url, {{ headers: {{ 'Accept': 'application/json' }} }});
+    if (!r.ok) return;
+    const data = await r.json();
+    const quotes = data?.quoteResponse?.result || [];
+    quotes.forEach(q => {{
+      const el    = document.getElementById('lp-' + q.symbol);
+      const entry = parseFloat(el?.dataset.entry || '0');
+      if (!el || !q.regularMarketPrice) return;
+      const price = q.regularMarketPrice;
+      el.textContent = '$' + price.toFixed(2);
+      el.className   = 'mono ' + (price >= entry ? 'positive' : 'negative');
+    }});
+  }} catch(e) {{ /* CORS or network failure — stored price stays */ }}
+}}
+
 // ── Open Positions Table ──────────────────────────────────────────────────────
 const positions = port.positions || [];
 const posEl = document.getElementById('positions-container');
@@ -450,21 +471,29 @@ if (positions.length > 0) {{
   <table>
     <thead><tr>
       <th>Symbol</th><th>Direction</th><th>Shares</th>
-      <th>Entry</th><th>Stop</th><th>Target</th><th>Score</th><th>Entered</th>
+      <th>Cost</th><th>Entry</th><th>Current</th><th>Stop</th><th>Target</th><th>Score</th><th>Entered</th>
     </tr></thead>
     <tbody>
-    ${{positions.map(p => `
+    ${{positions.map(p => {{
+      const entry   = Number(p.entry_price);
+      const stored  = p.current_price != null ? Number(p.current_price) : null;
+      const cost    = (p.shares * entry);
+      const curCls  = stored == null ? '' : stored >= entry ? 'positive' : 'negative';
+      const curTxt  = stored == null ? '…' : '$' + stored.toFixed(2);
+      return `
       <tr>
-        <td><strong>${{p.symbol}}</strong></td>
+        <td><strong><a href="https://finance.yahoo.com/quote/${{p.symbol}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{p.symbol}}</a></strong></td>
         <td>${{dirBadge(p.direction)}}</td>
         <td class="mono">${{p.shares}}</td>
-        <td class="mono">$${{Number(p.entry_price).toFixed(2)}}</td>
+        <td class="mono">$${{cost.toLocaleString('en-US', {{minimumFractionDigits:0, maximumFractionDigits:0}})}}</td>
+        <td class="mono">$${{entry.toFixed(2)}}</td>
+        <td class="mono ${{curCls}}" id="lp-${{p.symbol}}" data-entry="${{entry}}">${{curTxt}}</td>
         <td class="mono">${{p.stop_loss ? '$' + Number(p.stop_loss).toFixed(2) : '—'}}</td>
         <td class="mono">${{p.target    ? '$' + Number(p.target).toFixed(2)    : '—'}}</td>
         <td>${{p.composite_score ? Number(p.composite_score).toFixed(1) : '—'}}</td>
         <td>${{p.entry_date || '—'}}</td>
       </tr>
-      <tr class="thesis-row"><td colspan="8">
+      <tr class="thesis-row"><td colspan="10">
         <div class="reason">${{p.reason || ''}}</div>
         ${{p.bull_thesis ? `<details style="margin-top:8px"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(p.bull_thesis)}}</div></details>` : ''}}
         ${{p.bear_risks  ? `<details style="margin-top:6px"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(p.bear_risks)}}</div></details>` : ''}}
@@ -489,9 +518,12 @@ if (positions.length > 0) {{
           </div>
         </details>` : ''}}
       </td></tr>
-    `).join('')}}
+      `;
+    }}).join('')}}
     </tbody>
   </table>`;
+  // Kick off live price fetch after table is in DOM
+  fetchLivePrices(positions.map(p => p.symbol));
 }}
 
 // ── Trade Log helpers ─────────────────────────────────────────────────────────
