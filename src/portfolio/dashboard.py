@@ -454,9 +454,9 @@ function renderNewsItem(n) {{
   const sc  = n.sentiment || 0;
   const cls = sc > 0.05 ? 'news-positive' : sc < -0.05 ? 'news-negative' : 'news-neutral';
   const lbl = sc > 0.05 ? '▲ ' + sc.toFixed(2) : sc < -0.05 ? '▼ ' + Math.abs(sc).toFixed(2) : '● ' + sc.toFixed(2);
-  const hl  = n.url
-    ? `<a href="${{n.url}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{n.headline}}</a>`
-    : (n.headline || '');
+  // Use stored URL; fall back to a DuckDuckGo search so every headline is clickable
+  const href = n.url || ('https://duckduckgo.com/?q=' + encodeURIComponent(n.headline || ''));
+  const hl   = `<a href="${{href}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{n.headline || ''}}</a>`;
   return `<div class="news-item">
     <span class="news-sentiment ${{cls}}">${{lbl}}</span>
     <div class="news-body">
@@ -465,14 +465,25 @@ function renderNewsItem(n) {{
     </div>
   </div>`;
 }}
-function renderNewsList(articles) {{
+function renderNewsList(articles, grp) {{
   if (!articles || !articles.length) return '';
+  const ga   = grp ? ` data-group="${{grp}}"` : '';
   const items = articles.slice(0, 10).map(renderNewsItem).join('');
-  return `<details style="margin-top:8px">
+  return `<details style="margin-top:6px"${{ga}}>
     <summary>News (${{articles.length}}) ▸</summary>
     <div class="news-list" style="margin-top:8px">${{items}}</div>
   </details>`;
 }}
+
+// ── Accordion: opening one details closes siblings in the same group ────────
+document.addEventListener('toggle', function(ev) {{
+  if (!ev.target.matches('details') || !ev.target.open) return;
+  const grp = ev.target.dataset.group;
+  if (!grp) return;
+  document.querySelectorAll('details[data-group="' + grp + '"]').forEach(function(d) {{
+    if (d !== ev.target) d.removeAttribute('open');
+  }});
+}}, true);
 
 // ── Live price fetch via Yahoo Finance ────────────────────────────────────────
 async function fetchLivePrices(syms) {{
@@ -506,13 +517,14 @@ if (positions.length > 0) {{
       <th>Cost</th><th>Entry</th><th>Current</th><th>Stop</th><th>Target</th><th>Score</th><th>Entered</th>
     </tr></thead>
     <tbody>
-    ${{positions.map(p => {{
+    ${{positions.map((p, pidx) => {{
       const entry      = Number(p.entry_price);
       const stored     = p.current_price != null ? Number(p.current_price) : null;
       const cost       = (p.shares * entry);
       const curCls     = stored == null ? '' : stored >= entry ? 'positive' : 'negative';
       const curTxt     = stored == null ? '…' : '$' + stored.toFixed(2);
       const verdictCls = 'verdict-' + (p.verdict || 'watch').toLowerCase();
+      const grp        = `pos-${{pidx}}`;
       return `
       <tr class="${{verdictCls}}">
         <td><strong><a href="https://finance.yahoo.com/quote/${{p.symbol}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{p.symbol}}</a></strong></td>
@@ -528,10 +540,10 @@ if (positions.length > 0) {{
       </tr>
       <tr class="thesis-row"><td colspan="10">
         <div class="reason">${{p.reason || ''}}</div>
-        ${{p.bull_thesis ? `<details style="margin-top:8px"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(p.bull_thesis)}}</div></details>` : ''}}
-        ${{p.bear_risks  ? `<details style="margin-top:6px"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(p.bear_risks)}}</div></details>` : ''}}
-        ${{p.full_memo   ? `<details style="margin-top:6px"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(p.full_memo)}}</div></details>` : ''}}
-        ${{renderNewsList(p.full_news)}}
+        ${{p.bull_thesis ? `<details style="margin-top:8px" data-group="${{grp}}"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(p.bull_thesis)}}</div></details>` : ''}}
+        ${{p.bear_risks  ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(p.bear_risks)}}</div></details>` : ''}}
+        ${{p.full_memo   ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(p.full_memo)}}</div></details>` : ''}}
+        ${{renderNewsList(p.full_news, grp)}}
       </td></tr>
       `;
     }}).join('')}}
@@ -553,7 +565,9 @@ function renderEntries(entries, container) {{
       <th>Date</th><th>Symbol</th><th>Verdict</th><th>Shares</th><th>Entry $</th><th>Cost</th><th>Stop</th><th>Target</th>
     </tr></thead>
     <tbody>
-    ${{entries.map(e => `
+    ${{entries.map((e, eidx) => {{
+      const grp = `ent-${{eidx}}`;
+      return `
       <tr class="verdict-${{(e.verdict || 'watch').toLowerCase()}}">
         <td style="color:var(--muted);font-size:0.8rem">${{e._date || e.entry_date || '—'}}</td>
         <td><strong>${{e.symbol}}</strong> ${{dirBadge(e.direction)}}</td>
@@ -567,12 +581,13 @@ function renderEntries(entries, container) {{
       ${{(e.reason || e.bull_thesis) ? `
       <tr class="thesis-row"><td colspan="8">
         <div class="reason">${{e.reason || ''}}</div>
-        ${{e.bull_thesis ? `<details style="margin-top:8px"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(e.bull_thesis)}}</div></details>` : ''}}
-        ${{e.bear_risks  ? `<details style="margin-top:6px"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(e.bear_risks)}}</div></details>` : ''}}
-        ${{e.full_memo   ? `<details style="margin-top:6px"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(e.full_memo)}}</div></details>` : ''}}
-        ${{renderNewsList(e.full_news)}}
+        ${{e.bull_thesis ? `<details style="margin-top:8px" data-group="${{grp}}"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(e.bull_thesis)}}</div></details>` : ''}}
+        ${{e.bear_risks  ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(e.bear_risks)}}</div></details>` : ''}}
+        ${{e.full_memo   ? `<details style="margin-top:6px" data-group="${{grp}}"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(e.full_memo)}}</div></details>` : ''}}
+        ${{renderNewsList(e.full_news, grp)}}
       </td></tr>` : ''}}
-    `).join('')}}
+      `;
+    }}).join('')}}
     </tbody>
   </table>`;
 }}
