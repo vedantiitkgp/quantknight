@@ -158,8 +158,9 @@ def _run_full_scan(client: YFClient, mode: str) -> List[Dict]:
                         "sentiment": round(a["sentiment"], 3),
                         "source":    a.get("source", ""),
                         "published": _fmt_pub(a.get("published", "")),
+                        "url":       a.get("url", ""),
                     }
-                    for a in scored_raw[:12]
+                    for a in scored_raw[:10]
                 ]
         except Exception as exc:
             rec["sentiment_score"] = 0.0

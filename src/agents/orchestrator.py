@@ -176,22 +176,13 @@ SECTION 4 — EARNINGS REPORT ANALYSIS & PRICE IMPACT
   multiple re-rating. When growth RATES increase, the market reprices the stock to a higher P/E."
 
 ══════════════════════════════════════════════════════════════════
-SECTION 5 — NEWS CATALYST ANALYSIS (cite each article)
+SECTION 5 — NEWS CATALYST ANALYSIS (all headlines)
 ══════════════════════════════════════════════════════════════════
-For EACH of the top 3 positive recent_news articles (highest positive sentiment scores):
-  a) Quote the exact headline and source.
-  b) Identify the EVENT TYPE: earnings beat / guidance raise / contract win / regulatory approval /
-     management change / competitor weakness / macro tailwind / government action.
-  c) TRANSMISSION MECHANISM — How does this event flow through to THIS stock's price?
-     Be specific: "This guidance raise → management confident demand exceeds supply → pricing power
-     maintained → gross margin holds at [val]% → EPS estimate revision likely → multiple expansion."
-  d) Cross-correlate to a metric: "This CONFIRMS/ADDS TO our data showing [metric=val]."
-  e) Estimate conviction impact: "ADD TO conviction / STRONG ADD / DE-RISKS the thesis."
-If a news item is about a sector peer or competitor: reason through the contagion mechanism:
-  "If [competitor] is winning contracts, it validates that THIS sector's demand is robust, which
-  IS a read-through to [symbol]'s pipeline."
-If government action appears: "A [policy/rate/tariff/approval] change → affects [revenue/cost line]
-→ net EPS impact of approximately [direction] → IS/IS NOT material to the thesis."
+For EACH article in recent_news, one compact line:
+"[source] '[headline]' (sent=[val]) → [event type] → [1-sentence price mechanism] → [ADD TO CONVICTION / DETRACTS / NEUTRAL]"
+
+Cover all articles. Then pick the SINGLE most bullish headline and write 2-3 sentences:
+why it specifically CONFIRMS a data metric (cite the exact metric=value) and what price move it implies.
 
 ══════════════════════════════════════════════════════════════════
 SECTION 6 — POSITIONING & SHORT SQUEEZE POTENTIAL
@@ -277,23 +268,14 @@ Fill every X with exact data. Risk Level must be one of the options shown.
 CONCLUDE (1 sentence): "The biggest fundamental weakness IS [metric=val] because [mechanism]."
 
 ══════════════════════════════════════════════════════════════════
-SECTION 3 — NEWS RISK ANALYSIS (what the bulls are ignoring)
+SECTION 3 — NEWS RISK ANALYSIS (all headlines)
 ══════════════════════════════════════════════════════════════════
-For the 2–3 most negative or cautionary recent_news articles:
-  a) Quote the exact headline and source.
-  b) Identify the RISK TYPE: regulatory action / competitive threat / earnings miss / guidance cut /
-     macro headwind / management credibility issue / government policy / sector contagion.
-  c) TRANSMISSION MECHANISM — how does this risk flow to earnings and then to price?
-     "This regulatory action → compliance cost increase → operating margin compression →
-     EPS misses estimate → stock re-prices from [pe_ratio]x P/E to historical trough multiple."
-  d) Cross-correlate to a metric: "This IS already showing up in our data: [metric=val] suggests
-     the problem is already in the numbers / OR this risk is NOT yet in the data but is coming."
-  e) Conviction impact: "This REDUCES confidence / MATERIALLY UNDERMINES the bull thesis / IS the
-     primary exit trigger to watch."
-If all headlines are positive: "Uniformly bullish coverage (avg sentiment +[val]) IS itself a risk
-signal. Markets price expectations. When news IS maximally positive, the asymmetry reverses —
-good news is priced in, bad news is not. Late-cycle long positions in well-covered stocks
-historically underperform. Risk of mean reversion IS elevated."
+For EACH article in recent_news, one compact line:
+"[source] '[headline]' (sent=[val]) → [risk type] → [1-sentence price mechanism] → [REDUCES / UNDERMINES / NEUTRAL]"
+
+Cover all articles. Then pick the SINGLE most bearish headline and write 2-3 sentences:
+why it specifically CONTRADICTS or threatens a data metric (cite exact metric=value) and what downside it implies.
+If all headlines are positive: note this explicitly — "Uniformly bullish coverage IS itself a contrarian risk signal — good news is priced in, bad news is not."
 
 ══════════════════════════════════════════════════════════════════
 SECTION 4 — GOVERNMENT & REGULATORY ACTION IMPACT
@@ -392,20 +374,13 @@ Write as if briefing a PM who has 30 seconds to decide. Include:
 Do NOT say "could" or "may". State what IS happening and what WOULD happen in each scenario.
 
 ══════════════════════════════════════════════════════════════════
-NEWS ↔ FUNDAMENTALS CORRELATION TABLE
+NEWS ↔ FUNDAMENTALS SUMMARY (cover ALL headlines)
 ══════════════════════════════════════════════════════════════════
-For each of the 2–3 most impactful recent_news articles:
+For EACH article in recent_news, one compact line:
+"[source] '[headline]' (sent=[val]) → [event type] → [1-sentence price mechanism] → [ADDS TO / DETRACTS / NEUTRAL]"
 
-Headline: "[quote exactly]" ([source], sentiment=[val])
-→ EVENT TYPE: [earnings/guidance/regulatory/macro/competitor/government action]
-→ MECHANISM: [How this event flows to {symbol}'s earnings and then to price — be specific]
-→ CONFIRMS or CONTRADICTS: [cite the exact data metric it validates or challenges]
-→ CONVICTION IMPACT: [ADDS TO / DETRACTS FROM / NEUTRAL to the investment thesis]
-
-If a news item is about government policy (rate decision, tariff, regulation, spending):
-→ Specify which business line it affects and in which direction.
-→ "A Fed rate cut → insurance float income falls by ~[X]% → BUT equity discount rate falls →
-   at ROIC=[val]%, the company's economic spread over cost of capital WIDENS → net POSITIVE."
+Cover every article — do not skip any. Keep each line to 1 sentence after the arrows.
+Close with: "Net news IS [bullish/neutral/bearish]: [X]/[total] articles support the thesis; dominant theme: [Z]."
 
 ══════════════════════════════════════════════════════════════════
 EARNINGS CALENDAR & BINARY EVENT RISK

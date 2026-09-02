@@ -175,9 +175,10 @@ def _build_html(data_json: str) -> str:
   td {{ padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }}
   tr:last-child td {{ border-bottom: none; }}
   tr:hover td {{ background: rgba(255,255,255,0.02); }}
-  tr.verdict-approved td {{ background: rgba(63,185,80,0.05); }}
-  tr.verdict-watch    td {{ background: rgba(210,153,34,0.06); }}
-  tr.verdict-rejected td {{ background: rgba(248,81,73,0.05); }}
+  tr.verdict-approved:not(.thesis-row) td {{ background: rgba(63,185,80,0.05); }}
+  tr.verdict-watch:not(.thesis-row)    td {{ background: rgba(210,153,34,0.06); }}
+  tr.verdict-rejected:not(.thesis-row) td {{ background: rgba(248,81,73,0.05); }}
+  tr.thesis-row td {{ background: transparent !important; }}
   .empty-state {{ padding: 32px; text-align: center; color: var(--muted); }}
 
   /* ── Badges ── */
@@ -448,6 +449,31 @@ if (curve && curve.length > 0) {{
     '<div class="empty-state">No historical data yet — runs after first EOD</div>';
 }}
 
+// ── News helpers ──────────────────────────────────────────────────────────────
+function renderNewsItem(n) {{
+  const sc  = n.sentiment || 0;
+  const cls = sc > 0.05 ? 'news-positive' : sc < -0.05 ? 'news-negative' : 'news-neutral';
+  const lbl = sc > 0.05 ? '▲ ' + sc.toFixed(2) : sc < -0.05 ? '▼ ' + Math.abs(sc).toFixed(2) : '● ' + sc.toFixed(2);
+  const hl  = n.url
+    ? `<a href="${{n.url}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{n.headline}}</a>`
+    : (n.headline || '');
+  return `<div class="news-item">
+    <span class="news-sentiment ${{cls}}">${{lbl}}</span>
+    <div class="news-body">
+      <div class="news-headline">${{hl}}</div>
+      <div class="news-meta">${{n.source || ''}}${{n.published ? ' · ' + fmtDate(n.published) : ''}}</div>
+    </div>
+  </div>`;
+}}
+function renderNewsList(articles) {{
+  if (!articles || !articles.length) return '';
+  const items = articles.slice(0, 10).map(renderNewsItem).join('');
+  return `<details style="margin-top:8px">
+    <summary>News (${{articles.length}}) ▸</summary>
+    <div class="news-list" style="margin-top:8px">${{items}}</div>
+  </details>`;
+}}
+
 // ── Live price fetch via Yahoo Finance ────────────────────────────────────────
 async function fetchLivePrices(syms) {{
   if (!syms.length) return;
@@ -505,25 +531,7 @@ if (positions.length > 0) {{
         ${{p.bull_thesis ? `<details style="margin-top:8px"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(p.bull_thesis)}}</div></details>` : ''}}
         ${{p.bear_risks  ? `<details style="margin-top:6px"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(p.bear_risks)}}</div></details>` : ''}}
         ${{p.full_memo   ? `<details style="margin-top:6px"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(p.full_memo)}}</div></details>` : ''}}
-        ${{(p.full_news && p.full_news.length) ? `
-        <details style="margin-top:8px">
-          <summary>News articles at entry (${{p.full_news.length}}) ▸</summary>
-          <div class="news-list" style="margin-top:8px">
-            ${{p.full_news.map(n => {{
-              const sc = n.sentiment || 0;
-              const cls = sc > 0.05 ? 'news-positive' : sc < -0.05 ? 'news-negative' : 'news-neutral';
-              const lbl = sc > 0.05 ? '▲ ' + sc.toFixed(2) : sc < -0.05 ? '▼ ' + Math.abs(sc).toFixed(2) : '● ' + sc.toFixed(2);
-              return `<div class="news-item">
-                <span class="news-sentiment ${{cls}}">${{lbl}}</span>
-                <div class="news-body">
-                  <div class="news-headline">${{n.headline}}</div>
-                  <div class="news-meta">${{n.source || ''}}${{n.published ? ' · ' + fmtDate(n.published) : ''}}</div>
-                  ${{n.summary ? '<div class="news-summary">' + n.summary + '</div>' : ''}}
-                </div>
-              </div>`;
-            }}).join('')}}
-          </div>
-        </details>` : ''}}
+        ${{renderNewsList(p.full_news)}}
       </td></tr>
       `;
     }}).join('')}}
@@ -546,7 +554,7 @@ function renderEntries(entries, container) {{
     </tr></thead>
     <tbody>
     ${{entries.map(e => `
-      <tr>
+      <tr class="verdict-${{(e.verdict || 'watch').toLowerCase()}}">
         <td style="color:var(--muted);font-size:0.8rem">${{e._date || e.entry_date || '—'}}</td>
         <td><strong>${{e.symbol}}</strong> ${{dirBadge(e.direction)}}</td>
         <td>${{badge(e.verdict)}}</td>
@@ -562,6 +570,7 @@ function renderEntries(entries, container) {{
         ${{e.bull_thesis ? `<details style="margin-top:8px"><summary class="thesis-summary-bull">Bull case ▸</summary><div class="thesis thesis-bull md">${{md(e.bull_thesis)}}</div></details>` : ''}}
         ${{e.bear_risks  ? `<details style="margin-top:6px"><summary class="thesis-summary-bear">Bear risks ▸</summary><div class="thesis thesis-bear md">${{md(e.bear_risks)}}</div></details>` : ''}}
         ${{e.full_memo   ? `<details style="margin-top:6px"><summary class="thesis-summary-memo">Risk Manager Verdict ▸</summary><div class="thesis thesis-memo md">${{md(e.full_memo)}}</div></details>` : ''}}
+        ${{renderNewsList(e.full_news)}}
       </td></tr>` : ''}}
     `).join('')}}
     </tbody>
