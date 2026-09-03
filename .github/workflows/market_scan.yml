@@ -92,10 +92,20 @@ jobs:
     - name: Cache SQLite database
       uses: actions/cache@v4
       with:
-        path: data/
-        key: quantknight-data-${{ runner.os }}
+        path: data/quant_engine.db
+        key: quantknight-db-${{ runner.os }}-${{ github.run_number }}
         restore-keys: |
-          quantknight-data-
+          quantknight-db-${{ runner.os }}-
+
+    # ── 5b. Restore git-tracked state files ────────────────────────────────────
+    # The cache step above only caches the SQLite DB now, but as a safety net:
+    # always restore portfolio.json and trades/ from the git checkout so that
+    # agent analysis (bull_thesis, bear_risks, full_memo) committed to main is
+    # never overwritten by a stale cached file.
+    - name: Restore git-tracked portfolio state
+      run: |
+        git checkout HEAD -- data/portfolio.json 2>/dev/null || true
+        git checkout HEAD -- data/trades/        2>/dev/null || true
 
     # ── 6. Create required directories ────────────────────────────────────────
     - name: Prepare directories
