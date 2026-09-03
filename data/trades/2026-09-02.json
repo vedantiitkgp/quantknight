@@ -4,8 +4,8 @@
   "entries": [],
   "exits": [],
   "realized_pnl": 0.0,
-  "unrealized_pnl": 2072.2,
+  "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": 2072.2,
-  "total_equity": 152072.2
+  "cumulative_pnl": 1219.07,
+  "total_equity": 151219.07
 }
