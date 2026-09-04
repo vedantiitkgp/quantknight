@@ -275,6 +275,33 @@ def _build_html(data_json: str, finnhub_key: str = "") -> str:
   .news-headline {{ font-size: 0.82rem; font-weight: 500; line-height: 1.35; }}
   .news-meta {{ font-size: 0.72rem; color: var(--muted); margin-top: 2px; }}
   .news-summary {{ font-size: 0.78rem; color: var(--muted); margin-top: 4px; line-height: 1.4; }}
+
+  /* ── Horizontal-scroll wrapper for wide tables ── */
+  .tbl-scroll {{ overflow-x: auto; -webkit-overflow-scrolling: touch; }}
+
+  /* ── Mobile card layout for open positions ── */
+  .pos-mobile  {{ display: none; padding: 8px 12px 12px; }}
+  .pos-desktop {{ display: block; }}
+  .pos-card {{ border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }}
+  .pos-card-top {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }}
+  .pos-card-sym {{ font-size: 1rem; font-weight: 700; color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--muted); }}
+  .pos-prices {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; margin-bottom: 8px; }}
+  .pos-prices > div {{ display: flex; flex-direction: column; gap: 2px; }}
+  .pos-price-lbl {{ font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }}
+  .pos-price-val {{ font-size: 0.85rem; font-family: 'SF Mono', SFMono-Regular, Consolas, monospace; }}
+  .pos-card-meta {{ font-size: 0.7rem; color: var(--muted); margin-bottom: 6px; }}
+
+  @media (max-width: 640px) {{
+    /* Switch positions to card layout */
+    .pos-mobile  {{ display: block; }}
+    .pos-desktop {{ display: none; }}
+    /* Other tables: force horizontal scroll */
+    .tbl-scroll table {{ min-width: 560px; }}
+    .tbl-scroll th, .tbl-scroll td {{ padding: 8px 10px; font-size: 0.78rem; }}
+    /* Keep 2-col metric cards on landscape phones */
+    .cards {{ grid-template-columns: repeat(2, 1fr); gap: 10px; }}
+    .card  {{ padding: 14px; }}
+  }}
 </style>
 </head>
 <body>
@@ -589,8 +616,15 @@ function _applyQuotes(quotes) {{
     const shares = parseFloat(el?.dataset.shares || '0');
     if (!el || q.price == null) return;
     const price = q.price;
+    // Update table row price
     el.textContent = '$' + price.toFixed(2);
     el.className   = 'mono ' + (price >= entry ? 'positive' : 'negative');
+    // Also update mobile card price (separate ID to avoid duplicate-ID conflicts)
+    const cardEl = document.getElementById('clp-' + q.symbol);
+    if (cardEl) {{
+      cardEl.textContent = '$' + price.toFixed(2);
+      cardEl.className   = 'pos-price-val mono ' + (price >= entry ? 'positive' : 'negative');
+    }}
     if (entry && shares) {{
       unrealized += (price - entry) * shares;
       mktValue   += price * shares;
@@ -633,56 +667,97 @@ async function fetchLivePrices(syms) {{
   if (quotes.length) _applyQuotes(quotes);
 }}
 
-// ── Open Positions Table ──────────────────────────────────────────────────────
+// ── Open Positions — card (mobile) + table (desktop) ─────────────────────────
 const positions = port.positions || [];
 const posEl = document.getElementById('positions-container');
 if (positions.length > 0) {{
-  posEl.innerHTML = `
-  <table>
+  // Build shared data per position once, reuse in both views
+  const posRows = positions.map((p, pidx) => {{
+    const entry      = Number(p.entry_price);
+    const stored     = p.current_price != null ? Number(p.current_price) : null;
+    const cost       = p.shares * entry;
+    const curCls     = stored == null ? '' : stored >= entry ? 'positive' : 'negative';
+    const curTxt     = stored == null ? '…' : '$' + stored.toFixed(2);
+    const verdictCls = 'verdict-' + (p.verdict || 'watch').toLowerCase();
+    const grp        = `pos-${{pidx}}`;
+    const cgrp       = `cpos-${{pidx}}`;  // card-scoped IDs — no DOM conflicts
+    const stopTxt    = p.stop_loss ? '$' + Number(p.stop_loss).toFixed(2) : '—';
+    const tgtTxt     = p.target    ? '$' + Number(p.target).toFixed(2)    : '—';
+    const scoreTxt   = p.composite_score ? Number(p.composite_score).toFixed(1) : '—';
+    // Reusable panel HTML builder (works for both table rows and cards)
+    const mkPanels = g => `
+      <div class="panel-bar">
+        ${{p.bull_thesis ? `<button class="panel-tab bull-tab" data-grp="${{g}}" onclick="openPanel(this,'bull','${{g}}')" type="button">Bull case</button>` : ''}}
+        ${{p.bear_risks  ? `<button class="panel-tab bear-tab" data-grp="${{g}}" onclick="openPanel(this,'bear','${{g}}')" type="button">Bear risks</button>` : ''}}
+        ${{p.full_memo   ? `<button class="panel-tab memo-tab" data-grp="${{g}}" onclick="openPanel(this,'memo','${{g}}')" type="button">Risk Manager Verdict</button>` : ''}}
+        ${{(p.full_news && p.full_news.length) ? `<button class="panel-tab news-tab" data-grp="${{g}}" onclick="openPanel(this,'news','${{g}}')" type="button">News (${{p.full_news.length}})</button>` : ''}}
+      </div>
+      ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{g}}" data-grp="${{g}}">${{thesisContent(p.bull_thesis)}}</div>` : ''}}
+      ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{g}}" data-grp="${{g}}">${{thesisContent(p.bear_risks)}}</div>` : ''}}
+      ${{p.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{g}}" data-grp="${{g}}">${{memoContent(p.full_memo)}}</div>` : ''}}
+      ${{(p.full_news && p.full_news.length) ? `<div class="panel-body" id="news-${{g}}" data-grp="${{g}}">${{newsItems(p.full_news)}}</div>` : ''}}`;
+    return {{ p, entry, cost, curCls, curTxt, verdictCls, grp, cgrp,
+              stopTxt, tgtTxt, scoreTxt, mkPanels }};
+  }});
+
+  // ── Mobile card view (shown at ≤640px via CSS) ──────────────────────────
+  const cardsHtml = posRows.map(r => {{
+    const {{ p, entry, cost, curCls, curTxt, verdictCls, cgrp, stopTxt, tgtTxt, scoreTxt, mkPanels }} = r;
+    return `
+    <div class="pos-card ${{verdictCls}}">
+      <div class="pos-card-top">
+        <div style="display:flex;align-items:center;gap:8px">
+          <a href="https://finance.yahoo.com/quote/${{p.symbol}}" target="_blank" class="pos-card-sym">${{p.symbol}}</a>
+          ${{dirBadge(p.direction)}}
+        </div>
+        <span style="font-size:0.72rem;color:var(--muted)">Score ${{scoreTxt}}</span>
+      </div>
+      <div class="pos-prices">
+        <div><span class="pos-price-lbl">Entry</span><span class="pos-price-val mono">$${{entry.toFixed(2)}}</span></div>
+        <div><span class="pos-price-lbl">Current</span><span class="pos-price-val mono ${{curCls}}" id="clp-${{p.symbol}}" data-entry="${{entry}}" data-shares="${{p.shares}}">${{curTxt}}</span></div>
+        <div><span class="pos-price-lbl">Stop</span><span class="pos-price-val mono">${{stopTxt}}</span></div>
+        <div><span class="pos-price-lbl">Target</span><span class="pos-price-val mono">${{tgtTxt}}</span></div>
+      </div>
+      <div class="pos-card-meta">${{p.shares}} sh · $${{cost.toLocaleString('en-US',{{maximumFractionDigits:0}})}} · ${{p.entry_date || '—'}}</div>
+      <div class="reason">${{p.reason || ''}}</div>
+      ${{mkPanels(cgrp)}}
+    </div>`;
+  }}).join('');
+
+  // ── Desktop table view (hidden at ≤640px via CSS) ────────────────────────
+  const tableHtml = `<table>
     <thead><tr>
       <th>Symbol</th><th>Direction</th><th>Shares</th>
       <th>Cost</th><th>Entry</th><th>Current</th><th>Stop</th><th>Target</th><th>Score</th><th>Entered</th>
     </tr></thead>
     <tbody>
-    ${{positions.map((p, pidx) => {{
-      const entry      = Number(p.entry_price);
-      const stored     = p.current_price != null ? Number(p.current_price) : null;
-      const cost       = (p.shares * entry);
-      const curCls     = stored == null ? '' : stored >= entry ? 'positive' : 'negative';
-      const curTxt     = stored == null ? '…' : '$' + stored.toFixed(2);
-      const verdictCls = 'verdict-' + (p.verdict || 'watch').toLowerCase();
-      const grp        = `pos-${{pidx}}`;
+    ${{posRows.map(r => {{
+      const {{ p, entry, cost, curCls, curTxt, verdictCls, grp, stopTxt, tgtTxt, scoreTxt, mkPanels }} = r;
       return `
       <tr class="${{verdictCls}}">
         <td><strong><a href="https://finance.yahoo.com/quote/${{p.symbol}}" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)">${{p.symbol}}</a></strong></td>
         <td>${{dirBadge(p.direction)}}</td>
         <td class="mono">${{p.shares}}</td>
-        <td class="mono">$${{cost.toLocaleString('en-US', {{minimumFractionDigits:0, maximumFractionDigits:0}})}}</td>
+        <td class="mono">$${{cost.toLocaleString('en-US',{{minimumFractionDigits:0,maximumFractionDigits:0}})}}</td>
         <td class="mono">$${{entry.toFixed(2)}}</td>
         <td class="mono ${{curCls}}" id="lp-${{p.symbol}}" data-entry="${{entry}}" data-shares="${{p.shares}}">${{curTxt}}</td>
-        <td class="mono">${{p.stop_loss ? '$' + Number(p.stop_loss).toFixed(2) : '—'}}</td>
-        <td class="mono">${{p.target    ? '$' + Number(p.target).toFixed(2)    : '—'}}</td>
-        <td>${{p.composite_score ? Number(p.composite_score).toFixed(1) : '—'}}</td>
+        <td class="mono">${{stopTxt}}</td>
+        <td class="mono">${{tgtTxt}}</td>
+        <td>${{scoreTxt}}</td>
         <td>${{p.entry_date || '—'}}</td>
       </tr>
       <tr class="thesis-row"><td colspan="10">
         <div class="reason">${{p.reason || ''}}</div>
-        <div class="panel-bar">
-          ${{p.bull_thesis ? `<button class="panel-tab bull-tab" data-grp="${{grp}}" onclick="openPanel(this,'bull','${{grp}}')" type="button">Bull case</button>` : ''}}
-          ${{p.bear_risks  ? `<button class="panel-tab bear-tab" data-grp="${{grp}}" onclick="openPanel(this,'bear','${{grp}}')" type="button">Bear risks</button>` : ''}}
-          ${{p.full_memo   ? `<button class="panel-tab memo-tab" data-grp="${{grp}}" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
-          ${{(p.full_news && p.full_news.length) ? `<button class="panel-tab news-tab" data-grp="${{grp}}" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{p.full_news.length}})</button>` : ''}}
-        </div>
-        ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{thesisContent(p.bull_thesis)}}</div>` : ''}}
-        ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{thesisContent(p.bear_risks)}}</div>` : ''}}
-        ${{p.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{memoContent(p.full_memo)}}</div>` : ''}}
-        ${{(p.full_news && p.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(p.full_news)}}</div>` : ''}}
-      </td></tr>
-      `;
+        ${{mkPanels(grp)}}
+      </td></tr>`;
     }}).join('')}}
     </tbody>
   </table>`;
-  // Kick off live price fetch after table is in DOM
+
+  posEl.innerHTML =
+    `<div class="pos-mobile">${{cardsHtml}}</div>` +
+    `<div class="pos-desktop tbl-scroll">${{tableHtml}}</div>`;
+
   fetchLivePrices(positions.map(p => p.symbol));
 }}
 
@@ -692,8 +767,7 @@ function renderEntries(entries, container) {{
     container.innerHTML = '<div class="empty-state">No entries</div>';
     return;
   }}
-  container.innerHTML = `
-  <table>
+  container.innerHTML = `<div class="tbl-scroll"><table>
     <thead><tr>
       <th>Date</th><th>Symbol</th><th>Verdict</th><th>Shares</th><th>Entry $</th><th>Cost</th><th>Stop</th><th>Target</th>
     </tr></thead>
@@ -728,7 +802,7 @@ function renderEntries(entries, container) {{
       `;
     }}).join('')}}
     </tbody>
-  </table>`;
+  </table></div>`;
 }}
 
 function renderExits(exits, container) {{
@@ -736,8 +810,7 @@ function renderExits(exits, container) {{
     container.innerHTML = '<div class="empty-state">No exits</div>';
     return;
   }}
-  container.innerHTML = `
-  <table>
+  container.innerHTML = `<div class="tbl-scroll"><table>
     <thead><tr>
       <th>Symbol</th><th>Dir</th><th>Shares</th><th>Entry $</th><th>Exit $</th><th>P&amp;L $</th><th>P&amp;L %</th><th>Reason</th>
     </tr></thead>
@@ -758,7 +831,7 @@ function renderExits(exits, container) {{
         </tr>`;
     }}).join('')}}
     </tbody>
-  </table>`;
+  </table></div>`;
 }}
 
 function renderRecentTrades(trades, container) {{
