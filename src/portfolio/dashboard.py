@@ -575,9 +575,11 @@ function _applyQuotes(quotes) {{
   }});
   if (!mktValue) return;
   const cash       = port.cash || 0;
-  const realized   = port.cumulative_pnl || 0;
   const liveEquity = cash + mktValue;
-  const totalPnl   = realized + unrealized;
+  // port.cumulative_pnl is set by mark_to_market() as (total_equity − TOTAL_CAPITAL),
+  // which already folds in unrealized P&L from the last EOD close.  Adding fresh
+  // unrealized on top would double-count it.  Derive total P&L purely from live equity.
+  const totalPnl   = liveEquity - (port.total_capital || 150000);
   document.getElementById('equity').textContent = fmt$(liveEquity);
   const pnlEl = document.getElementById('cum-pnl');
   pnlEl.textContent = fmtPnl(totalPnl);
