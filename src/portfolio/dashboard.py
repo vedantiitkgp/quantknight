@@ -153,9 +153,19 @@ def _build_html(data_json: str, finnhub_key: str = "") -> str:
   .verdict-callout-approved {{ background: rgba(63,185,80,0.08);  border-color: var(--green);  color: var(--green); }}
   .verdict-callout-rejected  {{ background: rgba(248,81,73,0.08);  border-color: var(--red);    color: var(--red);   }}
   .verdict-callout-watch     {{ background: rgba(210,153,34,0.08); border-color: var(--yellow); color: var(--yellow);}}
-  /* ── Section headers inside memos get stronger visual weight ── */
-  .thesis-memo h3 {{ font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-top: 18px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.07); }}
-  .thesis-memo h3:first-of-type {{ border-top: none; margin-top: 4px; }}
+  /* ── Section headers inside memos/thesis panels — muted small-caps ── */
+  .thesis-memo h3, .thesis-memo h2, .thesis-memo h1,
+  .thesis.thesis-bull h3, .thesis.thesis-bull h2, .thesis.thesis-bull h1,
+  .thesis.thesis-bear h3, .thesis.thesis-bear h2, .thesis.thesis-bear h1 {{
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.8px; color: var(--muted);
+    margin-top: 18px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.07);
+  }}
+  .thesis-memo h3:first-of-type, .thesis-memo h2:first-of-type, .thesis-memo h1:first-of-type,
+  .thesis.thesis-bull h3:first-of-type, .thesis.thesis-bull h2:first-of-type, .thesis.thesis-bull h1:first-of-type,
+  .thesis.thesis-bear h3:first-of-type, .thesis.thesis-bear h2:first-of-type, .thesis.thesis-bear h1:first-of-type {{
+    border-top: none; margin-top: 4px;
+  }}
   :root {{
     --bg:      #0d1117;
     --surface: #161b22;
@@ -389,6 +399,19 @@ function md(text) {{
     .replace(/(<li>[\\s\\S]*?<\\/li>)/g,'<ul>$1</ul>')
     .replace(/\\n{{2,}}/g,'</p><p>')
     .replace(/\\n/g,'<br>');
+}}
+// ── Bull/Bear thesis renderer — stamps inline styles on all headings ──────────
+// marked.js emits <h3 id="section-1-…"> (with id attributes), so CSS rules can
+// lose to specificity ties.  Inline style always wins — belt-and-suspenders.
+const _HDR_STYLE = 'font-size:0.72rem;font-weight:700;text-transform:uppercase;'
+  + 'letter-spacing:0.8px;color:var(--muted);margin-top:18px;padding-top:12px;'
+  + 'border-top:1px solid rgba(255,255,255,0.07)';
+function thesisContent(text) {{
+  if (!text) return '';
+  let html = md(text);
+  html = html.replace(/<h[123]([^>]*)>/gi, '<h3$1 style="' + _HDR_STYLE + '">')
+             .replace(/<\/h[123]>/gi, '</h3>');
+  return html;
 }}
 // ── Risk-manager memo renderer ─────────────────────────────────────────────────
 // Extracts the opening VERDICT line and renders it as a colored callout banner,
@@ -650,8 +673,8 @@ if (positions.length > 0) {{
           ${{p.full_memo   ? `<button class="panel-tab memo-tab" data-grp="${{grp}}" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
           ${{(p.full_news && p.full_news.length) ? `<button class="panel-tab news-tab" data-grp="${{grp}}" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{p.full_news.length}})</button>` : ''}}
         </div>
-        ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(p.bull_thesis)}}</div>` : ''}}
-        ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(p.bear_risks)}}</div>` : ''}}
+        ${{p.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{thesisContent(p.bull_thesis)}}</div>` : ''}}
+        ${{p.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{thesisContent(p.bear_risks)}}</div>` : ''}}
         ${{p.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{memoContent(p.full_memo)}}</div>` : ''}}
         ${{(p.full_news && p.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(p.full_news)}}</div>` : ''}}
       </td></tr>
@@ -697,8 +720,8 @@ function renderEntries(entries, container) {{
           ${{e.full_memo   ? `<button class="panel-tab memo-tab" data-grp="${{grp}}" onclick="openPanel(this,'memo','${{grp}}')" type="button">Risk Manager Verdict</button>` : ''}}
           ${{(e.full_news && e.full_news.length) ? `<button class="panel-tab news-tab" data-grp="${{grp}}" onclick="openPanel(this,'news','${{grp}}')" type="button">News (${{e.full_news.length}})</button>` : ''}}
         </div>
-        ${{e.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{md(e.bull_thesis)}}</div>` : ''}}
-        ${{e.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{md(e.bear_risks)}}</div>` : ''}}
+        ${{e.bull_thesis ? `<div class="panel-body thesis thesis-bull md" id="bull-${{grp}}" data-grp="${{grp}}">${{thesisContent(e.bull_thesis)}}</div>` : ''}}
+        ${{e.bear_risks  ? `<div class="panel-body thesis thesis-bear md" id="bear-${{grp}}" data-grp="${{grp}}">${{thesisContent(e.bear_risks)}}</div>` : ''}}
         ${{e.full_memo   ? `<div class="panel-body thesis thesis-memo md" id="memo-${{grp}}" data-grp="${{grp}}">${{memoContent(e.full_memo)}}</div>` : ''}}
         ${{(e.full_news && e.full_news.length) ? `<div class="panel-body" id="news-${{grp}}" data-grp="${{grp}}">${{newsItems(e.full_news)}}</div>` : ''}}
       </td></tr>` : ''}}
