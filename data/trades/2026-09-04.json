@@ -1,0 +1,292 @@
+{
+  "date": "2026-09-04",
+  "runs": [
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "BMY",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 114,
+      "entry_price": 66.675,
+      "stop_loss": 63.67,
+      "target": 71.19,
+      "entry_date": "2026-09-04",
+      "entry_time": "17:04",
+      "composite_score": 67.40578265204388,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 67.4, RSI 56, EPS growth 153%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Panmure Liberum says OxfordBiomedica share fall overdone after Novartis and BMS pause trials",
+          "summary": "Panmure Liberum has maintained its 'buy' rating on Oxford BioMedica PLC (LSE:OXB), the cell and gene therapy manufacturer, after its shares fell 15% following trial pauses by two of its customers. Novartis and Bristol Myers Squibb, both OXB customers",
+          "sentiment": -0.964,
+          "source": "Finnhub",
+          "published": "2026-09-02",
+          "url": "https://finnhub.io/api/news?id=3ee7793f113eb640bae9719676ac3ff7bda91affcde9e0a3c17a72bab4ca4c07"
+        },
+        {
+          "headline": "Can CYTK's Aficamten Strengthen Its HCM Growth Prospects?",
+          "summary": "Cytokinetics' aficamten shows added benefits in HCM studies, strengthening its potential in non-obstructive and obstructive disease.",
+          "sentiment": 0.941,
+          "source": "Finnhub",
+          "published": "2026-09-02",
+          "url": "https://finnhub.io/api/news?id=79f18174ad181fad00cc082df546211492fa49c31b6547541fd791f75251ab3c"
+        },
+        {
+          "headline": "Market Chatter: Bristol Myers Squibb Paused Zola-Cel Trials Over Safety Concerns",
+          "summary": "Bristol Myers Squibb (BMY) has told regulators, researchers and patient groups in early June that it",
+          "sentiment": -0.941,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=47c4b2ed2bec38e175d04009665aa290eda845b05591564bb0fb1d56c72fc776"
+        },
+        {
+          "headline": "Bristol Myers Squibb (BMY) Gains On Camzyos Data, Is The Upside Already Priced In?",
+          "summary": "Bristol-Myers Squibb (BMY) is back in focus after presenting long term Camzyos data from the EXPLORER-LTE cohort at the 2026 European Society of Cardiology Congress in Munich. Against this backdrop, Bristol-Myers Squibb\u2019s share price has moved to US$",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-02",
+          "url": "https://finnhub.io/api/news?id=9857fac7df0ba122b7ab45bf81308ca0b990fbf4f3d6509b48b838ae64cba442"
+        },
+        {
+          "headline": "Healthcare ETFs to Watch Post Merck-Moderna Cancer Vaccine Breakthrough",
+          "summary": "Merck-Moderna's melanoma vaccine success could boost immunotherapy growth, putting healthcare ETFs in the spotlight.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-01",
+          "url": "https://finnhub.io/api/news?id=1bce6207890c6536b7e9eb485b632e6b759d6d03e2e31443e056c8d59c8c4270"
+        },
+        {
+          "headline": "What Does Bristol Myers Squibb (BMY) Trial Pause Mean For Its Pipeline?",
+          "summary": "Bristol Myers Squibb (NYSE:BMY) has paused enrollment in its zola-cel cell therapy trials for autoimmune conditions following emerging safety concerns. The voluntary pause comes after inflammatory side effects were detected during ongoing safety surv",
+          "sentiment": -0.93,
+          "source": "Finnhub",
+          "published": "2026-09-03",
+          "url": "https://finnhub.io/api/news?id=3020ee035c6b5fa5f63c33a9349fbac264d79c0593069f9eb52783c81993f5b0"
+        },
+        {
+          "headline": "Novartis, Bristol Myers pause autoimmune CAR-T trials due to safety concerns",
+          "summary": "The deaths of three study participants led Novartis to halt development of rap-cel in multiple indications, while \u201ctransient\u201d side effects led Bristol Myers to voluntarily pause its zola-cel program.",
+          "sentiment": -0.926,
+          "source": "Finnhub",
+          "published": "2026-08-31",
+          "url": "https://finnhub.io/api/news?id=334ff16fb2f1413e92ef1f691bbdf3a5ee9ba6dfa0ecafb773f753b6ca7f91c4"
+        },
+        {
+          "headline": "Bristol Myers Squibb: Still Cheap, Despite What The Chart Says",
+          "summary": "Bristol Myers Squibb (BMY) stock: Strong Buy at 51% sector discount.",
+          "sentiment": 0.923,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=2c936dd7ab91688beb9ce6da968db548fae82c3c793c1a2644cb30d80a20c6c1"
+        },
+        {
+          "headline": "Jefferies starts biopharma firm Braveheart at Buy after IPO",
+          "summary": "Investing.com -- Jefferies initiated coverage of Braveheart Bio with a Buy rating and a $48 price target, implying roughly 75% upside from the stock\u2019s prior closing price. The move comes after the company priced its initial public offering (IPO) at $",
+          "sentiment": 0.876,
+          "source": "Finnhub",
+          "published": "2026-08-31",
+          "url": "https://finnhub.io/api/news?id=e97b2a46f32c37f55844c94c141bf555c1e96bec9907648b43645032263930ba"
+        },
+        {
+          "headline": "Summit Therapeutics Says It Is Beating Merck With Its Cancer Drug",
+          "summary": "Summit says its ivonescimab is keeping lung-cancer patients alive longer than Keytruda does. The stock is up.",
+          "sentiment": 0.865,
+          "source": "Finnhub",
+          "published": "2026-09-03",
+          "url": "https://finnhub.io/api/news?id=571938922c53a24695a79bd4b7bcf6cadc277e382964d905e6dd29c162da8113"
+        }
+      ],
+      "cost": 7600.95
+    },
+    {
+      "symbol": "ANET",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 39,
+      "entry_price": 192.805,
+      "stop_loss": 176.25,
+      "target": 217.64,
+      "entry_date": "2026-09-04",
+      "entry_time": "17:04",
+      "composite_score": 65.26229644400132,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 65.3, RSI 53, EPS growth 36%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Nokia Rides on Portfolio Diversification: Can it Boost Growth?",
+          "summary": "NOK's diversified connectivity portfolio and growing AI & Cloud business strengthen its growth prospects despite telecom and competitive pressures.",
+          "sentiment": 0.942,
+          "source": "Finnhub",
+          "published": "2026-08-28",
+          "url": "https://finnhub.io/api/news?id=0e96a8b41187c5c1c68a9b0401fc9a2965b0fa5dadeffd97f4bb342b15a50ddc"
+        },
+        {
+          "headline": "Arista Networks (ANET) Price Target Increased by 27.24% to 242.83",
+          "summary": "",
+          "sentiment": 0.94,
+          "source": "Finnhub",
+          "published": "2026-08-28",
+          "url": "https://finnhub.io/api/news?id=2c5d75af005eb3ba1ce207211f2b104c0c72fc84ab1c075265d2aa4ccaa5bfd6"
+        },
+        {
+          "headline": "Should Arista\u2019s Q2 AI Networking Beat and Upbeat Q3 Outlook Require Action From Arista Networks (ANET) Investors?",
+          "summary": "Arista Networks recently reported strong Q2 2026 results, with revenue and earnings exceeding expectations on the back of growing demand across AI, cloud, and enterprise networking, supported by better supply chain execution. Management\u2019s upbeat guid",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=eda3441ae6de14bde730deaa00dd0aea947dd6d99caa80773a0dea973ff60985"
+        },
+        {
+          "headline": "ANET Rises 37.3% in Six Months: Is There More Room to Grow?",
+          "summary": "Arista Networks has surged 37.3% in six months as AI demand, supply-chain gains and strong cash flow fuel its growth outlook.",
+          "sentiment": 0.937,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=a024442b8cb01b24f6be45efa7fd163a05f7076103ed60128d07187d3cd06238"
+        },
+        {
+          "headline": "PAYX Stock Rises 30% in 6 Months: Here's What You Should Know",
+          "summary": "Paychex is driving growth through Paycor synergies, AI-backed WISE capabilities and efficiency gains that support stronger margins and client value.",
+          "sentiment": 0.931,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=bff4b01a79f4eadff0d3782587e61192d4fef82d9d9cd057088c284b71160cae"
+        },
+        {
+          "headline": "Arista Networks Offers Entry After 42% Gain Amid Earnings Beat; Data Center Demand Surging",
+          "summary": "Arista Networks is rebounding from its 50-day moving average, offering a buying opportunity after an earnings beat in August.",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=ddbb6c5bf715fae009d6c42b26e6e2e97ca209e24c86f0ec995308e0765b7776"
+        },
+        {
+          "headline": "4 Cloud Computing Stocks to Profit Amid Intense Market Volatility",
+          "summary": "GOOGL, MSFT, AMZN and ANET stand out as cloud computing plays as AI, scalability and cost efficiency fuel enterprise adoption.",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-08-28",
+          "url": "https://finnhub.io/api/news?id=8ad82f5888e6ca5d86135b9495721bcb417f60491f3860a21eaadfd5af9030f7"
+        },
+        {
+          "headline": "Arista's Price Assumes The Parts Arrive On Time",
+          "summary": "Consensus cuts the stock's earnings multiple by about a third within two years, and what decides whether that happens is component supply rather than customer demand.",
+          "sentiment": -0.917,
+          "source": "Finnhub",
+          "published": "2026-08-28",
+          "url": "https://finnhub.io/api/news?id=7ca249c28c47540def5712b078fe2ed68ac53ca1b059ecca99573455ce2837b4"
+        },
+        {
+          "headline": "Nokia Stock Increases 135.8% in a Year: Should You Invest?",
+          "summary": "NOK's 135.8% surge reflects booming AI and cloud demand, but heavy investment, competition and financial pressure create key risks.",
+          "sentiment": 0.91,
+          "source": "Finnhub",
+          "published": "2026-09-01",
+          "url": "https://finnhub.io/api/news?id=063cdee5dffd7cec430fdf5c80b3056087c92896371c32d73980247b3ed55036"
+        },
+        {
+          "headline": "Broadcom Redraws the AI Silicon Runway While Dell's 16% Sprint Pulls Wall Street Off the Mat",
+          "summary": "Wall Street clawed back ground on Wednesday as long yields eased and Dell exploded 16% higher on the AI-server print. After the close, Broadcom lifted its FY27 AI revenue outlook to roughly $115 billion and, for the first time, put a $230 billion num",
+          "sentiment": 0.898,
+          "source": "Finnhub",
+          "published": "2026-09-03",
+          "url": "https://finnhub.io/api/news?id=22f171f60f6796e8d54494cf6fe5bf9e37468691d01468c04bc2efa2e05a16ce"
+        }
+      ],
+      "cost": 7519.39
+    },
+    {
+      "symbol": "BEN",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 50,
+      "entry_price": 34.685,
+      "stop_loss": 33.07,
+      "target": 37.11,
+      "entry_date": "2026-09-04",
+      "entry_time": "17:04",
+      "composite_score": 63.38168826852775,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 63.4, RSI 57, EPS growth 77%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "BEN's AUM Rises in August: Will the Growth Momentum Continue?",
+          "summary": "Franklin Templeton's AUM reaches a record $1.83 trillion in August as strong inflows and favorable markets fuel growth momentum.",
+          "sentiment": 0.93,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=0d9fe3027f02aea09516b83edf23344f8383d1508c497e6688fdf7aa42ba1df8"
+        },
+        {
+          "headline": "Winners And Losers Of Q2: Franklin Resources (NYSE:BEN) Vs The Rest Of The Custody Bank Stocks",
+          "summary": "Looking back on custody bank stocks\u2019 Q2 earnings, we examine this quarter\u2019s best and worst performers, including Franklin Resources (NYSE:BEN) and its peers.",
+          "sentiment": -0.899,
+          "source": "Finnhub",
+          "published": "2026-08-28",
+          "url": "https://finnhub.io/api/news?id=ed1f1513116f788714529b3e1a1cf67ae84f8fbd094eaff7f623907ec3bbdebc"
+        },
+        {
+          "headline": "Federated Hermes' APAC Tokenization Push: A New AUM Growth Lever?",
+          "summary": "FHI is expanding APAC tokenization with Conduit while leveraging its money market franchise. Can this boost AUM growth?",
+          "sentiment": 0.878,
+          "source": "Finnhub",
+          "published": "2026-09-02",
+          "url": "https://finnhub.io/api/news?id=1d52766157e9f06c4ced5313a2125819b5545af74761c7c138046251e3e3db3e"
+        },
+        {
+          "headline": "Best Dividend Aristocrats For September 2026",
+          "summary": "Dividend Aristocrats (NOBL) nearly match SPY in 2026, with top gainers, rising dividend growth, and 29 undervalued picks\u00e2\u0080\u0094see which to buy now.",
+          "sentiment": 0.875,
+          "source": "Finnhub",
+          "published": "2026-08-28",
+          "url": "https://finnhub.io/api/news?id=d92db7b94ab38deb8d45bd11ce337de7df789b48d477823807203626cf4038b8"
+        },
+        {
+          "headline": "Franklin Templeton, Inc. Announces Preliminary Month-End Assets Under Management",
+          "summary": "SAN MATEO, Calif., September 03, 2026--Franklin Templeton, Inc. (NYSE: BEN) today reported preliminary month-end assets under management (AUM) of $1.83 trillion at August 31, 2026, compared to $1.79 trillion at July 31, 2026. This month\u2019s increase in",
+          "sentiment": 0.621,
+          "source": "Finnhub",
+          "published": "2026-09-03",
+          "url": "https://finnhub.io/api/news?id=ea7cef5d3ae1735295eadb312c4fde9edf02cdc64374dc4ce0ea2045dd9cf9be"
+        },
+        {
+          "headline": "3 Value Stocks with Open Questions",
+          "summary": "The low valuation multiples for value stocks provide a margin of safety that growth stocks rarely offer. However, the challenge lies in determining whether these cheap assets are genuinely undervalued or simply on sale due to their potentially deteri",
+          "sentiment": -0.199,
+          "source": "Finnhub",
+          "published": "2026-09-01",
+          "url": "https://finnhub.io/api/news?id=0e2b4afe594d2b327c159353f5066f0daab230a972641ea43251ecb2d04a8872"
+        },
+        {
+          "headline": "Franklin Templeton Announces Availability of 19(a) Notices for Certain Closed-End Funds",
+          "summary": "SAN MATEO, Calif., August 31, 2026--Category: Distribution Related",
+          "sentiment": 0.002,
+          "source": "Finnhub",
+          "published": "2026-08-31",
+          "url": "https://finnhub.io/api/news?id=15a920b2005ef1cb0d04e5aa465a9e1a77fe37841d2fc4708c31e837d785fea1"
+        }
+      ],
+      "cost": 1734.25
+    }
+  ],
+  "exits": [],
+  "realized_pnl": 0.0,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": 3205.56,
+  "total_equity": 153205.56
+}
