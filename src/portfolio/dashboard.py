@@ -433,12 +433,18 @@ function md(text) {{
 const _HDR_STYLE = 'font-size:0.72rem;font-weight:700;text-transform:uppercase;'
   + 'letter-spacing:0.8px;color:var(--muted);margin-top:18px;padding-top:12px;'
   + 'border-top:1px solid rgba(255,255,255,0.07)';
+// Wrap every <table> produced by marked.js in a .tbl-scroll div so metric /
+// valuation tables inside thesis panels scroll horizontally on mobile.
+function _wrapTables(html) {{
+  return html.replace(/<table>/gi,  '<div class="tbl-scroll" style="margin:6px 0"><table>')
+             .replace(/<\/table>/gi, '</table></div>');
+}}
 function thesisContent(text) {{
   if (!text) return '';
   let html = md(text);
   html = html.replace(/<h[123]([^>]*)>/gi, '<h3$1 style="' + _HDR_STYLE + '">')
              .replace(/<\/h[123]>/gi, '</h3>');
-  return html;
+  return _wrapTables(html);
 }}
 // ── Risk-manager memo renderer ─────────────────────────────────────────────────
 // Extracts the opening VERDICT line and renders it as a colored callout banner,
@@ -453,9 +459,9 @@ function memoContent(memo) {{
     const cls = verdict === 'APPROVED' ? 'approved' : verdict === 'REJECTED' ? 'rejected' : 'watch';
     const callout = '<div class="verdict-callout verdict-callout-' + cls + '">' + vm[1].trim() + '</div>';
     const body = s.slice(vm.index + vm[0].length).trimStart();
-    return callout + md(body);
+    return _wrapTables(callout + md(body));
   }}
-  return md(s);
+  return _wrapTables(md(s));
 }}
 
 function fmtDate(d) {{
