@@ -1,7 +1,110 @@
 {
   "date": "2026-09-10",
-  "runs": [],
-  "entries": [],
+  "runs": [
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "STX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 8,
+      "entry_price": 866.4301,
+      "stop_loss": 758.26,
+      "target": 1028.68,
+      "entry_date": "2026-09-10",
+      "entry_time": "18:21",
+      "composite_score": 71.07992202729045,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 71.1, RSI 52, EPS growth 165%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Bull of the Day: Seagate Technology (STX)",
+          "summary": "Shares of Seagate Technology have appreciated significantly over the last year, with evidence pointing to more upside ahead.",
+          "sentiment": 0.937,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=9c5d53352921f074f6acb883b18ae7fecef36639fcdb303562b742757a865ffe"
+        },
+        {
+          "headline": "Can Western Digital's Strong FCF Sustain Buybacks and Dividends?",
+          "summary": "WDC entered fiscal 2027 with stronger cash generation, a net cash position and plans to keep returning free cash flow to shareholders.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=6c8c000d483a6cedaf8ac1b71f67ac94fa7fe66968f6b9fae2ec9d6f8434bd1c"
+        },
+        {
+          "headline": "Can Seagate Sustain Its Strong Revenue Growth in Fiscal 2027?",
+          "summary": "STX expects fiscal 2027 revenue growth to exceed fiscal 2026 as cloud demand, AI adoption and HAMR expansion support mass-capacity storage.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=66c4087a0487a2e94521eb5b7061560037531345caa2eba53369d514d03cdf4d"
+        },
+        {
+          "headline": "WDC Stock's Big Rally: Buy, Sell, or Hold After a 70% 6-Month Surge?",
+          "summary": "Western Digital's AI-driven storage growth, rising HDD pricing and expanding margins strengthen its case, but lofty expectations make the stock a closer call.",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=f1cb6112a8ee2bd659079c5ee33d592b04fafd4a0fdce70d42da902cb63b1234"
+        },
+        {
+          "headline": "Seagate's HAMR Bet is Paying Off: Can Mozaic Sustain the Momentum?",
+          "summary": "STX's HAMR and Mozaic roadmap is boosting storage capacity, exabyte growth and efficiency as demand for higher-capacity drives rises.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=2e207e2d83a3c0a79d6baf8dee91c99de7966c04b1da3e4eec87b5a71a973ec1"
+        },
+        {
+          "headline": "Meet the AI Infrastructure Stock That Has Tripled in 2026 (Hint: It Can Still Double)",
+          "summary": "The incredible demand for storage in AI data centers suggests that Seagate's terrific rally is sustainable.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-07",
+          "url": "https://finnhub.io/api/news?id=fbe5d8410b7d1b708c2cab4a0510c6f53d16bb2ac6d818171d688f56b5b0dab5"
+        },
+        {
+          "headline": "AI Data Explosion: Can WDC Become a Bigger Storage Winner?",
+          "summary": "Western Digital is poised to benefit from AI-driven data growth as inference, Agentic AI and emerging workloads fuel long-term storage demand.",
+          "sentiment": 0.93,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=c3ad968405c12ac76047fc67d30a229c32b1b4ded38db44ebaf79a6b76f7dd4a"
+        },
+        {
+          "headline": "Seagate Technology and Western Union have been highlighted as Zacks Bull and Bear of the Day",
+          "summary": "Seagate Technology's AI-driven storage demand, rising earnings estimates and breakout setup support a bullish outlook despite recent volatility.",
+          "sentiment": 0.915,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=a20cebd25726ec41e3803ba548270e9646a82f5c2cb6c849febea0f3a5097132"
+        },
+        {
+          "headline": "SK Hynix Surges 7% as Memory Bid Widens Beyond NAND; Seagate Rallies 5%",
+          "summary": "A broad memory bid swept through storage stocks Friday afternoon while the rest of the market softened, and the divergence between one sector ETF and the S&P 500 tells a story that goes well beyond a pair of NAND names catching a bid.",
+          "sentiment": 0.841,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=4ee08e0c13ee5430857a03ce10c0bf02addec9821b5aa8a2fb8887fbd93e51e1"
+        },
+        {
+          "headline": "Tracking Stanley Druckenmiller's Duquesne Family Office Portfolio - Q2 2026 Update",
+          "summary": "Duquesne Family Office's 13F portfolio increased from $3.38B to $5.21B, with 26 core positions now dominating the allocation. Read more on the portfolio here.",
+          "sentiment": 0.828,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=040d0234f1409d1d7ec4b57bd7219d407488348eeac26dd8b315b4c4441dfeaa"
+        }
+      ],
+      "cost": 6931.44
+    }
+  ],
   "exits": [
     {
       "symbol": "SWK",
