@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-10",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "SWK",
+      "direction": "LONG",
+      "shares": 78,
+      "entry_price": 96.43,
+      "exit_price": 88.73,
+      "pnl_dollars": -600.6,
+      "pnl_pct": -7.99,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-10"
+    }
+  ],
+  "realized_pnl": -600.6,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": 1420.02,
+  "total_equity": 152020.62
+}

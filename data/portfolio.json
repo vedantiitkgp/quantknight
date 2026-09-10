@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 12.63,
+  "cash": 6933.57,
   "total_equity": 152020.62,
-  "cumulative_pnl": 2020.62,
-  "as_of": "2026-09-09T22:44:09.276326",
+  "cumulative_pnl": 1420.02,
+  "as_of": "2026-09-10T17:13:57.806342",
   "positions": [
     {
       "symbol": "INCY",
@@ -1416,106 +1416,6 @@
         }
       ],
       "current_price": 184.74
-    },
-    {
-      "symbol": "SWK",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 78,
-      "entry_price": 96.43,
-      "stop_loss": 90.57,
-      "target": 105.22,
-      "entry_date": "2026-09-03",
-      "entry_time": "18:47",
-      "composite_score": 63.502223069105696,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 63.5, RSI 48, EPS growth 245%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "183-year-old giant tool company closes factory, lays off dozens",
-          "summary": "The iconic tool company begins layoffs in October 2026, with plans to complete the factory closure by March 2027.",
-          "sentiment": -0.95,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=358aeed18a1a5fed2f2c1c509feab489203ba1e55a7c4aa08d1cfac5916433ab"
-        },
-        {
-          "headline": "Zacks Industry Outlook Highlights Lincoln Electric, Stanley Black & Decker, Core & Main and Kennametal",
-          "summary": "Lincoln Electric, Stanley Black & Decker, Core & Main and Kennametal stand to benefit as manufacturing activity, innovation and acquisitions support growth.",
-          "sentiment": 0.932,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=f171556b8cb068300bed6212766cfe9798b62c42637cdb316487447906bda2e0"
-        },
-        {
-          "headline": "RBC Bearings (RBC) Stock Looks Above Fair Value On Cash Flow And Earnings",
-          "summary": "RBC Bearings has delivered a strong 5 year share return, yet current valuation checks suggest the stock is trading at a premium to what its cash flows and market multiples imply. The stock has returned 115.2% over 5 years, which sets a high bar for a",
-          "sentiment": 0.931,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=4cae4b6b0e9e6a77ba0a29794b960c8f85fd6b03b1745acde0a81463fd49eb6c"
-        },
-        {
-          "headline": "4 Manufacturing Tools Stocks to Watch on Prospering Industry Trends",
-          "summary": "An increase in manufacturing activities, technological progress and strategic acquisitions favor the Zacks Manufacturing-Tools & Related Products industry's near-term prospects. LECO, SWK, CNM and KMT are some promising stocks in the industry.",
-          "sentiment": 0.904,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=601b9348d3dd9539a56c6c78f638021b1024ff0e872bbeda850fa3b24aee08f5"
-        },
-        {
-          "headline": "Howmet vs. GE Aerospace: Which Aerospace & Defense Stock Should You Bet On?",
-          "summary": "HWM's commercial and defense strength, rising estimates and share gains outweigh its premium valuation, making it the better pick over GE.",
-          "sentiment": 0.879,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=80a7cf2b2850cc026f3c16f2452515d87b6a6ae5a4e6f2c0fdaa9e3299722cf0"
-        },
-        {
-          "headline": "3 Dividend-Paying Industrial Stocks to Buy Right Now",
-          "summary": "Three industrial leaders have the cash flow and competitive moats to keep growing their payouts.",
-          "sentiment": 0.744,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=a92c67e5164df7b8a7fb25052ee2be1d71a1d67ef6888c26cc573d51002beffc"
-        },
-        {
-          "headline": "Robinhood upgraded, Uber initiated: Wall Street's top analyst calls",
-          "summary": "Robinhood upgraded, Uber initiated: Wall Street's top analyst calls",
-          "sentiment": 0.165,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=781b7f2d6a815acac15e5fb4362f9b55cd991070be84b68d508ac08002c8f38c"
-        },
-        {
-          "headline": "Here Are Tuesday\u2019s Top Wall Street Analyst Research Calls: Akamai Technologies, Arista Networks, Booking Holdings, Cisco Systems, Dell Technologies, Duolingo, Robinhood Markets, PG&E, and More",
-          "summary": "Wall Street analysts reshuffled their ratings on September 1st with some dramatic target price swings, including one major utility stock getting its target slashed nearly in half while a red-hot language app saw its target doubled overnight.",
-          "sentiment": 0.089,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=e4d756bd7e2c7f5b0030d4677a28b4fb6650a1b1524351cfac6c2e0a2f1b1093"
-        },
-        {
-          "headline": "Why Is Stanley Black & Decker (SWK) Up 3.9% Since Last Earnings Report?",
-          "summary": "Stanley Black & Decker (SWK) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
-          "sentiment": 0.058,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=ec4a141b39ed46627e5b2e35f77b4326c7bac0551636c8b8a00812e39543a1fc"
-        },
-        {
-          "headline": "The Toro Company (TTC) Reports Q2: Everything You Need To Know Ahead Of Earnings",
-          "summary": "Outdoor equipment company Toro (NYSE:TTC) will be reporting earnings this Thursday before market hours. Here\u2019s what to expect.",
-          "sentiment": -0.02,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=55784dfb9b76d81180e3e6e1435202fab8f73e1c85281652b2f54df6d9be2fe8"
-        }
-      ],
-      "current_price": 91.68
     },
     {
       "symbol": "HPE",
