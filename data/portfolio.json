@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 2.13,
+  "cash": 16213.97,
   "total_equity": 149805.31,
-  "cumulative_pnl": -194.69,
-  "as_of": "2026-09-10T22:46:03.077962",
+  "cumulative_pnl": 897.8,
+  "as_of": "2026-09-11T17:15:22.836501",
   "positions": [
     {
       "symbol": "INCY",
@@ -1418,106 +1418,6 @@
       "current_price": 183.6
     },
     {
-      "symbol": "HPE",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 148,
-      "entry_price": 50.8,
-      "stop_loss": 50.8,
-      "target": 59.56,
-      "entry_date": "2026-09-03",
-      "entry_time": "18:47",
-      "composite_score": 60.25832063008131,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 60.3, RSI 46, EPS growth 159%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Hewlett Packard Enterprise Falls 5% as Supply Constraints Overshadow Raised Guidance, Super Micro Slips, Dell Holds Steady",
-          "summary": "Hewlett Packard Enterprise (NYSE:HPE) stock is falling 5% to $27.92 in Thursday trading despite the company delivering a strong fiscal third quarter and raising its outlook for both fiscal 2026 and fiscal 2027. Meanwhile, Super Micro Computer (NASDAQ",
-          "sentiment": -0.967,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=a22657b897e00df6d6921584ac98c8570fcfb1fa7c689958dddf597fc70daaf5"
-        },
-        {
-          "headline": "HPE raises fiscal 2026 sales forecast on AI server demand",
-          "summary": "The company posted record quarterly revenue of $12.2 billion but stock slipped after results fell short of some investor expectations",
-          "sentiment": -0.966,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=5734e2de9c788ceb7462ed18415bee4f15593a3765e9f7e08505f08d2a0a1789"
-        },
-        {
-          "headline": "These Analysts Revise Their Forecasts On Hewlett Packard Enterprise After Q3 Results",
-          "summary": "HPE beat Q3 FY26 estimates and raised guidance; EPS outlook hit $3.75-$3.85. Shares fell 6.8%, while analysts made mixed price-target changes.",
-          "sentiment": -0.962,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=202d1c1fe6752b2c5a7c77f585c243c1c68718d6bb9a18e2a959d26f76f6063f"
-        },
-        {
-          "headline": "HPE CEO Antonio Neri: We delivered record results across every metric",
-          "summary": "HPE shares have fallen Thursday despite a beat on top and bottom lines in its fiscal Q3. Antonio Neri, HPE CEO, joins 'Squawk on the Street' to discuss.",
-          "sentiment": -0.96,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=6f0ecf24a4e003171b36c8e0b04bb268df04e2cfa32d7657e9aa63155caa3945"
-        },
-        {
-          "headline": "Why HPE Stock Is Tanking Today",
-          "summary": "HPE Stock Slides as AI Orders Soar and Supply Bottlenecks Persist",
-          "sentiment": -0.959,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=d7e5c740aa43aa44b6df0acd101e2f6b1b67728e3c22efeee997fa7e76c0f5c7"
-        },
-        {
-          "headline": "Why HPE Stock Is Falling Amid Fiscal Q3 Earnings Beat",
-          "summary": "HPE stock fell amid fiscal Q3 earnings and revenue that topped estimates with high expectations for AI infrastructure growth.",
-          "sentiment": -0.956,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=6a81db22cfdff8166098c8f9eff8106d6b6c5ba9e2b16d87a3b036b9a4393492"
-        },
-        {
-          "headline": "HPE Raises 2026 and 2027 Guidance, Expands Oracle Networking Agreement",
-          "summary": "Hewlett Packard Enterprise (NYSE:HPE) reported quarterly revenue and earnings above expectations on Wednesday and raised its full-year guidance for both 2026 and 2027. Separately, the company expanded its collaboration with Oracle and issued warrants",
-          "sentiment": 0.929,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=7e71d45d57f54e137b98aae62b400a0f82270c91a514f1495de817512a2851f0"
-        },
-        {
-          "headline": "HPE raises FY27 outlook on agentic AI demand, reports record orders",
-          "summary": "Hewlett Packard Enterprise Co (NYSE:HPE, XETRA:2HP) beat analyst expectations for its fiscal third quarter and raised its full-year guidance, citing broad-based demand and record orders and backlog as the company positions itself for a surge in agent",
-          "sentiment": 0.929,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=ba7feffa27e4714bf43bcce95d552e17a5c79536eb72f27a76d2681d3424b9c9"
-        },
-        {
-          "headline": "Data Center Solutions Market Surges to $1,336.55 billion at a CAGR 20.1% by 2031 | Report by MarketsandMarkets\u2122",
-          "summary": "Delray Beach, FL, Sept. 03, 2026 (GLOBE NEWSWIRE) -- According to MarketsandMarkets\u2122, the Data Center Solutions Market is projected to grow from USD 535.45 billion in 2026 to USD 1,336.55 billion by 2031, registering a CAGR of 20.1% during the foreca",
-          "sentiment": 0.928,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=a116a57c01b6c4383b80c307f84d311cc3012b8f1a377c3c1b91fc462cab0044"
-        },
-        {
-          "headline": "Hewlett Packard Enterprise: Overshadowed By Dell, But More Attractive (Earnings Review)",
-          "summary": "Buy HPE stock after its post-earnings dip: Q3 FY26 revenue surged on Networking and Cloud & AI growth, strong margins, and attractive valuation\u00e2\u0080\u0094read now.",
-          "sentiment": 0.926,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=80ec91efc9ccc73b32797da03ce57bc38e58d2bc32149dfc1ad8c5bfc8deb97c"
-        }
-      ],
-      "current_price": 55.22
-    },
-    {
       "symbol": "IVZ",
       "direction": "LONG",
       "trade_type": "swing",
@@ -1616,106 +1516,6 @@
         }
       ],
       "current_price": 31.93
-    },
-    {
-      "symbol": "BMY",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 114,
-      "entry_price": 66.675,
-      "stop_loss": 63.67,
-      "target": 71.19,
-      "entry_date": "2026-09-04",
-      "entry_time": "17:04",
-      "composite_score": 67.40578265204388,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 67.4, RSI 56, EPS growth 153%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Panmure Liberum says OxfordBiomedica share fall overdone after Novartis and BMS pause trials",
-          "summary": "Panmure Liberum has maintained its 'buy' rating on Oxford BioMedica PLC (LSE:OXB), the cell and gene therapy manufacturer, after its shares fell 15% following trial pauses by two of its customers. Novartis and Bristol Myers Squibb, both OXB customers",
-          "sentiment": -0.964,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=3ee7793f113eb640bae9719676ac3ff7bda91affcde9e0a3c17a72bab4ca4c07"
-        },
-        {
-          "headline": "Can CYTK's Aficamten Strengthen Its HCM Growth Prospects?",
-          "summary": "Cytokinetics' aficamten shows added benefits in HCM studies, strengthening its potential in non-obstructive and obstructive disease.",
-          "sentiment": 0.941,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=79f18174ad181fad00cc082df546211492fa49c31b6547541fd791f75251ab3c"
-        },
-        {
-          "headline": "Market Chatter: Bristol Myers Squibb Paused Zola-Cel Trials Over Safety Concerns",
-          "summary": "Bristol Myers Squibb (BMY) has told regulators, researchers and patient groups in early June that it",
-          "sentiment": -0.941,
-          "source": "Finnhub",
-          "published": "2026-09-04",
-          "url": "https://finnhub.io/api/news?id=47c4b2ed2bec38e175d04009665aa290eda845b05591564bb0fb1d56c72fc776"
-        },
-        {
-          "headline": "Bristol Myers Squibb (BMY) Gains On Camzyos Data, Is The Upside Already Priced In?",
-          "summary": "Bristol-Myers Squibb (BMY) is back in focus after presenting long term Camzyos data from the EXPLORER-LTE cohort at the 2026 European Society of Cardiology Congress in Munich. Against this backdrop, Bristol-Myers Squibb\u2019s share price has moved to US$",
-          "sentiment": 0.932,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=9857fac7df0ba122b7ab45bf81308ca0b990fbf4f3d6509b48b838ae64cba442"
-        },
-        {
-          "headline": "Healthcare ETFs to Watch Post Merck-Moderna Cancer Vaccine Breakthrough",
-          "summary": "Merck-Moderna's melanoma vaccine success could boost immunotherapy growth, putting healthcare ETFs in the spotlight.",
-          "sentiment": 0.932,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=1bce6207890c6536b7e9eb485b632e6b759d6d03e2e31443e056c8d59c8c4270"
-        },
-        {
-          "headline": "What Does Bristol Myers Squibb (BMY) Trial Pause Mean For Its Pipeline?",
-          "summary": "Bristol Myers Squibb (NYSE:BMY) has paused enrollment in its zola-cel cell therapy trials for autoimmune conditions following emerging safety concerns. The voluntary pause comes after inflammatory side effects were detected during ongoing safety surv",
-          "sentiment": -0.93,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=3020ee035c6b5fa5f63c33a9349fbac264d79c0593069f9eb52783c81993f5b0"
-        },
-        {
-          "headline": "Novartis, Bristol Myers pause autoimmune CAR-T trials due to safety concerns",
-          "summary": "The deaths of three study participants led Novartis to halt development of rap-cel in multiple indications, while \u201ctransient\u201d side effects led Bristol Myers to voluntarily pause its zola-cel program.",
-          "sentiment": -0.926,
-          "source": "Finnhub",
-          "published": "2026-08-31",
-          "url": "https://finnhub.io/api/news?id=334ff16fb2f1413e92ef1f691bbdf3a5ee9ba6dfa0ecafb773f753b6ca7f91c4"
-        },
-        {
-          "headline": "Bristol Myers Squibb: Still Cheap, Despite What The Chart Says",
-          "summary": "Bristol Myers Squibb (BMY) stock: Strong Buy at 51% sector discount.",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-09-04",
-          "url": "https://finnhub.io/api/news?id=2c936dd7ab91688beb9ce6da968db548fae82c3c793c1a2644cb30d80a20c6c1"
-        },
-        {
-          "headline": "Jefferies starts biopharma firm Braveheart at Buy after IPO",
-          "summary": "Investing.com -- Jefferies initiated coverage of Braveheart Bio with a Buy rating and a $48 price target, implying roughly 75% upside from the stock\u2019s prior closing price. The move comes after the company priced its initial public offering (IPO) at $",
-          "sentiment": 0.876,
-          "source": "Finnhub",
-          "published": "2026-08-31",
-          "url": "https://finnhub.io/api/news?id=e97b2a46f32c37f55844c94c141bf555c1e96bec9907648b43645032263930ba"
-        },
-        {
-          "headline": "Summit Therapeutics Says It Is Beating Merck With Its Cancer Drug",
-          "summary": "Summit says its ivonescimab is keeping lung-cancer patients alive longer than Keytruda does. The stock is up.",
-          "sentiment": 0.865,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=571938922c53a24695a79bd4b7bcf6cadc277e382964d905e6dd29c162da8113"
-        }
-      ],
-      "current_price": 63.75
     },
     {
       "symbol": "ANET",

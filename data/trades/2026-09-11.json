@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-11",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "HPE",
+      "direction": "LONG",
+      "shares": 148,
+      "entry_price": 50.8,
+      "exit_price": 60.635,
+      "pnl_dollars": 1455.58,
+      "pnl_pct": 19.36,
+      "reason": "target hit",
+      "close_date": "2026-09-11"
+    },
+    {
+      "symbol": "BMY",
+      "direction": "LONG",
+      "shares": 114,
+      "entry_price": 66.675,
+      "exit_price": 63.49,
+      "pnl_dollars": -363.09,
+      "pnl_pct": -4.78,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-11"
+    }
+  ],
+  "realized_pnl": 1092.49,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": 897.8,
+  "total_equity": 149805.31
+}
