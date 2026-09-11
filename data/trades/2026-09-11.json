@@ -1,7 +1,312 @@
 {
   "date": "2026-09-11",
-  "runs": [],
-  "entries": [],
+  "runs": [
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "TER",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 19,
+      "entry_price": 381.4,
+      "stop_loss": 338.52,
+      "target": 445.71,
+      "entry_date": "2026-09-11",
+      "entry_time": "18:25",
+      "composite_score": 69.35813920046016,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 69.4, RSI 54, EPS growth 378%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Qorvo shares are trading lower after the company reported Q3 financial results and issued Q4 sales guidance below estimates. Also, multiple firms lowered their respective price targets on the stock.",
+          "summary": "",
+          "sentiment": -0.963,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=f7b503bbcf45e76892e70c769020db75207f83d97e1644e83f0a215a3219a944"
+        },
+        {
+          "headline": "Teradyne Rides on Strong UltraFLEXplus Demand: Can It Beat KLAC & COHU?",
+          "summary": "TER's UltraFLEXplus demand is surging on AI-driven test needs, fueling chip-test growth and strengthening its position against KLA and Cohu.",
+          "sentiment": 0.942,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=c298c71b80f0a703ce6b2aa2e5c5c493b682bc0537439186811639e6c2207390"
+        },
+        {
+          "headline": "Teradyne (NASDAQ:TER) Delivers High Growth and Improving Fundamentals",
+          "summary": "Teradyne matches Navellier's 8-part growth strategy with strong earnings, sales, margins, cash flow, and ROE\u2014perfect for growth investors.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=1386d15aa46011871348fbecb387176f03a1d402276c66fc303d166aa888f9e9"
+        },
+        {
+          "headline": "Can AEHR Turn AI Processor Tests Into Long-Term Revenue Streams?",
+          "summary": "Aehr's AI testing business gains momentum with major orders, new customer opportunities and a path toward recurring revenues.",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-09-07",
+          "url": "https://finnhub.io/api/news?id=65e3378d36a419952c091d687d1d8b41ffa49ed9bfa79201bf5035b82cc69479"
+        },
+        {
+          "headline": "ADBE Q3 Earnings Beat Estimates, Revenues Rise on Subscription Growth",
+          "summary": "Adobe's Q3 fiscal 2026 earnings and revenues beat estimates as subscription growth and surging AI-first ARR powered results and lifted full-year targets.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=b886f43b329cd73dff7c5bb01c44c32a15c6608f55759401ecaaf7ad1f6b6c72"
+        },
+        {
+          "headline": "3 Profitable Stocks with Warning Signs",
+          "summary": "Even if a company is profitable, it doesn\u2019t always mean it\u2019s a great investment. Some struggle to maintain growth, face looming threats, or fail to reinvest wisely, limiting their future potential.",
+          "sentiment": -0.916,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=91e437b202ec89d26d015b9e51934c0cb93f60d661336b6e85aa2aea9931c4d2"
+        },
+        {
+          "headline": "IMF Cuts Global Growth Forecast Citing Brexit Blowback",
+          "summary": "",
+          "sentiment": -0.872,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=4cf23c492c5107eb89d10da340bb43dfe7d17b4c7dde7211317302fe9ea40dca"
+        },
+        {
+          "headline": "Top Wide-Moat Stocks to Buy for Long-Term Wealth and Stability",
+          "summary": "NVDA, CAT, TER and LRCX use strong moats to fend off rivals and deliver consistent returns amid market shifts.",
+          "sentiment": 0.871,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=21bdbcf044e0d4785d2d9f9588ec7d7a5b7f88ea4ac8781df467b57e9b1d0106"
+        },
+        {
+          "headline": "FormFactor, Entegris, Penguin Solutions, Teradyne, and Marvell Technology Stocks Trade Up, What You Need To Know",
+          "summary": "A number of stocks jumped in the afternoon session after investors shrugged off interest rate hike expectations following the August jobs report and unwound defensive positioning in beaten-down chip designers, according to Bloomberg. The U.S. Bureau",
+          "sentiment": 0.739,
+          "source": "Finnhub",
+          "published": "2026-09-05",
+          "url": "https://finnhub.io/api/news?id=a96b9dd6e0f0976195e604e79d21e7ddf0f42388977af49a20b3263c933662dc"
+        },
+        {
+          "headline": "AI And Robotics In 2026: 16 Recent Developments For Investors",
+          "summary": "If AI and robotics suddenly feel like they are moving faster, August gave investors plenty of evidence that the pace really is accelerating.",
+          "sentiment": 0.6,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=52562ddf2a6c2687841344a20584b7dbbff017f24bdf5eb5c9ae273fdb14f613"
+        }
+      ],
+      "cost": 7246.6
+    },
+    {
+      "symbol": "NEM",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 59,
+      "entry_price": 126.04,
+      "stop_loss": 117.3,
+      "target": 139.14,
+      "entry_date": "2026-09-11",
+      "entry_time": "18:25",
+      "composite_score": 68.29702329594478,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 68.3, RSI 57, EPS growth 7%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "BTG's All-in Sustaining Costs Rise Sharply in Q2: What Lies Ahead?",
+          "summary": "B2Gold's costs surged in the first half of 2026, but stronger production and lower cost guidance offer a brighter outlook for the miner.",
+          "sentiment": 0.923,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=8a53b6f3a7d580bcb8395d8cb52e116b6379c844d4ea986434e80d5b27a20eb4"
+        },
+        {
+          "headline": "Bernstein Maintains Outperform on Newmont, Lowers Price Target to $144",
+          "summary": "Bernstein  analyst Bob Brackett   maintains Newmont (NYSE:NEM) with a Outperform and lowers the price target from $147 to $144.",
+          "sentiment": -0.893,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=2bc573a5ed5a346f2df7c7a3cf073daf14360704c0b6e38c11dfc674ab701eec"
+        },
+        {
+          "headline": "Can NEM Maintain Earnings Momentum Amid Production Challenges?",
+          "summary": "NEM faces production challenges as lower output and higher costs pressure 2026 goals.",
+          "sentiment": -0.873,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=a15207b062d7a38e717016c610bb084ba63457cebababa71c11616bdbf4616a4"
+        },
+        {
+          "headline": "Is Newmont Stock Outperforming the Nasdaq?",
+          "summary": "As Newmont has surpassed the broader Nasdaq Composite over the past year, Wall Street analysts remain strongly optimistic about the stock\u2019s prospects.",
+          "sentiment": 0.861,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=f06e4e0fba564b0f993363af5ab6b205ee149e0c659288eac1667829eb4cb7c1"
+        },
+        {
+          "headline": "Gold miners and bitcoin stocks fall on strong jobs data",
+          "summary": "Investing.com -- Gold mining and crypto-linked equities skidded Friday as a blowout U.S. jobs report dampened expectations for monetary easing, lifting implied odds of a Fed rate hike next week to 60% from 52%. The Labor Department reported nonfarm p",
+          "sentiment": -0.731,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=888568c3413c102c6b1a946b289488c5602dc955089eddc582df97af583a8455"
+        },
+        {
+          "headline": "JPMorgan\u2019s Own Strategist Says the Fed Has Quietly Surrendered on 2% Inflation",
+          "summary": "A senior strategist at one of America's largest private banks just said something that reframes every fixed-income position in your portfolio, and the implications reach well beyond a single rate call.",
+          "sentiment": -0.642,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=6c7506c85f33fce3aacc29686e9327d3ceb755441a07e6cfbe3d2f56b3bb79b2"
+        },
+        {
+          "headline": "Newmont Corporation (NEM) Dips More Than Broader Market: What You Should Know",
+          "summary": "The latest trading day saw Newmont Corporation (NEM) settling at $126.14, representing a -2% change from its previous close.",
+          "sentiment": -0.624,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=9e56cdfe1e231586d9aed972a613218a282d51bafe3d2a632425c18cb2a27951"
+        },
+        {
+          "headline": "Oil Hits $100: Which Stocks And ETFs Win Or Lose?",
+          "summary": "Brent topped $100 after US strikes on Iranian tankers. Refiners have doubled in 2026. Airlines, REITs and gold miners are on the wrong side.",
+          "sentiment": -0.566,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=0be8189a8cad5f50f0714e805a9eaca9f9d5ea684f587b5c4103bca72eed98da"
+        },
+        {
+          "headline": "AEM Trading at a Premium Valuation: Here's How to Play the Stock",
+          "summary": "AEM's strong projects and cash flow support growth, but higher costs, production risks and a premium valuation could limit upside.",
+          "sentiment": 0.544,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=1973240160dde7e9eb8422a3c1ee8266ba45243c17a3aa42f3809a82297bf5c0"
+        },
+        {
+          "headline": "Bond Yields Are Pressuring Gold, But Miners May Tell a Different Story",
+          "summary": "As Treasury yields near multi-year highs and central banks repatriate gold, Newmont and Barrick Mining trade at discounted valuations despite strong margins, cash flow, and buyback programs.",
+          "sentiment": -0.541,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=802170d17728c0c56038cc661af04546ef54714b5e6580916de79130011a460b"
+        }
+      ],
+      "cost": 7436.36
+    },
+    {
+      "symbol": "CNC",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 23,
+      "entry_price": 65.52,
+      "stop_loss": 60.81,
+      "target": 72.59,
+      "entry_date": "2026-09-11",
+      "entry_time": "18:25",
+      "composite_score": 68.19956140350877,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 68.2, RSI 51, EPS growth 531%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Can UnitedHealth's AI Strategy Strengthen Optum Insight's Growth?",
+          "summary": "UNH is investing nearly $1.5B in AI to expand Optum Insight's software offerings, boost efficiency and unlock new growth opportunities.",
+          "sentiment": 0.934,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=40dfd9205ae43e624ebad1b59d50330d3017274c720b1d7abe70d6b8ef8c5fe4"
+        },
+        {
+          "headline": "4 Stocks Trading Near 52-Week High With Room to Rise Further",
+          "summary": "Investors target stocks that have been on a bullish run. Stocks like PRAA, CNC, BILL and PARR are seeing price strength, and the momentum is likely to continue.",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-09-04",
+          "url": "https://finnhub.io/api/news?id=603415c02c6c7ced31f6ff5bd5533b85634c1b7ddd2b168b9894d3b58bf62c7b"
+        },
+        {
+          "headline": "Fill the Gap: More Affordable Homes on the Way for Stanislaus County Residents thanks to Health Net's $2 Million Investment",
+          "summary": "Health Net, one of California's most experienced Medi-Cal managed care health plans and company of Centene Corporation (NYSE: CNC), today announced a $2 million investment in Stanislaus Equity Partners, Inc. (STEP) to help more residents access safe,",
+          "sentiment": 0.898,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=716a477e85aee84e071b9857434959bf3beca714ce5202aae516e74d713da3b5"
+        },
+        {
+          "headline": "Centene: Rapid Earnings Recovery And Momentum",
+          "summary": "Centene has had rapid earnings recovery, improved margins with HBR, decent value, and a crazy cash turnaround. Read why CNC stock is a Buy.",
+          "sentiment": 0.882,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=1feec01bcd36a02b023236a9fc2c5768c7f455ce4ab8065d15beafff0510ddc5"
+        },
+        {
+          "headline": "Wealthfront, Orchestra Biomed, AeroVironment And Other Big Stocks Moving Higher On Thursday",
+          "summary": "U.S. stocks fell, but Wealthfront surged 6.6% after beating Q2 earnings and revenue estimates; Orchestra Biomed, Clover Health and AeroVironment also rose.",
+          "sentiment": 0.869,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=614e0a94a502d46931d636e055743b9d653ac8057922cf1cbd6994c8f60b4d0b"
+        },
+        {
+          "headline": "Buy 5 Top-Ranked Undervalued Stocks to Enhance Your Portfolio Returns",
+          "summary": "SMCI, ADM, ALL, CNC and AVT are five undervalued stocks with strong estimate revisions and growth prospects that could offer more upside in 2026.",
+          "sentiment": 0.861,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=1e9791b2af29a999a315316b237abbbe0bdfa7123294cb795460208627440e1f"
+        },
+        {
+          "headline": "Can Centene's Medicare Advantage Strategy Unlock Better Margins?",
+          "summary": "CNC is set to reshape its Medicare Advantage business around dual-eligible members and a simpler footprint to drive margin recovery.",
+          "sentiment": 0.857,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=8005a02c755811a9a0a209f2f5677afb24b48c9bf148a5123db5ea187fd45728"
+        },
+        {
+          "headline": "Centene Stock: Is CNC Outperforming the Healthcare Sector?",
+          "summary": "Centene has outpaced the healthcare sector, and analysts remain moderately optimistic about the stock\u2019s outlook.",
+          "sentiment": 0.801,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=abb9955d1ba012d2d404487b775923eeb260a225064ea98f155c4422409cebbc"
+        },
+        {
+          "headline": "Fidelis Care Opens Here for Your Health Maternal Health Grant Applications to Providers and Organizations",
+          "summary": "Fidelis Care, a statewide health plan with more than two million members in New York State and a Centene Corporation company, has opened applications for up to $140,000 in Here for Your Health maternal health grants. The grants aim to support healthc",
+          "sentiment": 0.745,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=ae977af59da3588f35e1eeefcb1ed257c12b710513360d5bb7e47794187db817"
+        },
+        {
+          "headline": "Q2 Earnings Highs And Lows: Centene (NYSE:CNC) Vs The Rest Of The Health Insurance Providers Stocks",
+          "summary": "As the Q2 earnings season comes to a close, it\u2019s time to take stock of this quarter\u2019s best and worst performers in the health insurance providers industry, including Centene (NYSE:CNC) and its peers.",
+          "sentiment": -0.717,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=22345f8d1ad854be60116f72739f2b637ddeeeee5cc5e22acf3280b0a30c79f9"
+        }
+      ],
+      "cost": 1506.96
+    }
+  ],
   "exits": [
     {
       "symbol": "HPE",
