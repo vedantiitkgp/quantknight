@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 24.05,
+  "cash": 6420.78,
   "total_equity": 151894.72,
-  "cumulative_pnl": 1894.72,
-  "as_of": "2026-09-11T22:46:30.841739",
+  "cumulative_pnl": 1044.85,
+  "as_of": "2026-09-14T18:52:04.835918",
   "positions": [
     {
       "symbol": "INCY",
@@ -1792,106 +1792,6 @@
         }
       ],
       "current_price": 830.17
-    },
-    {
-      "symbol": "TER",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 19,
-      "entry_price": 381.4,
-      "stop_loss": 338.52,
-      "target": 445.71,
-      "entry_date": "2026-09-11",
-      "entry_time": "18:25",
-      "composite_score": 69.35813920046016,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 69.4, RSI 54, EPS growth 378%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Qorvo shares are trading lower after the company reported Q3 financial results and issued Q4 sales guidance below estimates. Also, multiple firms lowered their respective price targets on the stock.",
-          "summary": "",
-          "sentiment": -0.963,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=f7b503bbcf45e76892e70c769020db75207f83d97e1644e83f0a215a3219a944"
-        },
-        {
-          "headline": "Teradyne Rides on Strong UltraFLEXplus Demand: Can It Beat KLAC & COHU?",
-          "summary": "TER's UltraFLEXplus demand is surging on AI-driven test needs, fueling chip-test growth and strengthening its position against KLA and Cohu.",
-          "sentiment": 0.942,
-          "source": "Finnhub",
-          "published": "2026-09-08",
-          "url": "https://finnhub.io/api/news?id=c298c71b80f0a703ce6b2aa2e5c5c493b682bc0537439186811639e6c2207390"
-        },
-        {
-          "headline": "Teradyne (NASDAQ:TER) Delivers High Growth and Improving Fundamentals",
-          "summary": "Teradyne matches Navellier's 8-part growth strategy with strong earnings, sales, margins, cash flow, and ROE\u2014perfect for growth investors.",
-          "sentiment": 0.936,
-          "source": "Finnhub",
-          "published": "2026-09-04",
-          "url": "https://finnhub.io/api/news?id=1386d15aa46011871348fbecb387176f03a1d402276c66fc303d166aa888f9e9"
-        },
-        {
-          "headline": "Can AEHR Turn AI Processor Tests Into Long-Term Revenue Streams?",
-          "summary": "Aehr's AI testing business gains momentum with major orders, new customer opportunities and a path toward recurring revenues.",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-09-07",
-          "url": "https://finnhub.io/api/news?id=65e3378d36a419952c091d687d1d8b41ffa49ed9bfa79201bf5035b82cc69479"
-        },
-        {
-          "headline": "ADBE Q3 Earnings Beat Estimates, Revenues Rise on Subscription Growth",
-          "summary": "Adobe's Q3 fiscal 2026 earnings and revenues beat estimates as subscription growth and surging AI-first ARR powered results and lifted full-year targets.",
-          "sentiment": 0.932,
-          "source": "Finnhub",
-          "published": "2026-09-11",
-          "url": "https://finnhub.io/api/news?id=b886f43b329cd73dff7c5bb01c44c32a15c6608f55759401ecaaf7ad1f6b6c72"
-        },
-        {
-          "headline": "3 Profitable Stocks with Warning Signs",
-          "summary": "Even if a company is profitable, it doesn\u2019t always mean it\u2019s a great investment. Some struggle to maintain growth, face looming threats, or fail to reinvest wisely, limiting their future potential.",
-          "sentiment": -0.916,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=91e437b202ec89d26d015b9e51934c0cb93f60d661336b6e85aa2aea9931c4d2"
-        },
-        {
-          "headline": "IMF Cuts Global Growth Forecast Citing Brexit Blowback",
-          "summary": "",
-          "sentiment": -0.872,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=4cf23c492c5107eb89d10da340bb43dfe7d17b4c7dde7211317302fe9ea40dca"
-        },
-        {
-          "headline": "Top Wide-Moat Stocks to Buy for Long-Term Wealth and Stability",
-          "summary": "NVDA, CAT, TER and LRCX use strong moats to fend off rivals and deliver consistent returns amid market shifts.",
-          "sentiment": 0.871,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=21bdbcf044e0d4785d2d9f9588ec7d7a5b7f88ea4ac8781df467b57e9b1d0106"
-        },
-        {
-          "headline": "FormFactor, Entegris, Penguin Solutions, Teradyne, and Marvell Technology Stocks Trade Up, What You Need To Know",
-          "summary": "A number of stocks jumped in the afternoon session after investors shrugged off interest rate hike expectations following the August jobs report and unwound defensive positioning in beaten-down chip designers, according to Bloomberg. The U.S. Bureau",
-          "sentiment": 0.739,
-          "source": "Finnhub",
-          "published": "2026-09-05",
-          "url": "https://finnhub.io/api/news?id=a96b9dd6e0f0976195e604e79d21e7ddf0f42388977af49a20b3263c933662dc"
-        },
-        {
-          "headline": "AI And Robotics In 2026: 16 Recent Developments For Investors",
-          "summary": "If AI and robotics suddenly feel like they are moving faster, August gave investors plenty of evidence that the pace really is accelerating.",
-          "sentiment": 0.6,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=52562ddf2a6c2687841344a20584b7dbbff017f24bdf5eb5c9ae273fdb14f613"
-        }
-      ],
-      "current_price": 379.72
     },
     {
       "symbol": "NEM",

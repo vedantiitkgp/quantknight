@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-14",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "TER",
+      "direction": "LONG",
+      "shares": 19,
+      "entry_price": 381.4,
+      "exit_price": 336.67,
+      "pnl_dollars": -849.87,
+      "pnl_pct": -11.73,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-14"
+    }
+  ],
+  "realized_pnl": -849.87,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": 1044.85,
+  "total_equity": 151894.72
+}
