@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-15",
+  "runs": [
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "HPE",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 114,
+      "entry_price": 55.945,
+      "stop_loss": 48.65,
+      "target": 66.89,
+      "entry_date": "2026-09-15",
+      "entry_time": "17:53",
+      "composite_score": 71.42073170731707,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 71.4, RSI 53, EPS growth 405%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Why Hewlett Packard Enterprise Stock Plummeted by Almost 11% Today",
+          "summary": "The tech hardware company, which targets corporate clients, was hit with an analyst downgrade.",
+          "sentiment": -0.965,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=cf1d662282cf77e997c371edf650c97a2cabd9671b349aa5a54c3d8215163f69"
+        },
+        {
+          "headline": "Hewlett Packard Enterprise Sinks 9% on Downgrade After Triple-Digit Run; Dell Falls 5%, Super Micro Drops 8%",
+          "summary": "Hewlett Packard Enterprise (NYSE:HPE) stock is down 9% to $56.47 in early trading Monday after a Wall Street downgrade landed on top of a triple-digit run for the artificial intelligence (AI) server maker. The move places Hewlett Packard Enterprise s",
+          "sentiment": -0.965,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=e5356ad9390649441e256407ebf16244eeddfc6f9d768f79886eb1124f551d7f"
+        },
+        {
+          "headline": "This Charter Communications Analyst Turns Bearish; Here Are Top 5 Downgrades For Monday",
+          "summary": "Analysts downgraded ADUS, HPE, ERII, CHTR and CCI; targets fell for ADUS and CCI, while CHTR received a $118 target.",
+          "sentiment": -0.963,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=5c17ec2090cb1d7aab4146a5aedede70246685e239504330ddc8471e8272be24"
+        },
+        {
+          "headline": "Why Hewlett Packard Enterprise (HPE) Shares Are Trading Lower Today",
+          "summary": "Shares of enterprise technology company Hewlett Packard Enterprise (NYSE:HPE) fell 8.6% in the afternoon session after Evercore ISI analyst Amit Daryanani downgraded the company from Outperform to In Line. According to StreetInsider, the move shifts",
+          "sentiment": -0.961,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=862a8a3fea50dea8e9212944f051a2024af8d0d2f829f5c3e1ede5a9b2ffe27b"
+        },
+        {
+          "headline": "Dell Drops Over 7% as AI Servers Pass Half of Infrastructure Revenue",
+          "summary": "The division's 15% operating margin includes traditional servers, networking and storage--not just AI systems.",
+          "sentiment": -0.957,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=932145dd1b59b68ce152d159756e3438fa3abcb3c168cbe916ddfc2eee2ef712"
+        },
+        {
+          "headline": "HPE Stock Is Downgraded After Rising 159% This Year. Why?",
+          "summary": "Hewlett Packard Enterprise stock is downgraded as a Wall Street firm doesn\u2019t believe there\u2019s much more upside.",
+          "sentiment": -0.953,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=4c4170a32f936032a724a863414162ec99600eb76966ff22f9d2ff41c2b9a982"
+        },
+        {
+          "headline": "Evercore cuts HPE rating amid \u2019tougher setup\u2019",
+          "summary": "Investing.com -- Evercore ISI cut its rating for Hewlett Packard Enterprise to In Line from Outperform on Monday following a sharp rally in the shares, keeping its $65 price target on the stock.",
+          "sentiment": -0.947,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=a488034115b372bd70eecb428ce3fdeb8100dc3321bb7ec3ee19dfbc5f627706"
+        },
+        {
+          "headline": "HPE Stock Drops 11% To Worst Day In Over A Year After Evercore Downgrades On Lack Of Near-Term Catalysts",
+          "summary": "Evercore ISI lowered its rating on HPE stock to \u2018In-Line\u2019 from \u2018Outperform.\u2019",
+          "sentiment": -0.945,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=e378475acb04390474ccb6a0be373d93f3ddbff298f252bbee1ce85f644d0577"
+        },
+        {
+          "headline": "Hewlett Packard Enterprise (HPE) Surges 19% in a Week \u2014 What to Watch For Next?",
+          "summary": "Hewlett Packard Enterprise (NYSE:HPE) grew its share price by 19.4 percent week-on-week amid the growth opportunities from continued investment outpour in the artificial intelligence sector, which pushed investors to increase their exposure to its st",
+          "sentiment": 0.927,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=3061ca4a53bdbefa2083763293b7c94d69f8dd7b972ebd3475b735a16f097e66"
+        },
+        {
+          "headline": "Hewlett Packard Enterprise: At 16x FCF Stock Looks Ready To Inflect Higher",
+          "summary": "HPE stock trades at 16x forward FCF as AI-driven growth lifts backlog and FY2027 outlook.",
+          "sentiment": 0.916,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=a0d2f8bf6c456b1584ed058f6ea689d3c22859d994ca07a9ed4c74fd7084f798"
+        }
+      ],
+      "cost": 6377.73
+    },
+    {
+      "symbol": "HAL",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 1,
+      "entry_price": 35.87,
+      "stop_loss": 33.66,
+      "target": 39.18,
+      "entry_date": "2026-09-15",
+      "entry_time": "17:53",
+      "composite_score": 65.92073170731707,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 65.9, RSI 53, EPS growth 13%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Halliburton Awarded Bundled Well Construction And Completions Contract From Eni For Cronos Ultra-Deepwater Development In Block 6 Of Cyprus EEZ",
+          "summary": "https://www.halliburton.com/en/about-us/press-release/halliburton-awarded-bundled-deepwater-well-construction-completions-contract",
+          "sentiment": 0.748,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=8049af0afb19be5c31ad856ac6948ea096c44b58d4753e0f1acd6db9b7acf3e9"
+        },
+        {
+          "headline": "2 S&P 500 Stocks with Impressive Fundamentals and 1 We Turn Down",
+          "summary": "The S&P 500 (^GSPC) is often seen as a benchmark for strong businesses, but that doesn\u2019t mean every stock is worth owning. Some companies face significant challenges, whether it\u2019s stagnating growth, heavy debt, or disruptive new competitors.",
+          "sentiment": -0.716,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=0a539b902923fb632486bd2b57eec74d4737b70e2bbacee15c71672af6bf1e4f"
+        },
+        {
+          "headline": "Halliburton (HAL) Suffers a Larger Drop Than the General Market: Key Insights",
+          "summary": "Halliburton (HAL) closed the most recent trading day at $36.07, moving 2.85% from the previous trading session.",
+          "sentiment": -0.6,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=5704f54eea1c82f34675bfb53a3926d14329bed354a859383f0390b1a42a377b"
+        },
+        {
+          "headline": "This Generation Of Investors Could Soon Experience Their 1973 O.P.E.C. Moment",
+          "summary": "The Middle East conflict risks a 1973-style oil shock, pushing energy and commodity prices higher. Click for an updated market outlook.",
+          "sentiment": -0.111,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=1aa8c2d231df683b866f3946173d097d4f1757cee7dd913658f018a5763f2ac6"
+        },
+        {
+          "headline": "Advanced Micro Devices Upgraded, Eli Lilly Downgraded: Updated Rankings on Top Blue-Chip Stocks",
+          "summary": "During these busy times, it pays to stay on top of the latest profit opportunities. And today\u2019s blog post should be a great place to start. After taking a close look at the latest data on institutional buying pressure and each company\u2019s fundamental h",
+          "sentiment": 0.094,
+          "source": "Finnhub",
+          "published": "2026-09-08",
+          "url": "https://finnhub.io/api/news?id=913b2681a7661a95cb35ea2cb0afc3e18d4bd775885b119a0c9e6c33fecb58b1"
+        },
+        {
+          "headline": "Halliburton CFO Eric Carre Sells 24,777 Shares for $929,138",
+          "summary": "Sale executed under a Rule 10b5-1 plan adopted in May, with 124,104 directly held shares retained.",
+          "sentiment": 0.018,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=6cbc9c7f47fb8ceb930d8db39fbe7c6c545caea5effc38f28433069ef050f83e"
+        }
+      ],
+      "cost": 35.87
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "OXY",
+      "direction": "LONG",
+      "shares": 126,
+      "entry_price": 59.1,
+      "exit_price": 63.685,
+      "pnl_dollars": 577.71,
+      "pnl_pct": 7.76,
+      "reason": "target hit",
+      "close_date": "2026-09-15"
+    },
+    {
+      "symbol": "MS",
+      "direction": "LONG",
+      "shares": 34,
+      "entry_price": 216.395,
+      "exit_price": 202.58,
+      "pnl_dollars": -469.71,
+      "pnl_pct": -6.38,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-15"
+    }
+  ],
+  "realized_pnl": 108.0,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -1382.17,
+  "total_equity": 148509.83
+}
