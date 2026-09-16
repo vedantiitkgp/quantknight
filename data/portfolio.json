@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 49.44,
+  "cash": 8775.22,
   "total_equity": 148466.39,
-  "cumulative_pnl": -1533.61,
-  "as_of": "2026-09-16T17:49:14.388598",
+  "cumulative_pnl": -2091.36,
+  "as_of": "2026-09-16T18:48:25.261971",
   "positions": [
     {
       "symbol": "INCY",
@@ -1218,106 +1218,6 @@
       "current_price": 189.93
     },
     {
-      "symbol": "IVZ",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 232,
-      "entry_price": 32.54,
-      "stop_loss": 30.71,
-      "target": 35.29,
-      "entry_date": "2026-09-03",
-      "entry_time": "18:47",
-      "composite_score": 59.763147865853654,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 59.8, RSI 57, EPS growth 88%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Is Concentration Causing Investors to Fear the Market-Weighted Index?",
-          "summary": "Equal-weighted index funds are surging amid concerns of a tech bubble.",
-          "sentiment": -0.945,
-          "source": "Finnhub",
-          "published": "2026-08-31",
-          "url": "https://finnhub.io/api/news?id=0183ca1120e01cda160f1934b8829f4024be42f267d0fcb79414e3d4c342cf2d"
-        },
-        {
-          "headline": "Healthcare ETF Comparison: Fidelity's FHLC vs. Invesco's Biotech-Focused IBBQ",
-          "summary": "Invesco's biotech fund surged 56.4% in one year, while Fidelity's broader healthcare portfolio offers lower costs and steadier returns.",
-          "sentiment": 0.941,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=460faa0957cf1506bad7168a013094830ea556b8344fb00fc0160f7de36fe1c9"
-        },
-        {
-          "headline": "This Sector Is Fertile Ground For Buy Opportunities",
-          "summary": "Limited access through the Strait of Hormuz has reduced the amount of fertilizers reaching farms, resulting in lower crop yields and plantings.",
-          "sentiment": -0.938,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=dfd28ede8e1acb0f127f60aa865353ba91e592b41f2ab3c2f020bc21b03579d0"
-        },
-        {
-          "headline": "3 Cash-Producing Stocks That Fall Short",
-          "summary": "While strong cash flow is a key indicator of stability, it doesn\u2019t always translate to superior returns. Some cash-heavy businesses struggle with inefficient spending, slowing demand, or weak competitive positioning.",
-          "sentiment": -0.936,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=e45436e990dd452d078336696795136db5ea13116083139940becd7b25b052c3"
-        },
-        {
-          "headline": "Better Growth Stock ETF: Vanguard's Large-Cap VUG vs. Invesco's Small-Cap RZG",
-          "summary": "VUG delivered 80% higher five-year returns despite a 10x higher expense ratio, but RZG surged 26.9% over the past year.",
-          "sentiment": 0.934,
-          "source": "Finnhub",
-          "published": "2026-08-29",
-          "url": "https://finnhub.io/api/news?id=fec84dbaf5ee9f66cf50eec570f06d54805225fe1dbba73e017f79bcf11f1682"
-        },
-        {
-          "headline": "5 Relative Price Strength Stocks With Momentum on Their Side",
-          "summary": "PAYC, IVZ, RCMT, RELY and VLO stand out for relative price strength, positive earnings revisions and solid momentum amid market volatility.",
-          "sentiment": 0.929,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=925710b43ae5f8a3e1669b58376d98e129d56a927d0b162228097eb4f04346fa"
-        },
-        {
-          "headline": "Can Invesco (IVZ) Justify Its Price After Its Platform Expansion?",
-          "summary": "Invesco (IVZ) has drawn fresh attention after announcing an advancement for its Invesco Solutions & Custom Strategies platform, which unifies bespoke investment offerings for wealth and institutional clients across public, private, active, and passiv",
-          "sentiment": 0.928,
-          "source": "Finnhub",
-          "published": "2026-08-27",
-          "url": "https://finnhub.io/api/news?id=b1d7a1a32b0df898d4d4183ae79a2d88253d8f5692b3a4e7f6fca3905aebc51d"
-        },
-        {
-          "headline": "3 Asset Management Stocks to Watch as They Hit New 52-Week Highs",
-          "summary": "VCTR, IVZ and SEIC hit fresh 52-week highs as strong asset flows, rising AUM and strategic moves fuel growth.",
-          "sentiment": 0.919,
-          "source": "Finnhub",
-          "published": "2026-08-31",
-          "url": "https://finnhub.io/api/news?id=38348956a49d81b498b1ced1e6ce7c284731f8e040f268ae2022bc1ec6ff64d6"
-        },
-        {
-          "headline": "3 Top-Ranked Invesco Mutual Funds to Buy With Strong Return Potential",
-          "summary": "Invesco's three top-ranked mutual funds offer strong growth potential, with annualized returns of up to 27.7% across varied strategies.",
-          "sentiment": 0.917,
-          "source": "Finnhub",
-          "published": "2026-08-27",
-          "url": "https://finnhub.io/api/news?id=451320c5136c19360ac9510d3e6b463be937c29f7ebf2e54120896889fb1e14d"
-        },
-        {
-          "headline": "Invesco S&P 500 Equal Weight ETF (RSP) Reaches $100 Billion AUM Milestone",
-          "summary": "Invesco Ltd. (NYSE: IVZ), a leading global asset management firm, announced today that the Invesco S&P 500\u00ae Equal Weight ETF (RSP) has reached $100 billion in assets under management (AUM), marking a significant milestone for one of the firm's flagsh",
-          "sentiment": 0.909,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=aae93d3676c7730d467ce148f08a1f7541d2f7073b42e8323c628a078d37f810"
-        }
-      ],
-      "current_price": 30.78
-    },
-    {
       "symbol": "ANET",
       "direction": "LONG",
       "trade_type": "swing",
@@ -1416,82 +1316,6 @@
         }
       ],
       "current_price": 192.84
-    },
-    {
-      "symbol": "BEN",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 50,
-      "entry_price": 34.685,
-      "stop_loss": 33.07,
-      "target": 37.11,
-      "entry_date": "2026-09-04",
-      "entry_time": "17:04",
-      "composite_score": 63.38168826852775,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 63.4, RSI 57, EPS growth 77%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "BEN's AUM Rises in August: Will the Growth Momentum Continue?",
-          "summary": "Franklin Templeton's AUM reaches a record $1.83 trillion in August as strong inflows and favorable markets fuel growth momentum.",
-          "sentiment": 0.93,
-          "source": "Finnhub",
-          "published": "2026-09-04",
-          "url": "https://finnhub.io/api/news?id=0d9fe3027f02aea09516b83edf23344f8383d1508c497e6688fdf7aa42ba1df8"
-        },
-        {
-          "headline": "Winners And Losers Of Q2: Franklin Resources (NYSE:BEN) Vs The Rest Of The Custody Bank Stocks",
-          "summary": "Looking back on custody bank stocks\u2019 Q2 earnings, we examine this quarter\u2019s best and worst performers, including Franklin Resources (NYSE:BEN) and its peers.",
-          "sentiment": -0.899,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=ed1f1513116f788714529b3e1a1cf67ae84f8fbd094eaff7f623907ec3bbdebc"
-        },
-        {
-          "headline": "Federated Hermes' APAC Tokenization Push: A New AUM Growth Lever?",
-          "summary": "FHI is expanding APAC tokenization with Conduit while leveraging its money market franchise. Can this boost AUM growth?",
-          "sentiment": 0.878,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=1d52766157e9f06c4ced5313a2125819b5545af74761c7c138046251e3e3db3e"
-        },
-        {
-          "headline": "Best Dividend Aristocrats For September 2026",
-          "summary": "Dividend Aristocrats (NOBL) nearly match SPY in 2026, with top gainers, rising dividend growth, and 29 undervalued picks\u00e2\u0080\u0094see which to buy now.",
-          "sentiment": 0.875,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=d92db7b94ab38deb8d45bd11ce337de7df789b48d477823807203626cf4038b8"
-        },
-        {
-          "headline": "Franklin Templeton, Inc. Announces Preliminary Month-End Assets Under Management",
-          "summary": "SAN MATEO, Calif., September 03, 2026--Franklin Templeton, Inc. (NYSE: BEN) today reported preliminary month-end assets under management (AUM) of $1.83 trillion at August 31, 2026, compared to $1.79 trillion at July 31, 2026. This month\u2019s increase in",
-          "sentiment": 0.621,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=ea7cef5d3ae1735295eadb312c4fde9edf02cdc64374dc4ce0ea2045dd9cf9be"
-        },
-        {
-          "headline": "3 Value Stocks with Open Questions",
-          "summary": "The low valuation multiples for value stocks provide a margin of safety that growth stocks rarely offer. However, the challenge lies in determining whether these cheap assets are genuinely undervalued or simply on sale due to their potentially deteri",
-          "sentiment": -0.199,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=0e2b4afe594d2b327c159353f5066f0daab230a972641ea43251ecb2d04a8872"
-        },
-        {
-          "headline": "Franklin Templeton Announces Availability of 19(a) Notices for Certain Closed-End Funds",
-          "summary": "SAN MATEO, Calif., August 31, 2026--Category: Distribution Related",
-          "sentiment": 0.002,
-          "source": "Finnhub",
-          "published": "2026-08-31",
-          "url": "https://finnhub.io/api/news?id=15a920b2005ef1cb0d04e5aa465a9e1a77fe37841d2fc4708c31e837d785fea1"
-        }
-      ],
-      "current_price": 33.29
     },
     {
       "symbol": "STX",

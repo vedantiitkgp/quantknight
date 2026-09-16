@@ -307,10 +307,33 @@
       "cost": 64.06
     }
   ],
-  "exits": [],
-  "realized_pnl": 0.0,
+  "exits": [
+    {
+      "symbol": "IVZ",
+      "direction": "LONG",
+      "shares": 232,
+      "entry_price": 32.54,
+      "exit_price": 30.54,
+      "pnl_dollars": -464.0,
+      "pnl_pct": -6.15,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-16"
+    },
+    {
+      "symbol": "BEN",
+      "direction": "LONG",
+      "shares": 50,
+      "entry_price": 34.685,
+      "exit_price": 32.81,
+      "pnl_dollars": -93.75,
+      "pnl_pct": -5.41,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-16"
+    }
+  ],
+  "realized_pnl": -557.75,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -1533.61,
+  "cumulative_pnl": -2091.36,
   "total_equity": 148466.39
 }
