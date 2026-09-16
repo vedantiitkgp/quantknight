@@ -1,0 +1,316 @@
+{
+  "date": "2026-09-16",
+  "runs": [
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "OXY",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 123,
+      "entry_price": 60.33,
+      "stop_loss": 57.0,
+      "target": 65.33,
+      "entry_date": "2026-09-16",
+      "entry_time": "17:49",
+      "composite_score": 72.0306603773585,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 72.0, RSI 53, EPS growth 550%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Wall Street Freezes Up as Oil Tops $108 and the Ten-Year Clears 5% Ahead of Warsh's First Hike Test",
+          "summary": "US stocks closed lower on Tuesday as Brent crude pushed above $108 on a shuttered Saudi pipeline and the ten-year Treasury yield broke above 5% for the first time since 2007, with the market now pricing a 93% probability that Fed Chair Kevin Warsh de",
+          "sentiment": -0.954,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=5b9afc6a2765be4dcb459f4d7e3bc28535769faef01e43c7ae1224ee6dd76560"
+        },
+        {
+          "headline": "Intel, Sandisk, Palantir, Coinbase, and More Stocks That Explain Today\u2019s Market",
+          "summary": "FEATURE  Stock futures were falling on Tuesday as a rally in oil prices drove the yield to its highest level in more than 19 years. Chip and memory stocks were edging higher, having taken a battering on Monday after several top executives called for",
+          "sentiment": -0.952,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=034f1d50cbfef79771d6ee9a5bab700c07ef421a9274d442addadc35258cedb2"
+        },
+        {
+          "headline": "Occidental Petroleum Stock Is Up 45% This Year. Its 13x Forward P/E Says the Rally Isn\u2019t a Multiple Story.",
+          "summary": "Key Takeaways for Occidental Petroleum Stock as of September 2026YTD Run: Occidental stock has climbed 45% since early January to $61, powered by an August cash flow plan and crude oil breaking back above $100. Split Widens: OXY carries 8 buy ratings",
+          "sentiment": 0.928,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=4c9b0faef7967d7dc9774831f47f2b19f9623d5deb62dcfa784ee4b352ea1e7a"
+        },
+        {
+          "headline": "Record Diesel Prices Make Fed\u2019s Rate Decision for It",
+          "summary": "Diesel prices have hit $6 a gallon for the first time in history and Brent crude oil prices are trading at around $105 a barrel\u2014though they have fallen back from earlier highs of close to $110.  Consumer price index data for August, due to be release",
+          "sentiment": -0.914,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=8cd2961a42611fb09f3993b44178d3e7ca49c4c4d3a457efc98f2de099f6db3a"
+        },
+        {
+          "headline": "Occidental Petroleum (NYSE:OXY) Flashes Breakout Setup With Strong Technicals",
+          "summary": "ChartMill Technical Breakout: OXY scores 9/9 for trend and setup quality, with entry at 62.25, stop at 60.13, and defined risk near key support.",
+          "sentiment": 0.914,
+          "source": "Finnhub",
+          "published": "2026-09-12",
+          "url": "https://finnhub.io/api/news?id=8e8400cac94433ea90d9ad05e226e3e4598e40be875cf239f4f7581c132adacb"
+        },
+        {
+          "headline": "Trump oil and gas holdings gained up to $4.4M during Iran war",
+          "summary": "A CNBC analysis found Trump's 9 largest energy positions rose between $1.5M and $4.4M in the first six months of fighting",
+          "sentiment": 0.905,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=bc83188db11793be1fd1828a6c8d2bd0313d9f75250f37b2b485207f2290f20d"
+        },
+        {
+          "headline": "Will ExxonMobil's Guyana & Permian Assets Power Its Upstream Business?",
+          "summary": "XOM is expanding low-cost production in Guyana and the Permian Basin, targeting 5.5 MMBoe/d of upstream output by 2030 as advantaged assets grow.",
+          "sentiment": 0.851,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=3620d3f7c88390b014696b3406bfb486525b6c47e05772bee320b2581f05443a"
+        },
+        {
+          "headline": "Occidental Petroleum (OXY) Gains As Market Dips: What You Should Know",
+          "summary": "In the latest trading session, Occidental Petroleum (OXY) closed at $63.49, marking a +2.76% move from the previous day.",
+          "sentiment": 0.842,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=cc86187063dc4507374a0a7c3bb7836f9724f081d344ab39615c4630bd50a9f0"
+        },
+        {
+          "headline": "Evercore ISI Group Maintains Outperform on Occidental Petroleum, Raises Price Target to $70",
+          "summary": "Evercore ISI Group  analyst Stephen Richardson   maintains Occidental Petroleum (NYSE:OXY) with a Outperform and raises the price target from $65 to $70.",
+          "sentiment": 0.841,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=06cb00dd30d803532eef9e0801ad225131608a3a0ed8f6acf8ce1ff80b173326"
+        },
+        {
+          "headline": "Nvidia, Coinbase, Skyworks, Axon, Tesla, Applied Aerospace, and More Stocks That Explain Today\u2019s Market",
+          "summary": "FEATURE  Stocks declined Tuesday as the yield reached its highest level in 19 years. Investor fears over the selloff in artificial-intelligence stocks eased somewhat. AI-related stocks fared better Tuesday after taking a battering on Monday following",
+          "sentiment": -0.836,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=a2157e9f5a610237a2b186b1c0291e52b1bd430d39cc91638003ad02ecbdabe3"
+        }
+      ],
+      "cost": 7420.59
+    },
+    {
+      "symbol": "COP",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 55,
+      "entry_price": 134.275,
+      "stop_loss": 127.1,
+      "target": 145.04,
+      "entry_date": "2026-09-16",
+      "entry_time": "17:49",
+      "composite_score": 68.50471698113208,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 68.5, RSI 55, EPS growth 99%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Saudi Arabia Shuts Key Pipeline, Adding Pressure to Oil Supplies",
+          "summary": "The 750-mile pipeline carries crude from eastern Saudi Arabia to the Red Sea port of Yanbu, avoiding shipping disruptions in the Strait of Hormuz.",
+          "sentiment": -0.93,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=33bba2ab6863c06f27b4b2aa749ffbaca5b2e13e0bcb0afc52fef5c506189869"
+        },
+        {
+          "headline": "ConocoPhillips: A Winner Beyond The Iran Conflict",
+          "summary": "ConocoPhillips remains a buy, supported by robust free cash flow growth and a favorable macro environment. Click for more details on COP.",
+          "sentiment": 0.915,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=5855c62c67fa71045f078a8953e1c4670ccdaa0d781007bae99891a58c83f06a"
+        },
+        {
+          "headline": "Trump oil and gas holdings gained up to $4.4M during Iran war",
+          "summary": "A CNBC analysis found Trump's 9 largest energy positions rose between $1.5M and $4.4M in the first six months of fighting",
+          "sentiment": 0.905,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=bc83188db11793be1fd1828a6c8d2bd0313d9f75250f37b2b485207f2290f20d"
+        },
+        {
+          "headline": "Why Did CVX, COP, VLO Stocks Jump To 52-Week Highs?",
+          "summary": "Chevron, ConocoPhillips, and Valero Energy stocks surged to annual highs as Brent crude prices rallied past $101 a barrel on Wednesday.",
+          "sentiment": 0.874,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=26b4ced350c04ccd6f9b0ba5515d90bc50094b6bb3bf6c5b6611b9234f9e60da"
+        },
+        {
+          "headline": "Is ConocoPhillips Stock Worth Buying Here? - Shorting COP Puts and Credit Spreads are Better Plays",
+          "summary": "Oil futures have been rising, but recently hit a peak. ConocoPhillips reported strong Q2 earnings on Aug. 6, and COP stock may be fairly valued. However, short-put plays are attractive to value investors.",
+          "sentiment": 0.59,
+          "source": "Finnhub",
+          "published": "2026-09-13",
+          "url": "https://finnhub.io/api/news?id=8b69b57ae8741b37ec3ab59fd8707e3e316e3cbaa7dad90033e935ffd05d739e"
+        },
+        {
+          "headline": "Oil Hits $100: Which Stocks And ETFs Win Or Lose?",
+          "summary": "Brent topped $100 after US strikes on Iranian tankers. Refiners have doubled in 2026. Airlines, REITs and gold miners are on the wrong side.",
+          "sentiment": -0.566,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=0be8189a8cad5f50f0714e805a9eaca9f9d5ea684f587b5c4103bca72eed98da"
+        },
+        {
+          "headline": "Oil Crisis Worsens, Diesel Hits Record High: Here's How to Trade It",
+          "summary": "Oil prices surged as Gulf attacks disrupted Saudi infrastructure, threatening supplies; Brent topped $107 and U.S. diesel hit record highs.",
+          "sentiment": 0.305,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=bb5e1eca6eb40f442ed4e9f46088cb847a5edd69d60c7f90426bc8c0cb259160"
+        },
+        {
+          "headline": "Why Is ExxonMobil Priced Above Peers With Fatter Margins?",
+          "summary": "ExxonMobil (XOM) carries the highest earnings multiple in its peer group at 20.5 times, and it is not the best business in that group. Its operating margin ranks fourth of six, and its revenue growth ranks fourth of six as well. The premium is paying",
+          "sentiment": 0.274,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=f07a852274bab2b15c5ac54419385c30e9a4055f5f782c536cb76d9e2af37093"
+        },
+        {
+          "headline": "Should You Buy ExxonMobil Stock For What Guyana Pays Next?",
+          "summary": "ExxonMobil (XOM) stock has gained about 52% over the past year and now trades right at the top of its 52-week range. Anyone buying here is paying for something still ahead. The clearest candidate sits offshore Guyana, where the company has just finis",
+          "sentiment": 0.205,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=2154a1c683f77bae18a8e350e89829b24b0068dc30ff6f5ca7bc34672a31b6b2"
+        },
+        {
+          "headline": "What's going on in today's session: S&P500 movers",
+          "summary": "Uncover the latest developments among S&P500 stocks in today's session. Stay tuned to the S&P500 index's top gainers and losers on Wednesday.",
+          "sentiment": -0.044,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=30298a7b867fc3d1c8506990163ac5c9a3e40dd91ed64cc86b4796e19106bb06"
+        }
+      ],
+      "cost": 7385.12
+    },
+    {
+      "symbol": "BMY",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 1,
+      "entry_price": 64.06,
+      "stop_loss": 61.29,
+      "target": 68.22,
+      "entry_date": "2026-09-16",
+      "entry_time": "17:49",
+      "composite_score": 62.69339622641509,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 62.7, RSI 45, EPS growth 153%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "AstraZeneca shares oversold after trial flops and merger talk, says UBS",
+          "summary": "UBS has told investors that the recent slide in AstraZeneca PLC (LSE:AZN, NASDAQ:AZN) shares has gone too far, keeping its buy rating on the FTSE 100 drugmaker even after two clinical setbacks and speculation about a mega-merger. The stock has fallen",
+          "sentiment": -0.967,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=41f744ffe12c1d0fcc3f5d7575837d773a5bc2c3805482ee5a0ef6a9e39ae877"
+        },
+        {
+          "headline": "Big Pharma Is Pouring Billions Into China\u2019s Biotechs",
+          "summary": "Big Pharma firms have cut license deals worth tens of billions of dollars for cancer drugs invented in China.",
+          "sentiment": -0.955,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=081b98b5d25d6f244f391b421ddfad7d2c7255d5eed2d29386b3ce5fa4b198da"
+        },
+        {
+          "headline": "Bristol-Myers Squibb (NYSE:BMY) Passes the Dividend Screen, but Payout Sustainability Is the Key Question",
+          "summary": "BMY clears ChartMill\u2019s Best Dividend Stocks screen with a 4.58% yield, but high payout and falling earnings raise sustainability concerns.",
+          "sentiment": -0.943,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=3bd4334d3c508539047fb6dc644fa4509be3b787e95bb21bb331eefd2d3bb170"
+        },
+        {
+          "headline": "Will The Recent Pipeline Progress Boost BMY's Portfolio Expansion?",
+          "summary": "Bristol Myers Squibb's positive arlo-cel data in heavily pretreated multiple myeloma could strengthen its cell therapy pipeline.",
+          "sentiment": 0.942,
+          "source": "Finnhub",
+          "published": "2026-09-09",
+          "url": "https://finnhub.io/api/news?id=8594abe1497fc9106ab538c18da2afa5b36087b9d3b0a4028a4f1f1878bc3195"
+        },
+        {
+          "headline": "Bristol Myers\u2019 Cancer Therapy Win Strengthens its Oncology Pipeline",
+          "summary": "Bristol-Myers Squibb Company (NYSE:BMY) said its experimental CAR-T cell therapy, arlocabtagene autoleucel (arlo-cel), met the main goal of a mid-stage trial in patients with advanced multiple myeloma who had already gone through four major classes o",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=31c0e6117f1ad766e1277bf2e6484afaa811c575359894244ddfa808c5e07296"
+        },
+        {
+          "headline": "3 Healthcare Stocks That Fall Short",
+          "summary": "From novel pharmaceuticals to telemedicine, most healthcare companies are on a mission to drive better patient outcomes. Players catalyzing medical advancements have benefited from elevated demand, and their momentum is only rising as the industry ha",
+          "sentiment": 0.928,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=892ee473a89448e463e9ebabbdd3627fdd3c2e2cad825c716923497669bcd3f3"
+        },
+        {
+          "headline": "MRK Banks on Growing Pipeline & New Drugs to Offset Keytruda LOE",
+          "summary": "Merck is expanding its pipeline and newer drug portfolio to offset Keytruda's 2028 LOE and drive long-term growth.",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=3f68237b52bc07ee41445a0243eb8e461258e10ef1e9fda3f64a0a23ece2ee75"
+        },
+        {
+          "headline": "The Bull Case For Bristol Myers Squibb (BMY) Could Change Following Arlo-cel\u2019s Positive Phase 2 Myeloma Data",
+          "summary": "In early September 2026, Bristol Myers Squibb reported positive Phase 2 results from its registrational QUINTESSENTIAL trial of arlocabtagene autoleucel (arlo-cel), a potential first-in-class GPRC5D-directed CAR T cell therapy for heavily pretreated",
+          "sentiment": 0.924,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=dae1ac830485caf254f2c972f31e7da575595246c47381b6599f2a025c516b72"
+        },
+        {
+          "headline": "BMY Gains 19.4% Year to Date: Should You Buy, Sell or Hold the Stock?",
+          "summary": "Bristol Myers growth brands and pipeline progress are boosting momentum, but generic pressure on its legacy portfolio warrants caution.",
+          "sentiment": 0.922,
+          "source": "Finnhub",
+          "published": "2026-09-10",
+          "url": "https://finnhub.io/api/news?id=6e01b05c59628b4ff2dcc86605fe7a7840361eb6b84e1b205c557234aad4d152"
+        },
+        {
+          "headline": "Should You Buy Bristol Myers Squibb Stock Right Now for the Yield Alone?",
+          "summary": "As management tackles key issues head-on, Bristol Myers Squibb stock offers a steady 4% yield, with further upside potential.",
+          "sentiment": 0.921,
+          "source": "Finnhub",
+          "published": "2026-09-13",
+          "url": "https://finnhub.io/api/news?id=7e26736d400522145fd61c3724face31c42ea55559cd83350c84890cbeba6b18"
+        }
+      ],
+      "cost": 64.06
+    }
+  ],
+  "exits": [],
+  "realized_pnl": 0.0,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -1533.61,
+  "total_equity": 148466.39
+}
