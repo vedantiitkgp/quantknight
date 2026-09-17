@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 8775.22,
+  "cash": 149.96,
   "total_equity": 147611.24,
   "cumulative_pnl": -2388.76,
-  "as_of": "2026-09-16T23:14:18.555328",
+  "as_of": "2026-09-17T17:52:00.018305",
   "positions": [
     {
       "symbol": "INCY",
@@ -2084,6 +2084,204 @@
         }
       ],
       "current_price": 63.6
+    },
+    {
+      "symbol": "TGT",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 46,
+      "entry_price": 158.62,
+      "stop_loss": 150.04,
+      "target": 171.48,
+      "entry_date": "2026-09-17",
+      "entry_time": "17:51",
+      "composite_score": 65.98563664596273,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 66.0, RSI 53, EPS growth 101%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Unloved Consumer Names Like Walmart and Nike Face Pressure as Rate Hike Draws Near",
+          "summary": "Stocks that are most closely tied to the health of the US consumer have trailed the broader market badly this year. A potential Federal Reserve interest-rate hike Wednesday may add to the segment\u2019s stress.",
+          "sentiment": -0.951,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=cd657f9daee9283064ee9b2288681b2a2d1592b35f2f58bf6c143a881df64395"
+        },
+        {
+          "headline": "Ulta Beauty faces rising customer backlash over anti-theft tool",
+          "summary": "Ulta Beauty encounters mounting pressure as customer opposition to an anti-theft measure at its locations grows.",
+          "sentiment": -0.938,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=1f170704f1ddebca448cc69c81d639a8525f2df8bd3fa64f7e61c1293816def7"
+        },
+        {
+          "headline": "Target Stock Up More Than 30% in 6 Months: Is It Too Late to Buy TGT?",
+          "summary": "Target's 34.4% six-month rally is backed by stronger traffic, digital momentum and higher-margin growth, but its valuation now tops its one-year median.",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=3cf4e7775c6d132c88fd6fa70fe35341e110d518c2717cddbece59e7d637ca85"
+        },
+        {
+          "headline": "Costco's E-commerce Momentum Keeps Its Growth Engine Running",
+          "summary": "Costco's digital sales surge 17.9% in August and 20.9% in fiscal 2026, highlighting e-commerce as a growing pillar of its retail footprint.",
+          "sentiment": 0.934,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=206f21d8e8e9995b1e35a0e8beba59eff16725949de91bc729c56650b0ee6e11"
+        },
+        {
+          "headline": "Should You Buy Adobe Stock At $260?",
+          "summary": "Adobe (ADBE) reported a record fiscal Q3 2026 and raised its fiscal 2026 revenue and earnings targets. Revenue rose 13% as reported to $6.76 billion, above the $6.70 billion the company had guided. But the key figure that did not move is the one to h",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=ad7637a4cb3c93f63f88bb0d6892e2fe3fef151bac343534f1787869d3f0231c"
+        },
+        {
+          "headline": "3 Dividend Kings to Buy While They\u2019re Still Beaten Down",
+          "summary": "Target, Hormel and Procter & Gamble, all Dividend Kings, are rebounding from depressed valuations with reliable yields, improving traffic or market share trends, and firming analyst support.",
+          "sentiment": 0.923,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=37b3807971933802c1aed372268fb022dddb0a4770c6fb73242e4e5f62bb7933"
+        },
+        {
+          "headline": "Corporate DEI pullback has real consequences: Colin Kaepernick",
+          "summary": "Former NFL star Colin Kaepernick chats with Yahoo Finance Executive Editor Brian Sozzi about how companies putting profitability and political pressure ahead of equal opportunity risk losing consumers and market share.",
+          "sentiment": -0.923,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=e912e14074dce2506c3f700e4f9e8f2810170e8a1afaa35565a309e683203486"
+        },
+        {
+          "headline": "Target is taking on Walmart with a major grocery move",
+          "summary": "The retailer hopes its latest partnership will help it carve out a distinct niche in the grocery market",
+          "sentiment": 0.91,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=d1bb96e89230ad4161a9bece26dfc7eda7fd57c7b4d72ecbeccb0beb7fb70c29"
+        },
+        {
+          "headline": "Amazon raises starting pay to $20 an hour and adds Whole Foods discount",
+          "summary": "Wage increase brings Amazon\u2019s US minimum pay in line with Costco and includes new grocery discount benefit",
+          "sentiment": 0.901,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=0a610c6958b8a064ce32323dd0528e839308027c83d609aac9dda27a74f39de6"
+        },
+        {
+          "headline": "Target's Stock Is on a Tear in 2026. Can It Still Go Higher?",
+          "summary": "The retail stock recently hit a new 52-week high as it has been outperforming the S&P 500 this year by a wide margin.",
+          "sentiment": 0.9,
+          "source": "Finnhub",
+          "published": "2026-09-15",
+          "url": "https://finnhub.io/api/news?id=1a57c718b7d42ce885f5f21e5df5377ee8ee54f7cdd8b7cc48d76409e18a24cf"
+        }
+      ]
+    },
+    {
+      "symbol": "KEYS",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 4,
+      "entry_price": 332.185,
+      "stop_loss": 308.67,
+      "target": 367.46,
+      "entry_date": "2026-09-17",
+      "entry_time": "17:52",
+      "composite_score": 62.77298999309869,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 62.8, RSI 53, EPS growth 108%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Keysight Falls 11.1% in 3 Months While AI Demand Keeps Accelerating",
+          "summary": "KEYS shares fell 11.1% in three months despite surging orders and earnings, as AI demand meets supply, policy and valuation risks.",
+          "sentiment": -0.959,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=4bd53ff282666f5979db0840be3ef36c0f010390c2004e42f27c4e368d00efe4"
+        },
+        {
+          "headline": "Keysight Technologies (NYSE:KEYS) Delivers High Growth With Expanding Margins and Upward Earnings Revisions",
+          "summary": "Keysight clears all eight Little Book growth filters, with strong earnings revisions, sales growth, margins, cash flow, and ROE.",
+          "sentiment": 0.934,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=d770717ad1c2ea1630ba96e137074997b218955bc4d9f24d59eea32a9b3ae142"
+        },
+        {
+          "headline": "Keysight (KEYS): Buy, Sell, or Hold Post Q2 Earnings?",
+          "summary": "Keysight has followed the market\u2019s trajectory closely, rising in tandem with the S&P 500 over the past six months. The stock has climbed by 9.6% to $313.37 per share while the index has gained 13.7%.",
+          "sentiment": 0.925,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=9196f0104bbf5062eba725537fbaa178f012378f478cf05dcbcc1cb09fb556b9"
+        },
+        {
+          "headline": "Should You Buy Synopsys Stock While Its Cash Runs Far Ahead Of Its Profit?",
+          "summary": "Synopsys (SNPS) sells the design software and the interface IP that chip makers need to get AI silicon built, and its stock has still gone backwards over the past year. At about $370 the shares sit at their 52-week low. Reported margins have fallen s",
+          "sentiment": -0.924,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=1d1c91f99927cbefc6b273f251586f167cd1dab13c5fe554f5a54a22e81339b0"
+        },
+        {
+          "headline": "Would You Be Glad To Own Synopsys At A Discount While AI Tests Its Software?",
+          "summary": "Synopsys (SNPS) trades about 26% below its 52-week high after falling about 34% over the past year. You can be paid now to agree to buy it well below today's price, and you keep that payment either way. The catch is that you must want the business. O",
+          "sentiment": -0.912,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=f7781d3e84ebbbab99e5dbe06837bbdcac3465ba7305f2cb193eb4262a10627d"
+        },
+        {
+          "headline": "Coherent shares are trading higher after the company announced it will join the S&P 500 index, effective March 23.",
+          "summary": "",
+          "sentiment": 0.905,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=7f92e66de16101e7270a9490e22d92722610d8177864c27650013eda0e1675b0"
+        },
+        {
+          "headline": "Verizon Leads 6G Momentum with Nine New Forum Members and Successful Real-World ISAC and AI-Native Trials",
+          "summary": "Forum Expands Ecosystem Readiness Alongside Groundbreaking Pre-Standard ISAC and Live Sports Companion MilestonesNEW YORK, Sept. 14, 2026 (GLOBE NEWSWIRE) -- Verizon today announced a major acceleration in the development of next-generation wireless",
+          "sentiment": 0.892,
+          "source": "Finnhub",
+          "published": "2026-09-14",
+          "url": "https://finnhub.io/api/news?id=cdaaba664160487c441fa582731832f34ee8129dff88326e3043330a4bb6090a"
+        },
+        {
+          "headline": "Should Investors Buy KEYS as Growth Surges but Valuation Looks Mixed?",
+          "summary": "KEYS enters fiscal 2026's final stretch with faster AI-led growth and rising estimates, while valuation remains above broader market benchmarks.",
+          "sentiment": 0.88,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=7c9b56f03c6ca5eaf5090c7ce88224dcd16355f1e908bfb18a0f501f15df39b0"
+        },
+        {
+          "headline": "1 Cash-Producing Stock for Long-Term Investors and 2 We Question",
+          "summary": "A company that generates cash isn\u2019t automatically a winner. Some businesses stockpile cash but fail to reinvest wisely, limiting their ability to expand.",
+          "sentiment": -0.864,
+          "source": "Finnhub",
+          "published": "2026-09-11",
+          "url": "https://finnhub.io/api/news?id=c96910b056d29688ee4947d4eff328fdc15fa4bc1e91451b16c36afae32ca13c"
+        },
+        {
+          "headline": "Is Keysight Technologies Stock Outperforming the S&P 500?",
+          "summary": "Keysight Technologies has notably outperformed the S&P 500 over the past year, and analysts are highly optimistic about the stock\u2019s prospects.",
+          "sentiment": 0.829,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=b550074e24c25c2c5b15c1305a46bfdce1e4f3269a0332b6011829d36f9a45b2"
+        }
+      ]
     }
   ]
 }
