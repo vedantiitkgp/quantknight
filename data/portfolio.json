@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 149.96,
+  "cash": 183.61,
   "total_equity": 149860.9,
-  "cumulative_pnl": -139.1,
-  "as_of": "2026-09-17T23:02:22.945591",
+  "cumulative_pnl": -141.32,
+  "as_of": "2026-09-18T17:18:04.335962",
   "positions": [
     {
       "symbol": "INCY",
@@ -1716,74 +1716,6 @@
         }
       ],
       "current_price": 61.04
-    },
-    {
-      "symbol": "HAL",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 1,
-      "entry_price": 35.87,
-      "stop_loss": 33.66,
-      "target": 39.18,
-      "entry_date": "2026-09-15",
-      "entry_time": "17:53",
-      "composite_score": 65.92073170731707,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 65.9, RSI 53, EPS growth 13%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Halliburton Awarded Bundled Well Construction And Completions Contract From Eni For Cronos Ultra-Deepwater Development In Block 6 Of Cyprus EEZ",
-          "summary": "https://www.halliburton.com/en/about-us/press-release/halliburton-awarded-bundled-deepwater-well-construction-completions-contract",
-          "sentiment": 0.748,
-          "source": "Finnhub",
-          "published": "2026-09-15",
-          "url": "https://finnhub.io/api/news?id=8049af0afb19be5c31ad856ac6948ea096c44b58d4753e0f1acd6db9b7acf3e9"
-        },
-        {
-          "headline": "2 S&P 500 Stocks with Impressive Fundamentals and 1 We Turn Down",
-          "summary": "The S&P 500 (^GSPC) is often seen as a benchmark for strong businesses, but that doesn\u2019t mean every stock is worth owning. Some companies face significant challenges, whether it\u2019s stagnating growth, heavy debt, or disruptive new competitors.",
-          "sentiment": -0.716,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=0a539b902923fb632486bd2b57eec74d4737b70e2bbacee15c71672af6bf1e4f"
-        },
-        {
-          "headline": "Halliburton (HAL) Suffers a Larger Drop Than the General Market: Key Insights",
-          "summary": "Halliburton (HAL) closed the most recent trading day at $36.07, moving 2.85% from the previous trading session.",
-          "sentiment": -0.6,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=5704f54eea1c82f34675bfb53a3926d14329bed354a859383f0390b1a42a377b"
-        },
-        {
-          "headline": "This Generation Of Investors Could Soon Experience Their 1973 O.P.E.C. Moment",
-          "summary": "The Middle East conflict risks a 1973-style oil shock, pushing energy and commodity prices higher. Click for an updated market outlook.",
-          "sentiment": -0.111,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=1aa8c2d231df683b866f3946173d097d4f1757cee7dd913658f018a5763f2ac6"
-        },
-        {
-          "headline": "Advanced Micro Devices Upgraded, Eli Lilly Downgraded: Updated Rankings on Top Blue-Chip Stocks",
-          "summary": "During these busy times, it pays to stay on top of the latest profit opportunities. And today\u2019s blog post should be a great place to start. After taking a close look at the latest data on institutional buying pressure and each company\u2019s fundamental h",
-          "sentiment": 0.094,
-          "source": "Finnhub",
-          "published": "2026-09-08",
-          "url": "https://finnhub.io/api/news?id=913b2681a7661a95cb35ea2cb0afc3e18d4bd775885b119a0c9e6c33fecb58b1"
-        },
-        {
-          "headline": "Halliburton CFO Eric Carre Sells 24,777 Shares for $929,138",
-          "summary": "Sale executed under a Rule 10b5-1 plan adopted in May, with 124,104 directly held shares retained.",
-          "sentiment": 0.018,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=6cbc9c7f47fb8ceb930d8db39fbe7c6c545caea5effc38f28433069ef050f83e"
-        }
-      ],
-      "current_price": 34.03
     },
     {
       "symbol": "OXY",

@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-18",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "HAL",
+      "direction": "LONG",
+      "shares": 1,
+      "entry_price": 35.87,
+      "exit_price": 33.655,
+      "pnl_dollars": -2.22,
+      "pnl_pct": -6.18,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-18"
+    }
+  ],
+  "realized_pnl": -2.22,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -141.32,
+  "total_equity": 149860.9
+}
