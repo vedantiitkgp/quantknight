@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-21",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "ALL",
+      "direction": "LONG",
+      "shares": 28,
+      "entry_price": 260.58,
+      "exit_price": 245.38,
+      "pnl_dollars": -425.6,
+      "pnl_pct": -5.83,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-21"
+    }
+  ],
+  "realized_pnl": -425.6,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -891.49,
+  "total_equity": 149534.11
+}
