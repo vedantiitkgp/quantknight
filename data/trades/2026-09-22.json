@@ -2,6 +2,7 @@
   "date": "2026-09-22",
   "runs": [
     "midday",
+    "midday",
     "midday"
   ],
   "entries": [
@@ -204,6 +205,106 @@
         }
       ],
       "cost": 86.19
+    },
+    {
+      "symbol": "GOOGL",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 19,
+      "entry_price": 353.46,
+      "stop_loss": 335.86,
+      "target": 379.87,
+      "entry_date": "2026-09-22",
+      "entry_time": "18:49",
+      "composite_score": 66.48131313131313,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 66.5, RSI 57, EPS growth 298%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Netflix Faces Growing YouTube Threat As Viewer Share Hits Multi-Year Low, HSBC Says \u2014 Wells Fargo Flags Engagement Risk",
+          "summary": "Analysts raised concerns around Netflix\u2019s engagement trends as YouTube expands its living-room presence and Netflix heads into a potentially weaker second-half content slate.",
+          "sentiment": -0.958,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=00ca0e9c417d4287aae57e00ec2bf02ad25245ba4e7bc35f1e7b39f9cdec401c"
+        },
+        {
+          "headline": "Arm Just Got a Major Vote of Confidence From Its CEO",
+          "summary": "Haas also expressed growing confidence that the company can beat its $2 billion AGI CPU revenue target.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=089d6c5a3e519ad4405843c76d5f98f7a5c37abc5ec0977a1a3dde6d35716915"
+        },
+        {
+          "headline": "Meta Platforms Jumps 33% in a Month: Should You Buy or Hold the Stock?",
+          "summary": "META's 33% monthly surge reflects strong ads and AI momentum, but soaring capex, rising debt and weak cash flow remain key concerns.",
+          "sentiment": -0.935,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=4f61f364fd69c88cbedc82de2f14f1590d2dac44d0fef8271debc2fd7f1ed857"
+        },
+        {
+          "headline": "Cloud AI Today - AI Summit Drives Economic Vision For Latin America",
+          "summary": "The Inter-American Development Bank Group recently organized a significant meeting with heads of state and tech leaders from across Latin America and the Caribbean to push forward a collective agenda on the adoption of artificial intelligence (AI) te",
+          "sentiment": 0.924,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=a11595a380a0f3033a66bfffba467a31b1e73169a8f89e9922cd39600a996fbd"
+        },
+        {
+          "headline": "Can Intel's Core Ultra Expansion With Googlebook Benefit the Stock?",
+          "summary": "INTC extends its Core Ultra platform to new Googlebook laptops, bringing Series 3 processors, AI capabilities and advanced connectivity.",
+          "sentiment": 0.906,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=aa2252f79e3be560623c08d524ff70690f7fc7a745c8e271c3b58a6ab95aecd1"
+        },
+        {
+          "headline": "Is It Too Early To Buy Adobe Stock Before Its Free Users Pay Off?",
+          "summary": "Adobe (ADBE) stock has lost about a third of its value over the past year, while the S&P 500 (SPY) gained about 18%. It has already bounced 28% in three months. Yet near $250 it still sits about 32% below its 52-week high. At current levels, multiple",
+          "sentiment": -0.903,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=ad1b0fda2504b8971e13b75f27b52fcfa229d9d0f6957564fd431383889cb319"
+        },
+        {
+          "headline": "Meta Stock Gets Bold $750 Call as Muse AI Takes Off",
+          "summary": "Mizuho Sends Bullish Message on Meta Stock as Muse Hits No. 1",
+          "sentiment": 0.9,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=e7e2974d1d77b6f2ee74c171ab5fb29191970de1565983e49465bce7705a1a43"
+        },
+        {
+          "headline": "Alphabet Jumps Over 1.7% as $899 Googlebooks Move Chrome Upmarket",
+          "summary": "Google is asking Android users to pay premium prices for Gemini-centered continuity.",
+          "sentiment": 0.897,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=73a4110140e4b5ccff71ae61d50669a884b7a371498cd91f2f59d2bda89e8540"
+        },
+        {
+          "headline": "Meta\u2019s Muse Is a \u2018Killer Product\u2019. It Won\u2019t, However, Be the Death of Shopify.",
+          "summary": "Shopify stock rises for a second consecutive day as investors believe Meta\u2019s Muse AI agent might be a very good thing for the company\u2019s business.",
+          "sentiment": 0.896,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=8baf1b750d8d7ff21373440841c10f327fa3dd951af280e77d931b90e00291e8"
+        },
+        {
+          "headline": "Stock Market Today: Dow Slips But Apple Touches A Buy Point; Homebuilder, Retailer Funds Shine (Live Coverage)",
+          "summary": "Stock Market Today: The Dow Jones index reversed lower despite new U.S.-Iran peace hopes. Apple stock is trading near a buy point.",
+          "sentiment": -0.889,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=778740497b3c831a1941f86fb750b8a36ba481502a5f4ea9afedca9d14084e84"
+        }
+      ],
+      "cost": 6715.74
     }
   ],
   "exits": [
@@ -217,11 +318,33 @@
       "pnl_pct": -5.74,
       "reason": "stop-loss hit",
       "close_date": "2026-09-22"
+    },
+    {
+      "symbol": "CAH",
+      "direction": "LONG",
+      "shares": 31,
+      "entry_price": 234.55,
+      "exit_price": 221.745,
+      "pnl_dollars": -396.96,
+      "pnl_pct": -5.46,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-22"
+    },
+    {
+      "symbol": "OXY",
+      "direction": "LONG",
+      "shares": 123,
+      "entry_price": 60.33,
+      "exit_price": 56.685,
+      "pnl_dollars": -448.33,
+      "pnl_pct": -6.04,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-22"
     }
   ],
-  "realized_pnl": -423.73,
+  "realized_pnl": -1269.02,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -514.77,
+  "cumulative_pnl": -1360.06,
   "total_equity": 149908.96
 }
