@@ -206,10 +206,22 @@
       "cost": 6591.52
     }
   ],
-  "exits": [],
-  "realized_pnl": 0.0,
+  "exits": [
+    {
+      "symbol": "BMY",
+      "direction": "LONG",
+      "shares": 1,
+      "entry_price": 64.06,
+      "exit_price": 61.27,
+      "pnl_dollars": -2.79,
+      "pnl_pct": -4.36,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-23"
+    }
+  ],
+  "realized_pnl": -2.79,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -51.41,
+  "cumulative_pnl": -54.2,
   "total_equity": 149948.59
 }

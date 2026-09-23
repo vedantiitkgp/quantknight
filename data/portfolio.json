@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 126.76,
+  "cash": 188.03,
   "total_equity": 149948.59,
-  "cumulative_pnl": -51.41,
-  "as_of": "2026-09-23T18:03:42.142461",
+  "cumulative_pnl": -54.2,
+  "as_of": "2026-09-23T18:58:24.298789",
   "positions": [
     {
       "symbol": "INCY",
@@ -1548,106 +1548,6 @@
         }
       ],
       "current_price": 61.03
-    },
-    {
-      "symbol": "BMY",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 1,
-      "entry_price": 64.06,
-      "stop_loss": 61.29,
-      "target": 68.22,
-      "entry_date": "2026-09-16",
-      "entry_time": "17:49",
-      "composite_score": 62.69339622641509,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 62.7, RSI 45, EPS growth 153%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "AstraZeneca shares oversold after trial flops and merger talk, says UBS",
-          "summary": "UBS has told investors that the recent slide in AstraZeneca PLC (LSE:AZN, NASDAQ:AZN) shares has gone too far, keeping its buy rating on the FTSE 100 drugmaker even after two clinical setbacks and speculation about a mega-merger. The stock has fallen",
-          "sentiment": -0.967,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=41f744ffe12c1d0fcc3f5d7575837d773a5bc2c3805482ee5a0ef6a9e39ae877"
-        },
-        {
-          "headline": "Big Pharma Is Pouring Billions Into China\u2019s Biotechs",
-          "summary": "Big Pharma firms have cut license deals worth tens of billions of dollars for cancer drugs invented in China.",
-          "sentiment": -0.955,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=081b98b5d25d6f244f391b421ddfad7d2c7255d5eed2d29386b3ce5fa4b198da"
-        },
-        {
-          "headline": "Bristol-Myers Squibb (NYSE:BMY) Passes the Dividend Screen, but Payout Sustainability Is the Key Question",
-          "summary": "BMY clears ChartMill\u2019s Best Dividend Stocks screen with a 4.58% yield, but high payout and falling earnings raise sustainability concerns.",
-          "sentiment": -0.943,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=3bd4334d3c508539047fb6dc644fa4509be3b787e95bb21bb331eefd2d3bb170"
-        },
-        {
-          "headline": "Will The Recent Pipeline Progress Boost BMY's Portfolio Expansion?",
-          "summary": "Bristol Myers Squibb's positive arlo-cel data in heavily pretreated multiple myeloma could strengthen its cell therapy pipeline.",
-          "sentiment": 0.942,
-          "source": "Finnhub",
-          "published": "2026-09-09",
-          "url": "https://finnhub.io/api/news?id=8594abe1497fc9106ab538c18da2afa5b36087b9d3b0a4028a4f1f1878bc3195"
-        },
-        {
-          "headline": "Bristol Myers\u2019 Cancer Therapy Win Strengthens its Oncology Pipeline",
-          "summary": "Bristol-Myers Squibb Company (NYSE:BMY) said its experimental CAR-T cell therapy, arlocabtagene autoleucel (arlo-cel), met the main goal of a mid-stage trial in patients with advanced multiple myeloma who had already gone through four major classes o",
-          "sentiment": 0.938,
-          "source": "Finnhub",
-          "published": "2026-09-11",
-          "url": "https://finnhub.io/api/news?id=31c0e6117f1ad766e1277bf2e6484afaa811c575359894244ddfa808c5e07296"
-        },
-        {
-          "headline": "3 Healthcare Stocks That Fall Short",
-          "summary": "From novel pharmaceuticals to telemedicine, most healthcare companies are on a mission to drive better patient outcomes. Players catalyzing medical advancements have benefited from elevated demand, and their momentum is only rising as the industry ha",
-          "sentiment": 0.928,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=892ee473a89448e463e9ebabbdd3627fdd3c2e2cad825c716923497669bcd3f3"
-        },
-        {
-          "headline": "MRK Banks on Growing Pipeline & New Drugs to Offset Keytruda LOE",
-          "summary": "Merck is expanding its pipeline and newer drug portfolio to offset Keytruda's 2028 LOE and drive long-term growth.",
-          "sentiment": 0.926,
-          "source": "Finnhub",
-          "published": "2026-09-11",
-          "url": "https://finnhub.io/api/news?id=3f68237b52bc07ee41445a0243eb8e461258e10ef1e9fda3f64a0a23ece2ee75"
-        },
-        {
-          "headline": "The Bull Case For Bristol Myers Squibb (BMY) Could Change Following Arlo-cel\u2019s Positive Phase 2 Myeloma Data",
-          "summary": "In early September 2026, Bristol Myers Squibb reported positive Phase 2 results from its registrational QUINTESSENTIAL trial of arlocabtagene autoleucel (arlo-cel), a potential first-in-class GPRC5D-directed CAR T cell therapy for heavily pretreated",
-          "sentiment": 0.924,
-          "source": "Finnhub",
-          "published": "2026-09-15",
-          "url": "https://finnhub.io/api/news?id=dae1ac830485caf254f2c972f31e7da575595246c47381b6599f2a025c516b72"
-        },
-        {
-          "headline": "BMY Gains 19.4% Year to Date: Should You Buy, Sell or Hold the Stock?",
-          "summary": "Bristol Myers growth brands and pipeline progress are boosting momentum, but generic pressure on its legacy portfolio warrants caution.",
-          "sentiment": 0.922,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=6e01b05c59628b4ff2dcc86605fe7a7840361eb6b84e1b205c557234aad4d152"
-        },
-        {
-          "headline": "Should You Buy Bristol Myers Squibb Stock Right Now for the Yield Alone?",
-          "summary": "As management tackles key issues head-on, Bristol Myers Squibb stock offers a steady 4% yield, with further upside potential.",
-          "sentiment": 0.921,
-          "source": "Finnhub",
-          "published": "2026-09-13",
-          "url": "https://finnhub.io/api/news?id=7e26736d400522145fd61c3724face31c42ea55559cd83350c84890cbeba6b18"
-        }
-      ],
-      "current_price": 62.25
     },
     {
       "symbol": "TGT",
