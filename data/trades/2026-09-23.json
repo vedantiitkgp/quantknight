@@ -1,0 +1,215 @@
+{
+  "date": "2026-09-23",
+  "runs": [
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "VLO",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 20,
+      "entry_price": 369.72,
+      "stop_loss": 339.65,
+      "target": 414.82,
+      "entry_date": "2026-09-23",
+      "entry_time": "18:03",
+      "composite_score": 70.66790009250694,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 70.7, RSI 50, EPS growth 421%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "As the S&P 500 nears a new record high, there are signs of weakness below the surface",
+          "summary": "About 60% of the stocks in the S 500 are down more than 20% from their all-time highs.",
+          "sentiment": -0.968,
+          "source": "Finnhub",
+          "published": "2026-09-21",
+          "url": "https://finnhub.io/api/news?id=58261ca697f63d8169cfb2d0027db7346f73a86be38a9dac55031a9319fecadd"
+        },
+        {
+          "headline": "Trump Supports Diesel Export Ban, Knocking Refining Stocks",
+          "summary": "An export ban would hurt refiners\u2019 profits, and potentially force them to reduce overall fuel production.",
+          "sentiment": -0.948,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=c78c57134ab11144e9d5a1d3b90bc90dda0aa7e0f455303bae6a0680c12cfff4"
+        },
+        {
+          "headline": "This Marathon Petroleum Analyst Is No Longer Bullish; Here Are Top 4 Downgrades For Tuesday",
+          "summary": "Analysts downgraded MPC, ERIC, VLO, DAVA, lowering price targets for Ericsson and Pegasystems.",
+          "sentiment": -0.937,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=213e532ddcca3b4d617d28c5abdc1dd8a6703076c9a7fbced63036a9d00eec38"
+        },
+        {
+          "headline": "Jim Cramer Wished He\u2019d Worked At This Firm Instead Of Goldman Sachs",
+          "summary": "Oil refiner Valero Energy Corporation (NYSE:VLO)\u2019s shares are up by more than 140% over the past year. It is among the handful of oil stocks that have benefited due to the ongoing tensions in the Middle East. Valero Energy Corporation (NYSE:VLO)\u2019s re",
+          "sentiment": 0.937,
+          "source": "Finnhub",
+          "published": "2026-09-18",
+          "url": "https://finnhub.io/api/news?id=6369b31ccc9585a1ef1bd04d90790c4d9df4f1f76c79074074b6749c26037b7e"
+        },
+        {
+          "headline": "Refining Tailwinds and Diversified Operations to Support Par Pacific",
+          "summary": "PARR's refining margins, integrated downstream network and growing retail and logistics earnings support its financial performance.",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-09-18",
+          "url": "https://finnhub.io/api/news?id=f6184d398291b06aa5288689dfde504087af80b027ab27f45369b9b09289b766"
+        },
+        {
+          "headline": "Surging Earnings Estimates Signal Upside for Valero Energy (VLO) Stock",
+          "summary": "Valero Energy (VLO) shares have started gaining and might continue moving higher in the near term, as indicated by solid earnings estimate revisions.",
+          "sentiment": 0.928,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=ab30781280c57c6128c3645f00dfd637e4286603cb07e51fbab95751076a77c6"
+        },
+        {
+          "headline": "Equinor Expands LNG Reach in Asia With PTT Trading Supply Agreement",
+          "summary": "EQNR deepens its Asia LNG push with a long-term PTT Trading supply deal and targets an expansion of its global LNG portfolio by the early 2030s.",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-09-21",
+          "url": "https://finnhub.io/api/news?id=b2896cfed0e5b6c5f8796da5b49ed86fc1a1048342dc35dc8899f6503be1f9f5"
+        },
+        {
+          "headline": "This Energy Stock Could Give ExxonMobil a Run: Should You Buy?",
+          "summary": "VLO's heavy-crude edge, strong refining margins and cheaper valuation could fuel more upside despite higher crude costs.",
+          "sentiment": 0.918,
+          "source": "Finnhub",
+          "published": "2026-09-21",
+          "url": "https://finnhub.io/api/news?id=8b90393385c580ecfb44d683ff0adc4b71eb0e82e8771b38a9ea2e70ee2dded7"
+        },
+        {
+          "headline": "Equinor Eyes LNG Expansion Amid Global Supply Disruptions",
+          "summary": "EQNR plans to expand its LNG supply portfolio to 10-15 million tpy by the early 2030s as Europe and Asia seek diversified supply sources.",
+          "sentiment": 0.917,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=61cc360747876a259c081b8bd8637d58b82b68d06cd453f212390be81c05e432"
+        },
+        {
+          "headline": "Diesel Hits a Record. Why Valero and Marathon Stock Could Be Running Out of Gas.",
+          "summary": "Record diesel prices have been a boon for Valero and Marathon Petroleum. Now demand destruction and the threat of an export ban are creating new risks for refining stocks.",
+          "sentiment": -0.917,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=5866adeeb028f404a5cd51fb7147388eedbb7f8aef9acca9399f35505c612dd5"
+        }
+      ],
+      "cost": 7394.4
+    },
+    {
+      "symbol": "PSX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 26,
+      "entry_price": 253.52,
+      "stop_loss": 236.19,
+      "target": 279.51,
+      "entry_date": "2026-09-23",
+      "entry_time": "18:03",
+      "composite_score": 66.08880666049954,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 66.1, RSI 53, EPS growth 339%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "As the S&P 500 nears a new record high, there are signs of weakness below the surface",
+          "summary": "About 60% of the stocks in the S 500 are down more than 20% from their all-time highs.",
+          "sentiment": -0.968,
+          "source": "Finnhub",
+          "published": "2026-09-21",
+          "url": "https://finnhub.io/api/news?id=58261ca697f63d8169cfb2d0027db7346f73a86be38a9dac55031a9319fecadd"
+        },
+        {
+          "headline": "Will Par Pacific's Retail Expansion Boost Earnings Stability Ahead?",
+          "summary": "PARR is expanding its retail business through stronger food and merchandise sales, enabling earnings diversification beyond its cyclical refining operations.",
+          "sentiment": 0.94,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=4fa699ed332ef3de9235398db3641542d2a3345dfe4a35f7ba2470b595031af8"
+        },
+        {
+          "headline": "Phillips 66: Resilient Refining Meets Midstream Stability",
+          "summary": "PSX pairs profitable refining conditions with stable midstream cash flows, helping cushion commodity volatility despite high crude costs.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=3ed5729b7283546c21407d3ced810a9bcced4b353fb938b28076d143611fd4bc"
+        },
+        {
+          "headline": "Does HF Sinclair's Diversified Refining Base Enhance Its Resilience?",
+          "summary": "DINO's diversified refining network and integrated operations position it to benefit from tighter product markets and favorable crack spreads.",
+          "sentiment": 0.914,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=2eba9cd948fbc87a7563e9ff4d1f293d5e920571e8453658f5757536d7e8ee33"
+        },
+        {
+          "headline": "Phillips 66 (PSX) Faces Bayway Labor Questions, Is The Stock Now Too Expensive?",
+          "summary": "Phillips 66 (PSX) is back in focus after workers at its Bayway Refinery in New Jersey scheduled a contract rally, raising fresh questions about labor costs, operating continuity, and potential knock-on effects for shareholders. The labor flare up com",
+          "sentiment": 0.903,
+          "source": "Finnhub",
+          "published": "2026-09-16",
+          "url": "https://finnhub.io/api/news?id=8aa416d10a7084ace4bf0e864fd3592c7f37fe4d0d682984234d55dbd8a35fdf"
+        },
+        {
+          "headline": "Priced for a Pullback or More Gains? These 3 Stocks Are Testing the Limits",
+          "summary": "Dell, HP and Phillips 66 are rallying on AI server, AI-PC, and refining-margin catalysts, though all three now trade well above their consensus analyst price targets.",
+          "sentiment": 0.889,
+          "source": "Finnhub",
+          "published": "2026-09-19",
+          "url": "https://finnhub.io/api/news?id=e0f44d9c7ee5077ea5cdbc56110aabc01e779fe58d9aba1855b62df9a1358648"
+        },
+        {
+          "headline": "5 Relative Price Strength Stocks to Buy Amid Rising Rates",
+          "summary": "PSX, SIG, HPQ, BILL and MPC stand out for relative price strength as rising rates fuel volatility and investors stay selective.",
+          "sentiment": 0.888,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=53772698587994ca9febfc6dd9ae0c3a14345c52f8a2c43b86080d2efef28aa6"
+        },
+        {
+          "headline": "Diesel Squeeze Nobody Hedged: 4 Refiners Just Logged Their 6th Straight Week of Gains",
+          "summary": "Valero, Marathon Petroleum, HF Sinclair and Phillips 66 have gained for six consecutive weeks as diesel crack spreads hit an all-time record.",
+          "sentiment": 0.877,
+          "source": "Finnhub",
+          "published": "2026-09-18",
+          "url": "https://finnhub.io/api/news?id=65aed32f64004d8c597340a509f26c9f6bbb1ae27f7aa7004818862f7ec1f1a0"
+        },
+        {
+          "headline": "BMO Capital Maintains Outperform on Phillips 66, Raises Price Target to $310",
+          "summary": "BMO Capital  analyst Phillip Jungwirth   maintains Phillips 66 (NYSE:PSX) with a Outperform and raises the price target from $260 to $310.",
+          "sentiment": 0.831,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=c2a96161d4fdff3a23c2c311c41db584ebef4db550f4f152b476cae5a0530ba0"
+        },
+        {
+          "headline": "BMO Sees Phillips 66 (PSX) Breaking into New Highs",
+          "summary": "Phillips 66 (NYSE:PSX) has been on a strong rally this year, posting gains of over 110% since the beginning of 2026. The outperformance has been driven by an unusually sharp surge in global refining margins amid the war in the Middle East, which has",
+          "sentiment": 0.705,
+          "source": "Finnhub",
+          "published": "2026-09-20",
+          "url": "https://finnhub.io/api/news?id=df1d072fd77897ac039a26c2c5143dfbd70e6f97ff295031add85faf1da6afab"
+        }
+      ],
+      "cost": 6591.52
+    }
+  ],
+  "exits": [],
+  "realized_pnl": 0.0,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -51.41,
+  "total_equity": 149948.59
+}
