@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-24",
+  "runs": [
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "COP",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 1,
+      "entry_price": 129.84,
+      "stop_loss": 122.86,
+      "target": 140.31,
+      "entry_date": "2026-09-24",
+      "entry_time": "18:03",
+      "composite_score": 63.756793478260875,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 63.8, RSI 48, EPS growth 99%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Can Strong Oil Prices Drive ExxonMobil's Business Growth?",
+          "summary": "WTI near $100 and low-cost production in the Permian and Guyana could support XOM's earnings as drilling and AI boost output efficiency.",
+          "sentiment": 0.942,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=67d9c8bde15376ed52d8d8b06ee6bbd787eacd60273b52513fd3cfbad8e95ccd"
+        },
+        {
+          "headline": "ConocoPhillips: The Oil Price Play I Want, But With Added Risk",
+          "summary": "ConocoPhillips (COP) rated Buy: strong Q2 Permian output, $4.2B free cash flow, and oil upside despite geopolitical risk.",
+          "sentiment": 0.929,
+          "source": "Finnhub",
+          "published": "2026-09-20",
+          "url": "https://finnhub.io/api/news?id=9895bb04641c5b4851d9f4628c6d793fe1847f0934d4728f0a12c18dde677be5"
+        },
+        {
+          "headline": "Canada\u2019s Oil Patch On Track For Biggest M&A Wave In A Decade",
+          "summary": "Canada\u2019s oil patch is experiencing another major M&A boom, with more than $30 billion in deals so far in 2026 and activity potentially surpassing the $53 billion recorded in 2017.",
+          "sentiment": 0.917,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=e71b877bf137e2325dbc2eb16dfea4f3a07498c4b64d5e619e049b2eca37f67c"
+        },
+        {
+          "headline": "Analyzing The Venezuelan Oil Deal And Possible Opportunities",
+          "summary": "Venezuela's political shift and a new US-backed joint venture open significant long-term opportunities for upstream and oilfield services companies.",
+          "sentiment": 0.916,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=526dd46f4a4d47dee84a519823b541839f60e09324b676ad25199de09988439f"
+        },
+        {
+          "headline": "Can ExxonMobil Keep Rewarding Shareholders While Investing for Growth?",
+          "summary": "XOM's strong cash generation is funding growth investments and shareholder returns while supporting its 2030 earnings and cash-flow targets.",
+          "sentiment": 0.913,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=c6fd4ee7be2add999c4ded1ad3214d3a02104d198e18932b0c51d0b4bbdf9708"
+        },
+        {
+          "headline": "ConocoPhillips (NYSE:COP) Clears Minervini Trend Template and High Growth Momentum Screen",
+          "summary": "ConocoPhillips (COP) clears Minervini Trend Template and high-growth momentum screen with strong RS, rising MAs, and near 52-week highs.",
+          "sentiment": 0.913,
+          "source": "Finnhub",
+          "published": "2026-09-19",
+          "url": "https://finnhub.io/api/news?id=7dae1d2681043602550baec35c3be1a4de9b45ea9850f5931b2d1e8251138c8f"
+        },
+        {
+          "headline": "Mazama Energy Raises $135 Million to Scale the World\u2019s Hottest Engineered Geothermal System",
+          "summary": "Series B led by Centaurus Capital and Doerr Capital, with ConocoPhillips, Shell Ventures, Khosla Ventures and Gates Frontier participating, enabling Mazama to push beyond 750\u00b0F and demonstrate a commercially scalable pathway to deploy superhot rock g",
+          "sentiment": 0.89,
+          "source": "Finnhub",
+          "published": "2026-09-17",
+          "url": "https://finnhub.io/api/news?id=c880ef4311c75f1f06642bc205451d27be0caa002d45351ae0b82950ac6a3055"
+        },
+        {
+          "headline": "The Hidden Winners Inside SCHD - September 2026",
+          "summary": "Schwab US Dividend Equity ETF (SCHD) has outperformed SPY year-to-date, widening its lead during recent market volatility.",
+          "sentiment": 0.868,
+          "source": "Finnhub",
+          "published": "2026-09-18",
+          "url": "https://finnhub.io/api/news?id=2a57562e248a903fb341c7a0ca118e325b89de1403bfcc3bbb1a3200545a0235"
+        },
+        {
+          "headline": "Meta's Muse Sends the Nasdaq to a Record and Rekindles the AI Trade",
+          "summary": "Meta's agentic AI assistant Muse lit a fire under tech on Monday, pushing the Nasdaq to a record close and lifting chipmakers by double digits. Cheaper oil, a ten-year yield back below 5% and a friendlier tone between Washington and Beijing did the r",
+          "sentiment": 0.858,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=243db43307a3884832bb7a9dcdd2c7dbdfabb3920122c6201283cb5cc65b8c33"
+        },
+        {
+          "headline": "ConocoPhillips (COP) Stock Moves -1.77%: What You Should Know",
+          "summary": "ConocoPhillips (COP) closed the most recent trading day at $125.27, moving 1.77% from the previous trading session.",
+          "sentiment": 0.85,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=38c0ffe66e68a01bf27aa16483d580ec3d1e31eccc2dc03d21722a0d1fe09c3e"
+        }
+      ],
+      "cost": 129.84
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "GM",
+      "direction": "LONG",
+      "shares": 86,
+      "entry_price": 86.27,
+      "exit_price": 81.44,
+      "pnl_dollars": -415.38,
+      "pnl_pct": -5.6,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-24"
+    }
+  ],
+  "realized_pnl": -415.38,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -1056.0,
+  "total_equity": 149359.38
+}
