@@ -1,0 +1,227 @@
+{
+  "date": "2026-09-25",
+  "runs": [
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "LLY",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 5,
+      "entry_price": 1177.03,
+      "stop_loss": 1112.08,
+      "target": 1274.46,
+      "entry_date": "2026-09-25",
+      "entry_time": "18:10",
+      "composite_score": 66.80232558139537,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 66.8, RSI 54, EPS growth 25%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "8 Of 11 Sectors Fall In Thursday Trading As Leaders Split",
+          "summary": "Three sectors are higher and eight are lower in Thursday\u2019s regular session, with growth, cyclical and defensive sectors each represented among the top three. The leaders are separated rather than",
+          "sentiment": -0.94,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=00446d0b7eca62e7091fb91a0636311d89b5a340641080559ba21143a2da914a"
+        },
+        {
+          "headline": "2 Healthcare Stocks with Impressive Fundamentals and 1 Facing Challenges",
+          "summary": "Healthcare companies are pushing the status quo by innovating in areas like drug development and digital health. Those leading the charge have not only realized strong financial performance but also propelled the broader industry\u2019s returns as healthc",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=c6021a624f80da0ed3d242d93c5bb0268b46ed70c31b4a28c6af376ba9366f80"
+        },
+        {
+          "headline": "Novo is betting on its next chapter as Eli Lilly gains more ground in GLP-1s",
+          "summary": "As Novo works to turn itself around, some analysts say Lilly has advantages that could help it maintain its position at the top of the obesity drug market.",
+          "sentiment": 0.928,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=fab1ab128fb5f8cd1ab8b7c8c8a31103859f43053c0a620f8b8e0c90e3f34c9f"
+        },
+        {
+          "headline": "Sanofi's New Drugs Poised to Drive Growth Beyond Dupixent",
+          "summary": "SNY's new drugs are gaining momentum, with Altuviiio, Ayvakit and Sarclisa poised to broaden growth beyond Dupixent.",
+          "sentiment": 0.921,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=4c71243a51db5b8d130215e9973ad233fdca8ce6909d0974cab8345089d4ab70"
+        },
+        {
+          "headline": "Nektar Therapeutics stock rises on $90M jury verdict vs Lilly",
+          "summary": "Investing.com -- Nektar Therapeutics (NASDAQ:NKTR) shares rose 3.6% in premarket trading Friday following a jury verdict awarding the company $90 million in damages in a contract dispute with Eli Lilly and Company (NYSE:LLY).",
+          "sentiment": 0.91,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=d4031a07d633031582b0215a25e5a8e9c5119ac7ddd5de9cacf7f100fe9d46ae"
+        },
+        {
+          "headline": "InnoCare Announces Strategic Research Collaboration and License Agreement with Lilly to Develop New Medicines",
+          "summary": "BEIJING, Sept. 24, 2026 (GLOBE NEWSWIRE) -- InnoCare Pharma (HKEX: 09969; SSE: 688428), a leading biopharmaceutical company focusing on the treatment of cancer and autoimmune diseases, announced today that the Company has entered into a strategic res",
+          "sentiment": 0.907,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=b6c2048db7cc13fecd4c58f014f826e4a92a846b3e87b572bed1f3169baabc63"
+        },
+        {
+          "headline": "Sector Update: Healthcare Stocks Edge Higher Premarket Friday",
+          "summary": "Healthcare stocks were edging higher premarket Friday, with the State Street Health Care Select Sect",
+          "sentiment": 0.898,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=741d5aaa72fb3cf2d9a5058944b86e89f2b6600ec3e3f5bc26c1d7d5b2007e36"
+        },
+        {
+          "headline": "Lilly Jumps 3.64% While a $100 Billion Obesity Race Crowds In",
+          "summary": "New pills, injections and maintenance regimens broaden patient choice while raising the durability test for market leaders.",
+          "sentiment": 0.897,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=03c3ac98688b3f5d3513cf162d9ab1a9992e4dc854d414727654095b10eb703a"
+        },
+        {
+          "headline": "Lilly Wins FDA Nod For Weekly Insulin, Signs $3.25 Billion InnoCare Pact",
+          "summary": "Eli Lilly secured FDA approval for its once-weekly insulin Onswik and announced a $3.25 billion research partnership with InnoCare Pharma.",
+          "sentiment": 0.884,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=4c34ba95aeae5fc9eb246a8e755f1d42a6d23bde6244dd11fb985085e6213604"
+        },
+        {
+          "headline": "Eli Lilly (LLY) Stock Is Up, What You Need To Know",
+          "summary": "Shares of global pharmaceutical company Eli Lilly (NYSE:LLY) jumped 3.1% in the afternoon session after The U.S. Food and Drug Administration approved Eli Lilly\u2019s once-weekly basal insulin, Onswik, for adults with type 2 diabetes, giving patients an",
+          "sentiment": 0.879,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=af6edfbfc1d5a155f59549b88f71efc8c8a9d10ebeb2a9ca0fb060bce6b328e0"
+        }
+      ],
+      "cost": 5885.15
+    },
+    {
+      "symbol": "FCX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 16,
+      "entry_price": 72.13,
+      "stop_loss": 66.73,
+      "target": 80.24,
+      "entry_date": "2026-09-25",
+      "entry_time": "18:10",
+      "composite_score": 65.1843161683278,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 65.2, RSI 51, EPS growth 27%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Can Freeport-McMoRan's Growth Projects Drive the Next Expansion Wave?",
+          "summary": "FCX advances major expansion projects, lifting copper capacity and output as its organic pipeline targets the next growth phase.",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=228a1950f3dbe1193749ed6fd398731c4cebad3056e8b29b72b61d7f7c1173f3"
+        },
+        {
+          "headline": "FCX vs. SCCO: Which Copper Mining Giant Should You Bet on?",
+          "summary": "Freeport and Southern Copper push ahead with major projects leveraging strong cash flows and favorable copper prices.",
+          "sentiment": 0.922,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=8af7ef882bd46a4be537dbf032c06f9cfd579c0bf4872ca3eb1a2e98f480a649"
+        },
+        {
+          "headline": "Freeport-McMoRan (FCX): Can Copper Tightness Outrun Rising Costs?",
+          "summary": "Freeport-McMoRan Inc. (NYSE:FCX) is entering a critical period as rising copper prices and higher production collide with tariff uncertainty, rising project costs, and execution risks. Goldman Sachs reiterated its Buy rating on September 10, calling",
+          "sentiment": -0.686,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=b60f5f16bd2a85c153e50adf8f611eb54c459b2d0300ec8ea1479db4c6fe498f"
+        },
+        {
+          "headline": "Freeport McMoRan (FCX) Stock Fair Value Edges Higher After Split Analyst Revisions",
+          "summary": "Freeport-McMoRan is back in focus as analysts refresh their models, with several price targets now sitting in the US$70 to US$82 range. These revisions are tied closely to updated Street commentary that weighs copper and Grasberg execution against ta",
+          "sentiment": 0.631,
+          "source": "Finnhub",
+          "published": "2026-09-20",
+          "url": "https://finnhub.io/api/news?id=921391c69323ab606e4b069d2439cb7cc1f3d3490ce5685c30b732aac31ac9ac"
+        },
+        {
+          "headline": "Basic Materials Sector Still Shows Promise In 2026, But Proceed With Caution",
+          "summary": "Top XLB holdings like Newmont, Freeport-McMoran, Linde, Corteva, and Nucor have delivered strong YTD performance. Learn why XLB ETF is a hold.",
+          "sentiment": 0.448,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=aced6f462965dc82bde95de81f3f706ca5db95ef440413eaec2d458d052200e4"
+        },
+        {
+          "headline": "Trump, Greenland Deal Puts Rare-Earth ETFs In Focus: Funds to Watch as US Targets China\u2019s Supply Chain",
+          "summary": "Stocks related to Greenland surged after the new U.S.-Greenland deal. Here\u2019s what it could mean for rare-earth and critical-minerals ETFs.",
+          "sentiment": 0.205,
+          "source": "Finnhub",
+          "published": "2026-09-21",
+          "url": "https://finnhub.io/api/news?id=d19b8a48c74492b9607b42a451f28ff4099108feb502df8bf7d89db6cdf3f908"
+        },
+        {
+          "headline": "Freeport-McMoRan (FCX) Registers a Bigger Fall Than the Market: Important Facts to Note",
+          "summary": "Freeport-McMoRan (FCX) reached $72.58 at the closing of the latest trading day, reflecting a -2.38% change compared to its last close.",
+          "sentiment": 0.169,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=40768cb07b9dfcaa7583c443b6709e3dea29ba1f0631eb2fe901b78e05b959ed"
+        },
+        {
+          "headline": "Reported Earlier, 5E Advanced Materials Prices $36M Upsized Public Offering Of 18M Shares At $2 Per Share To Fund Boron And Critical Materials Development",
+          "summary": "",
+          "sentiment": 0.111,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=0f211d0f8085e92c3829e420431bc942a0a7ef02b04cf5c066c4f268e4a875fe"
+        },
+        {
+          "headline": "Freeport-McMoRan's Low-Cost Secret to Take Advantage of Record Copper Prices",
+          "summary": "There are no AI data centers without copper.",
+          "sentiment": 0.103,
+          "source": "Finnhub",
+          "published": "2026-09-22",
+          "url": "https://finnhub.io/api/news?id=84a81050704124ce1af077f4fee5e72fae9dbe534d682d7ff4b3aa14c1d80846"
+        },
+        {
+          "headline": "Freeport-McMoRan Inc. (FCX) is Attracting Investor Attention: Here is What You Should Know",
+          "summary": "Freeport-McMoRan (FCX) has received quite a bit of attention from Zacks.com users lately. Therefore, it is wise to be aware of the facts that can impact the stock's prospects.",
+          "sentiment": 0.029,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=ca739fdb84335fc123616b402548b0ac28c06aec16a4574b42f0e630fd58f3b1"
+        }
+      ],
+      "cost": 1154.08
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "CF",
+      "direction": "LONG",
+      "shares": 59,
+      "entry_price": 125.79,
+      "exit_price": 114.66,
+      "pnl_dollars": -656.67,
+      "pnl_pct": -8.85,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-25"
+    }
+  ],
+  "realized_pnl": -656.67,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -1372.07,
+  "total_equity": 149284.6
+}
