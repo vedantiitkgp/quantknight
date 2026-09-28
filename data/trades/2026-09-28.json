@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-28",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "NEM",
+      "direction": "LONG",
+      "shares": 59,
+      "entry_price": 126.04,
+      "exit_price": 116.08,
+      "pnl_dollars": -587.64,
+      "pnl_pct": -7.9,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-28"
+    }
+  ],
+  "realized_pnl": -587.64,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -1154.94,
+  "total_equity": 149432.7
+}

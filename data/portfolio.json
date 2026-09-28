@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 6787.74,
+  "cash": 13636.46,
   "total_equity": 149432.7,
-  "cumulative_pnl": -567.3,
-  "as_of": "2026-09-25T23:29:21.100590",
+  "cumulative_pnl": -1154.94,
+  "as_of": "2026-09-28T20:14:12.140604",
   "positions": [
     {
       "symbol": "INCY",
@@ -755,7 +755,7 @@
       "trade_type": "swing",
       "shares": 40,
       "entry_price": 185.46,
-      "stop_loss": 168.32,
+      "stop_loss": 185.46,
       "target": 211.18,
       "entry_date": "2026-09-03",
       "entry_time": "18:47",
@@ -1048,106 +1048,6 @@
         }
       ],
       "current_price": 916.83
-    },
-    {
-      "symbol": "NEM",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 59,
-      "entry_price": 126.04,
-      "stop_loss": 117.3,
-      "target": 139.14,
-      "entry_date": "2026-09-11",
-      "entry_time": "18:25",
-      "composite_score": 68.29702329594478,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 68.3, RSI 57, EPS growth 7%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "BTG's All-in Sustaining Costs Rise Sharply in Q2: What Lies Ahead?",
-          "summary": "B2Gold's costs surged in the first half of 2026, but stronger production and lower cost guidance offer a brighter outlook for the miner.",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=8a53b6f3a7d580bcb8395d8cb52e116b6379c844d4ea986434e80d5b27a20eb4"
-        },
-        {
-          "headline": "Bernstein Maintains Outperform on Newmont, Lowers Price Target to $144",
-          "summary": "Bernstein  analyst Bob Brackett   maintains Newmont (NYSE:NEM) with a Outperform and lowers the price target from $147 to $144.",
-          "sentiment": -0.893,
-          "source": "Finnhub",
-          "published": "2026-09-09",
-          "url": "https://finnhub.io/api/news?id=2bc573a5ed5a346f2df7c7a3cf073daf14360704c0b6e38c11dfc674ab701eec"
-        },
-        {
-          "headline": "Can NEM Maintain Earnings Momentum Amid Production Challenges?",
-          "summary": "NEM faces production challenges as lower output and higher costs pressure 2026 goals.",
-          "sentiment": -0.873,
-          "source": "Finnhub",
-          "published": "2026-09-08",
-          "url": "https://finnhub.io/api/news?id=a15207b062d7a38e717016c610bb084ba63457cebababa71c11616bdbf4616a4"
-        },
-        {
-          "headline": "Is Newmont Stock Outperforming the Nasdaq?",
-          "summary": "As Newmont has surpassed the broader Nasdaq Composite over the past year, Wall Street analysts remain strongly optimistic about the stock\u2019s prospects.",
-          "sentiment": 0.861,
-          "source": "Finnhub",
-          "published": "2026-09-08",
-          "url": "https://finnhub.io/api/news?id=f06e4e0fba564b0f993363af5ab6b205ee149e0c659288eac1667829eb4cb7c1"
-        },
-        {
-          "headline": "Gold miners and bitcoin stocks fall on strong jobs data",
-          "summary": "Investing.com -- Gold mining and crypto-linked equities skidded Friday as a blowout U.S. jobs report dampened expectations for monetary easing, lifting implied odds of a Fed rate hike next week to 60% from 52%. The Labor Department reported nonfarm p",
-          "sentiment": -0.731,
-          "source": "Finnhub",
-          "published": "2026-09-04",
-          "url": "https://finnhub.io/api/news?id=888568c3413c102c6b1a946b289488c5602dc955089eddc582df97af583a8455"
-        },
-        {
-          "headline": "JPMorgan\u2019s Own Strategist Says the Fed Has Quietly Surrendered on 2% Inflation",
-          "summary": "A senior strategist at one of America's largest private banks just said something that reframes every fixed-income position in your portfolio, and the implications reach well beyond a single rate call.",
-          "sentiment": -0.642,
-          "source": "Finnhub",
-          "published": "2026-09-04",
-          "url": "https://finnhub.io/api/news?id=6c7506c85f33fce3aacc29686e9327d3ceb755441a07e6cfbe3d2f56b3bb79b2"
-        },
-        {
-          "headline": "Newmont Corporation (NEM) Dips More Than Broader Market: What You Should Know",
-          "summary": "The latest trading day saw Newmont Corporation (NEM) settling at $126.14, representing a -2% change from its previous close.",
-          "sentiment": -0.624,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=9e56cdfe1e231586d9aed972a613218a282d51bafe3d2a632425c18cb2a27951"
-        },
-        {
-          "headline": "Oil Hits $100: Which Stocks And ETFs Win Or Lose?",
-          "summary": "Brent topped $100 after US strikes on Iranian tankers. Refiners have doubled in 2026. Airlines, REITs and gold miners are on the wrong side.",
-          "sentiment": -0.566,
-          "source": "Finnhub",
-          "published": "2026-09-09",
-          "url": "https://finnhub.io/api/news?id=0be8189a8cad5f50f0714e805a9eaca9f9d5ea684f587b5c4103bca72eed98da"
-        },
-        {
-          "headline": "AEM Trading at a Premium Valuation: Here's How to Play the Stock",
-          "summary": "AEM's strong projects and cash flow support growth, but higher costs, production risks and a premium valuation could limit upside.",
-          "sentiment": 0.544,
-          "source": "Finnhub",
-          "published": "2026-09-10",
-          "url": "https://finnhub.io/api/news?id=1973240160dde7e9eb8422a3c1ee8266ba45243c17a3aa42f3809a82297bf5c0"
-        },
-        {
-          "headline": "Bond Yields Are Pressuring Gold, But Miners May Tell a Different Story",
-          "summary": "As Treasury yields near multi-year highs and central banks repatriate gold, Newmont and Barrick Mining trade at discounted valuations despite strong margins, cash flow, and buyback programs.",
-          "sentiment": -0.541,
-          "source": "Finnhub",
-          "published": "2026-09-08",
-          "url": "https://finnhub.io/api/news?id=802170d17728c0c56038cc661af04546ef54714b5e6580916de79130011a460b"
-        }
-      ],
-      "current_price": 121.43
     },
     {
       "symbol": "CNC",
