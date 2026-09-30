@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 13636.46,
+  "cash": 70.28,
   "total_equity": 148593.9,
   "cumulative_pnl": -1406.1,
-  "as_of": "2026-09-29T23:57:31.962974",
+  "as_of": "2026-09-30T18:39:31.602843",
   "positions": [
     {
       "symbol": "INCY",
@@ -2248,6 +2248,204 @@
         }
       ],
       "current_price": 70.79
+    },
+    {
+      "symbol": "GOOG",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 21,
+      "entry_price": 345.52,
+      "stop_loss": 329.09,
+      "target": 370.17,
+      "entry_date": "2026-09-30",
+      "entry_time": "18:39",
+      "composite_score": 68.9848484848485,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 69.0, RSI 54, EPS growth 298%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Anthropic's Potential $2 Trillion-Plus IPO Supports Robust AI Infrastructure Spending, Wedbush Says",
+          "summary": "Anthropic's planned initial public offering, which could potentially value the company at more than",
+          "sentiment": 0.922,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=b434a17ccb2c7f7936d3027a2909200170461ab19281eca3b1e3cbe0f252d078"
+        },
+        {
+          "headline": "SpaceX Shares Rise Following TD Cowen \u201cBuy\u201d Rating Initiation",
+          "summary": "Key Stats for SpaceX StockPrice change for SpaceX stock in the last 1 month: 4%$SPCX Stock Price as of Sep. 29: $14952-Week High: $226$SPCX Stock Price Target: $223What Happened?SpaceX (SPCX:NASDAQ) shares are moving higher after TD Cowen started cov",
+          "sentiment": 0.918,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=c297d507dd9afdf144ac12bcd70bf3079660a2b08ccd87b90d65d22276f37c05"
+        },
+        {
+          "headline": "CoreWeave Expands Enterprise Push As AI Cloud Competition Heats Up",
+          "summary": "CoreWeave stock could get a boost as the AI cloud company moves beyond renting computing servers equipped with Nvidia chips.",
+          "sentiment": 0.915,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=47b123937ad4844b71b699c7e44703d6a73b39677c4f17f0e534eb97c86d0734"
+        },
+        {
+          "headline": "AI in America has a huge 1.7 million job shortage problem",
+          "summary": "Got skilled workers?",
+          "sentiment": -0.902,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=850daf5a30871df0216aeacc228c972f4606806b7fdf905eca76563e1c26e47b"
+        },
+        {
+          "headline": "Top Midday Stories: Fed's Preferred Inflation Gauge Rises as Expected in August; AI Companies Sign White House Accord",
+          "summary": "All three major US stock indexes were up in late-morning trading Wednesday after the latest reading",
+          "sentiment": 0.891,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=c51fe03761bdf6a695ea9c95b6ae8be182927ca0959f6e0ca8872796207e1991"
+        },
+        {
+          "headline": "NIQ Expands Google Relationship with Meridian Integration into NIQ Cadence\u2122",
+          "summary": "CHICAGO, September 30, 2026--NIQ (NYSE: NIQ), a leading consumer intelligence company, today announced the expansion of its relationship with Google through the integration of Meridian, Google's open-source MMM framework, into NIQ Cadence\u2122, NIQ's AI-",
+          "sentiment": 0.854,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=004ca512a889ade31c380668e56409e591026fa3bbf715e576a85bc4c4f40ec5"
+        },
+        {
+          "headline": "Better AI Chip Stock to Buy Today: Broadcom vs. Marvell",
+          "summary": "Marvell stock has greatly outperformed Broadcom's this year, but will that continue?",
+          "sentiment": 0.853,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=b97804755d757b535bde4fb59dc4bcc928f29eebcaf73539325a446fcac45477"
+        },
+        {
+          "headline": "Sector Update: Tech Stocks Mixed Wednesday Afternoon",
+          "summary": "Tech stocks were mixed Wednesday afternoon, with the State Street Technology Select Sector SPDR ETF",
+          "sentiment": -0.85,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=ccbe097de06ad01327ecc5b99b64da6fd9ca720ded6a86d8a33569539bba93de"
+        },
+        {
+          "headline": "The AI Revolution Could Be Microsoft\u2019s Next Trillion-Dollar Opportunity",
+          "summary": "Azure's explosive backlog and Copilot's paid seat growth have bulls eyeing targets near $700, but a capex surge that outpaced free cash flow by a wide margin could threaten the entire AI thesis before it pays off.",
+          "sentiment": -0.849,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=eae9b312e71ee662f58c3d5de5d579c5c2a9ec52b72e7ea4125d2d519ac0d804"
+        },
+        {
+          "headline": "Anthropic IPO Filing Reveals a Major Vulnerability: Nearly 50% of Sales Flow Through Amazon and Google as Revenue Concentration Raises Risks: Report",
+          "summary": "Anthropic\u2018s IPO prospectus has revealed the AI developer\u2019s significant reliance on a few tech giants and customers. About 47% of Anthropic\u2019s sales last year were routed through cloud partners Amazon (NASDAQ:AMZN) and Alphabet\u2019s Google (NASDAQ:GOOGL)",
+          "sentiment": -0.847,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=c372ef091144bce462a4693104be1599db6b8865e879fad757dce4619ab90eee"
+        }
+      ]
+    },
+    {
+      "symbol": "VRTX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 12,
+      "entry_price": 525.855,
+      "stop_loss": 502.69,
+      "target": 560.61,
+      "entry_date": "2026-09-30",
+      "entry_time": "18:39",
+      "composite_score": 61.659090909090914,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 61.7, RSI 53, EPS growth 6%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Maze Therapeutics Shares Rise 2.9% After CIBC Initiates Coverage",
+          "summary": "Maze Therapeutics (NASDAQ:MAZE) shares rose 2. 9% in pre-market trading after CIBC initiated coverage of the clinical-stage biopharmaceutical company with an Outperformer rating and a $50 price target.",
+          "sentiment": 0.931,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=8627463e0da36478cd4c6e979a5013bd6026f414da7d29d4e5042934f549f880"
+        },
+        {
+          "headline": "2 Healthcare Stocks to Target This Week and 1 We Avoid",
+          "summary": "From novel pharmaceuticals to telemedicine, most healthcare companies are on a mission to drive better patient outcomes. Shareholders who bet on the industry have been rewarded lately as healthcare stocks have returned 46.9% over the past six months,",
+          "sentiment": 0.927,
+          "source": "Finnhub",
+          "published": "2026-09-28",
+          "url": "https://finnhub.io/api/news?id=755d2c372c9a61d3c7e7d4171d959a6953d7d8fb9e6d1302ea12d1028db6c15a"
+        },
+        {
+          "headline": "Maze Therapeutics (MAZE) Shares Moved, So What Is Driving Attention Now?",
+          "summary": "Fresh Coverage Puts Maze Therapeutics in Focus Maze Therapeutics (MAZE) moved higher in pre-market trading on 23 September after CIBC began covering the clinical-stage kidney and metabolic disease specialist, with the share reaction unfolding alongsi",
+          "sentiment": -0.907,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=bc77ee2f3a731640cb511366a42735fcd3fed89234dd95f89b3c42f07dff1808"
+        },
+        {
+          "headline": "Could Vertex Pharmaceuticals (VRTX)\u2019s Kidney Breakthrough Unlock a New Opportunity for Maze Therapeutics (MAZE)?",
+          "summary": "On September 22, Truist analyst Danielle Brill identified a \u201csignificant positive readthrough\u201d for Maze Therapeutics, Inc. (NASDAQ:MAZE) following positive Phase 2 topline data from Vertex Pharmaceuticals Incorporated (NASDAQ:VRTX). The data validate",
+          "sentiment": 0.873,
+          "source": "Finnhub",
+          "published": "2026-09-29",
+          "url": "https://finnhub.io/api/news?id=53f4be2f0dd2ed26d97af2ff1e281be817a054b406c7bd3b609affe35a6362ec"
+        },
+        {
+          "headline": "Vertex Pharmaceuticals (VRTX) Increases Despite Market Slip: Here's What You Need to Know",
+          "summary": "Vertex Pharmaceuticals (VRTX) closed at $522.38 in the latest trading session, marking a +1.17% move from the prior day.",
+          "sentiment": 0.873,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=8d960186a0c346263dfff2e307f730d164cd86c45a32484e1998e77e86f3a011"
+        },
+        {
+          "headline": "Will Vertex's Kidney Disease Pipeline Be a New Growth Engine?",
+          "summary": "VRTX is expanding beyond its CF stronghold with a promising kidney disease pipeline led by povetacicept and inaxaplin.",
+          "sentiment": 0.87,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=8a32f016a9b3684f1fe9cfa6af45d10ca02839421a41253f2f7a3954c90aa335"
+        },
+        {
+          "headline": "Vertex Posts Positive Phase II Data on Kidney Disease Drug",
+          "summary": "VRTX announces positive AMPLIFIED data for inaxaplin, while completing AMPLITUDE enrollment and targeting interim results in early 2027.",
+          "sentiment": 0.867,
+          "source": "Finnhub",
+          "published": "2026-09-23",
+          "url": "https://finnhub.io/api/news?id=a98d3b33622162ff080cdad3121e9da25683017965436b651b972af21f3481ca"
+        },
+        {
+          "headline": "Lilly\u2019s latest China drug deal; Immunovant\u2019s setback in lupus",
+          "summary": "Lilly wagered up to $3.35 billion in\u00a0its fourth China-focused alliance since January 2025. Elsewhere, analysts are now more confident about one of Vertex\u2019s top prospects and an RNA drug succeeded against a rare form of ALS.",
+          "sentiment": 0.86,
+          "source": "Finnhub",
+          "published": "2026-09-24",
+          "url": "https://finnhub.io/api/news?id=abc95706b599049ea61198dad4403b3c20a062769fff63f839285132541fe923"
+        },
+        {
+          "headline": "2 Healthcare Stocks That Just Delivered Great News for Investors",
+          "summary": "And there could be more positive developments ahead.",
+          "sentiment": 0.798,
+          "source": "Finnhub",
+          "published": "2026-09-26",
+          "url": "https://finnhub.io/api/news?id=becdafb046515919da85f72434ea657c96efa03ea7b144c94184a78f1d8899cb"
+        },
+        {
+          "headline": "$100 Invested In Vertex Pharmaceuticals 10 Years Ago Would Be Worth This Much Today",
+          "summary": "Vertex Pharmaceuticals (NASDAQ:VRTX) has outperformed the market over the past 10 years by 6.27% on an annualized basis producing an average annual return of 19.81%. Currently, Vertex Pharmaceuticals has a market",
+          "sentiment": 0.79,
+          "source": "Finnhub",
+          "published": "2026-09-29",
+          "url": "https://finnhub.io/api/news?id=645e00c63c078d5113e0f74e41cc2998e00ddd331b98c15a9aba17eb591b050c"
+        }
+      ]
     }
   ]
 }
