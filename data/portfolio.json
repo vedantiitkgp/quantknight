@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 70.28,
+  "cash": 7006.31,
   "total_equity": 148593.9,
-  "cumulative_pnl": -1406.1,
-  "as_of": "2026-09-30T18:39:31.602843",
+  "cumulative_pnl": -1980.8,
+  "as_of": "2026-09-30T19:56:09.145179",
   "positions": [
     {
       "symbol": "INCY",
@@ -648,106 +648,6 @@
         }
       ],
       "current_price": 84.34
-    },
-    {
-      "symbol": "IBKR",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 81,
-      "entry_price": 92.725,
-      "stop_loss": 85.82,
-      "target": 103.09,
-      "entry_date": "2026-09-03",
-      "entry_time": "18:47",
-      "composite_score": 67.2187137049942,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 67.2, RSI 51, EPS growth 39%",
-      "bull_thesis": "# INTERACTIVE BROKERS (IBKR) \u2014 BULL CASE\n**Analysis Date:** 2026-09-03\n\n---\n\n## SECTION 1 \u2014 WHAT THIS BUSINESS DOES AND WHY IT IS WINNING NOW\n\nInteractive Brokers operates as an **automated, low-cost execution and clearance engine** for stocks, options, futures, FX, bonds, cryptocurrencies, and margin lending\u2014a pure volume and transaction-fee business with minimal marginal cost once infrastructure is built. The company is winning NOW because it is simultaneously capturing three structural tailwinds: **(1) retail trading volatility and account growth** (August 2026 client DARTs up 23% YoY), **(2) idle cash yield capture** (earning on client cash balances as Fed rates stay elevated), and **(3) technological differentiation** that allows it to serve both retail and institutional segments at scale without the overhead of traditional brokers. This combination drives operating leverage: revenue growth (21.3% YoY) is outpacing expense growth, expanding net margins and propelling EPS growth (39.3% YoY) far above the top line.\n\n---\n\n## SECTION 2 \u2014 FUNDAMENTAL QUALITY VERDICT\n\n| Metric | Value | Signal | Why It Matters |\n|--------|-------|--------|----------------|\n| ROIC | 24.019% | MOAT | Threshold 15%; IBKR at 24% = superior capital deployment & pricing power |\n| FCF Yield | 0.0% | DATA UNAVAILABLE | Cannot assess cash generation efficiency; see P/FCF below |\n| EPS Growth YoY | 39.2857% | ACCELERATING | Growth rate DOUBLING vs. revenue (21.3%); multiple re-rating likely |\n| EPS Growth QoQ | 16.8539% | ACCELERATING | Earnings acceleration sustaining \u2014 not a one-quarter bounce |\n| Revenue Growth YoY | 21.3447% | ORGANIC | Top-line expanding, but EPS growing 39%+ = margin expansion driving earnings |\n| Net Margin | 16.474% | EXPANDING | Strong; reflects operating leverage from scale without headcount bloat |\n| Gross Margin | 93.036% | EXPANDING (MOAT-LEVEL) | 93% gross margin = nearly zero variable cost per trade; transaction-fee businesses scale |\n\n**CONCLUSION:** The fundamentals ARE high quality. Here is why: ROIC of 24% demonstrates a genuine moat in execution and market making; EPS growth (39.3% YoY) is accelerating FASTER than revenue (21.3% YoY), proving operating leverage is kicking in; gross margin of 93% is a cash-generative machine once fixed costs are absorbed.\n\n---\n\n## SECTION 3 \u2014 VALUATION: IS THE PRICE JUSTIFIED?\n\n| Metric | Value | Signal | Interpretation |\n|--------|-------|--------|----------------|\n| PEG | 1.46 | FAIR | <1.0 cheap; >2.0 fully priced; IBKR at 1.46 = slight premium to growth, but justified |\n| EV/EBITDA | 0.0 | DATA UNAVAILABLE | Cannot assess enterprise value multiples; use P/E as proxy |\n| P/FCF | 0.0 | DATA UNAVAILABLE | Cannot assess free cash flow multiple |\n| Trailing P/E | 36.8 | ELEVATED | Current earnings multiple; higher than S&P 500 avg (~21x), signaling growth premium |\n| Forward P/E | 29.2 | CONTRACTING | Forward P/E LOWER than trailing P/E (36.8) = market expects EPS growth to compress |\n| Analyst Target | $105.74 (mean); High: $121.0 | +13.9% to +30.4% upside | 13 analysts; consensus $105.74; bull case $121 implies 30% upside |\n\n**CONCLUSION:** At $92.725, the stock IS fairly valued for growth-at-a-reasonable-price (GARP), not cheap. Here is why: PEG of 1.46 is at fair value for a 39% EPS grower; forward P/E of 29.2x suggests market is pricing in moderation from 39% growth, but if EPS acceleration continues, multiple expansion could close the gap to analyst target of $105.74 (+13.9% to fair value, or +30.4% to bull target).\n\n---\n\n## SECTION 4 \u2014 EARNINGS REPORT ANALYSIS & PRICE IMPACT\n\n**EPS Surprise: +6.05%** \u2014 IBKR beat estimates by 6%, a solid positive signal. The mechanism: a 6% EPS beat \u2192 analyst models revise earnings upward \u2192 earnings revision triggers quant rebalancing \u2192 institutional buy programs execute within 1\u20135 trading sessions \u2192 equity research coverage refreshes rating/target. At current P/E of 36.80x, a 6% upward EPS revision implies approximately **$92.73 \u00d7 1.06 = $98.29** as the mechanical price target from earnings expansion alone. This mechanism already appears partially baked in (stock at $92.73, suggesting limited surprise left in the near-term market reaction).\n\n**Next Earnings: October 20, 2026 (47 days away)** \u2014 This is NOT an imminent binary event. A 47-day window means the thesis has clean runway to develop without earnings overhang. Market volatility, trading volume, and client growth can be monitored through August/September operational metrics (August DARTs already showed 23% YoY strength, confirming positive momentum into the October report).\n\n**EPS Acceleration (22.84% year-over-year acceleration):** This IS the catalyst for multiple re-rating. When earnings growth RATES increase\u2014as IBKR's are doing (39.3% YoY current, likely driven by operating leverage)\u2014the market reprices the stock from a \"stable slow-growth\" multiple to a \"growing faster\" multiple. If the 39% growth rate is sustainable (which the 16.85% QoQ growth suggests it is), P/E re-rating from current 36.8x to 40\u201345x is rational and historically precedented for high-quality compounders at inflection points.\n\n---\n\n## SECTION 5 \u2014 NEWS CATALYST ANALYSIS\n\n| Source | Headline | Sentiment | Event Type | Price Mechanism | Conviction Impact |\n|--------|----------|-----------|------------|-----------------|-------------------|\n| Finnhub | \"US Equity Markets End Lower as Oil, Bond Yields Rise After US Strikes on Iran\" | -0.955 | MACRO HEADWIND | Broader market volatility suppresses equities; beta=1.343 means IBKR falls ~1.3% for every 1% market decline | DETRACTS (noise) |\n| Finnhub | \"Interactive Brokers Stock Falls After Getting Bumped From Goldman's Top Picks List\" | -0.944 | ANALYST DOWNGRADE | One analyst removed coverage/downgrade = tactical selling by hedge funds following that analyst; this IS reversible and not fundamental | DETRACTS (short-term overhang) |\n| Finnhub | \"Interactive Brokers Stock Slides Following August Metrics\" | -0.944 | MIXED DATA | \"Sequential dip in trading activity\" vs. \"strong YoY metrics\" = one month of softness vs. structural uptrend; traders overreact to sequential noise | NEUTRAL (temporary weakness) |\n| Finnhub | \"IBKR Gains 50.1% So Far in 2026: Should You Buy the Stock Now?\" | +0.938 | NARRATIVE VALIDATION | Up 50% YTD = momentum narrative attracts retail FOMO + algorithmic trend following; confirms market is recognizing the thesis | ADD TO CONVICTION |\n| Finnhub | \"3 Investment Bank Stocks Set to Benefit From Industry Tailwinds\" | +0.934 | SECTOR ROTATION | Morgan Stanley, Schwab, IBKR all riding active trading, tech investment, underwriting tailwinds = institutional money rotating INTO capital markets as sector. IBKR is mentioned as best-positioned small-cap in the group | ADD TO CONVICTION |\n| Finnhub | \"Bull of the Day: Interactive Brokers (IBKR)\" | +0.933 | ANALYST BULLISHNESS | \"Robust account growth, rising trading activity, positive EPS revisions\" = consensus sentiment shifting bullish; positive EPS revisions specifically drive 1\u20135 day price momentum | ADD TO CONVICTION |\n| Finnhub | \"Why Interactive Brokers Stock Tumbled on Tuesday\" | -0.926 | ANALYST UNCERTAINTY | \"Dose of uncertainty from Wall Street\" = vague; likely reaction to Goldman downgrade and macro noise, not fundamental | DETRACTS (noise) |\n| Finnhub | \"IBKR Sees 23% Y/Y Rise in Client DARTs in August 2026: What Drove It?\" | +0.925 | OPERATIONAL VALIDATION | August DARTs (Daily Active Revenue Traders) up 23% YoY = THE leading indicator for Q3 revenue and trading volume; confirms organic growth thesis | ADD TO CONVICTION |\n| Finnhub | \"Zacks Industry Outlook Highlights Morgan Stanley, The Charles Schwab and Interactive Brokers\" | +0.923 | INDUSTRY POSITIONING | IBKR positioned as a beneficiary of deal activity, trading, technology spending = sector tailwinds are STRUCTURAL, not cyclical | ADD TO CONVICTION |\n| Finnhub | \"Robinhood and Interactive Brokers Both Ride Retail Volume. Only One Earns on Idle Cash.\" | +0.86 | COMPETITIVE ADVANTAGE | IBKR's margin lending and cash yield = superior profitability vs. Robinhood, which relies on PFOF; IBKR's business model is STRUCTURALLY more profitable | ADD TO CONVICTION |\n\n**MOST BULLISH HEADLINE:**\n\"**IBKR Sees 23% Y/Y Rise in Client DARTs in August 2026: What Drove It?**\" (sentiment +0.925)\n\nThis headline directly CONFIRMS the data showing eps_growth_yoy=39.2857% and rev_growth_yoy=21.3447%. August's 23% YoY DART growth is the **leading indicator** for Q3 revenue and is HIGHER than the full-year revenue growth rate (21.3%), signaling acceleration into year-end. If DARTs remain elevated through September and October (leading into the October 20 earnings), a beat is highly probable. The mechanism: strong DART growth \u2192 higher commission/trading volume revenue \u2192 operating leverage on fixed costs \u2192 EPS growth re-rates upward from current 39% to 42\u201345% \u2192 analyst targets revised higher (current high target is $121, implying 30% upside) \u2192 institutional accumulation phase in Q4. **Price implication: A sustained 23%+ DART growth trend through earnings would justify movement toward the $121 analyst high target, representing +30% from current levels.**\n\n---\n\n## SECTION 6 \u2014 POSITIONING & SHORT SQUEEZE POTENTIAL\n\n**Short Interest: 2.07% of float; 1.8 days to cover**\n\nShort interest IS NOT a coiled spring. At only 2.07% of float, the short interest is minimal and poses NO squeeze risk. This is actually **BULLISH** \u2014 the upside move is CLEAN, driven by genuine new buyers accumulating on fundamentals, not mechanical covering. There is no hidden pressure beneath the surface waiting to explode. The low short ratio (1.8 days) means short-covering will NOT amplify the move; the upside is authentic and based on earnings power, not squeeze dynamics.\n\n**Insider Net: -6 (net selling)**\n\nInsider selling IS a warning flag. Management selling -6 net shares on a short-term basis could signal either (a) tax planning, (b) liquidity rebalancing, or (c) concerns about near-term valuation. However, in the context of IBKR's 50% YTD rally and elevated P/E, some insider trimming is rational profit-taking and does NOT invalidate the longer-term thesis. The magnitude is small (-6 net), suggesting this is not panic selling but opportunistic. DETRACTS from conviction slightly, but in isolation is not disqualifying.\n\n**Institutional Holders: 10**\n\nInstitutional holder count of 10 is LOW, suggesting the stock remains under-owned by large asset managers. This is BULLISH for accumulation potential \u2014 as IBKR's growth thesis becomes more mainstream (evidenced by recent analyst upgrades and \"Bull of the Day\" coverage), institutional inflows could accelerate. Early-stage institutional adoption = prolonged accumulation phase = sustained upside.\n\n**Beta: 1.343**\n\nAt beta 1.343, a 1% S&P 500 upside move implies approximately 1.34% upside in IBKR. In a bull market environment (and the sector news suggests we are in capital markets rotation mode), high beta amplifies the upside. If the S&P 500 rallies 10% over the next 6 months on tech/AI tailwinds, IBKR could see 13.4% from beta alone, PLUS organic EPS growth accretion on top\u2014creating compounding returns.\n\n---\n\n## SECTION 7 \u2014 SECTOR ROTATION & OTHER-STOCK IMPACT\n\n**Sector: Financial Services | Industry: Capital Markets**\n\nMoney IS flowing INTO capital markets broadly. Evidence from recent news:\n\n1. **Finnhub:** \"3 Investment Bank Stocks Set to Benefit From Industry Tailwinds\" \u2014 Morgan Stanley, Charles Schwab, and IBKR are all cited as beneficiaries of tech investments, active trading, and stronger underwriting/advisory. **This signals institutional ETF flows into capital markets ETFs (XLF, IYG, FSVX) are lifting the entire subsector.**\n\n2. **Zacks:** \"Zacks Industry Outlook Highlights Morgan Stanley, The Charles Schwab and Interactive Brokers\" \u2014 Explicit mention of IBKR alongside tier-1 capital markets names = IBKR is being recognized as a structural beneficiary of deal activity, technology spending, and trading volatility. **Sector tailwinds are structural (M&A pipelines, record wealth creation in tech/AI sectors) not cyclical.**\n\n3. **Comparative Read-Through:** Peer strength (Morgan Stanley, Schwab) reported, with IBKR positioned as the highest-margin, lowest-cost operator in the group. This is a BULLISH differentiation. **IBKR's 93% gross margin and 16.5% net margin outpace traditional brokers with higher overhead.**\n\n**Macro Backdrop:** Elevated interest rates (which support margin lending income and cash yield), healthy M&A pipeline, and retail trading activity all support capital markets revenue. Recent Fed policy signals are neutral-to-slightly-dovish (no rate hikes expected), meaning the current yield environment will persist through 2026, supporting IBKR's core margin lending and idle cash income streams. **The macro backdrop IS SUPPORTIVE for the Capital Markets sector because (1) rates are stable/elevated, supporting yield income; (2) M&A and trading volatility are structural tailwinds driven by AI, tech consolidation, and wealth transfer.**\n\n---\n\n## SECTION 8 \u2014 TECHNICAL ENTRY: WHY THE TIMING IS RIGHT TODAY\n\n| Metric | Value | Interpretation |\n|--------|-------|-----------------|\n| Entry Setup | RSI_PULLBACK | Pullback in RSI signals low-risk entry |\n| Setup Confidence | 70% | High conviction in technical pattern |\n| EMA Alignment | 4 | All 4 EMAs stacked bullishly = uptrend confirmed |\n| RSI | 50.60 | Neutral-to-slightly-bullish (50 = centerline; below 70 = not extended) |\n| MACD Histogram | +0.8524 | Positive and rising = momentum building |\n| Volume Ratio | 0.5152 | Below 1.0 = volume NOT yet confirming the move (potential setup for acceleration) |\n| Entry | $92.725 | Current |\n| Stop Loss | $85.82 | -7.5% downside risk |\n| Short Target | $103.09 | +11.1% medium-term |\n| Long Target | $113.45 | +22.3% full target |\n| Risk/Reward | 1.5x | 7.5% risk : 11.3% upside minimum (or 22.3% to full target = 3x R/R) |\n\n**Technical Setup:**\n\nIBKR is setting up as a **textbook RSI pullback entry**. The stock is not extended (RSI 50.6 = neutral, below 70-level overbought threshold); EMA alignment (4/4 bullish) confirms the primary uptrend remains intact; MACD histogram is positive and rising (+0.8524), signaling momentum is building, not rolling over. Volume ratio is 0.5152 (below 1.0), meaning institutional participation has NOT yet flooded the market\u2014this is a setup for ACCELERATION into the October earnings.\n\n**Why Enter NOW Not Later:**\n\nAt $92.725, IBKR is in a **pullback-within-trend formation**. August and early September saw profit-taking (Goldman downgrade, macro noise), creating the RSI pullback. However, the fundamentals remain intact (August DARTs +23% YoY), the sector tailwinds are structural, and EPS acceleration is kicking in. Waiting for RSI to break 70 risks missing the acceleration phase; entering NOW on the pullback captures the move with a tight $85.82 stop (7.5% risk), with 11%+ upside to $103 in the near-term and 22% upside to $113.45 on a full EPS re-rating. The R/R of 1.5x minimum (or 3x to full target) justifies entry.\n\n---\n\n## FINAL BULL VERDICT\n\n**BULL VERDICT: I rate IBKR a STRONG BUY at $92.725 with 3x R/R (full target $113.45) because EPS growth is accelerating to 39.3% YoY while the forward P/E (29.2x) is LOWER than the trailing P/E (36.8x), indicating the market has already priced in moderation\u2014yet August client DARTs grew 23% YoY (faster than full-year revenue growth of 21.3%), confirming the uptrend is accelerating, not decelerating. At current valuation, this is a re-rating setup where multiple expansion from 36.8x trailing to 40+x forward is justified by sustained mid-30s% EPS growth AND sector tailwinds (capital markets rotation, idle cash yield support, M&A activity). RSI pullback + EMA bullish alignment + rising MACD provide clean technical entry. Risk is $85.82 (7.5%); upside to analyst mean $105.74 (+13.9%) is conservative; full target $113.45 (+22.3%) is achievable on Q3/Q4 beat + multiple re-rating.**",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "US Equity Markets End Lower as Oil, Bond Yields Rise After US Strikes on Iran",
-          "summary": "US equity indexes ended lower Tuesday after crude oil prices and government bond yields rose followi",
-          "sentiment": -0.955,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=31848a5a94a48921bd417a814130220f78e312d60bc59c8dc09778fb0f9aa974"
-        },
-        {
-          "headline": "Interactive Brokers Stock Falls After Getting Bumped From Goldman\u2019s Top Picks List",
-          "summary": "Interactive Brokers\u2019 stock has soared for the past three years, but on Tuesday, one analyst was less than bullish on its growth potential.",
-          "sentiment": -0.944,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=cd7d0c556fde2893a8243adb0fde25ec6317dfb7ab0d19fbe5808e8a9d7c0f93"
-        },
-        {
-          "headline": "Interactive Brokers Stock Slides Following August Metrics",
-          "summary": "Shares of Interactive Brokers are under pressure Tuesday afternoon as investors weigh a slight sequential dip in trading activity against otherwise strong year-over-year metrics in the company&#39;s August performance report.",
-          "sentiment": -0.944,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=9dc392c86434f91a0ebe4125289267be7618a3b44f568b376472a543001f0906"
-        },
-        {
-          "headline": "IBKR Gains 50.1% So Far in 2026: Should You Buy the Stock Now?",
-          "summary": "Interactive Brokers' 50.1% rally in 2026 is backed by robust results, client growth, product innovation and global expansion, signaling growth potential.",
-          "sentiment": 0.938,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=174c61a73d4f4c1a2addf33c11e0d91426ecf3ef484d00c9fc257fe9a159176b"
-        },
-        {
-          "headline": "3 Investment Bank Stocks Set to Benefit From Industry Tailwinds",
-          "summary": "Tech investments, active trading and stronger underwriting and advisory businesses are likely to support Zacks Investment Bank industry players, like Morgan Stanley, Schwab and Interactive Brokers.",
-          "sentiment": 0.934,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=54badddc7c5f8a08e57a9b5b58a3222fc15d56c6fe74a0331f38f2fcb39e21b7"
-        },
-        {
-          "headline": "Bull of the Day: Interactive Brokers (IBKR)",
-          "summary": "Robust account growth, rising trading activity, and positive EPS revisions overall keep the near-term outlook bright for IBKR shares.",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-08-28",
-          "url": "https://finnhub.io/api/news?id=63e71546f2933914ed5e3ad06680526fbbbccf434de884b0d7b8b170e3aaed63"
-        },
-        {
-          "headline": "Why Interactive Brokers Stock Tumbled on Tuesday",
-          "summary": "A dose of uncertainty from Wall Street weighed on the shares.",
-          "sentiment": -0.926,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=c765e49bffb2342cec5cadf9da061444104ccee0b5773b39f618b505d980dc1b"
-        },
-        {
-          "headline": "IBKR Sees 23% Y/Y Rise in Client DARTs in August 2026: What Drove It?",
-          "summary": "Interactive Brokers' August client DARTs jumped 23% y/y as volatility and strong client growth fueled trading activity.",
-          "sentiment": 0.925,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=89aef27d6f6fd42c160355bcc1686aee45b00c500528c3de1e985f9596a32b0a"
-        },
-        {
-          "headline": "Zacks Industry Outlook Highlights Morgan Stanley, The Charles Schwab and Interactive Brokers",
-          "summary": "Investment banks are poised for growth as deal activity, trading and technology spending create opportunities for Morgan Stanley, Schwab and IBKR.",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-08-31",
-          "url": "https://finnhub.io/api/news?id=65f189af49011f28d53d6f7c926516911c8f7685884b34b68673db9ba7c29cf4"
-        },
-        {
-          "headline": "Robinhood and Interactive Brokers Both Ride Retail Volume. Only One Earns on Idle Cash.",
-          "summary": "Record trading volumes are leading to strong earnings for Robinhood and IBKR, but will subscription revenues be the big long-term winner?",
-          "sentiment": 0.86,
-          "source": "Finnhub",
-          "published": "2026-08-30",
-          "url": "https://finnhub.io/api/news?id=d522cef709a7ef25a40f9cb55d37e9c9db64967eb0a3c030134da90e26c1dcd0"
-        }
-      ],
-      "current_price": 86.18
     },
     {
       "symbol": "NTAP",

@@ -206,10 +206,22 @@
       "cost": 6310.26
     }
   ],
-  "exits": [],
-  "realized_pnl": 0.0,
+  "exits": [
+    {
+      "symbol": "IBKR",
+      "direction": "LONG",
+      "shares": 81,
+      "entry_price": 92.725,
+      "exit_price": 85.63,
+      "pnl_dollars": -574.7,
+      "pnl_pct": -7.65,
+      "reason": "stop-loss hit",
+      "close_date": "2026-09-30"
+    }
+  ],
+  "realized_pnl": -574.7,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -1406.1,
+  "cumulative_pnl": -1980.8,
   "total_equity": 148593.9
 }
