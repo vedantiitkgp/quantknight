@@ -24,11 +24,22 @@
       "pnl_pct": 12.99,
       "reason": "target hit",
       "close_date": "2026-10-01"
+    },
+    {
+      "symbol": "INCY",
+      "direction": "LONG",
+      "shares": 60,
+      "entry_price": 124.37,
+      "exit_price": 117.14,
+      "pnl_dollars": -433.8,
+      "pnl_pct": -5.81,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-01"
     }
   ],
-  "realized_pnl": 1316.46,
+  "realized_pnl": 882.66,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -295.89,
+  "cumulative_pnl": -729.69,
   "total_equity": 148387.65
 }
