@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-01",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "NTAP",
+      "direction": "LONG",
+      "shares": 40,
+      "entry_price": 185.46,
+      "exit_price": 214.055,
+      "pnl_dollars": 1143.8,
+      "pnl_pct": 15.42,
+      "reason": "target hit",
+      "close_date": "2026-10-01"
+    },
+    {
+      "symbol": "KEYS",
+      "direction": "LONG",
+      "shares": 4,
+      "entry_price": 332.185,
+      "exit_price": 375.35,
+      "pnl_dollars": 172.66,
+      "pnl_pct": 12.99,
+      "reason": "target hit",
+      "close_date": "2026-10-01"
+    }
+  ],
+  "realized_pnl": 1316.46,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -295.89,
+  "total_equity": 148387.65
+}

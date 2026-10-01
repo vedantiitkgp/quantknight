@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 7006.31,
+  "cash": 17069.91,
   "total_equity": 148387.65,
-  "cumulative_pnl": -1612.35,
-  "as_of": "2026-10-01T00:08:44.602811",
+  "cumulative_pnl": -295.89,
+  "as_of": "2026-10-01T19:00:45.684060",
   "positions": [
     {
       "symbol": "INCY",
@@ -650,106 +650,6 @@
       "current_price": 84.34
     },
     {
-      "symbol": "NTAP",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 40,
-      "entry_price": 185.46,
-      "stop_loss": 185.46,
-      "target": 211.18,
-      "entry_date": "2026-09-03",
-      "entry_time": "18:47",
-      "composite_score": 64.32613784843204,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 64.3, RSI 49, EPS growth 19%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Why NetApp Stock Is Falling Despite A Big Earnings Beat",
-          "summary": "NetApp stock slid Thursday despite the enterprise data storage firm reporting fiscal Q1 results easily ahead of views.",
-          "sentiment": -0.965,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=3162805bf3cb4217a079ffca7581120931819ec71115fbd3ac1d25d52921b7b6"
-        },
-        {
-          "headline": "NetApp Stock Slides Despite Earnings Beat",
-          "summary": "NetApp stock slid late Wednesday despite the enterprise data storage firm reporting fiscal Q1 results easily ahead of views.",
-          "sentiment": -0.963,
-          "source": "Finnhub",
-          "published": "2026-09-02",
-          "url": "https://finnhub.io/api/news?id=e9e40aa58adbdef2f07f7f001e9d563353c7f9a9b459ace15695a9083a224de1"
-        },
-        {
-          "headline": "NetApp, Hewlett Packard Enterprise And Other Big Stocks Moving Lower In Thursday\u2019s Pre-Market Session",
-          "summary": "U.S. futures rose, but NetApp fell 8.2% after earnings. Ultragenyx plunged 45% on a failed trial; HPE, Methode and others also traded lower premarket.",
-          "sentiment": -0.963,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=90cad7999b172d6267658f46259c5302a7c0070150839dfc04b4a629a7ae2bf6"
-        },
-        {
-          "headline": "5 Stocks In The Spotlight From Wall Street's Most Accurate Analysts Last Month",
-          "summary": "U.S. stocks settled lower on Monday, with the Dow Jones index falling more than 350 points during the session. Renewed US-Iran strikes over the weekend sent crude sharply higher Monday, reviving inflation fears and",
-          "sentiment": -0.952,
-          "source": "Finnhub",
-          "published": "2026-09-01",
-          "url": "https://finnhub.io/api/news?id=710e65b6e7cf41278c56b64c97b9d421bdcc5c56e8b486357cfaffe168edbfae"
-        },
-        {
-          "headline": "NetApp Q1 Earnings Call Highlights",
-          "summary": "NetApp (NASDAQ:NTAP) reported a record start to fiscal 2027, with first-quarter revenue rising 30% year over year to $2.03 billion and non-GAAP earnings per share increasing 66% to $2.58. The company said results exceeded the high end of its guidance",
-          "sentiment": 0.935,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=1120bde6657b0472264314419ce9b814c906507eff3b530d2adb6bd3597d1599"
-        },
-        {
-          "headline": "NTAP Q1 Earnings & Revenues Top Estimates on AI and All-Flash Strength",
-          "summary": "NetApp posts record fiscal Q1 results as AI and modernization demand fuels revenue growth, flash momentum and a raised fiscal 2027 outlook.",
-          "sentiment": 0.934,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=d605a4d3917e5082878be34f69982896341e0014cbb0dcc76fac299819066062"
-        },
-        {
-          "headline": "12 Information Technology Stocks Moving In Thursday's Pre-Market Session",
-          "summary": "Gainers\n\nSnowflake (NYSE:SNOW) stock increased by 23.2% to $376.85 during Thursday&#39;s pre-market session. The market value of their outstanding shares is at $106.0 billion. As per the press release, Q2 earnings came",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=c7562269ddda727c6f860875d0d18e8990094b5f762cf4e40363798ecdf177b9"
-        },
-        {
-          "headline": "NetApp Inc (NTAP) (Q1 2027) Earnings Call Highlights: Record Revenue Surges 30% on AI-Driven Demand",
-          "summary": "NetApp Inc (NTAP) raises full-year guidance after posting strong Q1 results with EPS up 66% year-over-year.",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=69c25ced69e667fff6f12e7e61d83c915707dc872243cd515967202b10c564c4"
-        },
-        {
-          "headline": "NetApp Stock Is Buyable Here, Better In The $140s",
-          "summary": "NetApp, Inc. just posted record results, raised FY2027 guidance, and shows standout margins. Click for more on NTAP following its fiscal Q1 earnings release.",
-          "sentiment": 0.919,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=2675d30ef01ad06b8988dee99ac4993be4fdee09e8a9ed51eb1769bd463dd544"
-        },
-        {
-          "headline": "NetApp CEO George Kurian: We had a record-setting quarter; we see really good momentum",
-          "summary": "NetApp shares are higher Thursday after reporting a beat on the top and bottom lines in fiscal Q1. George Kurian, NetApp CEO, joins 'Squawk on the Street' to discuss.",
-          "sentiment": 0.914,
-          "source": "Finnhub",
-          "published": "2026-09-03",
-          "url": "https://finnhub.io/api/news?id=33d198725b50a3baca94f79af7be2296210b5d9e940dba912e69270814426ca0"
-        }
-      ],
-      "current_price": 209.18
-    },
-    {
       "symbol": "ANET",
       "direction": "LONG",
       "trade_type": "swing",
@@ -1248,106 +1148,6 @@
         }
       ],
       "current_price": 156.43
-    },
-    {
-      "symbol": "KEYS",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 4,
-      "entry_price": 332.185,
-      "stop_loss": 332.19,
-      "target": 367.46,
-      "entry_date": "2026-09-17",
-      "entry_time": "17:52",
-      "composite_score": 62.77298999309869,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 62.8, RSI 53, EPS growth 108%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Keysight Falls 11.1% in 3 Months While AI Demand Keeps Accelerating",
-          "summary": "KEYS shares fell 11.1% in three months despite surging orders and earnings, as AI demand meets supply, policy and valuation risks.",
-          "sentiment": -0.959,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=4bd53ff282666f5979db0840be3ef36c0f010390c2004e42f27c4e368d00efe4"
-        },
-        {
-          "headline": "Keysight Technologies (NYSE:KEYS) Delivers High Growth With Expanding Margins and Upward Earnings Revisions",
-          "summary": "Keysight clears all eight Little Book growth filters, with strong earnings revisions, sales growth, margins, cash flow, and ROE.",
-          "sentiment": 0.934,
-          "source": "Finnhub",
-          "published": "2026-09-11",
-          "url": "https://finnhub.io/api/news?id=d770717ad1c2ea1630ba96e137074997b218955bc4d9f24d59eea32a9b3ae142"
-        },
-        {
-          "headline": "Keysight (KEYS): Buy, Sell, or Hold Post Q2 Earnings?",
-          "summary": "Keysight has followed the market\u2019s trajectory closely, rising in tandem with the S&P 500 over the past six months. The stock has climbed by 9.6% to $313.37 per share while the index has gained 13.7%.",
-          "sentiment": 0.925,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=9196f0104bbf5062eba725537fbaa178f012378f478cf05dcbcc1cb09fb556b9"
-        },
-        {
-          "headline": "Should You Buy Synopsys Stock While Its Cash Runs Far Ahead Of Its Profit?",
-          "summary": "Synopsys (SNPS) sells the design software and the interface IP that chip makers need to get AI silicon built, and its stock has still gone backwards over the past year. At about $370 the shares sit at their 52-week low. Reported margins have fallen s",
-          "sentiment": -0.924,
-          "source": "Finnhub",
-          "published": "2026-09-17",
-          "url": "https://finnhub.io/api/news?id=1d1c91f99927cbefc6b273f251586f167cd1dab13c5fe554f5a54a22e81339b0"
-        },
-        {
-          "headline": "Would You Be Glad To Own Synopsys At A Discount While AI Tests Its Software?",
-          "summary": "Synopsys (SNPS) trades about 26% below its 52-week high after falling about 34% over the past year. You can be paid now to agree to buy it well below today's price, and you keep that payment either way. The catch is that you must want the business. O",
-          "sentiment": -0.912,
-          "source": "Finnhub",
-          "published": "2026-09-11",
-          "url": "https://finnhub.io/api/news?id=f7781d3e84ebbbab99e5dbe06837bbdcac3465ba7305f2cb193eb4262a10627d"
-        },
-        {
-          "headline": "Coherent shares are trading higher after the company announced it will join the S&P 500 index, effective March 23.",
-          "summary": "",
-          "sentiment": 0.905,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=7f92e66de16101e7270a9490e22d92722610d8177864c27650013eda0e1675b0"
-        },
-        {
-          "headline": "Verizon Leads 6G Momentum with Nine New Forum Members and Successful Real-World ISAC and AI-Native Trials",
-          "summary": "Forum Expands Ecosystem Readiness Alongside Groundbreaking Pre-Standard ISAC and Live Sports Companion MilestonesNEW YORK, Sept. 14, 2026 (GLOBE NEWSWIRE) -- Verizon today announced a major acceleration in the development of next-generation wireless",
-          "sentiment": 0.892,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=cdaaba664160487c441fa582731832f34ee8129dff88326e3043330a4bb6090a"
-        },
-        {
-          "headline": "Should Investors Buy KEYS as Growth Surges but Valuation Looks Mixed?",
-          "summary": "KEYS enters fiscal 2026's final stretch with faster AI-led growth and rising estimates, while valuation remains above broader market benchmarks.",
-          "sentiment": 0.88,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=7c9b56f03c6ca5eaf5090c7ce88224dcd16355f1e908bfb18a0f501f15df39b0"
-        },
-        {
-          "headline": "1 Cash-Producing Stock for Long-Term Investors and 2 We Question",
-          "summary": "A company that generates cash isn\u2019t automatically a winner. Some businesses stockpile cash but fail to reinvest wisely, limiting their ability to expand.",
-          "sentiment": -0.864,
-          "source": "Finnhub",
-          "published": "2026-09-11",
-          "url": "https://finnhub.io/api/news?id=c96910b056d29688ee4947d4eff328fdc15fa4bc1e91451b16c36afae32ca13c"
-        },
-        {
-          "headline": "Is Keysight Technologies Stock Outperforming the S&P 500?",
-          "summary": "Keysight Technologies has notably outperformed the S&P 500 over the past year, and analysts are highly optimistic about the stock\u2019s prospects.",
-          "sentiment": 0.829,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=b550074e24c25c2c5b15c1305a46bfdce1e4f3269a0332b6011829d36f9a45b2"
-        }
-      ],
-      "current_price": 360.65
     },
     {
       "symbol": "AMGN",
