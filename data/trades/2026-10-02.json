@@ -1,0 +1,429 @@
+{
+  "date": "2026-10-02",
+  "runs": [
+    "midday",
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "CVX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 35,
+      "entry_price": 207.13,
+      "stop_loss": 198.95,
+      "target": 219.39,
+      "entry_date": "2026-10-02",
+      "entry_time": "18:44",
+      "composite_score": 68.26442307692308,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 68.3, RSI 53, EPS growth 385%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Venezuela\u2019s Oil Exports Drop 9% as Freight Costs Bite",
+          "summary": "Venezuela\u2019s oil exports fell nearly 9% in September to 1.08 million barrels per day as soaring tanker costs forced traders to demand steeper discounts and delayed cargoes leaving the country.",
+          "sentiment": -0.968,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=84f7ae80f787f914dcab336f8f86a77e7a88fa0a9d836b8d42212f730cc43783"
+        },
+        {
+          "headline": "8 Of 11 Sectors Fall In Thursday Trading As Cyclicals Lead",
+          "summary": "Three sectors are higher and eight are lower in Thursday\u2019s regular session, with cyclical sectors holding two of the top three positions. The leaders are separated rather than clustered, with Energy well ahead of the next group.",
+          "sentiment": -0.953,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=a5e1219f250288b91304fd987c96f87f01cb5b83ed9125dd3e3fe0b1d1051426"
+        },
+        {
+          "headline": "Diesel\u2019s supply crunch may hit CFOs through freight contracts",
+          "summary": "Chevron CFO Eimear Bonner expects energy prices to stay elevated, while a major trucking CEO says contracts signed before diesel prices rose are hurting the bottom line.",
+          "sentiment": -0.948,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=b0a646354fa62bb1e77411704c0dae7b8970d07569f47702370c3a1ac5b9871c"
+        },
+        {
+          "headline": "Marathon Petroleum Climbs 5%, Valero Energy Gains 4% as Refiners Outrun Integrated Majors; Exxon Mobil Stays Flat",
+          "summary": "Refining stocks are breaking away from the integrated oil majors, and the gap places the bid directly on fuel margins. Marathon Petroleum (NYSE:MPC) stock has risen 5% to $413.75 this afternoon. Also, Valero Energy (NYSE:VLO) shares are climbing 4% t",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=29e1a73a4258cc5fd071ab287e1755f0895e015f7f17b98fcc685ca6a0e3385b"
+        },
+        {
+          "headline": "Will Chevron (CVX) Beat Estimates Again in Its Next Earnings Report?",
+          "summary": "Chevron (CVX) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+          "sentiment": 0.897,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=acc8740d09e73dbc5b83be30aab02970df23034afeaf7103b557c925d7cd4ae7"
+        },
+        {
+          "headline": "Leviathan's Israeli Owners Cancel $6.7B Domestic Supply Deal",
+          "summary": "Chevron's local partners in Israel's Leviathan gas and condensate field binned a potential contract to supply natural gas from the Mediterranean project to two planned domestic power plants.",
+          "sentiment": -0.894,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=aaefc4d307e6dc1021bc9541f066bf2ed9ced37fb74ef2f80942605788e946a8"
+        },
+        {
+          "headline": "Chevron (CVX) Surpasses Market Returns: Some Facts Worth Knowing",
+          "summary": "Chevron (CVX) concluded the recent trading session at $207.1, signifying a +1.42% move from its prior day's close.",
+          "sentiment": 0.89,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=e9877f68d394832ed65540e9bc2df4b6755875de2f1c7abcbc5b307d1fa417aa"
+        },
+        {
+          "headline": "Are Oils-Energy Stocks Lagging  Chevron (CVX) This Year?",
+          "summary": "Here is how Chevron (CVX) and Kinetik Holdings Inc. (KNTK) have performed compared to their sector so far this year.",
+          "sentiment": -0.882,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=6481f3efa9d7842f30f1c9be2a5ef7757265349d137e08a648ad3012ed3ddbd6"
+        },
+        {
+          "headline": "America\u2019s Strategic Oil Reserves Are at 44-Year Lows \u2014 And Trump Just Gave Away Another 40 Million Barrels",
+          "summary": "Oil markets are operating with little room for error. West Texas Intermediate crude trades above $91 a barrel this morning, while the Iran conflict, disrupted shipping, and tight diesel supplies continue putting a geopolitical premium on energy price",
+          "sentiment": -0.881,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=44d33fc42532cdeb278f063bff74bee051fa1261e68643db0366bef2cc3abf93"
+        },
+        {
+          "headline": "Can Chevron's Growing LNG Network Power Its Next Growth Phase?",
+          "summary": "Chevron is linking LNG exports, domestic gas sales and new supply sources across regions to deepen long-term natural-gas commercialization.",
+          "sentiment": 0.874,
+          "source": "Finnhub",
+          "published": "2026-10-02",
+          "url": "https://finnhub.io/api/news?id=218b1f79e7eff24e4ebdbd123cc85c9eb3c0b3710013f0d0f72bb58f30db0094"
+        }
+      ],
+      "cost": 7249.55
+    },
+    {
+      "symbol": "EXPD",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 38,
+      "entry_price": 191.445,
+      "stop_loss": 183.47,
+      "target": 203.41,
+      "entry_date": "2026-10-02",
+      "entry_time": "18:44",
+      "composite_score": 64.3798076923077,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 64.4, RSI 57, EPS growth 45%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Here's Why Investors Should Give UAL Stock a Miss Currently",
+          "summary": "United Airlines faces falling earnings estimates, rising labor and fuel costs, reduced flying and weak price performance, pressuring its near-term outlook.",
+          "sentiment": -0.964,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=203efb7d237ed92bdcacc2ee047de0d587b849e87d5e302b6d320a4a9fa656f7"
+        },
+        {
+          "headline": "Here's Why Investors Should Give Delta Air Stock a Miss Currently",
+          "summary": "DAL faces falling earnings estimates, rising crew costs and fuel volatility after double-digit share losses over three months.",
+          "sentiment": -0.962,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=5471c40e88c8e5808c722fb055c555621c5f2a41753247330716be97c6658d62"
+        },
+        {
+          "headline": "4% Overvalued? Expeditors International Of Washington (EXPD) On Leadership Change",
+          "summary": "Expeditors International of Washington (EXPD) is back in focus after announcing that Blake Bell will move into the Senior Vice President, Professional Services role effective October 1, 2026. The company stated that this change is intended to reshape",
+          "sentiment": -0.957,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=ff96aab4cb97453ee8676d5cbb48cc3d0185de15f904c58556f7ba721afb2f78"
+        },
+        {
+          "headline": "Expeditors International of Washington Seen Benefiting From Stronger Ocean Rates, Airfreight Growth, UBS Says",
+          "summary": "Expeditors International of Washington (EXPD) is benefiting from stronger ocean rates and continued",
+          "sentiment": 0.943,
+          "source": "Finnhub",
+          "published": "2026-10-02",
+          "url": "https://finnhub.io/api/news?id=75bbdd0ee0f42a1a55667b79904822b3a0b1c87b6ae9b67d6cd6422fd4db8301"
+        },
+        {
+          "headline": "Expeditors' Prospects Lifted by Dividends & Efficiency Initiatives",
+          "summary": "EXPD benefits from resilient airfreight demand, rising customs activity, efficiency gains and robust shareholder returns.",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-10-02",
+          "url": "https://finnhub.io/api/news?id=a4371a2e462da74535031a0326320423007330410b85f276c04dcf62b8c35738"
+        },
+        {
+          "headline": "Delta Expands Europe Network With New Routes From Detroit and Boston",
+          "summary": "DAL expands its European network, with new nonstop routes and extended seasonal service as transatlantic travel demand grows.",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-09-29",
+          "url": "https://finnhub.io/api/news?id=e08c47177317a20d24eb11fe98b6a1fa44956f88bd4c8c1df9676771ddd862d7"
+        },
+        {
+          "headline": "Old Dominion Announces 4.9% General Rate Increase Effective Oct. 5",
+          "summary": "ODFL's 4.9% rate increase, effective Oct. 5, aims to offset rising operating costs while supporting investments in its service network and technology.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-09-28",
+          "url": "https://finnhub.io/api/news?id=1e2439b7f27144840c3004472653f04e878976fbdeb9c83fab10e65ce0fb855c"
+        },
+        {
+          "headline": "Alaska and Hawaiian Airlines Raise the Bar for Premium Travel",
+          "summary": "ALK expands premium travel with new suites, premium economy, upgraded lounges and enhanced onboard experiences across its airlines.",
+          "sentiment": 0.91,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=11871e27c6f833b7c0c2e148886a602627f58ae04da68760da40b5c8d39ded3c"
+        },
+        {
+          "headline": "Alaska Air Advances With the Activation of Alaska Accelerate",
+          "summary": "ALK advances Alaska Accelerate, targeting $1B in incremental profit by 2027 while expanding globally, upgrading loyalty and growing its fleet.",
+          "sentiment": 0.9,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=8f28b6ff356f0ba372422d6c70a542b87d21748a9c6f8740a93c0e0dd72ba359"
+        },
+        {
+          "headline": "UPS Strengthens E-Commerce Security With New Secure Commerce Platform",
+          "summary": "United Parcel's Secure Commerce combines insurance, fraud mitigation and AI-driven risk management to protect shipments, revenues and customer relationships.",
+          "sentiment": 0.882,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=80a0b6ba28bda447a89dc1dbe27b00bf3bcf8f898de58afa104afeae20522844"
+        }
+      ],
+      "cost": 7274.91
+    },
+    {
+      "symbol": "COHR",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 22,
+      "entry_price": 334.895,
+      "stop_loss": 292.12,
+      "target": 399.06,
+      "entry_date": "2026-10-02",
+      "entry_time": "18:44",
+      "composite_score": 61.2548076923077,
+      "verdict": "WATCH",
+      "reason": "MACD_CROSSOVER setup, score 61.3, RSI 60, EPS growth 352%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Stock Market Today: S&P 500 Slips as Micron Fails to Impress, 10-Year Yields Ease to 5.25%",
+          "summary": "Micron slides despite a record quarter as the 10-year yield nears 5.3% and oil tops $92, while Accenture, Coherent and Vicor surge on earnings and AI optics.",
+          "sentiment": -0.951,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=0255090bb18c924540a0a13cf730eefebf89ddab06109553a0b9e5680edde0de"
+        },
+        {
+          "headline": "PLTR vs. COHR: Which AI-Driven Tech Stock is a Better Buy?",
+          "summary": "Palantir's commercial AI momentum, scalable software model, strong profitability and cash generation give it an edge over Coherent despite its higher valuation.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-09-29",
+          "url": "https://finnhub.io/api/news?id=4cd43521faa640dda4ef0ce3cd9782bad9f17a24a9b91b3d68493a82b7e106b8"
+        },
+        {
+          "headline": "Why Coherent (COHR) Stock Is Up Today",
+          "summary": "Shares of materials and photonics company Coherent (NYSE:COHR) jumped 5.2% in the afternoon session after it successfully demonstrated scalable physical-layer security for artificial intelligence infrastructure developed alongside CUbIQ Technologies.",
+          "sentiment": 0.931,
+          "source": "Finnhub",
+          "published": "2026-09-29",
+          "url": "https://finnhub.io/api/news?id=d5ced990f897196c9c60df6656847a2ca9408f142875d396387347cc9a7414ca"
+        },
+        {
+          "headline": "Why Coherent (COHR) Stock Is Trading Up Today",
+          "summary": "Shares of materials and photonics company Coherent (NYSE:COHR) jumped 10.5% in the afternoon session after Bernstein rated the company Outperform with a $350 price target, pointing to optical-module upside as data-center switches move to higher speed",
+          "sentiment": 0.929,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=9bf06b64396670b694b9bacf60aaba0b1c155ac946d2bc175cd2479306f9266b"
+        },
+        {
+          "headline": "Here's Why Investors Should Hold OMC Stock in Their Portfolios for Now",
+          "summary": "Omnicom gains from post-Interpublic cross-selling, AI-enabled capabilities and buybacks, though ad weakness and higher debt remain key risks.",
+          "sentiment": 0.929,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=ecde286fed83581b2b970170b67cc92c78c4a34c0849ca23dbf493a30557e3cc"
+        },
+        {
+          "headline": "3 Reasons Investors Love Coherent (COHR)",
+          "summary": "Coherent currently trades at $294.15 and has been a dream stock for shareholders. It\u2019s returned 396% since September 2021, blowing past the S&P 500\u2019s 78.4% gain. The company has also beaten the index over the past six months as its stock price is up",
+          "sentiment": 0.927,
+          "source": "Finnhub",
+          "published": "2026-09-30",
+          "url": "https://finnhub.io/api/news?id=7f898b3071b5bc5c15ab62c9d2c9bcee31942f2f0ffc426688bacc70182293ce"
+        },
+        {
+          "headline": "Coherent Jumps 10% on PhotonLink Push and Bernstein\u2019s Outperform Start; Lumentum Rises 9%, Corning Advances 3%",
+          "summary": "Coherent's PhotonLink platform and a fresh Wall Street initiation sent optics stocks surging well ahead of the broader market, raising the question of whether this rally signals a durable AI infrastructure trade or another sentiment-driven spike.",
+          "sentiment": 0.918,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=72ec07f2140aeddfbe59695e12cebaab7fcccc923c7f8016c8914c2f6339d522"
+        },
+        {
+          "headline": "Meet AI\u2019s New \u201cStructural Winners\u201d: Coherent Soars 11%, Lumentum Up 8%",
+          "summary": "Key TakeawaysLumentum shares rose about 8% and Coherent about 11% after Bernstein started coverage of both at Outperform. Bernstein said networking and optical suppliers could be \u201cstructural winners\u201d within AI infrastructure.",
+          "sentiment": 0.917,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=3619be35bcf1a7fabfa8ddef55707eb9969ae0256b378e5ec8f53df2bf153674"
+        },
+        {
+          "headline": "Synopsys, Accenture, Vicor And Other Big Stocks Moving Higher On Thursday",
+          "summary": "U.S. stocks fell Thursday, but Synopsys surged 10.8% on strong FY27 guidance. Accenture, Enerflex and other shares also posted notable gains.",
+          "sentiment": 0.917,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=ddeea8a12489b2ee14a76fdd5668a28f481a8dc6435f38d7f81ed9e9994e5ed6"
+        },
+        {
+          "headline": "Coherent, Lumentum, and Ciena stocks surge on bullish Wall Street call",
+          "summary": "Optical networking stocks ripped higher on Thursday after Wall Street grew bullish on the next generation of data center networking.",
+          "sentiment": 0.885,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=50ab94c2d05d03e4c89642386b4b11503a083985fdad4714e56f6b6063524a16"
+        }
+      ],
+      "cost": 7367.69
+    },
+    {
+      "symbol": "LRCX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 6,
+      "entry_price": 347.775,
+      "stop_loss": 320.14,
+      "target": 389.22,
+      "entry_date": "2026-10-02",
+      "entry_time": "18:44",
+      "composite_score": 61.02403846153847,
+      "verdict": "WATCH",
+      "reason": "MACD_CROSSOVER setup, score 61.0, RSI 68, EPS growth 32%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued",
+          "summary": "Lam Research (LRCX) drew fresh attention after management lifted its 2026 wafer fab equipment outlook to the low US$150b range, while also flagging a sharp expected rise in advanced packaging revenue. Recent trading has been choppy for Lam Research,",
+          "sentiment": -0.948,
+          "source": "Finnhub",
+          "published": "2026-09-25",
+          "url": "https://finnhub.io/api/news?id=120e821170bc70d5dfe782eb915bb230253a0a7971c92a3176882f0f31b3eb1b"
+        },
+        {
+          "headline": "Lam Research: A Key AI Infrastructure Player With Growth Upside",
+          "summary": "Lam Research (LRCX) could gain from rising AI CapEx and data center buildouts; margin strength may drive a 30x P/E re-rating.",
+          "sentiment": 0.942,
+          "source": "Finnhub",
+          "published": "2026-09-28",
+          "url": "https://finnhub.io/api/news?id=5efcd72c9dbb46f835e255b6c8630e53a2b2636d5cd0522655c76dee8be0258d"
+        },
+        {
+          "headline": "Virtualware completes the acquisition of British company Virtalis",
+          "summary": "Manchester, 28 September 2026.- Virtualware (EPA: ALVIR), a European pioneer in 3D-driven industrial software listed on Euronext Growth Paris, has completed the acquisition of 100% of Virtalis Holding, the Manchester-based virtual reality and RT3D vi",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-09-28",
+          "url": "https://finnhub.io/api/news?id=6371c87130d41ab7f4915c6179302e1818ed3d517a1c87709ce8c648fdbb44e3"
+        },
+        {
+          "headline": "Are Computer and Technology Stocks Lagging  Lam Research (LRCX) This Year?",
+          "summary": "Here is how Lam Research (LRCX) and Avnet (AVT) have performed compared to their sector so far this year.",
+          "sentiment": -0.908,
+          "source": "Finnhub",
+          "published": "2026-10-02",
+          "url": "https://finnhub.io/api/news?id=cd76f496e3a3bf95d1a70d9f626c303f3b1ce915fa097c3416530f6ca78a9f80"
+        },
+        {
+          "headline": "Better Semiconductor Equipment Stock: Applied Materials vs. Lam Research",
+          "summary": "The chipmaking equipment boom has supercharged growth for both companies, and their prospects suggest further upside in their stock prices.",
+          "sentiment": 0.906,
+          "source": "Finnhub",
+          "published": "2026-09-29",
+          "url": "https://finnhub.io/api/news?id=39839efb9dddeab36a5bc56d672d5f68cc8c45e55812a82ab1985731ef70168f"
+        },
+        {
+          "headline": "Wall Street\u2019s Favorite AI Trade Is Up 89% This Year: Its Best Season Starts Today",
+          "summary": "Chip stocks are up 89% this year, and the best stretch of their calendar starts now. Since 2001, SOXX has gained an average 12.5% from October to February, and Bank of America just named its five top picks for the season.",
+          "sentiment": 0.885,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=3596c30319679e310c094a002f1b9a295cddcc9deadecce11be2c37bb06189a5"
+        },
+        {
+          "headline": "Lam Research (LRCX) Stock May Look Stretched After Its Big Five Year Run",
+          "summary": "Lam Research has ridden a powerful wave of enthusiasm around semiconductor equipment and AI infrastructure, and the stock\u2019s very large 5 year gain now puts its earnings under a sharper spotlight. With that kind of price move already in the rear-view",
+          "sentiment": 0.84,
+          "source": "Finnhub",
+          "published": "2026-10-02",
+          "url": "https://finnhub.io/api/news?id=4e1b5650b7d639bdec6571e0f45b5477480793cbf50396a1af226d958265cd5d"
+        },
+        {
+          "headline": "Chip Equipment Stocks Rally as Quality Growers Lead the Snapback",
+          "summary": "Semiconductor equipment stocks rally 6.3% in a week, led by quality growth names TER, LRCX, ASML, AMAT, and ONTO as sentiment resets.",
+          "sentiment": 0.809,
+          "source": "Finnhub",
+          "published": "2026-09-28",
+          "url": "https://finnhub.io/api/news?id=3949e451c2a639a3423306f9abe01c0a8d4de77e04e115b657fdc35d2e3c93a4"
+        },
+        {
+          "headline": "Management Guided Higher For Applied Materials Stock; Does The Chart Agree?",
+          "summary": "Applied Materials (AMAT) guided next-quarter revenue higher on August 13, 2026, and its stock has fallen more than the S&P 500 since. A higher outlook beside a stock that has fallen since is a mismatch, which is why the chart is worth checking first.",
+          "sentiment": -0.793,
+          "source": "Finnhub",
+          "published": "2026-10-01",
+          "url": "https://finnhub.io/api/news?id=05b4e9bb696fda2a187ee9d86e35b37d12a7ab0c9e8b2a527ccc89ec0a020a5b"
+        },
+        {
+          "headline": "High-K Dielectric Materials Market - Global Strategic Business Report: Capture 48% market expansion to $262.4M by 2030 as GAA, AI and 3D memory reshape chip economics\u2014benchmark Applied Materials, ASM International, Lam Research, Tokyo Electron before tariffs reset supply chains",
+          "summary": "High-K dielectrics are gaining traction in advanced logic, 3D memory, GaN/SiC power devices and sensors, driven by chip scaling, low-power demand and ALD advances.Dublin, Sept. 28, 2026 (GLOBE NEWSWIRE) -- \"High-K Dielectric Materials Market - Global",
+          "sentiment": 0.79,
+          "source": "Finnhub",
+          "published": "2026-09-28",
+          "url": "https://finnhub.io/api/news?id=afe93583d9da84fd42cc105a4fe5f69c5a3e13754efc68554863a3479a320688"
+        }
+      ],
+      "cost": 2086.65
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "HPE",
+      "direction": "LONG",
+      "shares": 114,
+      "entry_price": 55.945,
+      "exit_price": 69.93,
+      "pnl_dollars": 1594.29,
+      "pnl_pct": 25.0,
+      "reason": "target hit",
+      "close_date": "2026-10-02"
+    }
+  ],
+  "realized_pnl": 1594.29,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -50.0,
+  "total_equity": 148355.71
+}
