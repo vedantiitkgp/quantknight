@@ -13,11 +13,22 @@
       "pnl_pct": 14.08,
       "reason": "target hit",
       "close_date": "2026-10-06"
+    },
+    {
+      "symbol": "VRTX",
+      "direction": "LONG",
+      "shares": 12,
+      "entry_price": 525.855,
+      "exit_price": 502.31,
+      "pnl_dollars": -282.54,
+      "pnl_pct": -4.48,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-06"
     }
   ],
-  "realized_pnl": 1041.4,
+  "realized_pnl": 758.86,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": 802.88,
+  "cumulative_pnl": 520.34,
   "total_equity": 149761.48
 }

@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 16527.33,
+  "cash": 22555.05,
   "total_equity": 149761.48,
-  "cumulative_pnl": 802.88,
-  "as_of": "2026-10-06T19:01:51.710208",
+  "cumulative_pnl": 520.34,
+  "as_of": "2026-10-06T20:09:35.488367",
   "positions": [
     {
       "symbol": "TRV",
@@ -1748,106 +1748,6 @@
         }
       ],
       "current_price": 340.35
-    },
-    {
-      "symbol": "VRTX",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 12,
-      "entry_price": 525.855,
-      "stop_loss": 502.69,
-      "target": 560.61,
-      "entry_date": "2026-09-30",
-      "entry_time": "18:39",
-      "composite_score": 61.659090909090914,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 61.7, RSI 53, EPS growth 6%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Maze Therapeutics Shares Rise 2.9% After CIBC Initiates Coverage",
-          "summary": "Maze Therapeutics (NASDAQ:MAZE) shares rose 2. 9% in pre-market trading after CIBC initiated coverage of the clinical-stage biopharmaceutical company with an Outperformer rating and a $50 price target.",
-          "sentiment": 0.931,
-          "source": "Finnhub",
-          "published": "2026-09-23",
-          "url": "https://finnhub.io/api/news?id=8627463e0da36478cd4c6e979a5013bd6026f414da7d29d4e5042934f549f880"
-        },
-        {
-          "headline": "2 Healthcare Stocks to Target This Week and 1 We Avoid",
-          "summary": "From novel pharmaceuticals to telemedicine, most healthcare companies are on a mission to drive better patient outcomes. Shareholders who bet on the industry have been rewarded lately as healthcare stocks have returned 46.9% over the past six months,",
-          "sentiment": 0.927,
-          "source": "Finnhub",
-          "published": "2026-09-28",
-          "url": "https://finnhub.io/api/news?id=755d2c372c9a61d3c7e7d4171d959a6953d7d8fb9e6d1302ea12d1028db6c15a"
-        },
-        {
-          "headline": "Maze Therapeutics (MAZE) Shares Moved, So What Is Driving Attention Now?",
-          "summary": "Fresh Coverage Puts Maze Therapeutics in Focus Maze Therapeutics (MAZE) moved higher in pre-market trading on 23 September after CIBC began covering the clinical-stage kidney and metabolic disease specialist, with the share reaction unfolding alongsi",
-          "sentiment": -0.907,
-          "source": "Finnhub",
-          "published": "2026-09-25",
-          "url": "https://finnhub.io/api/news?id=bc77ee2f3a731640cb511366a42735fcd3fed89234dd95f89b3c42f07dff1808"
-        },
-        {
-          "headline": "Could Vertex Pharmaceuticals (VRTX)\u2019s Kidney Breakthrough Unlock a New Opportunity for Maze Therapeutics (MAZE)?",
-          "summary": "On September 22, Truist analyst Danielle Brill identified a \u201csignificant positive readthrough\u201d for Maze Therapeutics, Inc. (NASDAQ:MAZE) following positive Phase 2 topline data from Vertex Pharmaceuticals Incorporated (NASDAQ:VRTX). The data validate",
-          "sentiment": 0.873,
-          "source": "Finnhub",
-          "published": "2026-09-29",
-          "url": "https://finnhub.io/api/news?id=53f4be2f0dd2ed26d97af2ff1e281be817a054b406c7bd3b609affe35a6362ec"
-        },
-        {
-          "headline": "Vertex Pharmaceuticals (VRTX) Increases Despite Market Slip: Here's What You Need to Know",
-          "summary": "Vertex Pharmaceuticals (VRTX) closed at $522.38 in the latest trading session, marking a +1.17% move from the prior day.",
-          "sentiment": 0.873,
-          "source": "Finnhub",
-          "published": "2026-09-24",
-          "url": "https://finnhub.io/api/news?id=8d960186a0c346263dfff2e307f730d164cd86c45a32484e1998e77e86f3a011"
-        },
-        {
-          "headline": "Will Vertex's Kidney Disease Pipeline Be a New Growth Engine?",
-          "summary": "VRTX is expanding beyond its CF stronghold with a promising kidney disease pipeline led by povetacicept and inaxaplin.",
-          "sentiment": 0.87,
-          "source": "Finnhub",
-          "published": "2026-09-24",
-          "url": "https://finnhub.io/api/news?id=8a32f016a9b3684f1fe9cfa6af45d10ca02839421a41253f2f7a3954c90aa335"
-        },
-        {
-          "headline": "Vertex Posts Positive Phase II Data on Kidney Disease Drug",
-          "summary": "VRTX announces positive AMPLIFIED data for inaxaplin, while completing AMPLITUDE enrollment and targeting interim results in early 2027.",
-          "sentiment": 0.867,
-          "source": "Finnhub",
-          "published": "2026-09-23",
-          "url": "https://finnhub.io/api/news?id=a98d3b33622162ff080cdad3121e9da25683017965436b651b972af21f3481ca"
-        },
-        {
-          "headline": "Lilly\u2019s latest China drug deal; Immunovant\u2019s setback in lupus",
-          "summary": "Lilly wagered up to $3.35 billion in\u00a0its fourth China-focused alliance since January 2025. Elsewhere, analysts are now more confident about one of Vertex\u2019s top prospects and an RNA drug succeeded against a rare form of ALS.",
-          "sentiment": 0.86,
-          "source": "Finnhub",
-          "published": "2026-09-24",
-          "url": "https://finnhub.io/api/news?id=abc95706b599049ea61198dad4403b3c20a062769fff63f839285132541fe923"
-        },
-        {
-          "headline": "2 Healthcare Stocks That Just Delivered Great News for Investors",
-          "summary": "And there could be more positive developments ahead.",
-          "sentiment": 0.798,
-          "source": "Finnhub",
-          "published": "2026-09-26",
-          "url": "https://finnhub.io/api/news?id=becdafb046515919da85f72434ea657c96efa03ea7b144c94184a78f1d8899cb"
-        },
-        {
-          "headline": "$100 Invested In Vertex Pharmaceuticals 10 Years Ago Would Be Worth This Much Today",
-          "summary": "Vertex Pharmaceuticals (NASDAQ:VRTX) has outperformed the market over the past 10 years by 6.27% on an annualized basis producing an average annual return of 19.81%. Currently, Vertex Pharmaceuticals has a market",
-          "sentiment": 0.79,
-          "source": "Finnhub",
-          "published": "2026-09-29",
-          "url": "https://finnhub.io/api/news?id=645e00c63c078d5113e0f74e41cc2998e00ddd331b98c15a9aba17eb591b050c"
-        }
-      ],
-      "current_price": 504.73
     },
     {
       "symbol": "CVX",
