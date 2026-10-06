@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-06",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "VLO",
+      "direction": "LONG",
+      "shares": 20,
+      "entry_price": 369.72,
+      "exit_price": 421.79,
+      "pnl_dollars": 1041.4,
+      "pnl_pct": 14.08,
+      "reason": "target hit",
+      "close_date": "2026-10-06"
+    }
+  ],
+  "realized_pnl": 1041.4,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": 802.88,
+  "total_equity": 149761.48
+}
