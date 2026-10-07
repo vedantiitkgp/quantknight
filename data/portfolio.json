@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 22555.05,
-  "total_equity": 150915.78,
-  "cumulative_pnl": 915.78,
-  "as_of": "2026-10-07T21:54:25.330553",
+  "total_equity": 151269.98,
+  "cumulative_pnl": 1269.98,
+  "as_of": "2026-10-07T23:31:43.326545",
   "positions": [
     {
       "symbol": "TRV",
@@ -947,7 +947,7 @@
           "url": "https://finnhub.io/api/news?id=1a57c718b7d42ce885f5f21e5df5377ee8ee54f7cdd8b7cc48d76409e18a24cf"
         }
       ],
-      "current_price": 150.92
+      "current_price": 158.62
     },
     {
       "symbol": "AMGN",
