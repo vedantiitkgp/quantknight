@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 31807.53,
-  "total_equity": 149770.56,
-  "cumulative_pnl": -229.44,
-  "as_of": "2026-10-12T23:35:42.691928",
+  "total_equity": 149975.79,
+  "cumulative_pnl": -24.21,
+  "as_of": "2026-10-13T01:11:15.991142",
   "positions": [
     {
       "symbol": "TRV",
@@ -647,7 +647,7 @@
           "url": "https://finnhub.io/api/news?id=22f171f60f6796e8d54494cf6fe5bf9e37468691d01468c04bc2efa2e05a16ce"
         }
       ],
-      "current_price": 210.88
+      "current_price": 216.74
     },
     {
       "symbol": "STX",
@@ -1647,7 +1647,7 @@
           "url": "https://finnhub.io/api/news?id=c372ef091144bce462a4693104be1599db6b8865e879fad757dce4619ab90eee"
         }
       ],
-      "current_price": 348.97
+      "current_price": 347.86
     },
     {
       "symbol": "CVX",
