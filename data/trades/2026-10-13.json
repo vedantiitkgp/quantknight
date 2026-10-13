@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-13",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "STX",
+      "direction": "LONG",
+      "shares": 8,
+      "entry_price": 866.4301,
+      "exit_price": 748.6525,
+      "pnl_dollars": -942.22,
+      "pnl_pct": -13.59,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-13"
+    },
+    {
+      "symbol": "APA",
+      "direction": "LONG",
+      "shares": 2,
+      "entry_price": 43.095,
+      "exit_price": 47.99,
+      "pnl_dollars": 9.79,
+      "pnl_pct": 11.36,
+      "reason": "target hit",
+      "close_date": "2026-10-13"
+    },
+    {
+      "symbol": "COP",
+      "direction": "LONG",
+      "shares": 1,
+      "entry_price": 129.84,
+      "exit_price": 140.725,
+      "pnl_dollars": 10.89,
+      "pnl_pct": 8.38,
+      "reason": "target hit",
+      "close_date": "2026-10-13"
+    },
+    {
+      "symbol": "COHR",
+      "direction": "LONG",
+      "shares": 22,
+      "entry_price": 334.895,
+      "exit_price": 289.6,
+      "pnl_dollars": -996.49,
+      "pnl_pct": -13.53,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-13"
+    }
+  ],
+  "realized_pnl": -1918.03,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -2147.47,
+  "total_equity": 149770.56
+}
