@@ -1,0 +1,397 @@
+{
+  "date": "2026-10-15",
+  "runs": [
+    "midday",
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "CPAY",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 18,
+      "entry_price": 404.125,
+      "stop_loss": 386.63,
+      "target": 430.37,
+      "entry_date": "2026-10-15",
+      "entry_time": "18:00",
+      "composite_score": 66.20039100684262,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 66.2, RSI 54, EPS growth -13%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Financial Tech Firms Set for Mixed Quarterly Earnings Ahead, Oppenheimer Says",
+          "summary": "Financial technology companies are set to report mixed quarterly results, with Visa (V) and Fiserv (",
+          "sentiment": -0.946,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=d69fcd4cab97abece3b23b2cb5c5a34c281860ee83b3c0b2ae29489d4dde50b8"
+        },
+        {
+          "headline": "1 Growth Stock with Explosive Upside and 2 We Avoid",
+          "summary": "Growth boosts valuation multiples, but it doesn\u2019t always last forever. Companies that cannot maintain it are often penalized with large declines in market value, a lesson ingrained in investors who lost money in tech stocks during 2022.",
+          "sentiment": -0.941,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=25e322cf230bb7b6d6fbf7eb7715fc0bb7d2cf16e0844ba8d17d8d74ad25d231"
+        },
+        {
+          "headline": "CPAY Stock Rises 14.6% in Three Months: Here's What You Should Know",
+          "summary": "Corpay's 14.6% stock rally reflects strong payment segment growth, strategic acquisitions and aggressive share buybacks that support earnings momentum.",
+          "sentiment": 0.937,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=a58f619801a87ca05800cd3b512a26dd05dadf67981e4a49f29a25b24ed47e04"
+        },
+        {
+          "headline": "Will Corpay (CPAY) Beat Estimates Again in Its Next Earnings Report?",
+          "summary": "Corpay (CPAY) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+          "sentiment": 0.88,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=5ef1f0b8716d4cfd0320c4b6cd222c6a3190d44fadb2d34a0b5012c7d21e3dc9"
+        },
+        {
+          "headline": "2 Financials Stocks Worth Your Attention and 1 We Find Risky",
+          "summary": "Financial providers use their expertise in capital allocation and risk assessment to help facilitate economic growth while offering consumers and businesses essential financial services. But uncertainty about fiscal and monetary policy has tempered e",
+          "sentiment": -0.804,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=218acea973c03970784cfdc975f5f005ae5e6c3850ddd79abc21948409d13078"
+        },
+        {
+          "headline": "How low can the Canadian dollar go?",
+          "summary": "Karl Schamotta Chief Market Strategist at Corpay, talks to Larysa Harapyn at the Financial Post about the forces driving currency markets\u00a0 and how the Canadian dollar is standing up to the greenback.",
+          "sentiment": 0.162,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=ba7d7e08a4e7724ea604d446cc1aec6447a88317f377fffbe3b622a621bf7b6a"
+        }
+      ],
+      "cost": 7274.25
+    },
+    {
+      "symbol": "FFIV",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 16,
+      "entry_price": 453.315,
+      "stop_loss": 425.56,
+      "target": 494.95,
+      "entry_date": "2026-10-15",
+      "entry_time": "18:00",
+      "composite_score": 64.84145894428154,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 64.8, RSI 53, EPS growth 10%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Shares of software companies are trading lower, possibly in response to escalating tensions in the Middle East and renewed inflation concerns that may shift the Fed towards a rate hike. Concerns about key economic data due later this week may prompt traders to rotate out of growth stocks.",
+          "summary": "",
+          "sentiment": -0.958,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=c69408f6b2e2de87abefeb217619a19db915930e139f14fc71586990a574b37b"
+        },
+        {
+          "headline": "3 Reasons FFIV is Risky and 1 Stock to Buy Instead",
+          "summary": "What a time it\u2019s been for F5. In the past six months alone, the company\u2019s stock price has increased by a massive 59.1%, reaching $474.15 per share. This was partly thanks to its solid quarterly results, and the performance may have investors wonderin",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=ab36ae966d0ffcd220440e410bed2378de6e3ea412a6f146b783161edfb3fa85"
+        },
+        {
+          "headline": "What Did Fastly Stock Investors Miss Before The Run?",
+          "summary": "Fastly (FSLY) stock returned 241.5% in the twelve months to October 9, 2026, easily outpacing the 17.0% gain for the S&P 500. Buyers appear to have been paying for a clear shift in the underlying business: sales began growing faster again, and losses",
+          "sentiment": 0.916,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=3e9b3c3e92243fc55a7a1b8c503791b3c2ef5235ed5794dd60275f6609715106"
+        },
+        {
+          "headline": "How F5\u2019s (FFIV) Application Delivery Rails Drive Multi-Year Growth",
+          "summary": "Reaves W H & Co Inc released its third-quarter 2026 investor letter for \u201cReaves Long-Term Value Strategy\u201d. The letter can be downloaded here. The Reaves Long-Term Value Wrap Composite saw an 11.83% decline before fees in Q3, underperforming the MSCI",
+          "sentiment": -0.887,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=57c5ad9df115a981bb33385535e28e9dae932b69fd08e30c4b8da9d172a31209"
+        },
+        {
+          "headline": "2 Cash-Producing Stocks with Exciting Potential and 1 We Avoid",
+          "summary": "Generating cash is essential for any business, but not all cash-rich companies are great investments. Some produce plenty of cash but fail to allocate it effectively, leading to missed opportunities.",
+          "sentiment": -0.836,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=fed0842d8eacdf54819a021e762078cc1d8d6ea39db24e8c54b2b14a032e5876"
+        },
+        {
+          "headline": "RBC Capital Maintains Outperform on F5, Raises Price Target to $525",
+          "summary": "RBC Capital  analyst Matthew Hedberg   maintains F5 (NASDAQ:FFIV) with a Outperform and raises the price target from $508 to $525.",
+          "sentiment": 0.812,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=9e54f4738ce3dd0f4d9690edccf20181dcb226dd8dfa40da991845dca49517b3"
+        },
+        {
+          "headline": "Should FFIV Stock's New High Stop You From Buying?",
+          "summary": "Investors are often warned to buy low and avoid purchasing at the top. F5 (FFIV) stock closed at a 52-week high of $479.83 on October 9, 2026. By traditional logic, this is the wrong time to buy. Rather than debate the current share price, historical",
+          "sentiment": -0.22,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=93e5e6f82c387c2522bc158864bcd133acb319d5ab74b07ad8dd17977c6c2589"
+        },
+        {
+          "headline": "What Is The True Hidden Price Of Lumentum Stock?",
+          "summary": "Lumentum (LITE) stock currently trades at 150.5 times its adjusted earnings for the last twelve months, meaning normalized net income with stock-based pay added back. While that is a steep price for one year of profit, Lumentum's sales more than doub",
+          "sentiment": 0.144,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=99d912f12e8f8f457f1116ace6ba20ea64a692a5a8ec11a65c3eb07ef6c2353b"
+        },
+        {
+          "headline": "F5 to Report Fourth Quarter and Fiscal Year 2026 Financial Results",
+          "summary": "SEATTLE, October 08, 2026--F5, Inc. (NASDAQ: FFIV), the global leader in delivering and securing every app and API, announced it will report its fourth quarter and fiscal year 2026 financial results on Tuesday, October 27, 2026, following the market",
+          "sentiment": 0.022,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=8e562bc877032e6ec471e383c6e7635f649dd5d5fa0a82701fbb11b0bdb0f915"
+        },
+        {
+          "headline": "VTEX or FFIV: Which Is the Better Value Stock Right Now?",
+          "summary": "VTEX vs. FFIV: Which Stock Is the Better Value Option?",
+          "sentiment": 0.004,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=d29a9f7f4e39075b7f0ff6cc87f680c303786850772cb74b104564bb27e3bc0f"
+        }
+      ],
+      "cost": 7253.04
+    },
+    {
+      "symbol": "ADI",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 18,
+      "entry_price": 401.85,
+      "stop_loss": 378.41,
+      "target": 437.01,
+      "entry_date": "2026-10-15",
+      "entry_time": "18:00",
+      "composite_score": 62.87096774193548,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 62.9, RSI 55, EPS growth 158%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Analog Devices (ADI) vs. TXN and ON: Can AI Infrastructure and Acquisitions Drive Its Next Growth Phase?",
+          "summary": "Is ADI a good stock to buy? We came across a bullish thesis on Analog Devices, Inc. on Astute Optics \u2013 US\u2019s Substack. The thesis was published on September 11th, when the stock was trading at $378.78, and ADI gained more than 7% since then. The gain",
+          "sentiment": 0.94,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=6850ad2aa1036ff476b748179a469e3b4f312dc01b2bb4414a2a0fa1e8dd785c"
+        },
+        {
+          "headline": "All You Need to Know About Analog Devices (ADI) Rating Upgrade to Strong Buy",
+          "summary": "Analog Devices (ADI) has been upgraded to a Zacks Rank #1 (Strong Buy), reflecting growing optimism about the company's earnings prospects. This might drive the stock higher in the near term.",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=40a476a489e797926d19e4eccd68e4ad700c867d4e206d501efd814c0c2312ee"
+        },
+        {
+          "headline": "Reasons Why Investors Can Consider Buying ADP Stock Now",
+          "summary": "Automatic Data Processing's strong stock performance, AI integration, strategic acquisitions & healthy cash flow indicate sustained growth in fiscal 2027.",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=3a84360917ae00fb7d35899c45ae1891a259a46ae328b95a1e240d1a8196cc5c"
+        },
+        {
+          "headline": "Cadence Design Systems (CDNS) Stock Trades Rich After A 122% Five Year Run",
+          "summary": "Cadence Design Systems has delivered powerful long term gains for shareholders, which puts today's US$348.84 share price under the spotlight and raises a simple question for you as an investor: Are the earnings of Cadence doing enough to support wher",
+          "sentiment": 0.92,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=f51f146617159a882e606e4043fb50ee32d452be7c38cdf0e4198de9369d1825"
+        },
+        {
+          "headline": "Reasons Why Investors Can Consider Buying Genpact Stock Now",
+          "summary": "G's 13.6% stock rally, AI-led growth, rising earnings estimates and steady shareholder returns make it an attractive investment opportunity.",
+          "sentiment": 0.906,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=7bdcabebf220ec6067ed1e1f3675c07b60ce1c221c8623a7694bd4c790894e11"
+        },
+        {
+          "headline": "Analog Devices (ADI) Ascends While Market Falls: Some Facts to Note",
+          "summary": "Analog Devices (ADI) concluded the recent trading session at $414.7, signifying a +2.08% move from its prior day's close.",
+          "sentiment": 0.887,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=ba092e0746d489836c1d87d9c1afdd3416bc6545a9b3c0a87d0fef548a2d4ce1"
+        },
+        {
+          "headline": "Analog Devices (NASDAQ:ADI): A Dividend Quality Standout for Income Investors",
+          "summary": "Analog Devices (ADI) passes the Best Dividend screen with a 7/10 dividend rating, 10.2% dividend growth, strong profitability, and solid financial health.",
+          "sentiment": 0.883,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=d5280c2d372fc77bfb39b6250b59c0a9600fcfb452dd1c0c34274f6f34cb5736"
+        },
+        {
+          "headline": "Was There Any Sign Texas Instruments Stock Would Run?",
+          "summary": "Shares of Texas Instruments (TXN) returned 67% in the twelve months from October 7, 2025, to October 8, 2026, easily outpacing the 17% gain for the S&P 500. That performance ultimately rested on a single factor: demand for the company's chips recover",
+          "sentiment": 0.873,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=e9a3f0dc5792f8734881cd6c842245413e8dde1bd814e2769a490167c1284fe7"
+        },
+        {
+          "headline": "Mo\u00ebt Hennessy, Analog Devices and UC Davis Join Forces to Advance Wine Production Through Breakthrough Chemical Signature Detection Technology Leveraging AI",
+          "summary": "Mo\u00ebt Hennessy, the wine and spirits division of LVMH, Analog Devices, Inc. (ADI), a global semiconductor leader, and University of California, Davis, a world-renowned leading research university, today announced a groundbreaking joint effort to deplo",
+          "sentiment": 0.871,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=f7fb49ae1bd8da63ca297ac8b56b9c26217e1be61f8cc28574a9baec1cc35453"
+        },
+        {
+          "headline": "Quantum XChange Strengthens Advisory Board with Former BlackRock Chief Innovation Officer Kfir Godrich and Longtime Cisco Senior Executive Chris White",
+          "summary": "BETHESDA, Md., October 15, 2026--Quantum XChange adds former BlackRock innovation chief Kfir Godrich to its advisory board and expands Cisco veteran Chris White's strategic role.",
+          "sentiment": 0.858,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=260fc365052a12cacb94bd864d70ad662cfdc547bdf4b7f523a75cb72e08bb5e"
+        }
+      ],
+      "cost": 7233.3
+    },
+    {
+      "symbol": "NUE",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 2,
+      "entry_price": 254.705,
+      "stop_loss": 240.65,
+      "target": 275.79,
+      "entry_date": "2026-10-15",
+      "entry_time": "18:00",
+      "composite_score": 60.1920210166178,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 60.2, RSI 55, EPS growth 92%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Reliance: Growth Metrics Don't Support The Premium Valuation",
+          "summary": "Market momentum hints commodity stocks are turning bearish.",
+          "sentiment": -0.953,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=fb89f2351b055afc25b21e1716682f91b554bb26af44dfcc04e8c7276e5a7a41"
+        },
+        {
+          "headline": "Nucor (NUE) Expands Indiana Pole Output, Is The Stock Still Cheap?",
+          "summary": "Nucor (NUE) is back in focus after the company outlined a US$105 million expansion at its Nucor Towers & Structures facility in Crawfordsville, Indiana, tied to growing utility pole production. The Crawfordsville announcement follows a strong run in",
+          "sentiment": 0.937,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=a9232129bc1c63f2d8d2580bfe178da3bd33d437a797e0770f7de21bac1088de"
+        },
+        {
+          "headline": "Nucor (NYSE:NUE): Dividend Quality Stands Out in a Disciplined Screen",
+          "summary": "Nucor (NUE) clears a disciplined dividend screen with a 7/10 dividend rating, sustainable payout, and solid health, despite modest yield.",
+          "sentiment": 0.934,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=537b793a19c834884985fc06e7240e4b8ffee8515f1bb55eec3a9ec7d17dd626"
+        },
+        {
+          "headline": "Nucor (NYSE:NUE) Combines High Growth Momentum With a Breakout Setup",
+          "summary": "Nucor pairs strong earnings and sales momentum with a tight consolidation, earning high growth and setup ratings for a potential breakout.",
+          "sentiment": 0.931,
+          "source": "Finnhub",
+          "published": "2026-10-10",
+          "url": "https://finnhub.io/api/news?id=9b809015fb09a22e9e4e406d02f7983913a5951739fb10f29f4babafa370198a"
+        },
+        {
+          "headline": "Nucor to Expand Utility Towers & Structures Facility in Indiana",
+          "summary": "Nucor Corporation (NYSE: NUE) announced today that it is expanding production at its Nucor Towers & Structures facility in Crawfordsville, Indiana, pending receipt of regulatory and other approvals. The additional $105 million investment will add cap",
+          "sentiment": 0.92,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=69b21d4589ed72b8acb74d4bcec948fa352caf784a168f5a640223320d806f41"
+        },
+        {
+          "headline": "Nucor Expands Utility Towers Capacity With $105M Investment",
+          "summary": "NUE is investing $105 million to expand utility poles production in Indiana, adding advanced automation and 100 jobs to support growing electricity needs.",
+          "sentiment": 0.919,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=2b7976cab4d0c23f22e2e3d87a0dea03d6acdca9213d16f0f00c1211ea628e01"
+        },
+        {
+          "headline": "What Does Nucor (NUE) Indiana Utility Pole Expansion Mean For Grid Growth?",
+          "summary": "Nucor (NYSE:NUE) announced a major expansion of its Indiana facility to manufacture utility poles for power transmission infrastructure. The project will add new production capacity using advanced manufacturing technology to serve power transmission",
+          "sentiment": 0.905,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=994b5f8b3a3927dd578bc2e1d72f74d7199fae54e234c19cdac8fc1dfd8c4ea6"
+        },
+        {
+          "headline": "Does Nucor\u2019s US$105 Million Grid Investment Shift The Bull Case For NUE Toward Higher-Value Steel?",
+          "summary": "Nucor Corporation recently announced it will invest an additional US$105,000,000 to expand its Nucor Towers & Structures facility in Crawfordsville, Indiana, adding more than 120,000 square feet of automated manufacturing space and 100 new jobs with",
+          "sentiment": 0.9,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=6a4603ec1b7349536b66e8d3c304666613027ee9ef3c517ec0241a84b5ce15a6"
+        },
+        {
+          "headline": "Nucor To Expand Production At Its Towers & Structures Facility In Indiana Under Additional $105M Investment; Expected To Create 100 New Jobs",
+          "summary": "The expansion includes more than 120,000 square feet of additional manufacturing space, incorporating advanced automation, modern production equipment, and the latest manufacturing technologies. These investments are",
+          "sentiment": 0.887,
+          "source": "Finnhub",
+          "published": "2026-10-08",
+          "url": "https://finnhub.io/api/news?id=8a4283b19b9673bd339b423d6db3e768c99796df9ec6fa10d96a07cf556e0fa4"
+        },
+        {
+          "headline": "Nucor (NUE) Beats Stock Market Upswing: What Investors Need to Know",
+          "summary": "Nucor (NUE) closed at $250.33 in the latest trading session, marking a +1.7% move from the prior day.",
+          "sentiment": 0.88,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=286910500e3b67b70960c05cc1a786afec86422fe14992353fe353fbbcdc16a2"
+        }
+      ],
+      "cost": 509.41
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "ANET",
+      "direction": "LONG",
+      "shares": 39,
+      "entry_price": 192.805,
+      "exit_price": 184.255,
+      "pnl_dollars": -333.45,
+      "pnl_pct": -4.43,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-15"
+    }
+  ],
+  "realized_pnl": -333.45,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -1590.18,
+  "total_equity": 148743.27
+}
