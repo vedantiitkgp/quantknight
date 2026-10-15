@@ -387,11 +387,22 @@
       "pnl_pct": -4.43,
       "reason": "stop-loss hit",
       "close_date": "2026-10-15"
+    },
+    {
+      "symbol": "NVDA",
+      "direction": "LONG",
+      "shares": 34,
+      "entry_price": 217.55,
+      "exit_price": 217.23,
+      "pnl_dollars": -10.88,
+      "pnl_pct": -0.15,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-15"
     }
   ],
-  "realized_pnl": -333.45,
+  "realized_pnl": -344.33,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -1590.18,
+  "cumulative_pnl": -1601.06,
   "total_equity": 148743.27
 }
