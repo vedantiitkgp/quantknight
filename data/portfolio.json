@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 6651.32,
+  "cash": 6856.21,
   "total_equity": 147578.74,
-  "cumulative_pnl": -5458.28,
-  "as_of": "2026-10-16T18:50:02.529848",
+  "cumulative_pnl": -5476.44,
+  "as_of": "2026-10-16T19:53:18.080269",
   "positions": [
     {
       "symbol": "TRV",
@@ -1272,106 +1272,6 @@
         }
       ],
       "current_price": 241.24
-    },
-    {
-      "symbol": "NTAP",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 1,
-      "entry_price": 223.05,
-      "stop_loss": 205.39,
-      "target": 249.54,
-      "entry_date": "2026-10-14",
-      "entry_time": "18:17",
-      "composite_score": 64.29590620031797,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 64.3, RSI 58, EPS growth 61%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Barclays Downgrades HPE, Dell, NetApp On Enterprise AI Spending Trends",
-          "summary": "HPE stock fell along with Dell and NetApp after Barclays downgraded the enterprise system suppliers, citing AI spending trends.",
-          "sentiment": -0.966,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=5dfae8d0c3349dbc06a211cc4d28e1baf3e7867faef46ae305359dca6a9b27d2"
-        },
-        {
-          "headline": "Is SanDisk Stock's Fall A Bargain Or A Warning?",
-          "summary": "Shares of SanDisk (SNDK) closed at $1,692.42 on October 7, 2026, down 10% from their one-month closing high of $1,887.04, set on September 22, 2026. The fall may go further. A slide of this magnitude forces investors to make a choice: buy the lower p",
-          "sentiment": -0.965,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=1cd72e94b1d068110ba84bbf676e2516f003fb0b49418f5ff54f96b254024a63"
-        },
-        {
-          "headline": "Barclays downgrades Dell stock after sharp rally",
-          "summary": "Barclays downgraded Dell Technologies, Hewlett Packard Enterprise and NetApp to Equal Weight from Overweight in a note on Wednesday, saying valuations have run too far and it sees no meaningful enterprise AI inflection yet.",
-          "sentiment": -0.957,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=4e7b0d4494721987d29e16629256987b76c45afced4132e5fa9674d2da8d93fb"
-        },
-        {
-          "headline": "Wall Street Breakfast Podcast: BofA's $1.2B Penalty Punch",
-          "summary": "Treasury hits BofA with $1.2B in penalties ahead of earnings. ASML sees AI demand outrunning supply for years to come. Barclays downgrades three tech names.",
-          "sentiment": -0.953,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=249a6cafa2997e1941f32ab6061bc218c42ba74682381ee293ad5d96d7efb168"
-        },
-        {
-          "headline": "Western Digital Lost One Third Its Value Over 3 Months: It\u2019S Ready to Provide 175% Returns Says This Wall Street Pro",
-          "summary": "Western Digital has beaten earnings five straight times, yet the stock keeps falling as a supply threat from a rival threatens to unravel the entire bullish case that has one Wall Street analyst calling for a massive rebound.",
-          "sentiment": -0.95,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=5055c3c09cadda5bea807b3447d24ba93d73afa98f8d953fff811ad0917eb2ae"
-        },
-        {
-          "headline": "Should Investors Still Buy QMCO Stock After a 3-Month Rally of 191%?",
-          "summary": "Quantum shares surged 191.2% in three months as strong revenue growth, improving margins and debt elimination bolster its outlook despite supply constraints.",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=9b65eb1231f23abcf2f8524374e49e34858ea2916ad43d5103fb5e717ad69999"
-        },
-        {
-          "headline": "What Changed For HPE Stock, And What Did Not?",
-          "summary": "Hewlett Packard Enterprise (HPE) stock returned 193.4% in the year to October 12, 2026, far outpacing the 20.5% return for the S&P 500. The company's sales growth sped up over those twelve months, and management raised its outlook for fiscal 2026 and",
-          "sentiment": 0.929,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=80920166b1f6090938fe3c7d433f66b8d1ca931860c910a386d190b17e13223c"
-        },
-        {
-          "headline": "Arrow Electronics recognized as NetApp North America Distributor of the Year for 2026",
-          "summary": "CENTENNIAL, Colo., October 13, 2026--Global technology solutions provider Arrow Electronics has been named NetApp North America Distributor of the Year for NetApp\u2019s fiscal year 2026. The award recognizes Arrow\u2019s enterprise computing solutions busines",
-          "sentiment": 0.928,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=3346796e875d8277b870d0b2b4573ea2e440a967329bbb4c94bf315eef13a4a2"
-        },
-        {
-          "headline": "Dow Jones Futures Rise, Techs Fall With ASML, BofA, Dell, HPE Early Movers; CPI Inflation Due",
-          "summary": "Dow futures rose with yields falling. Chip-gear giant ASML beat on earnings with the CPI inflation report due.. Meta and AMD are buys.",
-          "sentiment": -0.924,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=29d32ca512a627743b4d5f03423c05375179d4856fe00b0cc9e7e6ddefc79e7a"
-        },
-        {
-          "headline": "Quantum Builds ActiveScale Momentum: Can It Sustain Growth?",
-          "summary": "QMCO's ActiveScale gains traction amid rising demand for scalable data storage, major customer wins and 26% revenue growth, but supply constraints threaten momentum.",
-          "sentiment": 0.916,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=7eda9f1d75d6fae813fa2130e6a5146ba8ece4119f223a7b0c615c8982bed1b5"
-        }
-      ],
-      "current_price": 214.7
     },
     {
       "symbol": "CPAY",

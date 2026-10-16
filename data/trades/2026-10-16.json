@@ -598,11 +598,22 @@
       "pnl_pct": -7.27,
       "reason": "stop-loss hit",
       "close_date": "2026-10-16"
+    },
+    {
+      "symbol": "NTAP",
+      "direction": "LONG",
+      "shares": 1,
+      "entry_price": 223.05,
+      "exit_price": 204.89,
+      "pnl_dollars": -18.16,
+      "pnl_pct": -8.14,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-16"
     }
   ],
-  "realized_pnl": -3037.02,
+  "realized_pnl": -3055.18,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -5458.28,
+  "cumulative_pnl": -5476.44,
   "total_equity": 147578.74
 }
