@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 14598.0,
+  "cash": 19779.83,
   "total_equity": 147578.74,
-  "cumulative_pnl": -2421.26,
-  "as_of": "2026-10-15T23:14:40.822449",
+  "cumulative_pnl": -4937.28,
+  "as_of": "2026-10-16T17:46:02.248470",
   "positions": [
     {
       "symbol": "TRV",
@@ -1074,206 +1074,6 @@
       "current_price": 198.64
     },
     {
-      "symbol": "HPE",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 118,
-      "entry_price": 63.2601,
-      "stop_loss": 55.78,
-      "target": 74.47,
-      "entry_date": "2026-10-14",
-      "entry_time": "18:17",
-      "composite_score": 67.80365659777425,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 67.8, RSI 49, EPS growth 405%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "State Street, Fastenal And Other Big Stocks Moving Lower In Wednesday\u2019s Pre-Market Session",
-          "summary": "U.S. futures were mixed. State Street fell 6.4% after missing sales estimates, while Biomea Fusion, Skydance and other stocks slid premarket.",
-          "sentiment": -0.966,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=86b6758a936bd4d3f70fa2f7ddbc67c8b0f61715d7510afe9eaf934d98db971a"
-        },
-        {
-          "headline": "Why Hewlett Packard Enterprise (HPE) Shares Are Trading Lower Today",
-          "summary": "Shares of enterprise technology company Hewlett Packard Enterprise (NYSE:HPE) fell 4.9% in the afternoon session after Evercore ISI downgraded the stock to In-Line due to stretched valuation following a strong rally. According to Tipranks, analyst Am",
-          "sentiment": -0.966,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=653f6c04932a021afd3cada6be0358ab6be7a11971bfb9dbf929f61ae9c8ea62"
-        },
-        {
-          "headline": "Barclays Downgrades HPE, Dell, NetApp On Enterprise AI Spending Trends",
-          "summary": "HPE stock fell along with Dell and NetApp after Barclays downgraded the enterprise system suppliers, citing AI spending trends.",
-          "sentiment": -0.966,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=5dfae8d0c3349dbc06a211cc4d28e1baf3e7867faef46ae305359dca6a9b27d2"
-        },
-        {
-          "headline": "Barclays downgrades Dell stock after sharp rally",
-          "summary": "Barclays downgraded Dell Technologies, Hewlett Packard Enterprise and NetApp to Equal Weight from Overweight in a note on Wednesday, saying valuations have run too far and it sees no meaningful enterprise AI inflection yet.",
-          "sentiment": -0.957,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=4e7b0d4494721987d29e16629256987b76c45afced4132e5fa9674d2da8d93fb"
-        },
-        {
-          "headline": "CoreWeave, HPE, Dell, Bank of America, Morgan Stanley, Bending Spoons, and More Stocks That Explain Today\u2019s Market",
-          "summary": "Bank of America falls after earnings take a hit from the $1.2 billion fine issued by the Treasury Department.",
-          "sentiment": -0.938,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=05c928bb190d7f87261a1bbe19486213d859b5ad5c75c86c29f464e702125abe"
-        },
-        {
-          "headline": "How Evercore\u2019s Valuation-Driven Downgrade At Hewlett Packard Enterprise (HPE) Has Changed Its Investment Story",
-          "summary": "In early October 2026, Evercore ISI downgraded Hewlett Packard Enterprise to an In-Line rating, arguing that the company\u2019s valuation looked stretched after a strong rally and that there were limited near-term supports for further multiple expansion.",
-          "sentiment": -0.937,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=84216223c30f7092850d1a58e24c313204128dd8f13d24057d26d3b9afb86fcd"
-        },
-        {
-          "headline": "HPE Partners With NVDA: Can it Help Challenge SMCI & DELL?",
-          "summary": "Hewlett Packard Enterprise's NVIDIA partnership strengthens its enterprise AI offerings, challenging SMCI and DELL.",
-          "sentiment": 0.934,
-          "source": "Finnhub",
-          "published": "2026-10-12",
-          "url": "https://finnhub.io/api/news?id=cc5dfa69869a5e1598a9138abf701b666e73bf97a374160097c131c7b0b73b88"
-        },
-        {
-          "headline": "What Changed For HPE Stock, And What Did Not?",
-          "summary": "Hewlett Packard Enterprise (HPE) stock returned 193.4% in the year to October 12, 2026, far outpacing the 20.5% return for the S&P 500. The company's sales growth sped up over those twelve months, and management raised its outlook for fiscal 2026 and",
-          "sentiment": 0.929,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=80920166b1f6090938fe3c7d433f66b8d1ca931860c910a386d190b17e13223c"
-        },
-        {
-          "headline": "4 Stocks Trading Near 52-Week High With Room to Rise Further",
-          "summary": "Investors target stocks that have been on a bullish run. Stocks like HPE, ARW, KSS and GCT are seeing price strength, and the momentum is likely to continue.",
-          "sentiment": 0.927,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=f8c1f71e50e106711bdf211837db8d2cf241e65ea8d3d789780683ff2c32dee3"
-        },
-        {
-          "headline": "Dow Jones Futures Rise, Techs Fall With ASML, BofA, Dell, HPE Early Movers; CPI Inflation Due",
-          "summary": "Dow futures rose with yields falling. Chip-gear giant ASML beat on earnings with the CPI inflation report due.. Meta and AMD are buys.",
-          "sentiment": -0.924,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=29d32ca512a627743b4d5f03423c05375179d4856fe00b0cc9e7e6ddefc79e7a"
-        }
-      ],
-      "current_price": 58.63
-    },
-    {
-      "symbol": "TWLO",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 27,
-      "entry_price": 272.09,
-      "stop_loss": 242.93,
-      "target": 315.83,
-      "entry_date": "2026-10-14",
-      "entry_time": "18:17",
-      "composite_score": 66.1891891891892,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 66.2, RSI 51, EPS growth 4659%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "How Much Downside Is Left In SOUN Stock?",
-          "summary": "Shares of SoundHound AI (SOUN) have lost 21% in the past month. The S&P 500 gained 2.0% over the same period, and no cause for the fall in SoundHound is known. Over twelve months, the stock is down 73%. Both declines unfolded while the broader market",
-          "sentiment": -0.965,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=9de17e2de4329ab47120b5a9ee25a5f092f178852e3612a28134f85e4bec0b63"
-        },
-        {
-          "headline": "Twilio (TWLO) Stock Trades Up, Here Is Why",
-          "summary": "Shares of customer engagement platform Twilio (NYSE:TWLO) jumped 5.5% in the afternoon session after JPMorgan Chase raised its price target on the stock and continuing institutional demand from its addition to the S&P 500 provided momentum, while tec",
-          "sentiment": 0.924,
-          "source": "Finnhub",
-          "published": "2026-10-10",
-          "url": "https://finnhub.io/api/news?id=bd78128d2db89dd72c584edbb6e997dfba363e4b3b9e16c7d726ccc747cecfa3"
-        },
-        {
-          "headline": "What Can Make SoundHound AI Stock A Buy?",
-          "summary": "Enterprise AI is now the largest business at SoundHound AI (SOUN), even if many still think of the company as a voice assistant. Within that shift, one product stands out: OASYS. The company launched this platform for building AI agents in May, and i",
-          "sentiment": -0.913,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=fe8175cc601496c590a26c2f3ef2ce58550dcaf298a4f63e71c6efe8242bc7b2"
-        },
-        {
-          "headline": "Will Twilio (TWLO) Beat Estimates Again in Its Next Earnings Report?",
-          "summary": "Twilio (TWLO) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
-          "sentiment": 0.904,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=c238f1d5f936200db406a49f70968073bc1f849f322af54e8971b93d46565c5b"
-        },
-        {
-          "headline": "Twilio shares up 97% this year as investors focus on third-quarter gross profit growth, Jefferies says",
-          "summary": "Twilio Inc (NYSE:TWLO), the cloud communications company, has seen its shares rise 97% this year to new highs, leaving investors increasingly nervous ahead of third-quarter earnings, for which no date has been set. Jefferies says investors are focuse",
-          "sentiment": 0.875,
-          "source": "Finnhub",
-          "published": "2026-10-07",
-          "url": "https://finnhub.io/api/news?id=b4be3d29d04cbd292c7fac6de4745eb79475d240ba6d36062a443e24cfba9446"
-        },
-        {
-          "headline": "JP Morgan Maintains Overweight on Twilio, Raises Price Target to $335",
-          "summary": "JP Morgan  analyst Mark Murphy   maintains Twilio (NYSE:TWLO) with a Overweight and raises the price target from $260 to $335.",
-          "sentiment": 0.861,
-          "source": "Finnhub",
-          "published": "2026-10-08",
-          "url": "https://finnhub.io/api/news?id=e0329b4f75c819055f4c1b25142a3624d8c70cd6e6927d1e614efbc66d119c4c"
-        },
-        {
-          "headline": "Twilio (TWLO) Suffers a Larger Drop Than the General Market: Key Insights",
-          "summary": "The latest trading day saw Twilio (TWLO) settling at $282.66, representing a -2.35% change from its previous close.",
-          "sentiment": -0.733,
-          "source": "Finnhub",
-          "published": "2026-10-12",
-          "url": "https://finnhub.io/api/news?id=79f5364e834532006bbba7a9f1a3b92cfbfb5dfec2ef259b48fca436e22a27c7"
-        },
-        {
-          "headline": "Twilio (TWLO) Stock May Be Expensive Following Its 421% 3 Year Run",
-          "summary": "Twilio has delivered a very strong run over the past few years, and that kind of move naturally raises a simple question for anyone looking at the stock today. Do the cash flows that the business can produce now and in the future really support the p",
-          "sentiment": 0.685,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=3c845fea927669d0b7d05a207231ee254735601f119de78928c7749c5efc4e36"
-        },
-        {
-          "headline": "Trellist Launches Free Personalization Audit as New Research Shows Most Brands Lack Usable Customer Data",
-          "summary": "Trellist, Inc. today announced a complimentary Personalization Audit for brands running Adobe Target, AEM, or comparable personalization platforms, following new Twilio research showing only 16% of businesses strongly agree they have the data they ne",
-          "sentiment": 0.333,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=5828554902ce6c4b750184cd94cbb247d53cd91c032b42893018228f92504d01"
-        },
-        {
-          "headline": "Twilio CEO: Voice AI penetration rate is extraordinarily low",
-          "summary": "Khozema Shipchandler, CEO of Twilio, joins Squawk Box Europe to discuss AI safety concerns and whether artificial intelligence will destroy SaaS businesses.",
-          "sentiment": -0.239,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=b7c5517f0c50eb8cc7f55e5f287f6039dc9b8b6ec12627c65605b7f4b7c82ed4"
-        }
-      ],
-      "current_price": 273.4
-    },
-    {
       "symbol": "OXY",
       "direction": "LONG",
       "trade_type": "swing",
@@ -1572,106 +1372,6 @@
         }
       ],
       "current_price": 241.24
-    },
-    {
-      "symbol": "FTNT",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 40,
-      "entry_price": 185.37,
-      "stop_loss": 173.24,
-      "target": 203.57,
-      "entry_date": "2026-10-14",
-      "entry_time": "18:17",
-      "composite_score": 64.42209856915738,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 64.4, RSI 58, EPS growth 38%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Why Fortinet Stock Slumped on Wednesday",
-          "summary": "There are concerns that OpenAI may be making a move in the cybersecurity industry.",
-          "sentiment": -0.96,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=6075bb8a1a282f10c7ea85419f345d88f708be597b082c72c798885b0bbbca37"
-        },
-        {
-          "headline": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
-          "summary": "Cybersecurity stocks fell amid a report artificial intelligence system maker OpenAI plans to acquire an industry startup.",
-          "sentiment": -0.947,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=33d7709ea7b0280cc9a3cd848d26d56b67ac0bf9fcfc439807bd4ee9c2ba2e89"
-        },
-        {
-          "headline": "Palo Alto Falls 4% as Report of OpenAI Cybersecurity Deal Hits Sector; CrowdStrike Drops 3%, Fortinet Slips",
-          "summary": "A single report about OpenAI entering cybersecurity sent shockwaves through the sector's biggest names, and the question now is whether the AI giant plans to partner with incumbents or hunt their customers directly.",
-          "sentiment": -0.944,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=732667025404d442d7ba79f48e4e595ad00e4738881c395c37c01efcb18b7e4e"
-        },
-        {
-          "headline": "Fortinet (FTNT) Could Be 54% Overvalued After Better Than Expected Earnings",
-          "summary": "GovWare 2026 puts Fortinet in focus for Asia-facing growth Fortinet (FTNT) is drawing fresh attention as it heads into GovWare 2026 in Singapore, a high profile cybersecurity conference where management plans to highlight networking and security offe",
-          "sentiment": 0.931,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=8351b39a4ba7808a74377a1fe8c836b8ced3d0f108f9f3cada5740b2f621aeb8"
-        },
-        {
-          "headline": "Does Fortinet's Strong Margin Profile Make the Stock Worth Buying Now?",
-          "summary": "FTNT's record margins, raised 2026 guidance and AI security push strengthen its profitability story, but rising chip costs and product-mix pressure remain key concerns.",
-          "sentiment": 0.928,
-          "source": "Finnhub",
-          "published": "2026-10-12",
-          "url": "https://finnhub.io/api/news?id=f940522bafb13875c709a4883fe4619a01befd3ca43411f7114dbfbe3d021d0b"
-        },
-        {
-          "headline": "Atos expands partnership with Fortinet to deliver a global unified cybersecurity framework across hybrid and multi-cloud environments",
-          "summary": "Press Release Atos expands partnership with Fortinet to deliver a global unified cybersecurity framework across hybrid and multi-cloud environments Paris, France \u2013 October 14, 2026 \u2013 Atos, a global leader of AI-powered digital transformation, today a",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=f30d283f443327159ab8ee72a05452340b62fa4f44c5a43b31a4c76364289989"
-        },
-        {
-          "headline": "Fortinet: An Excellent Business Whose Stock Has Run Ahead Of Its Value (Downgrade)",
-          "summary": "Fortinet (FTNT) is downgraded to neutral after a 232% rally as valuation outruns growth.",
-          "sentiment": -0.906,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=a257c1b90de46e8d9601e0bb640e85ecf6e92c240b0c899209324d13b861e879"
-        },
-        {
-          "headline": "Are Computer and Technology Stocks Lagging  Fortinet (FTNT) This Year?",
-          "summary": "Here is how Fortinet (FTNT) and Ambiq Micro, Inc. (AMBQ) have performed compared to their sector so far this year.",
-          "sentiment": -0.901,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=217addfdc265aa5c142cf110dbaeb9c28420a9c0cdb946b4dd24f02dce35f9a8"
-        },
-        {
-          "headline": "Is Fortinet\u2019s AI Security Push and GovWare 2026 Spotlight Reshaping the Investment Case for FTNT?",
-          "summary": "Fortinet recently participated in GovWare 2026 in Singapore, where senior leaders showcased the company\u2019s cybersecurity offerings and AI-enabled solutions to public- and private-sector attendees. This exposure, alongside a strong record of earnings o",
-          "sentiment": 0.874,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=f9634d0850988c658432ca1435218a59ebb7c8951053cf2fe4bfc58d7fe85368"
-        },
-        {
-          "headline": "Zscaler's Growth Likely to Slow to 17%: Can AI Products Close the Gap?",
-          "summary": "ZS' revenue growth is set to slow to 17% in fiscal 2027, but rising AI security demand and expanding product offerings are likely to help bridge the growth gap.",
-          "sentiment": -0.871,
-          "source": "Finnhub",
-          "published": "2026-10-12",
-          "url": "https://finnhub.io/api/news?id=a063fbeaacc9f4f32703d1260a75c0675604ee3029a47ca04cdd464b4071a5a2"
-        }
-      ],
-      "current_price": 181.91
     },
     {
       "symbol": "NTAP",
@@ -2140,6 +1840,287 @@
         }
       ],
       "current_price": 254.69
+    },
+    {
+      "symbol": "MRK",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 50,
+      "entry_price": 146.96,
+      "stop_loss": 139.24,
+      "target": 158.54,
+      "entry_date": "2026-10-16",
+      "entry_time": "17:45",
+      "composite_score": 64.40693681318682,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 64.4, RSI 54, EPS growth -130%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "How Much Downside Is Left In Liquidia Stock?",
+          "summary": "Over the past month, shares of Liquidia (LQDA) have lost 59%, even as the S&P 500 gained 2.5%. Reuters reported that the stock dropped nearly 50% on September 30 after a federal judge ruled that Yutrepia, Liquidia's inhaled lung drug, infringes a Uni",
+          "sentiment": -0.963,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=a15dbaf0ec5913d78ad6dd47f8be522dd0a51efa769661f4a206c2f7086f658e"
+        },
+        {
+          "headline": "Moderna Tumbles 10% as Profit Taking Hits Cancer Vaccine Rally; BioNTech Eases, Pfizer Stays Put",
+          "summary": "Moderna stock is shedding 10% after a blistering cancer vaccine run, and the question now is whether profit takers know something the bulls don't ahead of a critical trial readout later this month.",
+          "sentiment": -0.962,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=9dbc95242c8d52265d5c0557a75bf5612f2300b046560659575730db61480277"
+        },
+        {
+          "headline": "Moderna stock sinks as Wall Street turns cautious following blistering rally",
+          "summary": "Moderna sank as Wall Street grew more cautious on the company's valuation after a massive rally this year.",
+          "sentiment": -0.954,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=e586d9fa75f4bb019a822871751834ee14425871a48920ab8652e36bf3d86a7a"
+        },
+        {
+          "headline": "Merck & Co., Inc. (MRK) Reports Promising Skin Cancer Trial Results for Keytruda and Personalized mRNA Vaccine",
+          "summary": "Baillie Gifford & Co, an independent investment management firm, released its third-quarter 2026 investor letter for \u201cInternational Concentrated Growth Strategy\u201d. A copy of the letter can be downloaded here. The strategy outperformed its benchmark in",
+          "sentiment": 0.93,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=dd209d7cc5c57c1fdbe0bfcb962ee233f615afcc0e3601c6a02d0b34c87dbc45"
+        },
+        {
+          "headline": "Why Eli Lilly Became Wall Street\u2019s Safe Haven on a Hot CPI Day",
+          "summary": "Eli Lilly (LLY:NYSE) stock rose roughly 4% on Wednesday, October 14, joining a broad rally in healthcare stocks. No major Lilly news drove it.",
+          "sentiment": 0.925,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=9d68f92c16833503339ea5d5df75459423360a1508a93c70603f4b8b209e8fdf"
+        },
+        {
+          "headline": "What Is The Case For Waiting On Moderna Stock?",
+          "summary": "Moderna (MRNA) stock has gained 282.6% over the past three months, outpacing a 4.1% return for the S&P 500. The shares reached their highest close in a year on October 15, 2026, ending the session at $236.50. Investors paying that premium are betting",
+          "sentiment": 0.922,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=3baf1ee24e890652fecbebc36de430f14066942b4fdd1616633ea9c823267896"
+        },
+        {
+          "headline": "What Could Send Regeneron Stock Higher?",
+          "summary": "Regeneron Pharmaceuticals (REGN) may get its next boost from an old deal rather than a new drug. Through the first half of 2026, Regeneron was paying down a balance owed to its partner Sanofi. This obligation reduced the revenue Regeneron reported fr",
+          "sentiment": -0.92,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=434733031d20fe4cdc19bc79cf48d12b65f1d04ad018b78d4055f1173b8c98bb"
+        },
+        {
+          "headline": "Lilly, Merck, AbbVie Stocks Surge. Why Healthcare Is Rallying Today.",
+          "summary": "Shares of Lilly, the world\u2019s largest pharmaceutical company by market value, rallied above their 50-day moving average to mark their best level since August.",
+          "sentiment": 0.899,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=19b85bc72b748e5c4f9df4d280603355fd2cbda4b56f2bfe016353e892bc2ed5"
+        },
+        {
+          "headline": "Stock Market Today: Dow Rises, Nasdaq Tumbles As AI Worries Hit Major Players (Live Coverage)",
+          "summary": "The Dow Jones index rises Thursday ahead of more inflation data. Nvidia, Micron and AMD sell off on AI fears.",
+          "sentiment": -0.891,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=6ad409edc5845d99345332cecd4ac0d247cc7396d902bc4aa044842c2de7fcee"
+        },
+        {
+          "headline": "AMGN vs. MRK: Which Pharma Giant\u2019s Dividend Actually Has Room to Grow",
+          "summary": "Amgen and Merck both yield around 2.3% and have surged this year, but one of them is paying its dividend out of thin air while the other has a cash cushion that changes the entire income calculus.",
+          "sentiment": 0.891,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=e1edfeb2d3d1b855f41641b69760edc6c7630a45db8b820a950c2052acbfe992"
+        }
+      ]
+    },
+    {
+      "symbol": "OKTA",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 38,
+      "entry_price": 186.81,
+      "stop_loss": 164.76,
+      "target": 219.89,
+      "entry_date": "2026-10-16",
+      "entry_time": "17:45",
+      "composite_score": 61.93166208791209,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 61.9, RSI 41, EPS growth 73%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "MongoDB lets apps pay only for what they use",
+          "summary": "The impact of executive departures remains an open question, along with whether customers\u2019 overall spending will dip.",
+          "sentiment": -0.948,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=d97384798bbc292b802110ee2003d991dbc98ddcb1c369473474b42a4bab2016"
+        },
+        {
+          "headline": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
+          "summary": "Cybersecurity stocks fell amid a report artificial intelligence system maker OpenAI plans to acquire an industry startup.",
+          "sentiment": -0.947,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=33d7709ea7b0280cc9a3cd848d26d56b67ac0bf9fcfc439807bd4ee9c2ba2e89"
+        },
+        {
+          "headline": "CrowdStrike vs. Okta: Which Cybersecurity Stock Is a Better Buy in 2026?",
+          "summary": "CrowdStrike recently posted its best quarter ever with record recurring revenue and expanding free cash flow. Okta delivered record bookings in the same quarter and saw its stock surge nearly 20%.",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=d8dd91fc8581526083828e9681bb6ffbacb4c7a9e3008db6b99a06666715cff9"
+        },
+        {
+          "headline": "Cybersecurity Stocks Retreat From Record Highs \u2014 Citi Raises CRWD, PANW, ZS Targets On Improving Spending Momentum",
+          "summary": "Wells Fargo said ten detailed discussions with channel partners and its reseller survey indicated cybersecurity spending was gaining momentum heading into 2027, according to The Fly.",
+          "sentiment": 0.893,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=5ac5539f58d773fe04b11968b66f7e0911950c95ad4a9a1cb3b2ae48af6341e7"
+        },
+        {
+          "headline": "BMO Capital Maintains Outperform on Okta, Raises Price Target to $245",
+          "summary": "BMO Capital  analyst Keith Bachman   maintains Okta (NASDAQ:OKTA) with a Outperform and raises the price target from $230 to $245.",
+          "sentiment": 0.829,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=6f87665651aa1b244b0e2c837d220f75a524583baa3dc2fea7b15f4c8ff5d022"
+        },
+        {
+          "headline": "Someone Bugged OpenAI's Boardroom: ChatGPT's Maker Says its Own AI Found Out Who",
+          "summary": "OpenAI uses AI to trace a hidden office recording device to an employee who was arrested; no model weights or data were stolen.",
+          "sentiment": -0.717,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=d10343231d561521afc55f56d6ebc9023dda42d8af102c2172c4b899a02efd2e"
+        },
+        {
+          "headline": "Should You Trim Or Add To Your CrowdStrike Position Now?",
+          "summary": "Investors holding CrowdStrike (CRWD) are likely weighing whether to take some money off the table. The stock returned 107% over the past twelve months, easily outpacing the 17.3% gain for the S&P 500. Yet management noted in August that customers are",
+          "sentiment": 0.666,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=218984fe1f448ef52dbd0717c967cbe609676c0e1c84b40a4307e9cc62b07573"
+        },
+        {
+          "headline": "Citigroup Maintains Neutral on Okta, Raises Price Target to $215",
+          "summary": "Citigroup  analyst Fatima Boolani   maintains Okta (NASDAQ:OKTA) with a Neutral and raises the price target from $205 to $215.",
+          "sentiment": 0.61,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=6f14e675e5f3cbca17505db3a7a4f26890a239b9315e03a5819da5f250236151"
+        },
+        {
+          "headline": "Okta (OKTA) Dips More Than Broader Market: What You Should Know",
+          "summary": "Okta (OKTA) closed the most recent trading day at $211.92, moving 6.45% from the previous trading session.",
+          "sentiment": 0.6,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=ec2c73c10e0006d1018a982937117a9b02dceaf84ca0fb431827cfb3f1f9defa"
+        },
+        {
+          "headline": "Q3 Earnings Could Blow Past Consensus\u2014Be Ready for What Comes Next",
+          "summary": "AI-driven demand is lifting earnings estimates and price targets across cybersecurity, semiconductor, and CPU stocks, including PANW, MRVL, AMD, and INTC, ahead of Q3 results.",
+          "sentiment": 0.51,
+          "source": "Finnhub",
+          "published": "2026-10-11",
+          "url": "https://finnhub.io/api/news?id=7801f245bf4bde190b8b8f17e40e982954a732bf5879a131da5d021bc310c642"
+        }
+      ]
+    },
+    {
+      "symbol": "SWKS",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 1,
+      "entry_price": 81.285,
+      "stop_loss": 72.89,
+      "target": 93.88,
+      "entry_date": "2026-10-16",
+      "entry_time": "17:45",
+      "composite_score": 59.70089285714286,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 59.7, RSI 51, EPS growth -68%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Apple Drops 3% on Reported iPhone 18 Pro Component Order Cuts; Skyworks Slips, Qualcomm Treads Water",
+          "summary": "Apple just got hit with a report that it slashed iPhone 18 Pro component orders, and the fallout is splitting the chip sector in a way that raises questions about whether premium smartphone demand is cracking at exactly the wrong moment.",
+          "sentiment": -0.96,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=7fd98fe8bd34a91a2327e908d6e4c118ad133d68743b12399bd954d86e5b6a6b"
+        },
+        {
+          "headline": "Apple Cut iPhone 18 Orders; What Does It Mean For Suppliers?",
+          "summary": "Apple's reported iPhone 18 Pro component order cuts raise questions for suppliers Skyworks Solutions and Broadcom, which face differing levels of exposure to Apple's business.",
+          "sentiment": -0.954,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=3663fe99ee0b9cad505493bd35babc0fbefdf7dbe6342d0bb6ebefd205361b24"
+        },
+        {
+          "headline": "Mizuho Maintains Underperform on Skyworks Solutions, Raises Price Target to $61",
+          "summary": "Mizuho  analyst Vijay Rakesh   maintains Skyworks Solutions (NASDAQ:SWKS) with a Underperform and raises the price target from $52 to $61.",
+          "sentiment": 0.77,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=83b78665e5ebf24d9a50f87f411cc062c57eba3fae82d84d01fdac822423ac67"
+        },
+        {
+          "headline": "Skyworks (SWKS) Pays 147% of Earnings as Dividends With Over 29% of Its Float Short. Can the Dividend Hold?",
+          "summary": "Skyworks Solutions, Inc. (NASDAQ:SWKS) closed at $76.56 on October 13. The stock has returned 35.5% over the last six months, compared to a 21.5% return for the Insider Monkey Billionaire Index and 14% for State Street SPDR S&P 500 ETF Trust. The pay",
+          "sentiment": 0.377,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=dbf5e6351504ea959ddf0456da4227a38e1fa2c8bf546d0bd8c9b2cc65e140f7"
+        },
+        {
+          "headline": "1 S&P 500 Stock with Solid Fundamentals and 2 We Avoid",
+          "summary": "The S&P 500 (^GSPC) is often seen as a benchmark for strong businesses, but that doesn\u2019t mean every stock is worth owning. Some companies face significant challenges, whether it\u2019s stagnating growth, heavy debt, or disruptive new competitors.",
+          "sentiment": -0.14,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=971eb0e7dd65d7a16f69e14706838030a4dafdcb13e7b86265cc270f3b69b563"
+        },
+        {
+          "headline": "These S&P500 stocks are gapping in today's session",
+          "summary": "Let's take a look at the S&P500 stocks that are experiencing notable price gaps in today's session on Friday. Discover the gap up and gap down stocks in the S&P500 index.",
+          "sentiment": -0.098,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=bf3d21624633bc9ad99ba28bdeef279504f7de1ef429b79bd5d07d797459ef36"
+        },
+        {
+          "headline": "Discover which S&P500 stocks are making waves on Friday.",
+          "summary": "Stay updated with the movements of the S&P500 index one hour before the close of the markets on Friday. Discover which stocks are leading as top gainers and losers in today's session.",
+          "sentiment": -0.027,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=fa69fc8000049deee244f45ce89b56b001c6c1c2df31ee60616bdbf8d43bd682"
+        },
+        {
+          "headline": "Get insights into the top movers in the S&P500 index of Friday's pre-market session.",
+          "summary": "Stay updated with the S&P500 stocks that are on the move in today's pre-market session.",
+          "sentiment": 0.024,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=778ceffa164e9c35d0e2b24a8f102c642d824f901e9fc3094deeb6e3b2074f5a"
+        }
+      ]
     }
   ]
 }

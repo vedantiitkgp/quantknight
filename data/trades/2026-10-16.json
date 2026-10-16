@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-16",
+  "runs": [
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "MRK",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 50,
+      "entry_price": 146.96,
+      "stop_loss": 139.24,
+      "target": 158.54,
+      "entry_date": "2026-10-16",
+      "entry_time": "17:45",
+      "composite_score": 64.40693681318682,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 64.4, RSI 54, EPS growth -130%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "How Much Downside Is Left In Liquidia Stock?",
+          "summary": "Over the past month, shares of Liquidia (LQDA) have lost 59%, even as the S&P 500 gained 2.5%. Reuters reported that the stock dropped nearly 50% on September 30 after a federal judge ruled that Yutrepia, Liquidia's inhaled lung drug, infringes a Uni",
+          "sentiment": -0.963,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=a15dbaf0ec5913d78ad6dd47f8be522dd0a51efa769661f4a206c2f7086f658e"
+        },
+        {
+          "headline": "Moderna Tumbles 10% as Profit Taking Hits Cancer Vaccine Rally; BioNTech Eases, Pfizer Stays Put",
+          "summary": "Moderna stock is shedding 10% after a blistering cancer vaccine run, and the question now is whether profit takers know something the bulls don't ahead of a critical trial readout later this month.",
+          "sentiment": -0.962,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=9dbc95242c8d52265d5c0557a75bf5612f2300b046560659575730db61480277"
+        },
+        {
+          "headline": "Moderna stock sinks as Wall Street turns cautious following blistering rally",
+          "summary": "Moderna sank as Wall Street grew more cautious on the company's valuation after a massive rally this year.",
+          "sentiment": -0.954,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=e586d9fa75f4bb019a822871751834ee14425871a48920ab8652e36bf3d86a7a"
+        },
+        {
+          "headline": "Merck & Co., Inc. (MRK) Reports Promising Skin Cancer Trial Results for Keytruda and Personalized mRNA Vaccine",
+          "summary": "Baillie Gifford & Co, an independent investment management firm, released its third-quarter 2026 investor letter for \u201cInternational Concentrated Growth Strategy\u201d. A copy of the letter can be downloaded here. The strategy outperformed its benchmark in",
+          "sentiment": 0.93,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=dd209d7cc5c57c1fdbe0bfcb962ee233f615afcc0e3601c6a02d0b34c87dbc45"
+        },
+        {
+          "headline": "Why Eli Lilly Became Wall Street\u2019s Safe Haven on a Hot CPI Day",
+          "summary": "Eli Lilly (LLY:NYSE) stock rose roughly 4% on Wednesday, October 14, joining a broad rally in healthcare stocks. No major Lilly news drove it.",
+          "sentiment": 0.925,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=9d68f92c16833503339ea5d5df75459423360a1508a93c70603f4b8b209e8fdf"
+        },
+        {
+          "headline": "What Is The Case For Waiting On Moderna Stock?",
+          "summary": "Moderna (MRNA) stock has gained 282.6% over the past three months, outpacing a 4.1% return for the S&P 500. The shares reached their highest close in a year on October 15, 2026, ending the session at $236.50. Investors paying that premium are betting",
+          "sentiment": 0.922,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=3baf1ee24e890652fecbebc36de430f14066942b4fdd1616633ea9c823267896"
+        },
+        {
+          "headline": "What Could Send Regeneron Stock Higher?",
+          "summary": "Regeneron Pharmaceuticals (REGN) may get its next boost from an old deal rather than a new drug. Through the first half of 2026, Regeneron was paying down a balance owed to its partner Sanofi. This obligation reduced the revenue Regeneron reported fr",
+          "sentiment": -0.92,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=434733031d20fe4cdc19bc79cf48d12b65f1d04ad018b78d4055f1173b8c98bb"
+        },
+        {
+          "headline": "Lilly, Merck, AbbVie Stocks Surge. Why Healthcare Is Rallying Today.",
+          "summary": "Shares of Lilly, the world\u2019s largest pharmaceutical company by market value, rallied above their 50-day moving average to mark their best level since August.",
+          "sentiment": 0.899,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=19b85bc72b748e5c4f9df4d280603355fd2cbda4b56f2bfe016353e892bc2ed5"
+        },
+        {
+          "headline": "Stock Market Today: Dow Rises, Nasdaq Tumbles As AI Worries Hit Major Players (Live Coverage)",
+          "summary": "The Dow Jones index rises Thursday ahead of more inflation data. Nvidia, Micron and AMD sell off on AI fears.",
+          "sentiment": -0.891,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=6ad409edc5845d99345332cecd4ac0d247cc7396d902bc4aa044842c2de7fcee"
+        },
+        {
+          "headline": "AMGN vs. MRK: Which Pharma Giant\u2019s Dividend Actually Has Room to Grow",
+          "summary": "Amgen and Merck both yield around 2.3% and have surged this year, but one of them is paying its dividend out of thin air while the other has a cash cushion that changes the entire income calculus.",
+          "sentiment": 0.891,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=e1edfeb2d3d1b855f41641b69760edc6c7630a45db8b820a950c2052acbfe992"
+        }
+      ],
+      "cost": 7348.0
+    },
+    {
+      "symbol": "OKTA",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 38,
+      "entry_price": 186.81,
+      "stop_loss": 164.76,
+      "target": 219.89,
+      "entry_date": "2026-10-16",
+      "entry_time": "17:45",
+      "composite_score": 61.93166208791209,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 61.9, RSI 41, EPS growth 73%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "MongoDB lets apps pay only for what they use",
+          "summary": "The impact of executive departures remains an open question, along with whether customers\u2019 overall spending will dip.",
+          "sentiment": -0.948,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=d97384798bbc292b802110ee2003d991dbc98ddcb1c369473474b42a4bab2016"
+        },
+        {
+          "headline": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
+          "summary": "Cybersecurity stocks fell amid a report artificial intelligence system maker OpenAI plans to acquire an industry startup.",
+          "sentiment": -0.947,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=33d7709ea7b0280cc9a3cd848d26d56b67ac0bf9fcfc439807bd4ee9c2ba2e89"
+        },
+        {
+          "headline": "CrowdStrike vs. Okta: Which Cybersecurity Stock Is a Better Buy in 2026?",
+          "summary": "CrowdStrike recently posted its best quarter ever with record recurring revenue and expanding free cash flow. Okta delivered record bookings in the same quarter and saw its stock surge nearly 20%.",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=d8dd91fc8581526083828e9681bb6ffbacb4c7a9e3008db6b99a06666715cff9"
+        },
+        {
+          "headline": "Cybersecurity Stocks Retreat From Record Highs \u2014 Citi Raises CRWD, PANW, ZS Targets On Improving Spending Momentum",
+          "summary": "Wells Fargo said ten detailed discussions with channel partners and its reseller survey indicated cybersecurity spending was gaining momentum heading into 2027, according to The Fly.",
+          "sentiment": 0.893,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=5ac5539f58d773fe04b11968b66f7e0911950c95ad4a9a1cb3b2ae48af6341e7"
+        },
+        {
+          "headline": "BMO Capital Maintains Outperform on Okta, Raises Price Target to $245",
+          "summary": "BMO Capital  analyst Keith Bachman   maintains Okta (NASDAQ:OKTA) with a Outperform and raises the price target from $230 to $245.",
+          "sentiment": 0.829,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=6f87665651aa1b244b0e2c837d220f75a524583baa3dc2fea7b15f4c8ff5d022"
+        },
+        {
+          "headline": "Someone Bugged OpenAI's Boardroom: ChatGPT's Maker Says its Own AI Found Out Who",
+          "summary": "OpenAI uses AI to trace a hidden office recording device to an employee who was arrested; no model weights or data were stolen.",
+          "sentiment": -0.717,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=d10343231d561521afc55f56d6ebc9023dda42d8af102c2172c4b899a02efd2e"
+        },
+        {
+          "headline": "Should You Trim Or Add To Your CrowdStrike Position Now?",
+          "summary": "Investors holding CrowdStrike (CRWD) are likely weighing whether to take some money off the table. The stock returned 107% over the past twelve months, easily outpacing the 17.3% gain for the S&P 500. Yet management noted in August that customers are",
+          "sentiment": 0.666,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=218984fe1f448ef52dbd0717c967cbe609676c0e1c84b40a4307e9cc62b07573"
+        },
+        {
+          "headline": "Citigroup Maintains Neutral on Okta, Raises Price Target to $215",
+          "summary": "Citigroup  analyst Fatima Boolani   maintains Okta (NASDAQ:OKTA) with a Neutral and raises the price target from $205 to $215.",
+          "sentiment": 0.61,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=6f14e675e5f3cbca17505db3a7a4f26890a239b9315e03a5819da5f250236151"
+        },
+        {
+          "headline": "Okta (OKTA) Dips More Than Broader Market: What You Should Know",
+          "summary": "Okta (OKTA) closed the most recent trading day at $211.92, moving 6.45% from the previous trading session.",
+          "sentiment": 0.6,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=ec2c73c10e0006d1018a982937117a9b02dceaf84ca0fb431827cfb3f1f9defa"
+        },
+        {
+          "headline": "Q3 Earnings Could Blow Past Consensus\u2014Be Ready for What Comes Next",
+          "summary": "AI-driven demand is lifting earnings estimates and price targets across cybersecurity, semiconductor, and CPU stocks, including PANW, MRVL, AMD, and INTC, ahead of Q3 results.",
+          "sentiment": 0.51,
+          "source": "Finnhub",
+          "published": "2026-10-11",
+          "url": "https://finnhub.io/api/news?id=7801f245bf4bde190b8b8f17e40e982954a732bf5879a131da5d021bc310c642"
+        }
+      ],
+      "cost": 7098.78
+    },
+    {
+      "symbol": "SWKS",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 1,
+      "entry_price": 81.285,
+      "stop_loss": 72.89,
+      "target": 93.88,
+      "entry_date": "2026-10-16",
+      "entry_time": "17:45",
+      "composite_score": 59.70089285714286,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 59.7, RSI 51, EPS growth -68%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Apple Drops 3% on Reported iPhone 18 Pro Component Order Cuts; Skyworks Slips, Qualcomm Treads Water",
+          "summary": "Apple just got hit with a report that it slashed iPhone 18 Pro component orders, and the fallout is splitting the chip sector in a way that raises questions about whether premium smartphone demand is cracking at exactly the wrong moment.",
+          "sentiment": -0.96,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=7fd98fe8bd34a91a2327e908d6e4c118ad133d68743b12399bd954d86e5b6a6b"
+        },
+        {
+          "headline": "Apple Cut iPhone 18 Orders; What Does It Mean For Suppliers?",
+          "summary": "Apple's reported iPhone 18 Pro component order cuts raise questions for suppliers Skyworks Solutions and Broadcom, which face differing levels of exposure to Apple's business.",
+          "sentiment": -0.954,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=3663fe99ee0b9cad505493bd35babc0fbefdf7dbe6342d0bb6ebefd205361b24"
+        },
+        {
+          "headline": "Mizuho Maintains Underperform on Skyworks Solutions, Raises Price Target to $61",
+          "summary": "Mizuho  analyst Vijay Rakesh   maintains Skyworks Solutions (NASDAQ:SWKS) with a Underperform and raises the price target from $52 to $61.",
+          "sentiment": 0.77,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=83b78665e5ebf24d9a50f87f411cc062c57eba3fae82d84d01fdac822423ac67"
+        },
+        {
+          "headline": "Skyworks (SWKS) Pays 147% of Earnings as Dividends With Over 29% of Its Float Short. Can the Dividend Hold?",
+          "summary": "Skyworks Solutions, Inc. (NASDAQ:SWKS) closed at $76.56 on October 13. The stock has returned 35.5% over the last six months, compared to a 21.5% return for the Insider Monkey Billionaire Index and 14% for State Street SPDR S&P 500 ETF Trust. The pay",
+          "sentiment": 0.377,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=dbf5e6351504ea959ddf0456da4227a38e1fa2c8bf546d0bd8c9b2cc65e140f7"
+        },
+        {
+          "headline": "1 S&P 500 Stock with Solid Fundamentals and 2 We Avoid",
+          "summary": "The S&P 500 (^GSPC) is often seen as a benchmark for strong businesses, but that doesn\u2019t mean every stock is worth owning. Some companies face significant challenges, whether it\u2019s stagnating growth, heavy debt, or disruptive new competitors.",
+          "sentiment": -0.14,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=971eb0e7dd65d7a16f69e14706838030a4dafdcb13e7b86265cc270f3b69b563"
+        },
+        {
+          "headline": "These S&P500 stocks are gapping in today's session",
+          "summary": "Let's take a look at the S&P500 stocks that are experiencing notable price gaps in today's session on Friday. Discover the gap up and gap down stocks in the S&P500 index.",
+          "sentiment": -0.098,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=bf3d21624633bc9ad99ba28bdeef279504f7de1ef429b79bd5d07d797459ef36"
+        },
+        {
+          "headline": "Discover which S&P500 stocks are making waves on Friday.",
+          "summary": "Stay updated with the movements of the S&P500 index one hour before the close of the markets on Friday. Discover which stocks are leading as top gainers and losers in today's session.",
+          "sentiment": -0.027,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=fa69fc8000049deee244f45ce89b56b001c6c1c2df31ee60616bdbf8d43bd682"
+        },
+        {
+          "headline": "Get insights into the top movers in the S&P500 index of Friday's pre-market session.",
+          "summary": "Stay updated with the S&P500 stocks that are on the move in today's pre-market session.",
+          "sentiment": 0.024,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=778ceffa164e9c35d0e2b24a8f102c642d824f901e9fc3094deeb6e3b2074f5a"
+        }
+      ],
+      "cost": 81.29
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "HPE",
+      "direction": "LONG",
+      "shares": 118,
+      "entry_price": 63.2601,
+      "exit_price": 55.38,
+      "pnl_dollars": -929.85,
+      "pnl_pct": -12.46,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-16"
+    },
+    {
+      "symbol": "TWLO",
+      "direction": "LONG",
+      "shares": 27,
+      "entry_price": 272.09,
+      "exit_price": 239.58,
+      "pnl_dollars": -877.77,
+      "pnl_pct": -11.95,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-16"
+    },
+    {
+      "symbol": "FTNT",
+      "direction": "LONG",
+      "shares": 40,
+      "entry_price": 185.37,
+      "exit_price": 167.66,
+      "pnl_dollars": -708.4,
+      "pnl_pct": -9.55,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-16"
+    }
+  ],
+  "realized_pnl": -2516.02,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -4937.28,
+  "total_equity": 147578.74
+}
