@@ -3,6 +3,9 @@
   "runs": [
     "midday",
     "midday",
+    "midday",
+    "midday",
+    "midday",
     "midday"
   ],
   "entries": [
@@ -289,6 +292,266 @@
         }
       ],
       "cost": 81.29
+    },
+    {
+      "symbol": "MSFT",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 14,
+      "entry_price": 526.444,
+      "stop_loss": 502.44,
+      "target": 562.45,
+      "entry_date": "2026-10-16",
+      "entry_time": "18:49",
+      "composite_score": 62.79608294930877,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 62.8, RSI 56, EPS growth 31%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Microsoft Q1 Preview: A 27.5x Stock, A $25 Billion Cost Problem, And A 60% Fix",
+          "summary": "Microsoft is rated a Buy, driven by underappreciated revenue upside from usage-based billing in Microsoft 365 Copilot. Read more on MSFT stock here.",
+          "sentiment": -0.94,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=dfa7c59ca08e8fda07a99fdbea1edf5ad1d2f3bcc06c1b01d20a0a42c0ec6cf6"
+        },
+        {
+          "headline": "This Week In Cloud AI - Akamai Technologies Boosts Global Cloud Service Adoption",
+          "summary": "Akamai Technologies has observed a significant increase in customer adoption of its cloud computing services, largely driven by the growing demand for high-performance computing across AI and enterprise SaaS workloads. The company reported that this",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=9bb9cbf4a984087c6b956308e6aff4aa9a3123c06789c31aa94718359a9b82a7"
+        },
+        {
+          "headline": "NiSource Expands Microsoft Power Deal, Projects $1.75B In Customer Savings",
+          "summary": "NiSource\u2019s new 20-year power agreement with Microsoft is expected to lift projected savings for NIPSCO electric customers to $1.75 billion across data-center contracts, alongside plans to add generation and battery-storage capacity.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=eef1721a26acaa11ffa2b4a1ba1020dc353d6efb0ac5a29c1e13aa511bc14973"
+        },
+        {
+          "headline": "NiSource announces long-term agreement with Microsoft expected to increase customer savings and support Indiana\u2019s economic growth",
+          "summary": "MERRILLVILLE, Ind., October 16, 2026--NiSource Inc. (NYSE: NI) announced today a new long-term energy agreement with Microsoft for its previously announced northwest Indiana campus. The agreement is expected to expand customer savings while supportin",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=3f3df1ada20529070a880201afe44837fb7b9a24096341e19f31506e6fe85905"
+        },
+        {
+          "headline": "NiSource Signs 20-Year Microsoft Power Agreement for 1,100 MW Indiana Data Centre Campus",
+          "summary": "NiSource Inc. (NYSE:NI) has entered into a 20-year energy agreement with Microsoft Corporation (NASDAQ:MSFT) to supply approximately 1,100 megawatts (MW) of generation resources to a data centre campus in northwest Indiana.",
+          "sentiment": 0.902,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=107768aef7b8645a9782b9c73428a039629523b349cf7283b86920e80fd0445c"
+        },
+        {
+          "headline": "Strong Azure Results Powered Microsoft Corporation\u2019s (MSFT) Rally",
+          "summary": "Diamond Hill Capital, a First Eagle Investment Management company, issued its Q3 2026 investor letter for its \u201cLarge Cap Strategy\u201d. The letter can be downloaded here. The Strategy returned 3.18% (net of fees) in the quarter, outperforming the 2.61% r",
+          "sentiment": 0.881,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=7b39714a15f33bc629f7386c81797b0b1bff3da64201132e43231ed099583b2b"
+        },
+        {
+          "headline": "Does The Move In Snowflake Stock Change Anything?",
+          "summary": "Snowflake (SNOW) stock rose 59.3% from January 18 to October 15, 2026, against 12.5% for the S&P 500. The company reported quarterly results three times along the way, on February 25, May 27 and September 2. Buyers appear to be betting that customers",
+          "sentiment": 0.833,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=fbd14ade6214cff0bbe86e260a9fd8d09e3391e0aa545d56f49dfb17e0b1f19f"
+        },
+        {
+          "headline": "Is Amazon Stock Poised to Gain as AI Boosts Cash Flow Prospects?",
+          "summary": "AMZN's AI products, surging AWS sales and multibillion-dollar chip commitments can boost future cash flow, but rising capex and capacity constraints pose challenges.",
+          "sentiment": 0.811,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=30f94ee678b0fd2b24e116088be02237c338a2dc350167dbce779e6ed40aa09f"
+        },
+        {
+          "headline": "StoneX Maintains Buy on Microsoft, Raises Price Target to $600",
+          "summary": "StoneX  analyst Yi Fu Lee   maintains Microsoft (NASDAQ:MSFT) with a Buy and raises the price target from $525 to $600.",
+          "sentiment": 0.799,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=f043edf950de2b36a7240f41335889c584b62884e90077e36c5af36dd81bd8b4"
+        },
+        {
+          "headline": "Anthropic Might Be Worth \u2018Only\u2019 $1.5 Trillion. Why It Isn\u2019t a Disaster for the AI Trade.",
+          "summary": "AI stocks have been hit by worries about Anthropic's IPO but it isn't all bad news.",
+          "sentiment": -0.773,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=c5435f7f9da4f120c0ff2d4dda20ce408c7d56366267155164de5fdf368b1781"
+        }
+      ],
+      "cost": 7370.22
+    },
+    {
+      "symbol": "ILMN",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 28,
+      "entry_price": 262.575,
+      "stop_loss": 235.61,
+      "target": 303.03,
+      "entry_date": "2026-10-16",
+      "entry_time": "18:49",
+      "composite_score": 61.403225806451616,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 61.4, RSI 53, EPS growth N/A",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "What is Illumina\u2019s (ILMN) Economic Moat, and is it Widening or Narrowing?",
+          "summary": "Illumina, Inc. (NASDAQ:ILMN) traded at around $268 on October 7, down 2.11% on the day, though still 183.61% higher over twelve months. Revenue grew 9.40% in the most recent quarter while earnings fell 11.90%. A business selling more and earning less",
+          "sentiment": -0.956,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=edc14684f3cf0363f36c21c0b418ab18d69707584494fc319896a92daa48f7ad"
+        },
+        {
+          "headline": "Illumina (ILMN) Starts Global Recall Of Diagnostic Sequencers Over Security Vulnerability",
+          "summary": "Illumina (NasdaqGS:ILMN) has begun a global voluntary recall of certain NovaSeq 6000Dx and NextSeq 550Dx diagnostic sequencers due to a server security vulnerability. The affected devices are used in clinical settings across multiple regions, and Ill",
+          "sentiment": -0.937,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=064fc49002f60672dcb74c731265448c1a6e287160adb347d8480cc9ab24f374"
+        },
+        {
+          "headline": "Will Illumina (ILMN) Beat Estimates Again in Its Next Earnings Report?",
+          "summary": "Illumina (ILMN) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+          "sentiment": 0.907,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=f3f090cf566e9dcd9ef8c237f5a1cbd7420e58f7a5b8a510883f45bbd2ee3608"
+        },
+        {
+          "headline": "Illumina Earnings Preview: What to Expect",
+          "summary": "Illumina will release its third-quarter earnings later this month, and analysts anticipate a low single-digit bottom-line growth.",
+          "sentiment": -0.894,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=5c92b87b9497c8549bcc5b52f280c9471b8a2f2435c80823f831a5ba48aa3e30"
+        },
+        {
+          "headline": "Global Chromosomal Microarray Reflex Testing Market Report 2026-2030 | Capitalize on 9.1% CAGR as Thermo Fisher, LabCorp, Illumina, Agilent, and Natera Scale Precision Genomics",
+          "summary": "Dublin, Oct. 13, 2026 (GLOBE NEWSWIRE) -- \"Chromosomal Microarray Reflex Testing Global Market Report 2026\" has been added to ResearchAndMarkets.com's offering. The global chromosomal microarray reflex testing market is experiencing strong growth as",
+          "sentiment": 0.891,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=d2236c8c28c291f8d06435628151897272438e2c76e2f409c8bed47f16e3d589"
+        },
+        {
+          "headline": "Could You Have Seen The Run In Tempus AI Stock Coming?",
+          "summary": "Tempus AI (TEM) stock returned 56.9% in the six months from April 9 to October 8, 2026. Partway through that timeline, on July 30, the company finally reported a quarterly profit following years of losses. Yet the stock's run began more than three mo",
+          "sentiment": 0.891,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=3b3344f74bcb61c4bd0118651c3f64969cb03c062ec7f3b9717f18bd5f79bca6"
+        },
+        {
+          "headline": "3 Profitable Stocks We Steer Clear Of",
+          "summary": "While profitability is essential, it doesn\u2019t guarantee long-term success. Some companies that rest on their margins will lose ground as competition intensifies \u2014 as Jeff Bezos said, \u201cYour margin is my opportunity\u201d.",
+          "sentiment": -0.858,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=aa506e63cf8c83694345374c645af4df5b45c40b18195fdf847ca8d4ff2435eb"
+        },
+        {
+          "headline": "Is Illumina (ILMN) Fully Valued Following Its Recall And AI Push?",
+          "summary": "Illumina recall and security risk in focus Illumina (ILMN) has drawn fresh attention after initiating a voluntary Class II recall of certain NovaSeq 6000Dx and NextSeq 550Dx diagnostic systems due to a security vulnerability in associated DRAGEN serv",
+          "sentiment": -0.853,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=93bc4a3fb24ed5505c54e3bfd164f0f4f2dce33559b66b73bf2918ffd7ba8721"
+        },
+        {
+          "headline": "Did Illumina\u2019s (ILMN) New SpliceAI2 Genomic Model Just Reframe Its Clinical Genomics Narrative?",
+          "summary": "In October 2026, Illumina announced SpliceAI2, a new genomic AI model that helps researchers better identify disease-relevant splice variants across rare disease, hereditary cancer, and drug discovery applications. By improving detection of clinicall",
+          "sentiment": 0.827,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=3d9ebe5936dd7ae4650025ae9e5897eee8d910de8935cc3a1fb3d0fb190b5c17"
+        },
+        {
+          "headline": "TD Cowen Maintains Hold on Illumina, Raises Price Target to $270",
+          "summary": "TD Cowen  analyst Dan Brennan   maintains Illumina (NASDAQ:ILMN) with a Hold and raises the price target from $210 to $270.",
+          "sentiment": 0.708,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=60e09b368ee1770b7d13ecf0792225234d92df431d242a642fea7dc0032e8f2e"
+        }
+      ],
+      "cost": 7352.1
+    },
+    {
+      "symbol": "DVA",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 27,
+      "entry_price": 186.97,
+      "stop_loss": 177.64,
+      "target": 200.96,
+      "entry_date": "2026-10-16",
+      "entry_time": "18:49",
+      "composite_score": 60.05645161290323,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 60.1, RSI 57, EPS growth N/A",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Here's Why You Should Retain DaVita Stock in Your Portfolio for Now",
+          "summary": "DaVita gains from IKC growth, improving treatment economics and stronger formulary adoption, but payer-mix pressures and costs remain concerns.",
+          "sentiment": 0.911,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=37d9951dde8b5beedd7275bfc9f18f1d145f1fc77af72e233d50b33a0bcd3165"
+        },
+        {
+          "headline": "Why DaVita HealthCare (DVA) Outpaced the Stock Market Today",
+          "summary": "In the latest trading session, DaVita HealthCare (DVA) closed at $179.25, marking a +1.26% move from the previous day.",
+          "sentiment": 0.83,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=3657053d8db115de479c8d3f51fbbcfb80b5785121806a88c1e6e2d224acbfb9"
+        },
+        {
+          "headline": "DaVita Brings New Clinical Research to ASN Kidney Week 2026, Advancing Evidence for the Next Era of Kidney Care",
+          "summary": "DaVita will present seven studies at the American Society of Nephrology (ASN) Kidney Week 2026, marking one of its most significant research presences at the conference in recent years. The research spans emerging approaches to middle molecule cleara",
+          "sentiment": 0.71,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=5904a0020b66aeba1a4d1d8daf4a2fd2f73a822f0b06834fe050754312ba75e6"
+        },
+        {
+          "headline": "DaVita: After A 25% Drop, The Buyback Machine Is Cheap Again",
+          "summary": "DaVita Inc. is rated a Buy with a $220 12-month price target, offering 22% upside from current levels. Read more on DVA stock here.",
+          "sentiment": 0.7,
+          "source": "Finnhub",
+          "published": "2026-10-09",
+          "url": "https://finnhub.io/api/news?id=25b578a19f70e71834f2aa3bcb0f7c4591460547ca7ad75701f1ccb4d15bc228"
+        },
+        {
+          "headline": "1 Mid-Cap Stock to Target This Week and 2 Facing Headwinds",
+          "summary": "Mid-cap stocks have the best odds of scaling into $100 billion corporations thanks to their tested business models and large addressable markets. But the many opportunities in front of them attract significant competition, spanning from industry behe",
+          "sentiment": 0.476,
+          "source": "Finnhub",
+          "published": "2026-10-12",
+          "url": "https://finnhub.io/api/news?id=377cfc6328ae3f6e86c006f81399e61f7a3fcd20933a17953616f85c122debbc"
+        }
+      ],
+      "cost": 5048.19
     }
   ],
   "exits": [
@@ -324,11 +587,22 @@
       "pnl_pct": -9.55,
       "reason": "stop-loss hit",
       "close_date": "2026-10-16"
+    },
+    {
+      "symbol": "KEYS",
+      "direction": "LONG",
+      "shares": 20,
+      "entry_price": 358.15,
+      "exit_price": 332.1,
+      "pnl_dollars": -521.0,
+      "pnl_pct": -7.27,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-16"
     }
   ],
-  "realized_pnl": -2516.02,
+  "realized_pnl": -3037.02,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -4937.28,
+  "cumulative_pnl": -5458.28,
   "total_equity": 147578.74
 }
