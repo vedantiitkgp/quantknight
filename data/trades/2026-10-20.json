@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-20",
+  "runs": [
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "TWLO",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 26,
+      "entry_price": 260.5101,
+      "stop_loss": 228.28,
+      "target": 308.86,
+      "entry_date": "2026-10-20",
+      "entry_time": "18:12",
+      "composite_score": 68.87053571428572,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 68.9, RSI 47, EPS growth 4659%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "How Much Downside Is Left In SOUN Stock?",
+          "summary": "Shares of SoundHound AI (SOUN) have lost 21% in the past month. The S&P 500 gained 2.0% over the same period, and no cause for the fall in SoundHound is known. Over twelve months, the stock is down 73%. Both declines unfolded while the broader market",
+          "sentiment": -0.965,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=9de17e2de4329ab47120b5a9ee25a5f092f178852e3612a28134f85e4bec0b63"
+        },
+        {
+          "headline": "Twilio Stock Plummets to Become the S&P 500\u2019s Top Loser Today",
+          "summary": "Shares of the cloud communications company dropped below their current 50-day moving average.",
+          "sentiment": -0.962,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=f10108ae17262b11979d8eb65ad0be1ddaddeec6bed0cfa15f2490f012e77f2d"
+        },
+        {
+          "headline": "Nasdaq 100 Slides As Micron, SanDisk, CoreWeave Sink: Stock Market Today",
+          "summary": "The Nasdaq 100 fell 1.5% at midday Friday as memory chips and AI-debt names sold off, while Fed Chair Warsh declined to rule out an October hike after hot CPI and PPI. WTI held near $96, the 10-year yield hovered around 5.1%, gold bounced toward $4,2",
+          "sentiment": -0.962,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=c5926a8a854f428679082b9816725c53cdafe5c734def83695422491bdeefea2"
+        },
+        {
+          "headline": "S&P 500 Gap Downs on October 16: MRNA, TWLO and COHR Lead Declines",
+          "summary": "S&P 500 gap downs on October 16 include MRNA, TWLO, COHR, STX, SMCI, WDC, SNDK, P, FLEX and PANW, with declines carrying into the session.",
+          "sentiment": -0.961,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=35d2528b6f45127bfd2262dd5afe7c59219686e8daef1a82ac77cbc7871d0c8e"
+        },
+        {
+          "headline": "Qualys, DigitalOcean, Twilio, CrowdStrike, and MongoDB Shares Are Falling, What You Need To Know",
+          "summary": "A number of stocks fell in the afternoon session after investors shifted their focus from what AI technology can do toward concerns over how companies will finance it.",
+          "sentiment": -0.961,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=cb043257a060e0a9a3a0d8abd0461af1f83ce214893f03b0d78da245f3ede34a"
+        },
+        {
+          "headline": "3 Reasons TWLO is Risky and 1 Stock to Buy Instead",
+          "summary": "What a time it\u2019s been for Twilio. In the past six months alone, the company\u2019s stock price has increased by a massive 76.9%, reaching $257.65 per share. This was partly due to its solid quarterly results, and the performance may have investors wonderi",
+          "sentiment": 0.934,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=b35de0db47d00532f36a765fdc39eb8b2052794dd11edd495356849428d469e3"
+        },
+        {
+          "headline": "Shares of health insurance companies are trading higher after the Centers for Medicare & Medicaid Services announced a 2.48% rate hike for 2027 Medicare Advantage and Part D programs.",
+          "summary": "",
+          "sentiment": 0.923,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=da9922bba73e386e1d53894fc8d8a1c7e98054195bceef23adcccf13ddf81188"
+        },
+        {
+          "headline": "Will Twilio (TWLO) Beat Estimates Again in Its Next Earnings Report?",
+          "summary": "Twilio (TWLO) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+          "sentiment": 0.904,
+          "source": "Finnhub",
+          "published": "2026-10-13",
+          "url": "https://finnhub.io/api/news?id=c238f1d5f936200db406a49f70968073bc1f849f322af54e8971b93d46565c5b"
+        },
+        {
+          "headline": "B of A Securities Maintains Buy on Twilio, Raises Price Target to $320",
+          "summary": "B of A Securities  analyst Koji Ikeda   maintains Twilio (NYSE:TWLO) with a Buy and raises the price target from $270 to $320.",
+          "sentiment": 0.873,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=53358e4ba5408db87ab254513e25ff88d1562144aecf8dd19422324e72bf51dc"
+        },
+        {
+          "headline": "BTIG Maintains Buy on Twilio, Raises Price Target to $315",
+          "summary": "BTIG  analyst Nick Altmann   maintains Twilio (NYSE:TWLO) with a Buy and raises the price target from $285 to $315.",
+          "sentiment": 0.866,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=23e7fcc842705f15d7baf5853217e9b84d528305a9e2b44b063ea093377a5920"
+        }
+      ],
+      "cost": 6773.26
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "TRV",
+      "direction": "LONG",
+      "shares": 20,
+      "entry_price": 369.9,
+      "exit_price": 393.31,
+      "pnl_dollars": 468.2,
+      "pnl_pct": 6.33,
+      "reason": "target hit",
+      "close_date": "2026-10-20"
+    },
+    {
+      "symbol": "LLY",
+      "direction": "LONG",
+      "shares": 5,
+      "entry_price": 1177.03,
+      "exit_price": 1291.92,
+      "pnl_dollars": 574.45,
+      "pnl_pct": 9.76,
+      "reason": "target hit",
+      "close_date": "2026-10-20"
+    },
+    {
+      "symbol": "DVA",
+      "direction": "LONG",
+      "shares": 27,
+      "entry_price": 186.97,
+      "exit_price": 175.5266,
+      "pnl_dollars": -308.97,
+      "pnl_pct": -6.12,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-20"
+    }
+  ],
+  "realized_pnl": 733.68,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -4394.0,
+  "total_equity": 144872.32
+}
