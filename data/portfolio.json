@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 19147.97,
+  "cash": 6407.78,
   "total_equity": 145935.82,
-  "cumulative_pnl": -4064.18,
-  "as_of": "2026-10-20T23:21:41.127496",
+  "cumulative_pnl": -4415.68,
+  "as_of": "2026-10-21T18:20:10.447674",
   "positions": [
     {
       "symbol": "TRGP",
@@ -472,106 +472,6 @@
         }
       ],
       "current_price": 438.94
-    },
-    {
-      "symbol": "GOOGL",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 19,
-      "entry_price": 353.46,
-      "stop_loss": 335.86,
-      "target": 379.87,
-      "entry_date": "2026-09-22",
-      "entry_time": "18:49",
-      "composite_score": 66.48131313131313,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 66.5, RSI 57, EPS growth 298%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Netflix Faces Growing YouTube Threat As Viewer Share Hits Multi-Year Low, HSBC Says \u2014 Wells Fargo Flags Engagement Risk",
-          "summary": "Analysts raised concerns around Netflix\u2019s engagement trends as YouTube expands its living-room presence and Netflix heads into a potentially weaker second-half content slate.",
-          "sentiment": -0.958,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=00ca0e9c417d4287aae57e00ec2bf02ad25245ba4e7bc35f1e7b39f9cdec401c"
-        },
-        {
-          "headline": "Arm Just Got a Major Vote of Confidence From Its CEO",
-          "summary": "Haas also expressed growing confidence that the company can beat its $2 billion AGI CPU revenue target.",
-          "sentiment": 0.936,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=089d6c5a3e519ad4405843c76d5f98f7a5c37abc5ec0977a1a3dde6d35716915"
-        },
-        {
-          "headline": "Meta Platforms Jumps 33% in a Month: Should You Buy or Hold the Stock?",
-          "summary": "META's 33% monthly surge reflects strong ads and AI momentum, but soaring capex, rising debt and weak cash flow remain key concerns.",
-          "sentiment": -0.935,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=4f61f364fd69c88cbedc82de2f14f1590d2dac44d0fef8271debc2fd7f1ed857"
-        },
-        {
-          "headline": "Cloud AI Today - AI Summit Drives Economic Vision For Latin America",
-          "summary": "The Inter-American Development Bank Group recently organized a significant meeting with heads of state and tech leaders from across Latin America and the Caribbean to push forward a collective agenda on the adoption of artificial intelligence (AI) te",
-          "sentiment": 0.924,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=a11595a380a0f3033a66bfffba467a31b1e73169a8f89e9922cd39600a996fbd"
-        },
-        {
-          "headline": "Can Intel's Core Ultra Expansion With Googlebook Benefit the Stock?",
-          "summary": "INTC extends its Core Ultra platform to new Googlebook laptops, bringing Series 3 processors, AI capabilities and advanced connectivity.",
-          "sentiment": 0.906,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=aa2252f79e3be560623c08d524ff70690f7fc7a745c8e271c3b58a6ab95aecd1"
-        },
-        {
-          "headline": "Is It Too Early To Buy Adobe Stock Before Its Free Users Pay Off?",
-          "summary": "Adobe (ADBE) stock has lost about a third of its value over the past year, while the S&P 500 (SPY) gained about 18%. It has already bounced 28% in three months. Yet near $250 it still sits about 32% below its 52-week high. At current levels, multiple",
-          "sentiment": -0.903,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=ad1b0fda2504b8971e13b75f27b52fcfa229d9d0f6957564fd431383889cb319"
-        },
-        {
-          "headline": "Meta Stock Gets Bold $750 Call as Muse AI Takes Off",
-          "summary": "Mizuho Sends Bullish Message on Meta Stock as Muse Hits No. 1",
-          "sentiment": 0.9,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=e7e2974d1d77b6f2ee74c171ab5fb29191970de1565983e49465bce7705a1a43"
-        },
-        {
-          "headline": "Alphabet Jumps Over 1.7% as $899 Googlebooks Move Chrome Upmarket",
-          "summary": "Google is asking Android users to pay premium prices for Gemini-centered continuity.",
-          "sentiment": 0.897,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=73a4110140e4b5ccff71ae61d50669a884b7a371498cd91f2f59d2bda89e8540"
-        },
-        {
-          "headline": "Meta\u2019s Muse Is a \u2018Killer Product\u2019. It Won\u2019t, However, Be the Death of Shopify.",
-          "summary": "Shopify stock rises for a second consecutive day as investors believe Meta\u2019s Muse AI agent might be a very good thing for the company\u2019s business.",
-          "sentiment": 0.896,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=8baf1b750d8d7ff21373440841c10f327fa3dd951af280e77d931b90e00291e8"
-        },
-        {
-          "headline": "Stock Market Today: Dow Slips But Apple Touches A Buy Point; Homebuilder, Retailer Funds Shine (Live Coverage)",
-          "summary": "Stock Market Today: The Dow Jones index reversed lower despite new U.S.-Iran peace hopes. Apple stock is trading near a buy point.",
-          "sentiment": -0.889,
-          "source": "Finnhub",
-          "published": "2026-09-22",
-          "url": "https://finnhub.io/api/news?id=778740497b3c831a1941f86fb750b8a36ba481502a5f4ea9afedca9d14084e84"
-        }
-      ],
-      "current_price": 340.27
     },
     {
       "symbol": "FCX",
@@ -1547,7 +1447,7 @@
       "trade_type": "swing",
       "shares": 38,
       "entry_price": 186.81,
-      "stop_loss": 164.76,
+      "stop_loss": 186.81,
       "target": 219.89,
       "entry_date": "2026-10-16",
       "entry_time": "17:45",
@@ -2024,6 +1924,303 @@
         }
       ],
       "current_price": 258.69
+    },
+    {
+      "symbol": "FTNT",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 41,
+      "entry_price": 174.66,
+      "stop_loss": 161.08,
+      "target": 195.03,
+      "entry_date": "2026-10-21",
+      "entry_time": "18:20",
+      "composite_score": 67.79296875,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 67.8, RSI 47, EPS growth 38%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Fortinet stock falls as Arete delivers rare double downgrade to sell",
+          "summary": "Investing.com -- Fortinet (NASDAQ: FTNT) shares fell 2.7% in premarket trading Wednesday after Arete Research downgraded the cybersecurity company by two notches, from buy to sell, warning that a convergence of favorable growth drivers could make 202",
+          "sentiment": -0.964,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=737ccd2df596b73a29dbdd5b939fb58af25298270cfcb20c8e51a962378c1bcf"
+        },
+        {
+          "headline": "Why Fortinet Stock Slumped on Wednesday",
+          "summary": "There are concerns that OpenAI may be making a move in the cybersecurity industry.",
+          "sentiment": -0.96,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=6075bb8a1a282f10c7ea85419f345d88f708be597b082c72c798885b0bbbca37"
+        },
+        {
+          "headline": "Shares of software companies are trading lower, possibly in response to escalating tensions in the Middle East and renewed inflation concerns that may shift the Fed towards a rate hike. Concerns about key economic data due later this week may prompt traders to rotate out of growth stocks.",
+          "summary": "",
+          "sentiment": -0.958,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=c69408f6b2e2de87abefeb217619a19db915930e139f14fc71586990a574b37b"
+        },
+        {
+          "headline": "CrowdStrike Stock Fell 7% on Friday. Here\u2019s What Could Drive Shares Through 2026",
+          "summary": "Key Stats for CrowdStrike StockOctober 16 Performance: -7%52-Week Range: $86 to $287Valuation Model Target Price: Around $240Implied Upside: About 6%What Happened?AI is creating a complicated investment story for CrowdStrike Holdings (NASDAQ: CRWD),",
+          "sentiment": -0.957,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=a4be548de296f4a63cf2788eab70d613331b4adfd63dca11eb109242d7613c48"
+        },
+        {
+          "headline": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
+          "summary": "Cybersecurity stocks fell amid a report artificial intelligence system maker OpenAI plans to acquire an industry startup.",
+          "sentiment": -0.947,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=33d7709ea7b0280cc9a3cd848d26d56b67ac0bf9fcfc439807bd4ee9c2ba2e89"
+        },
+        {
+          "headline": "Palo Alto Falls 4% as Report of OpenAI Cybersecurity Deal Hits Sector; CrowdStrike Drops 3%, Fortinet Slips",
+          "summary": "A single report about OpenAI entering cybersecurity sent shockwaves through the sector's biggest names, and the question now is whether the AI giant plans to partner with incumbents or hunt their customers directly.",
+          "sentiment": -0.944,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=732667025404d442d7ba79f48e4e595ad00e4738881c395c37c01efcb18b7e4e"
+        },
+        {
+          "headline": "Fortinet Shares Jump with Earnings on Horizon",
+          "summary": "Shares of cybersecurity firm Fortinet, Inc. (FTNT) are up 9,219% since institutions first bought big in 2010.",
+          "sentiment": 0.924,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=8f277e42311819481cb0e35fe03ef9541242069c1c6f38328f03fc0e39fa4857"
+        },
+        {
+          "headline": "Sell-Off In Cybersecurity Stocks Intensifies Amid Palo Alto Vulnerability",
+          "summary": "Cybersecurity stocks sold off again on Friday amid a hacker vulnerability involving a Palo Alto Networks network firewall platform.",
+          "sentiment": -0.912,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=ed2b99c982cf092c4681976953f6f5127e0a19cbebfe68bae06ff7d9a97afca5"
+        },
+        {
+          "headline": "Are You Sure You Understand Cloudflare Stock's Risk?",
+          "summary": "Cloudflare (NET) stock returned 39.6% over the past year to October 19, 2026, compared with 17.4% for the S&P 500, and its sales grew 36% in fiscal Q2 2026. Numbers like those can make a stock look as if it has earned some calm. Yet the shares fell 1",
+          "sentiment": -0.896,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=c6aefa83dd6239faedd4aad50043d91380fa43a94aaf949d37374c14ed2c0f61"
+        },
+        {
+          "headline": "Fortinet (NASDAQ:FTNT): A High-Quality Stock with Strong Fundamentals and a Premium Price",
+          "summary": "Fortinet clears the Caviar Cruise quality screen with strong growth, ROIC and cash conversion, but its premium valuation remains the key risk.",
+          "sentiment": 0.894,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=89cb4b7feeadbd875fd8b031c3320567520063eed49afdaf148ad21c5d49329b"
+        }
+      ]
+    },
+    {
+      "symbol": "NTAP",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 33,
+      "entry_price": 216.655,
+      "stop_loss": 198.87,
+      "target": 243.34,
+      "entry_date": "2026-10-21",
+      "entry_time": "18:20",
+      "composite_score": 64.01953125,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 64.0, RSI 53, EPS growth 61%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Barclays Downgrades Dell Technologies Stock After Massive Rally",
+          "summary": "Key Stats for Dell Technologies StockPrice change for Dell Technologies stock in the last 6 months: 187%$DELL Stock Price as of Oct. 14: $50752-Week High: $596$DELL Stock Price Target: $493What Happened?Dell (DELL:NYSE) shares fell 11% on Wednesday.",
+          "sentiment": -0.965,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=25b0772a0b4ec6b2e05dab02c3ac7fa59b8e20f47cbc62e1f8093b2a9e2c34c2"
+        },
+        {
+          "headline": "Why Hewlett Packard Enterprise (HPE) Stock Is Trading Lower Today",
+          "summary": "Shares of enterprise technology company Hewlett Packard Enterprise (NYSE:HPE) fell 5.2% in the pre-market session after Barclays downgraded the stock to Equal Weight from Overweight with a $77 price target, lowered from $83.",
+          "sentiment": -0.964,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=7cb20ec095e97db16b3d5f768e8312a286626cc77fda488a0dca146e43bc2814"
+        },
+        {
+          "headline": "CoreWeave, International Paper, Dell, FMC, Bloom Energy, Rocket Lab, and More Stocks That Explain Today\u2019s Market",
+          "summary": "CoreWeave shares fall as concerns continue to mount about the company\u2019s debt.",
+          "sentiment": -0.963,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=9a4469d4ebbd49905fa089eaa777fa273303692dee565fb036ca7651edcb4e7f"
+        },
+        {
+          "headline": "Dell stock plunges 11%, leading data center sell-off as fears mount about 'enterprise AI timing'",
+          "summary": "Barclays downgraded Dell, HPE, and NetApp on concerns that enterprise AI adoption is lagging.",
+          "sentiment": -0.962,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=75ccd8a55745caa857e157592b9656eb8cf16d5b8022fcc4a3c853b3911dd665"
+        },
+        {
+          "headline": "What\u2019s Really Driving Dell\u2019s Boom? Barclays Has a Different Answer",
+          "summary": "Dell stock fell 11% after Barclays tied enterprise revenue to memory costs, a day after its CEO said the AI wave is just starting.",
+          "sentiment": -0.959,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=ada3b18b2a1b21fc1c86704114a0e3479d8dd9299fdf035e3abcbe1cdbd1454e"
+        },
+        {
+          "headline": "Dell, HPE and NetApp Stocks Slump After Downgrades on Worries About AI Spending",
+          "summary": "Some of this year\u2019s hottest stocks are taking a hit Wednesday after downgrades from Barclays.",
+          "sentiment": -0.958,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=c22aeb40e6aee2a6090536406e1ef5e7cf550a54e60c21e5f026ddda052f99d7"
+        },
+        {
+          "headline": "Dell Falls 8%, Hewlett Packard Enterprise Drops 4% as Barclays Cuts Both to Hold; Super Micro Slides 5%",
+          "summary": "Barclays just pulled its buy ratings on three major AI hardware names, and the reason has nothing to do with demand collapsing. A quiet force inside the supply chain may have been inflating server revenues all along.",
+          "sentiment": -0.957,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=cbc6ce190b4278e6d7dc4fa8dc222ba4dffa63d4c8a4bd6c203a87127634d923"
+        },
+        {
+          "headline": "Barclays downgrades Dell stock after sharp rally",
+          "summary": "Barclays downgraded Dell Technologies, Hewlett Packard Enterprise and NetApp to Equal Weight from Overweight in a note on Wednesday, saying valuations have run too far and it sees no meaningful enterprise AI inflection yet.",
+          "sentiment": -0.957,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=4e7b0d4494721987d29e16629256987b76c45afced4132e5fa9674d2da8d93fb"
+        },
+        {
+          "headline": "Has Buying HPE Stock's Dips Paid Off?",
+          "summary": "Shares of Hewlett Packard Enterprise (HPE) fell 20.2% between October 9 and October 15, 2026. The decline included an 8.3% drop on October 14 and a further 7.1% drop on October 15. A rapid decline tempts buyers who expect a rebound and who trust the",
+          "sentiment": -0.957,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=3e3a10e586c0687d3906a527ed70f45bd6d4f987ff3278740928e53efd5487ab"
+        },
+        {
+          "headline": "Dell Just Found Out What Gravity Feels Like",
+          "summary": "Dell shed $40 billion in market value as Barclays questioned whether its AI server boom is built on real demand or soaring memory prices.",
+          "sentiment": -0.955,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=e192eb12ed50f9d5b82ef084ff0ac77d078fe9e904fbfdd6ac5156d70f9c13fa"
+        }
+      ]
+    },
+    {
+      "symbol": "DVN",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 96,
+      "entry_price": 49.935,
+      "stop_loss": 47.17,
+      "target": 54.08,
+      "entry_date": "2026-10-21",
+      "entry_time": "18:20",
+      "composite_score": 63.27213541666667,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 63.3, RSI 57, EPS growth 113%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Here Are Thursday\u2019s Top Wall Street Analyst Research Calls: AngloGold Ashanti, Bank of America, Cirrus Logic, Crocs, Diamondback Energy, Devon Energy, Netflix, PayPal, Spotify Technolgy , and More",
+          "summary": "Pre-Market Stock Futures: Futures are trading mixed, but the Nasdaq is down sharply Thursday morning as worries about AI overspending continue to emerge. Wall Street\u2019s worst fears materialized yesterday, as the Consumer Price Index (CPI) report came",
+          "sentiment": -0.947,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=24216ce278600124de9e90b6ea830cf3a494fd282df6011d3f1cd37a0fdabd81"
+        },
+        {
+          "headline": "Devon Energy (NYSE:DVN) Meets Minervini Trend Template and High Growth Momentum for Breakout Setup",
+          "summary": "Devon Energy (DVN) meets Minervini's Trend Template and High Growth Momentum, scoring 10/10 technically with breakout potential.",
+          "sentiment": 0.931,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=572c3367ee0b0918b5fe4e8d00b7dff047c22ddc1659eafba069fc5633d42110"
+        },
+        {
+          "headline": "The Zacks Analyst Blog Highlights Crescent Energy, Devon Energy, Energy Transfer, Cenovus Energy and Drilling Tools International",
+          "summary": "Crescent Energy, Energy Transfer and others are pursuing major acquisitions to expand production, boost efficiency and strengthen cash flow as energy M&A activity accelerates.",
+          "sentiment": 0.912,
+          "source": "Finnhub",
+          "published": "2026-10-14",
+          "url": "https://finnhub.io/api/news?id=30d6421148b8b1d551077757d57122e521f35e5d2b3ac1549e7351ab056bc07d"
+        },
+        {
+          "headline": "Devon Energy: Eagle Ford Sale Is A Significant Step To Closing The Valuation Discount (Upgrade To Strong Buy)",
+          "summary": "Devon Energy is upgraded to Strong Buy after the $4.2B Eagle Ford sale, boosting Permian focus and margins. Click to read the latest analysis on the DVN stock.",
+          "sentiment": 0.903,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=c3d8bd7778330031a1119c726e218fd3691aeb197619cdbf68301cf09aa00466"
+        },
+        {
+          "headline": "Devon Energy (DVN) Stock Drops Despite Market Gains: Important Facts to Note",
+          "summary": "In the latest trading session, Devon Energy (DVN) closed at $49.24, marking a -1.36% move from the previous day.",
+          "sentiment": -0.899,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=b229a780b0412e92b0892142b05528a54e4ab4c314e23f59d6231ed26e521759"
+        },
+        {
+          "headline": "Mizuho Maintains Outperform on Devon Energy, Lowers Price Target to $65",
+          "summary": "Mizuho  analyst Nitin Kumar   maintains Devon Energy (NYSE:DVN) with a Outperform and lowers the price target from $68 to $65.",
+          "sentiment": -0.861,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=43beb53a145aae2349125a996284a2f3582144cf2bfc166e1440707196db5b7d"
+        },
+        {
+          "headline": "Morgan Stanley Maintains Overweight on Devon Energy, Raises Price Target to $65",
+          "summary": "Morgan Stanley  analyst Devin McDermott   maintains Devon Energy (NYSE:DVN) with a Overweight and raises the price target from $63 to $65.",
+          "sentiment": 0.744,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=07ac512008dcad39a7fa637134a641613edce3c8808f9eafed8897ad6f4bc8fe"
+        },
+        {
+          "headline": "Scotiabank Initiates Coverage of Devon Energy at Sector Outperform",
+          "summary": "",
+          "sentiment": 0.6,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=2dded0c81d04ea6a0e5a76eb5dc8ee237834e6e364b1e75ea98fe840f9a62fd3"
+        },
+        {
+          "headline": "S&P 500 Premarket Movers: Gainers and Losers on Oct. 19, 2026",
+          "summary": "S&P 500 premarket trading on Oct. 19, 2026, shows tech and semiconductor stocks rebounding while financial, payments, beverage and energy shares lag.",
+          "sentiment": 0.531,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=0c9d1cca5c75581761f42ca2abf92c95b06d611e34185f4fde9cdead51cd00c2"
+        },
+        {
+          "headline": "SpaceX To Rally Around 85%? Here Are 10 Top Analyst Forecasts For Friday",
+          "summary": "Wall Street analysts raised targets for MSTR, FOXA, NRIX, ZETA and TWLO, while cutting targets for CAMT and DVN.",
+          "sentiment": 0.409,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=47e99a735671a2cd321a946afcb35e99c8e067d23a3406578d2bddbb28bfb67d"
+        }
+      ]
     }
   ]
 }
