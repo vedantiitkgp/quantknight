@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-22",
+  "runs": [
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "PSX",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 22,
+      "entry_price": 282.06,
+      "stop_loss": 263.72,
+      "target": 309.58,
+      "entry_date": "2026-10-22",
+      "entry_time": "18:15",
+      "composite_score": 69.89583333333334,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 69.9, RSI 57, EPS growth 339%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Can Valero's Heavy Crude Advantage Support Stronger Refining Margins?",
+          "summary": "VLO's crude-sourcing flexibility and sustained heavy sour crude discounts support refining margins, with Venezuelan and Canadian supplies creating further opportunities.",
+          "sentiment": 0.942,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=b9dcd025feea8c90b42fa46e21fbd45dbb66c171513ac7a3655168367cc2f13f"
+        },
+        {
+          "headline": "Marathon Petroleum: Booming Profits From A Long-Term Structural Bull Market",
+          "summary": "",
+          "sentiment": 0.932,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=a5885d4fd19076db7852045c4052643f647711f09f00371a8abba32ea3ec80e2"
+        },
+        {
+          "headline": "Phillips 66 Announces Increase in Quarterly Dividend",
+          "summary": "HOUSTON, October 16, 2026--The board of directors of Phillips 66 has declared a quarterly dividend of $1.33 per share on Phillips 66 common stock, representing a $0.06 increase.",
+          "sentiment": 0.908,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=02a80276af8bea3134b6aef4a456291da58083fd2a90ee352e83869c0a370f98"
+        },
+        {
+          "headline": "Phillips 66 Stock Is Up 133%. Can Its Dividend Keep Growing?",
+          "summary": "Phillips 66 has handed investors a 133% gain this year and just bumped its dividend again, but a swelling debt load and volatile refining margins raise real questions about how long the raises can continue.",
+          "sentiment": 0.904,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=e45fb93d2bf855c26714951e4372039fd7eb73caa80e96100de51b3e35c17689"
+        },
+        {
+          "headline": "Refiners Lead Energy Rally as Low Forward Valuations Face Earnings Test",
+          "summary": "Oil refiners pair strong momentum with high returns and low forward P/Es, offering a selective energy play ahead of key earnings.",
+          "sentiment": 0.893,
+          "source": "Finnhub",
+          "published": "2026-10-17",
+          "url": "https://finnhub.io/api/news?id=2e6f81182e5c4f03cce954eebef5c240018f29034399c0ebf21752b550445c79"
+        },
+        {
+          "headline": "Gas Never Used To Be This Pricey In October; West Coast Imports Are Surging",
+          "summary": "U.S. gas prices have never been so high in Oct. as West Coast drivers face $5.50/gallon and shuttered refineries trigger \"structural shift.\"",
+          "sentiment": -0.885,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=0cb9ce5db6b512b2ef563e699f3c7e8da7ae88c6112bd5dad416bdd93301269c"
+        },
+        {
+          "headline": "Energy: We're Seeing Something Very Special Right Now",
+          "summary": "XLE is up 50% YTD on the Strait of Hormuz risk and strong demand. Click for a look at the energy sector and see if it is the right place for your funds.",
+          "sentiment": 0.878,
+          "source": "Finnhub",
+          "published": "2026-10-15",
+          "url": "https://finnhub.io/api/news?id=fd0c59b3d77a95d1b94e03af6da568d32769eee41f1b36ecf91617fa2e7bb0ef"
+        },
+        {
+          "headline": "Valero Energy's Q3 Earnings Approach: Higher Refining Margins Fuel Optimism",
+          "summary": "Valero Energy (VLO), one of the largest independent petroleum refiners in the U.S., is set to report its much-anticipated Q3 results before market hours on Thursday, Oct. 22.",
+          "sentiment": 0.784,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=748bbe18dfcf8e34a6c02457991ceda241eae27290ade754d2fe7aa80936416e"
+        },
+        {
+          "headline": "TD Cowen Maintains Buy on Phillips 66, Raises Price Target to $308",
+          "summary": "TD Cowen  analyst Jason Gabelman   maintains Phillips 66 (NYSE:PSX) with a Buy and raises the price target from $295 to $308.",
+          "sentiment": 0.764,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=66989b7d56b9b0d725e2c0cae328c997da51780512088e2449d7ed34ed71a583"
+        },
+        {
+          "headline": "PBF Energy: Top Pick In Refining",
+          "summary": "PBF Energy (PBF) is a top refining pick trading at a discount; conservative estimates may miss durable margins.",
+          "sentiment": -0.759,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=2d0e573fad245d5be1ffa7b67505d3032b8917bb2191d2042ac45fcfaa8c9c5f"
+        }
+      ],
+      "cost": 6205.32
+    },
+    {
+      "symbol": "PLTR",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 1,
+      "entry_price": 197.08,
+      "stop_loss": 180.83,
+      "target": 221.46,
+      "entry_date": "2026-10-22",
+      "entry_time": "18:15",
+      "composite_score": 64.81963794289646,
+      "verdict": "WATCH",
+      "reason": "RSI_PULLBACK setup, score 64.8, RSI 55, EPS growth 225%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Palantir Stock Is Holding Above a Key Technical Level. Why Wall Street Sees 24% Upside.",
+          "summary": "Palantir stock is holding above a key technical level and Wall Street expects third-quarter earnings to move the stock higher.",
+          "sentiment": 0.94,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=92c6830719a490239d8f4d1cf84160dbe76deb0ac5a7620badaaa6e87f8752ed"
+        },
+        {
+          "headline": "Palantir Stock Holds the Line. Wall Street Sees a 24% Gain Ahead.",
+          "summary": "Palantir stock is holding above a key technical level and Wall Street expects third-quarter earnings to move the stock higher.",
+          "sentiment": 0.937,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=44079fcf96008301ddaabdbb178cf9ce98702531792ed0173f2ef329a2e674d2"
+        },
+        {
+          "headline": "Palantir (NASDAQ:PLTR): High Growth Momentum Meets a Breakout Setup",
+          "summary": "Palantir (PLTR) pairs strong growth momentum with technical strength and constructive pullback setup, though volatility and slowing momentum pose risks.",
+          "sentiment": 0.927,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=14453b8df51869aa2464a124a5218ab3f758c9bfaf3696a58f3343c621c86b4c"
+        },
+        {
+          "headline": "CPI Aerostructures Secures Up To $12.1M Contract From L3Harris For Next Generation Jammer Low-Band Pod Structures; Deliveries To Begin In 2025 Supporting U.S. Navy EA-18G Growler Fleet Modernization",
+          "summary": "",
+          "sentiment": 0.916,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=3df02847df4fafbf88398f31a71c47ea6e80ffdd2a9dda0bd10b370e871d12e3"
+        },
+        {
+          "headline": "Palantir: Higher Fair Value But Not Enough So I Switched From Bullish To Neutral",
+          "summary": "Palantir (PLTR) growth surges in U.S. Gov & enterprise, but stock near $186 looks fairly valued vs $169.",
+          "sentiment": 0.915,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=5ddaaeb60b22643af7c032a92dadfa1f0d49dfe38e1f538a29f04353250beb85"
+        },
+        {
+          "headline": "Cathie Wood Adds Netflix After Earnings Selloff, Ark Keeps Selling Palantir Stock",
+          "summary": "Cathie Wood\u2019s Ark Invest picked up Netflix shares and continued trimming its Palantir stake on Wednesday.",
+          "sentiment": -0.908,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=284f9db7e89ab4f66c0b0fe7bbd271a8176a38bc9a1e7a71dc6c560a3874fdf0"
+        },
+        {
+          "headline": "Palantir Technologies (PLTR) Signs Knox Partnership, Is The Stock Fully Priced?",
+          "summary": "Palantir Technologies (PLTR) just signed a new partnership with Knox Systems that targets highly secure FedRAMP and IL5 government cloud environments, putting fresh attention on how this contract work might influence the stock. That Knox Systems deal",
+          "sentiment": 0.908,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=4f4d49c9f26a81da3c76ad11024ad47d7fc60da283b010ce88561eac2f0643e0"
+        },
+        {
+          "headline": "Stagwell Expands Partnership With Palantir Over AI-Powered Marketing Services",
+          "summary": "Stagwell (NASDAQ:STGW), the global challenger network transforming marketing through AI, and Palantir Technologies Inc. (NASDAQ:PLTR), a leading provider of AI-powered software, today announced an expansion of their",
+          "sentiment": 0.899,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=608e801998d16fdcc0bb472a35f6798618df3f934a96dbd277635d0a630bc6ff"
+        },
+        {
+          "headline": "Stagwell (STGW) and Palantir (PLTR) Expand AI Partnership to Transform Enterprise Marketing",
+          "summary": "Palantir to support on AI-powered marketing solutions, with serving as a premier marketing transformation partner for PalantirNEW YORK, NY AND MIAMI, FL / ACCESS Newswire / October 22, 2026 / (NASDAQ:STGW), the global challenger network transforming",
+          "sentiment": 0.888,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=ebd7e2729362d5d119b23d50995d904891826cfe0fc54201e67adb7edfb4a71c"
+        },
+        {
+          "headline": "4 Stocks With Demand So Sticky That the AI Sell-Off Barely Touched Them at All",
+          "summary": "AI hardware stocks slid on demand fears, but Chaikin Analytics says sticky-demand software and chip names like Palantir, ServiceNow, CrowdStrike and AMD could lead a post-midterm rally.",
+          "sentiment": -0.887,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=b4f3cc7772bf4e063f1a4777c633f985fbd6e9c834c1f93f027205b24fdd1bae"
+        }
+      ],
+      "cost": 197.08
+    }
+  ],
+  "exits": [
+    {
+      "symbol": "APH",
+      "direction": "LONG",
+      "shares": 93,
+      "entry_price": 81.17,
+      "exit_price": 72.61,
+      "pnl_dollars": -796.08,
+      "pnl_pct": -10.55,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-22"
+    },
+    {
+      "symbol": "AMGN",
+      "direction": "LONG",
+      "shares": 17,
+      "entry_price": 408.67,
+      "exit_price": 448.65,
+      "pnl_dollars": 679.66,
+      "pnl_pct": 9.78,
+      "reason": "target hit",
+      "close_date": "2026-10-22"
+    },
+    {
+      "symbol": "FCX",
+      "direction": "LONG",
+      "shares": 16,
+      "entry_price": 72.13,
+      "exit_price": 64.88,
+      "pnl_dollars": -116.0,
+      "pnl_pct": -10.05,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-22"
+    },
+    {
+      "symbol": "GOOG",
+      "direction": "LONG",
+      "shares": 21,
+      "entry_price": 345.52,
+      "exit_price": 320.725,
+      "pnl_dollars": -520.69,
+      "pnl_pct": -7.18,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-22"
+    }
+  ],
+  "realized_pnl": -753.11,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -3572.9,
+  "total_equity": 147180.21
+}
