@@ -253,8 +253,8 @@
     }
   ],
   "realized_pnl": -753.11,
-  "unrealized_pnl": 0.0,
+  "unrealized_pnl": -248.15,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -3572.9,
-  "total_equity": 147180.21
+  "cumulative_pnl": -5960.33,
+  "total_equity": 144039.67
 }
