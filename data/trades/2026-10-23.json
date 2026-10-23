@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-23",
+  "runs": [
+    "midday",
+    "midday",
+    "midday"
+  ],
+  "entries": [
+    {
+      "symbol": "TXN",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 25,
+      "entry_price": 284.57,
+      "stop_loss": 266.26,
+      "target": 312.04,
+      "entry_date": "2026-10-23",
+      "entry_time": "18:04",
+      "composite_score": 65.969766752855,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 66.0, RSI 55, EPS growth 53%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Chip Stocks Tumble Despite Solid Earnings Reports",
+          "summary": "Chip stocks fell Thursday despite solid quarterly earnings reports from Texas Instruments and Lam Research.",
+          "sentiment": -0.963,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=af854e2d02f5043d8df15c9933e853fc550936d13f485580a63099e9e2c76f95"
+        },
+        {
+          "headline": "Dow Jones Futures Fall, Nasdaq Back Below Key Level Amid Meta, Tesla, Oil Prices",
+          "summary": "Dow futures fell while Nasdaq futures tumbled in the wake of Tesla, Meta and other big earnings overnight.",
+          "sentiment": -0.961,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=2211c8437ab6747405cbe6b86ed05d383bdc83e058590f7c602050455407c899"
+        },
+        {
+          "headline": "Texas Instruments (TXN) Q3 2026 Earnings Call Transcript",
+          "summary": "Record industrial revenue and 95% data center growth highlight broad cyclical recovery.",
+          "sentiment": 0.938,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=5120fe1fa56fb4482f53e4e93a6a6a6246924546c839d673d89c1bd22c9d57e8"
+        },
+        {
+          "headline": "Can Strong Momentum in LoRa Boost Semtech's Long-Term Growth?",
+          "summary": "SMTC's LoRa business hits record sales as smart home, security and industrial adoption expands, while Amazon Sidewalk offers further growth opportunities.",
+          "sentiment": 0.936,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=000b39c3a084264a78c46869727b365fa6c8b0de34762b77c03aa8fa49a46768"
+        },
+        {
+          "headline": "TXN Q3 Earnings Call Highlights Broad Demand and Capacity Plans",
+          "summary": "Texas Instruments' Q3 earnings beat, surging industrial and data center demand, and capacity expansion plans reinforce its long-term cash flow growth strategy.",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=3e0fb904cfe31d29d43319541fabfe512a13cd7f4bc9b4eecc04bfb5121003d8"
+        },
+        {
+          "headline": "Texas Instruments (TXN) Posts Strong Q3 And Higher Outlook, Is It Still Below Fair Value?",
+          "summary": "Texas Instruments (TXN) just posted third quarter results that caught investors\u2019 attention, with revenue of US$6.06b and earnings per share of US$2.62, and followed up with higher fourth quarter guidance. Texas Instruments\u2019 strong quarter has arrived",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=2c6150d60ff41e2b7613a1754c372b62dd4c4753236d08b833ce71bd366a186f"
+        },
+        {
+          "headline": "Texas Instruments lifts quarterly profit 78% as chip demand broadens",
+          "summary": "Texas Instruments Inc (NASDAQ:TXN) reported a 78% rise in third-quarter net income to $2.43 billion as revenue increased across key industrial, automotive and data centre markets. Revenue climbed 28% to $6.06 billion in the three months to September,",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=a6de82456b1c85c89224fa7e28ff24b3c9f608accbc31ab3d4f77437255b9f02"
+        },
+        {
+          "headline": "TXN Q3 deep dive: industrial and data center growth drive outlook upgrade",
+          "summary": "Analog chip manufacturer Texas Instruments (NASDAQ:TXN) reported revenue ahead of Wall Street\u2019s expectations in Q3 2026, with sales up 27.7% year on year to $6.06 billion. On top of that, next quarter\u2019s revenue guidance ($6.05 billion at the midpoint",
+          "sentiment": 0.933,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=de4aae294b7ab7b3a2f1eacbb01157b50e46b6c134b4ced68791378affa76597"
+        },
+        {
+          "headline": "TXN Q3 Earnings Beat Estimates on Strong Analog, Data Center Demand",
+          "summary": "Texas Instruments beats Q3 earnings estimates as strong Analog, industrial and data center demand drives 28% revenue growth and sharp margin expansion.",
+          "sentiment": 0.927,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=d5243f3edecdccfb8eb0cf90046700586f79a2911fbe79608830909a48859c70"
+        },
+        {
+          "headline": "Texas Instruments: 3 Key Takeaways for Long-Term Investors",
+          "summary": "Gross margins hit 64% as industrial and data center demand converged, but capital spending is climbing to nearly $3 billion.",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=1dc15d1d702b03227429a077071938b51be096e9b38291377290a2e6b4c8e669"
+        }
+      ],
+      "cost": 7114.25
+    },
+    {
+      "symbol": "DVA",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 38,
+      "entry_price": 185.96,
+      "stop_loss": 174.23,
+      "target": 203.56,
+      "entry_date": "2026-10-23",
+      "entry_time": "18:04",
+      "composite_score": 65.92788461538461,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 65.9, RSI 54, EPS growth 33%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Why DaVita (DVA) Stock Is Nosediving",
+          "summary": "Shares of dialysis provider DaVita Inc. (NYSE:DVA) fell 7.1% in the afternoon session after Axios reported that the Department of Health and Human Services released a new kidney care plan from the Trump administration.",
+          "sentiment": -0.967,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=f3d64a726c61902b791866cbb91cd3697397465396bd1aca14a0dbcfd4352f16"
+        },
+        {
+          "headline": "S&P 500 Top Movers: EFX and HAS Lead Today's Gainers, GM and DVA Fall",
+          "summary": "S&P 500 top movers today: Equifax and Hasbro gained over 10%, while General Motors and DaVita fell more than 7% in a mixed session.",
+          "sentiment": -0.952,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=9767c866ea027121f6e583a1c9d55c71caf1930dcf32f3011cf51a1089f09880"
+        },
+        {
+          "headline": "DaVita Stock Gains 55.6% Year to Date: What's Behind the Rally?",
+          "summary": "DaVita's 55.6% stock rally reflects stronger operating execution, improving treatment volumes and value-based kidney care gains despite reimbursement pressures.",
+          "sentiment": 0.945,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=62fd12e5080b12b6263d31d607a9f1b4d07b54f3d1d98dbe99a2fb7960637686"
+        },
+        {
+          "headline": "DaVita Earnings Preview: What to Expect",
+          "summary": "DaVita is set to announce its third-quarter earnings next week, and analysts expect the company's bottom line to expand by double digits.",
+          "sentiment": 0.928,
+          "source": "Finnhub",
+          "published": "2026-10-22",
+          "url": "https://finnhub.io/api/news?id=6779e9c95450a0e30c61214b9ceac4cfbd40387a272e6be21a2afc0e8c38dcf1"
+        },
+        {
+          "headline": "Health Care Stocks Hit Record Highs, GM Drops Nearly 8%: Stock Market Today",
+          "summary": "Health care stocks climbed to record highs by midday Tuesday, with defensives and small caps leading a recovery from an early dip.",
+          "sentiment": 0.891,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=3482c1924b89e162572ba246e9d18ef4c7056d94d57c36f352953a973a66610a"
+        },
+        {
+          "headline": "S&P 500 Top Movers: Gainers and Losers From Today's US Session",
+          "summary": "S&P 500 top movers for today's US session: Equifax led gainers at 11.46%, while General Motors led losers at -7.72%, ranked by percentage change.",
+          "sentiment": -0.513,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=e11728fc8f5fa19627c71da56097d365124708caa38ac808ec39585063e67696"
+        },
+        {
+          "headline": "DaVita HealthCare (DVA) Stock Moves -1.01%: What You Should Know",
+          "summary": "DaVita HealthCare (DVA) closed at $187.25 in the latest trading session, marking a -1.01% move from the prior day.",
+          "sentiment": 0.474,
+          "source": "Finnhub",
+          "published": "2026-10-16",
+          "url": "https://finnhub.io/api/news?id=419934ef23a9819747e49c40638bec04a0613a81cda0fff0fe14413e9e6e30cd"
+        },
+        {
+          "headline": "S&P 500 Unusual Volume Movers for October 20",
+          "summary": "Ten S&P 500 stocks traded above their 50-day average volume on October 20, with gains in MSCI, Hasbro, Northrop, Hilton, 3M and Equifax and declines in GE, GM, DaVita and Baxter.",
+          "sentiment": -0.276,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=0cf2c5fe188493d656c8faf31d4633f820dfe5e9bbce24414fcde57b91bba2bd"
+        },
+        {
+          "headline": "DaVita Responds to HHS Kidney Care National Plan, Reaffirms Commitment to Innovation, Access and Patient Choice",
+          "summary": "DaVita today issued the following statement in response to the U.S. Department of Health and Human Services' Kidney Care National Plan and related remarks regarding the future of kidney care:",
+          "sentiment": 0.084,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=75bfb7fec254f880a50977f4f5ca3543fa4ca258566cbef0ddc9861a269310b5"
+        },
+        {
+          "headline": "'HHS releases new kidney care plan' - Axios Exclusive",
+          "summary": "https://www.axios.com/2026/10/20/kidney-care-plan-kennedy",
+          "sentiment": 0.057,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=6f36a9ca4ba5b97652b34869c72f9d812da30a43b44d13fb572cf06aad7660c3"
+        }
+      ],
+      "cost": 7066.48
+    },
+    {
+      "symbol": "DDOG",
+      "direction": "LONG",
+      "trade_type": "swing",
+      "shares": 26,
+      "entry_price": 273.3,
+      "stop_loss": 244.31,
+      "target": 316.79,
+      "entry_date": "2026-10-23",
+      "entry_time": "18:04",
+      "composite_score": 63.089056776556774,
+      "verdict": "WATCH",
+      "reason": "SEPA_PULLBACK setup, score 63.1, RSI 55, EPS growth 1583%",
+      "bull_thesis": "",
+      "bear_risks": "",
+      "full_memo": "",
+      "full_news": [
+        {
+          "headline": "Here Are Monday\u2019s Top Wall Street Analyst Research Calls: Ameriprise Financial, Boyd Gaming, CoreWeave, Datadog, Intel, JetBlue Airways, PayPal Holdings, Pinterest, Whirlpool, and More",
+          "summary": "Stock Futures: Stocks are trading mixed, with the Nasdaq up sharply as we start another action-packed trading week, driven by a flood of third-quarter earnings from some of the biggest U.S. companies. All major indices finished Friday lower as sellin",
+          "sentiment": -0.961,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=6027febd4eaab328114d0f4aea4b657d74c7bac5ad08d7334e1eae65ee787998"
+        },
+        {
+          "headline": "Datadog Soars 6% on Bernstein Upgrade as AI Token Use Has \u201cGrown at Least 50%\u201d",
+          "summary": "Key TakeawaysDatadog shares rose 6% today after Bernstein upgraded the stock to Outperform and raised its price target to $350 from $237. Bernstein\u2019s case for faster AI-driven growth looks well-founded, but the stock already prices in a lot of it.",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=b257331d91302b3d9a14902e7062ff65651cab24ad12fabe7f6be0f6d95c7878"
+        },
+        {
+          "headline": "Datadog (DDOG) Stock Looks Undervalued Even After A 216% Run",
+          "summary": "Datadog has delivered a powerful run over the past few years, helped by growing interest in observability tools and rising attention on AI workloads. With the share price now well above where it traded three years ago, the key question for investors",
+          "sentiment": 0.935,
+          "source": "Finnhub",
+          "published": "2026-10-23",
+          "url": "https://finnhub.io/api/news?id=479b3798bda453eff77b59197a8f0273c06b0ebb02118e4ffd8bc017a9ad8dd7"
+        },
+        {
+          "headline": "Datadog Stock Gets an Upgrade as OpenAI Setback May Be Fading",
+          "summary": "Datadog\u2019s artificial-intelligence customers are spending more than expected, says Bernstein analyst.",
+          "sentiment": 0.93,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=9bf2e57141bcc0c9530d626dc49f9ce086c489febe18fd0c7eea2680aed9b27f"
+        },
+        {
+          "headline": "Bernstein Upgrades Datadog Stock As AI Tailwinds Boost Growth",
+          "summary": "Key Stats for Datadog StockPrice change for Datadog stock in last 6 months: 104%$DDOG Stock Price as of Oct. 19: $26052-Week High: $301$DDOG Stock Price Target: $290What Happened?Bernstein upgraded Datadog (DDOG:NASDAQ) to Outperform from Market-Perf",
+          "sentiment": 0.929,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=6e7828fa30cfd7356c2a4e68049c2a1b8901b6fcc06d5bfbd5fc90c3449a5033"
+        },
+        {
+          "headline": "Datadog Stock Gains Attention After Analyst Upgrade On AI Demand",
+          "summary": "Datadog has been upgraded to Outperform by Bernstein after the broker highlighted stronger demand from artificial intelligence customers and upcoming third quarter fiscal 2026 results as key checkpoints for how AI heavy workloads are affecting the ob",
+          "sentiment": 0.929,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=d2ec6e35cc8a9c4a1724e5a810d21f6343c9bb496756077723d285b209860e3f"
+        },
+        {
+          "headline": "Datadog (DDOG) Stock Is Up, What You Need To Know",
+          "summary": "Shares of cloud monitoring platform Datadog (NASDAQ:DDOG) jumped 4.7% in the morning session after easing Treasury yields and broad dip-buying spurred a relief rebound across enterprise software, amplified by Bernstein SocGen Group upgrading the stoc",
+          "sentiment": 0.926,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=9dba88756594652928885b64ed9fad7cae21757912835c02ae20a0d26cf6036a"
+        },
+        {
+          "headline": "US Stock Market Today: S&P 500 Futures Climb On Strong Factory And Earnings Hopes",
+          "summary": "The Morning Bull - US Market Morning Update Tuesday, Oct, 20 2026 US stocks are set for a firmer open, with sentiment leaning risk on as investors focus on a clear upswing in American factory activity. The key driver this morning is stronger than exp",
+          "sentiment": 0.904,
+          "source": "Finnhub",
+          "published": "2026-10-20",
+          "url": "https://finnhub.io/api/news?id=18c14d931eee9d92a8cf40b1a069993811a070974901a245e3076ee4defd1441"
+        },
+        {
+          "headline": "Datadog, Intel, CoreWeave, Tesla, Amazon, Cleveland-Cliffs, and More Stocks That Explain Today\u2019s Market",
+          "summary": "Datadog stock is the best performer in the S&P 500 following an upgrade to Outperform at Bernstein.",
+          "sentiment": 0.899,
+          "source": "Finnhub",
+          "published": "2026-10-19",
+          "url": "https://finnhub.io/api/news?id=bd07f976c26011f1978aa93b7afb29821897fa920eaa9a8141e7ec7d51d2fb7b"
+        },
+        {
+          "headline": "S&P 500 Top Movers on Oct. 21, 2026: Supermicro Leads Gainers, Dexcom Leads Losers",
+          "summary": "S&P 500 top movers for Oct. 21, 2026: Supermicro rose 9.18% among gainers, while Dexcom fell 6.22% among losers.",
+          "sentiment": -0.89,
+          "source": "Finnhub",
+          "published": "2026-10-21",
+          "url": "https://finnhub.io/api/news?id=e2c12db8e0def243d28efc6e5dc8649bede831bd251ec679d9ab82d85e6f4247"
+        }
+      ],
+      "cost": 7105.8
+    }
+  ],
+  "exits": [],
+  "realized_pnl": 0.0,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -5960.33,
+  "total_equity": 144039.67
+}
