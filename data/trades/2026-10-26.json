@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "TGT",
+      "direction": "LONG",
+      "shares": 46,
+      "entry_price": 158.62,
+      "exit_price": 147.695,
+      "pnl_dollars": -502.55,
+      "pnl_pct": -6.89,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-26"
+    },
+    {
+      "symbol": "OKTA",
+      "direction": "LONG",
+      "shares": 38,
+      "entry_price": 186.81,
+      "exit_price": 220.175,
+      "pnl_dollars": 1267.87,
+      "pnl_pct": 17.86,
+      "reason": "target hit",
+      "close_date": "2026-10-26"
+    }
+  ],
+  "realized_pnl": 765.32,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -3725.11,
+  "total_equity": 145509.57
+}

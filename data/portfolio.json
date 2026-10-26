@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 871.94,
+  "cash": 16032.56,
   "total_equity": 145509.57,
-  "cumulative_pnl": -4490.43,
-  "as_of": "2026-10-23T23:24:34.131475",
+  "cumulative_pnl": -3725.11,
+  "as_of": "2026-10-26T19:33:04.059778",
   "positions": [
     {
       "symbol": "TRGP",
@@ -172,106 +172,6 @@
         }
       ],
       "current_price": 70.17
-    },
-    {
-      "symbol": "TGT",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 46,
-      "entry_price": 158.62,
-      "stop_loss": 150.04,
-      "target": 171.48,
-      "entry_date": "2026-09-17",
-      "entry_time": "17:51",
-      "composite_score": 65.98563664596273,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 66.0, RSI 53, EPS growth 101%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Unloved Consumer Names Like Walmart and Nike Face Pressure as Rate Hike Draws Near",
-          "summary": "Stocks that are most closely tied to the health of the US consumer have trailed the broader market badly this year. A potential Federal Reserve interest-rate hike Wednesday may add to the segment\u2019s stress.",
-          "sentiment": -0.951,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=cd657f9daee9283064ee9b2288681b2a2d1592b35f2f58bf6c143a881df64395"
-        },
-        {
-          "headline": "Ulta Beauty faces rising customer backlash over anti-theft tool",
-          "summary": "Ulta Beauty encounters mounting pressure as customer opposition to an anti-theft measure at its locations grows.",
-          "sentiment": -0.938,
-          "source": "Finnhub",
-          "published": "2026-09-15",
-          "url": "https://finnhub.io/api/news?id=1f170704f1ddebca448cc69c81d639a8525f2df8bd3fa64f7e61c1293816def7"
-        },
-        {
-          "headline": "Target Stock Up More Than 30% in 6 Months: Is It Too Late to Buy TGT?",
-          "summary": "Target's 34.4% six-month rally is backed by stronger traffic, digital momentum and higher-margin growth, but its valuation now tops its one-year median.",
-          "sentiment": 0.938,
-          "source": "Finnhub",
-          "published": "2026-09-17",
-          "url": "https://finnhub.io/api/news?id=3cf4e7775c6d132c88fd6fa70fe35341e110d518c2717cddbece59e7d637ca85"
-        },
-        {
-          "headline": "Costco's E-commerce Momentum Keeps Its Growth Engine Running",
-          "summary": "Costco's digital sales surge 17.9% in August and 20.9% in fiscal 2026, highlighting e-commerce as a growing pillar of its retail footprint.",
-          "sentiment": 0.934,
-          "source": "Finnhub",
-          "published": "2026-09-15",
-          "url": "https://finnhub.io/api/news?id=206f21d8e8e9995b1e35a0e8beba59eff16725949de91bc729c56650b0ee6e11"
-        },
-        {
-          "headline": "Should You Buy Adobe Stock At $260?",
-          "summary": "Adobe (ADBE) reported a record fiscal Q3 2026 and raised its fiscal 2026 revenue and earnings targets. Revenue rose 13% as reported to $6.76 billion, above the $6.70 billion the company had guided. But the key figure that did not move is the one to h",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-09-15",
-          "url": "https://finnhub.io/api/news?id=ad7637a4cb3c93f63f88bb0d6892e2fe3fef151bac343534f1787869d3f0231c"
-        },
-        {
-          "headline": "3 Dividend Kings to Buy While They\u2019re Still Beaten Down",
-          "summary": "Target, Hormel and Procter & Gamble, all Dividend Kings, are rebounding from depressed valuations with reliable yields, improving traffic or market share trends, and firming analyst support.",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-09-14",
-          "url": "https://finnhub.io/api/news?id=37b3807971933802c1aed372268fb022dddb0a4770c6fb73242e4e5f62bb7933"
-        },
-        {
-          "headline": "Corporate DEI pullback has real consequences: Colin Kaepernick",
-          "summary": "Former NFL star Colin Kaepernick chats with Yahoo Finance Executive Editor Brian Sozzi about how companies putting profitability and political pressure ahead of equal opportunity risk losing consumers and market share.",
-          "sentiment": -0.923,
-          "source": "Finnhub",
-          "published": "2026-09-17",
-          "url": "https://finnhub.io/api/news?id=e912e14074dce2506c3f700e4f9e8f2810170e8a1afaa35565a309e683203486"
-        },
-        {
-          "headline": "Target is taking on Walmart with a major grocery move",
-          "summary": "The retailer hopes its latest partnership will help it carve out a distinct niche in the grocery market",
-          "sentiment": 0.91,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=d1bb96e89230ad4161a9bece26dfc7eda7fd57c7b4d72ecbeccb0beb7fb70c29"
-        },
-        {
-          "headline": "Amazon raises starting pay to $20 an hour and adds Whole Foods discount",
-          "summary": "Wage increase brings Amazon\u2019s US minimum pay in line with Costco and includes new grocery discount benefit",
-          "sentiment": 0.901,
-          "source": "Finnhub",
-          "published": "2026-09-16",
-          "url": "https://finnhub.io/api/news?id=0a610c6958b8a064ce32323dd0528e839308027c83d609aac9dda27a74f39de6"
-        },
-        {
-          "headline": "Target's Stock Is on a Tear in 2026. Can It Still Go Higher?",
-          "summary": "The retail stock recently hit a new 52-week high as it has been outperforming the S&P 500 this year by a wide margin.",
-          "sentiment": 0.9,
-          "source": "Finnhub",
-          "published": "2026-09-15",
-          "url": "https://finnhub.io/api/news?id=1a57c718b7d42ce885f5f21e5df5377ee8ee54f7cdd8b7cc48d76409e18a24cf"
-        }
-      ],
-      "current_price": 152.76
     },
     {
       "symbol": "EXPD",
@@ -1040,106 +940,6 @@
         }
       ],
       "current_price": 145.27
-    },
-    {
-      "symbol": "OKTA",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 38,
-      "entry_price": 186.81,
-      "stop_loss": 186.81,
-      "target": 219.89,
-      "entry_date": "2026-10-16",
-      "entry_time": "17:45",
-      "composite_score": 61.93166208791209,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 61.9, RSI 41, EPS growth 73%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "MongoDB lets apps pay only for what they use",
-          "summary": "The impact of executive departures remains an open question, along with whether customers\u2019 overall spending will dip.",
-          "sentiment": -0.948,
-          "source": "Finnhub",
-          "published": "2026-10-15",
-          "url": "https://finnhub.io/api/news?id=d97384798bbc292b802110ee2003d991dbc98ddcb1c369473474b42a4bab2016"
-        },
-        {
-          "headline": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
-          "summary": "Cybersecurity stocks fell amid a report artificial intelligence system maker OpenAI plans to acquire an industry startup.",
-          "sentiment": -0.947,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=33d7709ea7b0280cc9a3cd848d26d56b67ac0bf9fcfc439807bd4ee9c2ba2e89"
-        },
-        {
-          "headline": "CrowdStrike vs. Okta: Which Cybersecurity Stock Is a Better Buy in 2026?",
-          "summary": "CrowdStrike recently posted its best quarter ever with record recurring revenue and expanding free cash flow. Okta delivered record bookings in the same quarter and saw its stock surge nearly 20%.",
-          "sentiment": 0.938,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=d8dd91fc8581526083828e9681bb6ffbacb4c7a9e3008db6b99a06666715cff9"
-        },
-        {
-          "headline": "Cybersecurity Stocks Retreat From Record Highs \u2014 Citi Raises CRWD, PANW, ZS Targets On Improving Spending Momentum",
-          "summary": "Wells Fargo said ten detailed discussions with channel partners and its reseller survey indicated cybersecurity spending was gaining momentum heading into 2027, according to The Fly.",
-          "sentiment": 0.893,
-          "source": "Finnhub",
-          "published": "2026-10-15",
-          "url": "https://finnhub.io/api/news?id=5ac5539f58d773fe04b11968b66f7e0911950c95ad4a9a1cb3b2ae48af6341e7"
-        },
-        {
-          "headline": "BMO Capital Maintains Outperform on Okta, Raises Price Target to $245",
-          "summary": "BMO Capital  analyst Keith Bachman   maintains Okta (NASDAQ:OKTA) with a Outperform and raises the price target from $230 to $245.",
-          "sentiment": 0.829,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=6f87665651aa1b244b0e2c837d220f75a524583baa3dc2fea7b15f4c8ff5d022"
-        },
-        {
-          "headline": "Someone Bugged OpenAI's Boardroom: ChatGPT's Maker Says its Own AI Found Out Who",
-          "summary": "OpenAI uses AI to trace a hidden office recording device to an employee who was arrested; no model weights or data were stolen.",
-          "sentiment": -0.717,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=d10343231d561521afc55f56d6ebc9023dda42d8af102c2172c4b899a02efd2e"
-        },
-        {
-          "headline": "Should You Trim Or Add To Your CrowdStrike Position Now?",
-          "summary": "Investors holding CrowdStrike (CRWD) are likely weighing whether to take some money off the table. The stock returned 107% over the past twelve months, easily outpacing the 17.3% gain for the S&P 500. Yet management noted in August that customers are",
-          "sentiment": 0.666,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=218984fe1f448ef52dbd0717c967cbe609676c0e1c84b40a4307e9cc62b07573"
-        },
-        {
-          "headline": "Citigroup Maintains Neutral on Okta, Raises Price Target to $215",
-          "summary": "Citigroup  analyst Fatima Boolani   maintains Okta (NASDAQ:OKTA) with a Neutral and raises the price target from $205 to $215.",
-          "sentiment": 0.61,
-          "source": "Finnhub",
-          "published": "2026-10-15",
-          "url": "https://finnhub.io/api/news?id=6f14e675e5f3cbca17505db3a7a4f26890a239b9315e03a5819da5f250236151"
-        },
-        {
-          "headline": "Okta (OKTA) Dips More Than Broader Market: What You Should Know",
-          "summary": "Okta (OKTA) closed the most recent trading day at $211.92, moving 6.45% from the previous trading session.",
-          "sentiment": 0.6,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=ec2c73c10e0006d1018a982937117a9b02dceaf84ca0fb431827cfb3f1f9defa"
-        },
-        {
-          "headline": "Q3 Earnings Could Blow Past Consensus\u2014Be Ready for What Comes Next",
-          "summary": "AI-driven demand is lifting earnings estimates and price targets across cybersecurity, semiconductor, and CPU stocks, including PANW, MRVL, AMD, and INTC, ahead of Q3 results.",
-          "sentiment": 0.51,
-          "source": "Finnhub",
-          "published": "2026-10-11",
-          "url": "https://finnhub.io/api/news?id=7801f245bf4bde190b8b8f17e40e982954a732bf5879a131da5d021bc310c642"
-        }
-      ],
-      "current_price": 213.05
     },
     {
       "symbol": "SWKS",
