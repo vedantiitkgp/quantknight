@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-28",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "FFIV",
+      "direction": "LONG",
+      "shares": 16,
+      "entry_price": 453.315,
+      "exit_price": 368.13,
+      "pnl_dollars": -1362.96,
+      "pnl_pct": -18.79,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-28"
+    }
+  ],
+  "realized_pnl": -1362.96,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -3841.31,
+  "total_equity": 147521.65
+}

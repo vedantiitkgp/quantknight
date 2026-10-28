@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 16032.56,
+  "cash": 21922.64,
   "total_equity": 147521.65,
-  "cumulative_pnl": -2478.35,
-  "as_of": "2026-10-27T23:58:01.265040",
+  "cumulative_pnl": -3841.31,
+  "as_of": "2026-10-28T19:03:14.216347",
   "positions": [
     {
       "symbol": "TRGP",
@@ -542,106 +542,6 @@
       "current_price": 397.02
     },
     {
-      "symbol": "FFIV",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 16,
-      "entry_price": 453.315,
-      "stop_loss": 425.56,
-      "target": 494.95,
-      "entry_date": "2026-10-15",
-      "entry_time": "18:00",
-      "composite_score": 64.84145894428154,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 64.8, RSI 53, EPS growth 10%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Shares of software companies are trading lower, possibly in response to escalating tensions in the Middle East and renewed inflation concerns that may shift the Fed towards a rate hike. Concerns about key economic data due later this week may prompt traders to rotate out of growth stocks.",
-          "summary": "",
-          "sentiment": -0.958,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=c69408f6b2e2de87abefeb217619a19db915930e139f14fc71586990a574b37b"
-        },
-        {
-          "headline": "3 Reasons FFIV is Risky and 1 Stock to Buy Instead",
-          "summary": "What a time it\u2019s been for F5. In the past six months alone, the company\u2019s stock price has increased by a massive 59.1%, reaching $474.15 per share. This was partly thanks to its solid quarterly results, and the performance may have investors wonderin",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=ab36ae966d0ffcd220440e410bed2378de6e3ea412a6f146b783161edfb3fa85"
-        },
-        {
-          "headline": "What Did Fastly Stock Investors Miss Before The Run?",
-          "summary": "Fastly (FSLY) stock returned 241.5% in the twelve months to October 9, 2026, easily outpacing the 17.0% gain for the S&P 500. Buyers appear to have been paying for a clear shift in the underlying business: sales began growing faster again, and losses",
-          "sentiment": 0.916,
-          "source": "Finnhub",
-          "published": "2026-10-12",
-          "url": "https://finnhub.io/api/news?id=3e9b3c3e92243fc55a7a1b8c503791b3c2ef5235ed5794dd60275f6609715106"
-        },
-        {
-          "headline": "How F5\u2019s (FFIV) Application Delivery Rails Drive Multi-Year Growth",
-          "summary": "Reaves W H & Co Inc released its third-quarter 2026 investor letter for \u201cReaves Long-Term Value Strategy\u201d. The letter can be downloaded here. The Reaves Long-Term Value Wrap Composite saw an 11.83% decline before fees in Q3, underperforming the MSCI",
-          "sentiment": -0.887,
-          "source": "Finnhub",
-          "published": "2026-10-15",
-          "url": "https://finnhub.io/api/news?id=57c5ad9df115a981bb33385535e28e9dae932b69fd08e30c4b8da9d172a31209"
-        },
-        {
-          "headline": "2 Cash-Producing Stocks with Exciting Potential and 1 We Avoid",
-          "summary": "Generating cash is essential for any business, but not all cash-rich companies are great investments. Some produce plenty of cash but fail to allocate it effectively, leading to missed opportunities.",
-          "sentiment": -0.836,
-          "source": "Finnhub",
-          "published": "2026-10-08",
-          "url": "https://finnhub.io/api/news?id=fed0842d8eacdf54819a021e762078cc1d8d6ea39db24e8c54b2b14a032e5876"
-        },
-        {
-          "headline": "RBC Capital Maintains Outperform on F5, Raises Price Target to $525",
-          "summary": "RBC Capital  analyst Matthew Hedberg   maintains F5 (NASDAQ:FFIV) with a Outperform and raises the price target from $508 to $525.",
-          "sentiment": 0.812,
-          "source": "Finnhub",
-          "published": "2026-10-12",
-          "url": "https://finnhub.io/api/news?id=9e54f4738ce3dd0f4d9690edccf20181dcb226dd8dfa40da991845dca49517b3"
-        },
-        {
-          "headline": "Should FFIV Stock's New High Stop You From Buying?",
-          "summary": "Investors are often warned to buy low and avoid purchasing at the top. F5 (FFIV) stock closed at a 52-week high of $479.83 on October 9, 2026. By traditional logic, this is the wrong time to buy. Rather than debate the current share price, historical",
-          "sentiment": -0.22,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=93e5e6f82c387c2522bc158864bcd133acb319d5ab74b07ad8dd17977c6c2589"
-        },
-        {
-          "headline": "What Is The True Hidden Price Of Lumentum Stock?",
-          "summary": "Lumentum (LITE) stock currently trades at 150.5 times its adjusted earnings for the last twelve months, meaning normalized net income with stock-based pay added back. While that is a steep price for one year of profit, Lumentum's sales more than doub",
-          "sentiment": 0.144,
-          "source": "Finnhub",
-          "published": "2026-10-09",
-          "url": "https://finnhub.io/api/news?id=99d912f12e8f8f457f1116ace6ba20ea64a692a5a8ec11a65c3eb07ef6c2353b"
-        },
-        {
-          "headline": "F5 to Report Fourth Quarter and Fiscal Year 2026 Financial Results",
-          "summary": "SEATTLE, October 08, 2026--F5, Inc. (NASDAQ: FFIV), the global leader in delivering and securing every app and API, announced it will report its fourth quarter and fiscal year 2026 financial results on Tuesday, October 27, 2026, following the market",
-          "sentiment": 0.022,
-          "source": "Finnhub",
-          "published": "2026-10-08",
-          "url": "https://finnhub.io/api/news?id=8e562bc877032e6ec471e383c6e7635f649dd5d5fa0a82701fbb11b0bdb0f915"
-        },
-        {
-          "headline": "VTEX or FFIV: Which Is the Better Value Stock Right Now?",
-          "summary": "VTEX vs. FFIV: Which Stock Is the Better Value Option?",
-          "sentiment": 0.004,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=d29a9f7f4e39075b7f0ff6cc87f680c303786850772cb74b104564bb27e3bc0f"
-        }
-      ],
-      "current_price": 459.36
-    },
-    {
       "symbol": "ADI",
       "direction": "LONG",
       "trade_type": "swing",
@@ -1131,7 +1031,7 @@
       "trade_type": "swing",
       "shares": 28,
       "entry_price": 262.575,
-      "stop_loss": 235.61,
+      "stop_loss": 262.57,
       "target": 303.03,
       "entry_date": "2026-10-16",
       "entry_time": "18:49",
