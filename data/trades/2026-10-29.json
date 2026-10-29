@@ -24,11 +24,22 @@
       "pnl_pct": -22.27,
       "reason": "stop-loss hit",
       "close_date": "2026-10-29"
+    },
+    {
+      "symbol": "TXN",
+      "direction": "LONG",
+      "shares": 25,
+      "entry_price": 284.57,
+      "exit_price": 312.94,
+      "pnl_dollars": 709.25,
+      "pnl_pct": 9.97,
+      "reason": "target hit",
+      "close_date": "2026-10-29"
     }
   ],
-  "realized_pnl": -2630.22,
+  "realized_pnl": -1920.97,
   "unrealized_pnl": 0.0,
   "daily_pnl": 0.0,
-  "cumulative_pnl": -6568.25,
+  "cumulative_pnl": -5859.0,
   "total_equity": 146061.97
 }

@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 33744.66,
+  "cash": 41568.16,
   "total_equity": 146061.97,
-  "cumulative_pnl": -6568.25,
-  "as_of": "2026-10-29T19:09:11.774427",
+  "cumulative_pnl": -5859.0,
+  "as_of": "2026-10-29T20:09:48.656562",
   "positions": [
     {
       "symbol": "TRGP",
@@ -747,7 +747,7 @@
       "trade_type": "swing",
       "shares": 1,
       "entry_price": 81.285,
-      "stop_loss": 72.89,
+      "stop_loss": 81.28,
       "target": 93.88,
       "entry_date": "2026-10-16",
       "entry_time": "17:45",
@@ -1524,106 +1524,6 @@
         }
       ],
       "current_price": 198.73
-    },
-    {
-      "symbol": "TXN",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 25,
-      "entry_price": 284.57,
-      "stop_loss": 266.26,
-      "target": 312.04,
-      "entry_date": "2026-10-23",
-      "entry_time": "18:04",
-      "composite_score": 65.969766752855,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 66.0, RSI 55, EPS growth 53%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Chip Stocks Tumble Despite Solid Earnings Reports",
-          "summary": "Chip stocks fell Thursday despite solid quarterly earnings reports from Texas Instruments and Lam Research.",
-          "sentiment": -0.963,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=af854e2d02f5043d8df15c9933e853fc550936d13f485580a63099e9e2c76f95"
-        },
-        {
-          "headline": "Dow Jones Futures Fall, Nasdaq Back Below Key Level Amid Meta, Tesla, Oil Prices",
-          "summary": "Dow futures fell while Nasdaq futures tumbled in the wake of Tesla, Meta and other big earnings overnight.",
-          "sentiment": -0.961,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=2211c8437ab6747405cbe6b86ed05d383bdc83e058590f7c602050455407c899"
-        },
-        {
-          "headline": "Texas Instruments (TXN) Q3 2026 Earnings Call Transcript",
-          "summary": "Record industrial revenue and 95% data center growth highlight broad cyclical recovery.",
-          "sentiment": 0.938,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=5120fe1fa56fb4482f53e4e93a6a6a6246924546c839d673d89c1bd22c9d57e8"
-        },
-        {
-          "headline": "Can Strong Momentum in LoRa Boost Semtech's Long-Term Growth?",
-          "summary": "SMTC's LoRa business hits record sales as smart home, security and industrial adoption expands, while Amazon Sidewalk offers further growth opportunities.",
-          "sentiment": 0.936,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=000b39c3a084264a78c46869727b365fa6c8b0de34762b77c03aa8fa49a46768"
-        },
-        {
-          "headline": "TXN Q3 Earnings Call Highlights Broad Demand and Capacity Plans",
-          "summary": "Texas Instruments' Q3 earnings beat, surging industrial and data center demand, and capacity expansion plans reinforce its long-term cash flow growth strategy.",
-          "sentiment": 0.935,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=3e0fb904cfe31d29d43319541fabfe512a13cd7f4bc9b4eecc04bfb5121003d8"
-        },
-        {
-          "headline": "Texas Instruments (TXN) Posts Strong Q3 And Higher Outlook, Is It Still Below Fair Value?",
-          "summary": "Texas Instruments (TXN) just posted third quarter results that caught investors\u2019 attention, with revenue of US$6.06b and earnings per share of US$2.62, and followed up with higher fourth quarter guidance. Texas Instruments\u2019 strong quarter has arrived",
-          "sentiment": 0.935,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=2c6150d60ff41e2b7613a1754c372b62dd4c4753236d08b833ce71bd366a186f"
-        },
-        {
-          "headline": "Texas Instruments lifts quarterly profit 78% as chip demand broadens",
-          "summary": "Texas Instruments Inc (NASDAQ:TXN) reported a 78% rise in third-quarter net income to $2.43 billion as revenue increased across key industrial, automotive and data centre markets. Revenue climbed 28% to $6.06 billion in the three months to September,",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=a6de82456b1c85c89224fa7e28ff24b3c9f608accbc31ab3d4f77437255b9f02"
-        },
-        {
-          "headline": "TXN Q3 deep dive: industrial and data center growth drive outlook upgrade",
-          "summary": "Analog chip manufacturer Texas Instruments (NASDAQ:TXN) reported revenue ahead of Wall Street\u2019s expectations in Q3 2026, with sales up 27.7% year on year to $6.06 billion. On top of that, next quarter\u2019s revenue guidance ($6.05 billion at the midpoint",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=de4aae294b7ab7b3a2f1eacbb01157b50e46b6c134b4ced68791378affa76597"
-        },
-        {
-          "headline": "TXN Q3 Earnings Beat Estimates on Strong Analog, Data Center Demand",
-          "summary": "Texas Instruments beats Q3 earnings estimates as strong Analog, industrial and data center demand drives 28% revenue growth and sharp margin expansion.",
-          "sentiment": 0.927,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=d5243f3edecdccfb8eb0cf90046700586f79a2911fbe79608830909a48859c70"
-        },
-        {
-          "headline": "Texas Instruments: 3 Key Takeaways for Long-Term Investors",
-          "summary": "Gross margins hit 64% as industrial and data center demand converged, but capital spending is climbing to nearly $3 billion.",
-          "sentiment": 0.926,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=1dc15d1d702b03227429a077071938b51be096e9b38291377290a2e6b4c8e669"
-        }
-      ],
-      "current_price": 308.91
     },
     {
       "symbol": "DVA",
