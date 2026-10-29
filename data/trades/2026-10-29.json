@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-29",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "MRVL",
+      "direction": "LONG",
+      "shares": 29,
+      "entry_price": 251.42,
+      "exit_price": 215.705,
+      "pnl_dollars": -1035.73,
+      "pnl_pct": -14.21,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-29"
+    },
+    {
+      "symbol": "FTNT",
+      "direction": "LONG",
+      "shares": 41,
+      "entry_price": 174.66,
+      "exit_price": 135.77,
+      "pnl_dollars": -1594.49,
+      "pnl_pct": -22.27,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-29"
+    }
+  ],
+  "realized_pnl": -2630.22,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -6568.25,
+  "total_equity": 146061.97
+}

@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 21922.64,
+  "cash": 33744.66,
   "total_equity": 146061.97,
-  "cumulative_pnl": -3938.03,
-  "as_of": "2026-10-29T00:18:02.789590",
+  "cumulative_pnl": -6568.25,
+  "as_of": "2026-10-29T19:09:11.774427",
   "positions": [
     {
       "symbol": "TRGP",
@@ -372,106 +372,6 @@
         }
       ],
       "current_price": 62.73
-    },
-    {
-      "symbol": "MRVL",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 29,
-      "entry_price": 251.42,
-      "stop_loss": 220.43,
-      "target": 297.91,
-      "entry_date": "2026-10-14",
-      "entry_time": "18:17",
-      "composite_score": 65.02384737678855,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 65.0, RSI 47, EPS growth 58%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Why the Chip Stocks Slump Is Deepening After ASML\u2019s Strong Earnings",
-          "summary": "Chip stocks are on track to fall for a seventh consecutive day, their longest losing streak since May 2025.",
-          "sentiment": -0.967,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=6fad9b0cdee9bb86ae7ed98ee61de48ede9d16c518db45b54acda627d1b3045a"
-        },
-        {
-          "headline": "Does The Drop In Credo Stock Change Anything?",
-          "summary": "Shares of Credo Technology (CRDO) fell 7.3% on Monday, October 12, 2026, alongside a 0.1% slip in the S&P 500. Astera Labs, a peer, fell 5.3% in the same session. Credo is also showcasing its ZeroFlap Active Light Cable, an optical connection for AI",
-          "sentiment": -0.966,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=fb0fe02073760f19520f8731fa4d5ebb03a50af168813042635e340054fd5361"
-        },
-        {
-          "headline": "Marvell Technology, Kulicke and Soffa, Vishay Intertechnology, Allegro MicroSystems, and Amkor Shares Plummet, What You Need To Know",
-          "summary": "A number of stocks fell in the morning session after reports of design breakthroughs in China prompted investors to reassess expectations for tight memory and chip supplies.",
-          "sentiment": -0.965,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=fc6f976a96f61f4e41b0b08ec30a893de644b7887f43b5ad79218aab749186c6"
-        },
-        {
-          "headline": "Does Credo's $525M-$535M Revenue Outlook Signal Further Upside?",
-          "summary": "CRDO's surging AI connectivity demand, record revenues and expanding optical business fuel growth, with fiscal 2027 revenues projected to rise more than 85%.",
-          "sentiment": 0.939,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=1303743f7da3fb643bd4cece3df826138a4c80d02c7c49ff53769824fbcd39eb"
-        },
-        {
-          "headline": "Can Semtech's 1.6T Ramp Accelerate its Data Center Growth?",
-          "summary": "SMTC's 1.6T product ramp fuels AI data-center growth, with record revenues, rising optical connectivity share and strong customer demand supporting its outlook.",
-          "sentiment": 0.936,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=75d79519487efc681d42610055886fca5f7e4e9052100b559eae8accec6822ff"
-        },
-        {
-          "headline": "Credo Expands AI Connectivity Portfolio With 1.6T ZeroFlap ALC",
-          "summary": "CRDO expands its AI connectivity portfolio with the 1.6T ZeroFlap Active Light Cable, offering lower power consumption, enhanced reliability and extended reach.",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=2568185f1bca30b49f4c612caf8ed40cc7d58c670b6d1e1c8f718bdf99385b59"
-        },
-        {
-          "headline": "Why It\u2019s Time to Load Up on Marvell Stock",
-          "summary": "Marvell stands to benefit from stronger demand for its products and solutions. Its top and bottom lines are expected to grow rapidly.",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=5858645d707d9ef6b8ae8a1065afa817dc450acf35e5e7cd16fc4e3e3c9edd5f"
-        },
-        {
-          "headline": "Marvell Technology Just Gave Its Investors Great News",
-          "summary": "The company revealed incredibly strong guidance, suggesting its revenue could 10x in the not-too-distant future.",
-          "sentiment": 0.933,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=e47f34462473f0ec452b2b7dd397f635637d1643d8b67ba86c9636215325f2ba"
-        },
-        {
-          "headline": "Astera Labs (ALAB) vs. CRDO and MRVL: Can Surging AI Demand Outpace Valuation Risks?",
-          "summary": "Is ALAB a good stock to buy? We came across a bullish thesis on Astera Labs, Inc. on Astute Optics \u2013 US\u2019s Substack. The thesis was published on September 11th, when the stock was trading at $291.22, and ALAB gained 11.29% since then. The gain appears",
-          "sentiment": 0.926,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=58456fc86b2cb0a01a83f897917ed54613b31cf5bc55715c3411a20f7157df90"
-        },
-        {
-          "headline": "Marvell (MRVL) Raises Its 2028 Revenue Target to $20 Billion. Can Growth Justify the Premium?",
-          "summary": "Marvell Technology, Inc. (NASDAQ:MRVL) raised its fiscal 2028 revenue forecast to roughly $20 billion on October 6, above the $18.2 billion Wall Street consensus, before laying out an even larger target of $70 billion to $90 billion for fiscal 2031.",
-          "sentiment": 0.923,
-          "source": "Finnhub",
-          "published": "2026-10-13",
-          "url": "https://finnhub.io/api/news?id=47589d487b7f4ca3926695903cc4b8eb92bbec4e990070e7202fab2efa900f22"
-        }
-      ],
-      "current_price": 243.57
     },
     {
       "symbol": "CPAY",
@@ -1224,106 +1124,6 @@
         }
       ],
       "current_price": 254.56
-    },
-    {
-      "symbol": "FTNT",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 41,
-      "entry_price": 174.66,
-      "stop_loss": 161.08,
-      "target": 195.03,
-      "entry_date": "2026-10-21",
-      "entry_time": "18:20",
-      "composite_score": 67.79296875,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 67.8, RSI 47, EPS growth 38%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Fortinet stock falls as Arete delivers rare double downgrade to sell",
-          "summary": "Investing.com -- Fortinet (NASDAQ: FTNT) shares fell 2.7% in premarket trading Wednesday after Arete Research downgraded the cybersecurity company by two notches, from buy to sell, warning that a convergence of favorable growth drivers could make 202",
-          "sentiment": -0.964,
-          "source": "Finnhub",
-          "published": "2026-10-21",
-          "url": "https://finnhub.io/api/news?id=737ccd2df596b73a29dbdd5b939fb58af25298270cfcb20c8e51a962378c1bcf"
-        },
-        {
-          "headline": "Why Fortinet Stock Slumped on Wednesday",
-          "summary": "There are concerns that OpenAI may be making a move in the cybersecurity industry.",
-          "sentiment": -0.96,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=6075bb8a1a282f10c7ea85419f345d88f708be597b082c72c798885b0bbbca37"
-        },
-        {
-          "headline": "Shares of software companies are trading lower, possibly in response to escalating tensions in the Middle East and renewed inflation concerns that may shift the Fed towards a rate hike. Concerns about key economic data due later this week may prompt traders to rotate out of growth stocks.",
-          "summary": "",
-          "sentiment": -0.958,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=c69408f6b2e2de87abefeb217619a19db915930e139f14fc71586990a574b37b"
-        },
-        {
-          "headline": "CrowdStrike Stock Fell 7% on Friday. Here\u2019s What Could Drive Shares Through 2026",
-          "summary": "Key Stats for CrowdStrike StockOctober 16 Performance: -7%52-Week Range: $86 to $287Valuation Model Target Price: Around $240Implied Upside: About 6%What Happened?AI is creating a complicated investment story for CrowdStrike Holdings (NASDAQ: CRWD),",
-          "sentiment": -0.957,
-          "source": "Finnhub",
-          "published": "2026-10-16",
-          "url": "https://finnhub.io/api/news?id=a4be548de296f4a63cf2788eab70d613331b4adfd63dca11eb109242d7613c48"
-        },
-        {
-          "headline": "Cybersecurity Stocks Fall Amid Report Of OpenAI Acquisition",
-          "summary": "Cybersecurity stocks fell amid a report artificial intelligence system maker OpenAI plans to acquire an industry startup.",
-          "sentiment": -0.947,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=33d7709ea7b0280cc9a3cd848d26d56b67ac0bf9fcfc439807bd4ee9c2ba2e89"
-        },
-        {
-          "headline": "Palo Alto Falls 4% as Report of OpenAI Cybersecurity Deal Hits Sector; CrowdStrike Drops 3%, Fortinet Slips",
-          "summary": "A single report about OpenAI entering cybersecurity sent shockwaves through the sector's biggest names, and the question now is whether the AI giant plans to partner with incumbents or hunt their customers directly.",
-          "sentiment": -0.944,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=732667025404d442d7ba79f48e4e595ad00e4738881c395c37c01efcb18b7e4e"
-        },
-        {
-          "headline": "Fortinet Shares Jump with Earnings on Horizon",
-          "summary": "Shares of cybersecurity firm Fortinet, Inc. (FTNT) are up 9,219% since institutions first bought big in 2010.",
-          "sentiment": 0.924,
-          "source": "Finnhub",
-          "published": "2026-10-14",
-          "url": "https://finnhub.io/api/news?id=8f277e42311819481cb0e35fe03ef9541242069c1c6f38328f03fc0e39fa4857"
-        },
-        {
-          "headline": "Sell-Off In Cybersecurity Stocks Intensifies Amid Palo Alto Vulnerability",
-          "summary": "Cybersecurity stocks sold off again on Friday amid a hacker vulnerability involving a Palo Alto Networks network firewall platform.",
-          "sentiment": -0.912,
-          "source": "Finnhub",
-          "published": "2026-10-16",
-          "url": "https://finnhub.io/api/news?id=ed2b99c982cf092c4681976953f6f5127e0a19cbebfe68bae06ff7d9a97afca5"
-        },
-        {
-          "headline": "Are You Sure You Understand Cloudflare Stock's Risk?",
-          "summary": "Cloudflare (NET) stock returned 39.6% over the past year to October 19, 2026, compared with 17.4% for the S&P 500, and its sales grew 36% in fiscal Q2 2026. Numbers like those can make a stock look as if it has earned some calm. Yet the shares fell 1",
-          "sentiment": -0.896,
-          "source": "Finnhub",
-          "published": "2026-10-21",
-          "url": "https://finnhub.io/api/news?id=c6aefa83dd6239faedd4aad50043d91380fa43a94aaf949d37374c14ed2c0f61"
-        },
-        {
-          "headline": "Fortinet (NASDAQ:FTNT): A High-Quality Stock with Strong Fundamentals and a Premium Price",
-          "summary": "Fortinet clears the Caviar Cruise quality screen with strong growth, ROIC and cash conversion, but its premium valuation remains the key risk.",
-          "sentiment": 0.894,
-          "source": "Finnhub",
-          "published": "2026-10-19",
-          "url": "https://finnhub.io/api/news?id=89cb4b7feeadbd875fd8b031c3320567520063eed49afdaf148ad21c5d49329b"
-        }
-      ],
-      "current_price": 185.0
     },
     {
       "symbol": "NTAP",
