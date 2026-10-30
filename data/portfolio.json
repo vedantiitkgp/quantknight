@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 74152.06,
-  "total_equity": 143541.63,
-  "cumulative_pnl": -9738.56,
-  "as_of": "2026-10-30T18:47:27.663125",
+  "total_equity": 139707.44,
+  "cumulative_pnl": -10292.56,
+  "as_of": "2026-10-30T21:26:55.811016",
   "positions": [
     {
       "symbol": "CNC",
@@ -103,7 +103,7 @@
           "url": "https://finnhub.io/api/news?id=22345f8d1ad854be60116f72739f2b637ddeeeee5cc5e22acf3280b0a30c79f9"
         }
       ],
-      "current_price": 67.05
+      "current_price": 68.45
     },
     {
       "symbol": "EXPD",
@@ -203,7 +203,7 @@
           "url": "https://finnhub.io/api/news?id=80a0b6ba28bda447a89dc1dbe27b00bf3bcf8f898de58afa104afeae20522844"
         }
       ],
-      "current_price": 197.15
+      "current_price": 198.85
     },
     {
       "symbol": "OXY",
@@ -303,7 +303,7 @@
           "url": "https://finnhub.io/api/news?id=4d0b670b76adbd8450182ea7c61422d9ebb68bde54e8eda8350e8b3a5a78a7d5"
         }
       ],
-      "current_price": 62.86
+      "current_price": 64.0
     },
     {
       "symbol": "CPAY",
@@ -371,7 +371,7 @@
           "url": "https://finnhub.io/api/news?id=ba7d7e08a4e7724ea604d446cc1aec6447a88317f377fffbe3b622a621bf7b6a"
         }
       ],
-      "current_price": 395.86
+      "current_price": 400.94
     },
     {
       "symbol": "ADI",
@@ -471,7 +471,7 @@
           "url": "https://finnhub.io/api/news?id=260fc365052a12cacb94bd864d70ad662cfdc547bdf4b7f523a75cb72e08bb5e"
         }
       ],
-      "current_price": 428.27
+      "current_price": 417.11
     },
     {
       "symbol": "NUE",
@@ -571,7 +571,7 @@
           "url": "https://finnhub.io/api/news?id=286910500e3b67b70960c05cc1a786afec86422fe14992353fe353fbbcdc16a2"
         }
       ],
-      "current_price": 271.79
+      "current_price": 273.87
     },
     {
       "symbol": "MRK",
@@ -671,7 +671,7 @@
           "url": "https://finnhub.io/api/news?id=e1edfeb2d3d1b855f41641b69760edc6c7630a45db8b820a950c2052acbfe992"
         }
       ],
-      "current_price": 140.93
+      "current_price": 149.52
     },
     {
       "symbol": "SWKS",
@@ -755,7 +755,7 @@
           "url": "https://finnhub.io/api/news?id=778ceffa164e9c35d0e2b24a8f102c642d824f901e9fc3094deeb6e3b2074f5a"
         }
       ],
-      "current_price": 87.23
+      "current_price": 87.58
     },
     {
       "symbol": "MSFT",
@@ -855,7 +855,7 @@
           "url": "https://finnhub.io/api/news?id=c5435f7f9da4f120c0ff2d4dda20ce408c7d56366267155164de5fdf368b1781"
         }
       ],
-      "current_price": 531.01
+      "current_price": 521.91
     },
     {
       "symbol": "DVN",
@@ -955,7 +955,7 @@
           "url": "https://finnhub.io/api/news?id=47e99a735671a2cd321a946afcb35e99c8e067d23a3406578d2bddbb28bfb67d"
         }
       ],
-      "current_price": 51.27
+      "current_price": 52.15
     },
     {
       "symbol": "PSX",
@@ -1055,7 +1055,7 @@
           "url": "https://finnhub.io/api/news?id=2d0e573fad245d5be1ffa7b67505d3032b8917bb2191d2042ac45fcfaa8c9c5f"
         }
       ],
-      "current_price": 273.76
+      "current_price": 282.83
     },
     {
       "symbol": "PLTR",
@@ -1155,7 +1155,7 @@
           "url": "https://finnhub.io/api/news?id=b4f3cc7772bf4e063f1a4777c633f985fbd6e9c834c1f93f027205b24fdd1bae"
         }
       ],
-      "current_price": 196.81
+      "current_price": 184.11
     },
     {
       "symbol": "DVA",
@@ -1255,7 +1255,7 @@
           "url": "https://finnhub.io/api/news?id=6f36a9ca4ba5b97652b34869c72f9d812da30a43b44d13fb572cf06aad7660c3"
         }
       ],
-      "current_price": 183.93
+      "current_price": 187.5
     }
   ]
 }
