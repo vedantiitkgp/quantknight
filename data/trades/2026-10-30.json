@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-30",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "TRGP",
+      "direction": "LONG",
+      "shares": 26,
+      "entry_price": 287.82,
+      "exit_price": 314.06,
+      "pnl_dollars": 682.24,
+      "pnl_pct": 9.12,
+      "reason": "target hit",
+      "close_date": "2026-10-30"
+    },
+    {
+      "symbol": "ILMN",
+      "direction": "LONG",
+      "shares": 28,
+      "entry_price": 262.575,
+      "exit_price": 234.965,
+      "pnl_dollars": -773.08,
+      "pnl_pct": -10.52,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-30"
+    },
+    {
+      "symbol": "TWLO",
+      "direction": "LONG",
+      "shares": 26,
+      "entry_price": 260.5101,
+      "exit_price": 203.37,
+      "pnl_dollars": -1485.64,
+      "pnl_pct": -21.93,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-30"
+    },
+    {
+      "symbol": "NTAP",
+      "direction": "LONG",
+      "shares": 33,
+      "entry_price": 216.655,
+      "exit_price": 195.66,
+      "pnl_dollars": -692.83,
+      "pnl_pct": -9.69,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-30"
+    },
+    {
+      "symbol": "DDOG",
+      "direction": "LONG",
+      "shares": 26,
+      "entry_price": 273.3,
+      "exit_price": 234.42,
+      "pnl_dollars": -1010.88,
+      "pnl_pct": -14.23,
+      "reason": "stop-loss hit",
+      "close_date": "2026-10-30"
+    }
+  ],
+  "realized_pnl": -3280.19,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -9738.56,
+  "total_equity": 143541.63
+}
