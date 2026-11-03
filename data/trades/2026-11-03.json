@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-03",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "EXPD",
+      "direction": "LONG",
+      "shares": 38,
+      "entry_price": 191.445,
+      "exit_price": 204.78,
+      "pnl_dollars": 506.73,
+      "pnl_pct": 6.97,
+      "reason": "target hit",
+      "close_date": "2026-11-03"
+    },
+    {
+      "symbol": "PLTR",
+      "direction": "LONG",
+      "shares": 1,
+      "entry_price": 197.08,
+      "exit_price": 175.49,
+      "pnl_dollars": -21.59,
+      "pnl_pct": -10.95,
+      "reason": "stop-loss hit",
+      "close_date": "2026-11-03"
+    }
+  ],
+  "realized_pnl": 485.14,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -10951.72,
+  "total_equity": 138563.14
+}

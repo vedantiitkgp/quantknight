@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
-  "cash": 74152.06,
+  "cash": 82109.19,
   "total_equity": 138563.14,
-  "cumulative_pnl": -11436.86,
-  "as_of": "2026-11-03T02:36:39.644014",
+  "cumulative_pnl": -10951.72,
+  "as_of": "2026-11-03T20:16:48.212858",
   "positions": [
     {
       "symbol": "CNC",
@@ -104,106 +104,6 @@
         }
       ],
       "current_price": 66.53
-    },
-    {
-      "symbol": "EXPD",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 38,
-      "entry_price": 191.445,
-      "stop_loss": 183.47,
-      "target": 203.41,
-      "entry_date": "2026-10-02",
-      "entry_time": "18:44",
-      "composite_score": 64.3798076923077,
-      "verdict": "WATCH",
-      "reason": "SEPA_PULLBACK setup, score 64.4, RSI 57, EPS growth 45%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Here's Why Investors Should Give UAL Stock a Miss Currently",
-          "summary": "United Airlines faces falling earnings estimates, rising labor and fuel costs, reduced flying and weak price performance, pressuring its near-term outlook.",
-          "sentiment": -0.964,
-          "source": "Finnhub",
-          "published": "2026-09-30",
-          "url": "https://finnhub.io/api/news?id=203efb7d237ed92bdcacc2ee047de0d587b849e87d5e302b6d320a4a9fa656f7"
-        },
-        {
-          "headline": "Here's Why Investors Should Give Delta Air Stock a Miss Currently",
-          "summary": "DAL faces falling earnings estimates, rising crew costs and fuel volatility after double-digit share losses over three months.",
-          "sentiment": -0.962,
-          "source": "Finnhub",
-          "published": "2026-10-01",
-          "url": "https://finnhub.io/api/news?id=5471c40e88c8e5808c722fb055c555621c5f2a41753247330716be97c6658d62"
-        },
-        {
-          "headline": "4% Overvalued? Expeditors International Of Washington (EXPD) On Leadership Change",
-          "summary": "Expeditors International of Washington (EXPD) is back in focus after announcing that Blake Bell will move into the Senior Vice President, Professional Services role effective October 1, 2026. The company stated that this change is intended to reshape",
-          "sentiment": -0.957,
-          "source": "Finnhub",
-          "published": "2026-09-30",
-          "url": "https://finnhub.io/api/news?id=ff96aab4cb97453ee8676d5cbb48cc3d0185de15f904c58556f7ba721afb2f78"
-        },
-        {
-          "headline": "Expeditors International of Washington Seen Benefiting From Stronger Ocean Rates, Airfreight Growth, UBS Says",
-          "summary": "Expeditors International of Washington (EXPD) is benefiting from stronger ocean rates and continued",
-          "sentiment": 0.943,
-          "source": "Finnhub",
-          "published": "2026-10-02",
-          "url": "https://finnhub.io/api/news?id=75bbdd0ee0f42a1a55667b79904822b3a0b1c87b6ae9b67d6cd6422fd4db8301"
-        },
-        {
-          "headline": "Expeditors' Prospects Lifted by Dividends & Efficiency Initiatives",
-          "summary": "EXPD benefits from resilient airfreight demand, rising customs activity, efficiency gains and robust shareholder returns.",
-          "sentiment": 0.935,
-          "source": "Finnhub",
-          "published": "2026-10-02",
-          "url": "https://finnhub.io/api/news?id=a4371a2e462da74535031a0326320423007330410b85f276c04dcf62b8c35738"
-        },
-        {
-          "headline": "Delta Expands Europe Network With New Routes From Detroit and Boston",
-          "summary": "DAL expands its European network, with new nonstop routes and extended seasonal service as transatlantic travel demand grows.",
-          "sentiment": 0.935,
-          "source": "Finnhub",
-          "published": "2026-09-29",
-          "url": "https://finnhub.io/api/news?id=e08c47177317a20d24eb11fe98b6a1fa44956f88bd4c8c1df9676771ddd862d7"
-        },
-        {
-          "headline": "Old Dominion Announces 4.9% General Rate Increase Effective Oct. 5",
-          "summary": "ODFL's 4.9% rate increase, effective Oct. 5, aims to offset rising operating costs while supporting investments in its service network and technology.",
-          "sentiment": 0.932,
-          "source": "Finnhub",
-          "published": "2026-09-28",
-          "url": "https://finnhub.io/api/news?id=1e2439b7f27144840c3004472653f04e878976fbdeb9c83fab10e65ce0fb855c"
-        },
-        {
-          "headline": "Alaska and Hawaiian Airlines Raise the Bar for Premium Travel",
-          "summary": "ALK expands premium travel with new suites, premium economy, upgraded lounges and enhanced onboard experiences across its airlines.",
-          "sentiment": 0.91,
-          "source": "Finnhub",
-          "published": "2026-09-30",
-          "url": "https://finnhub.io/api/news?id=11871e27c6f833b7c0c2e148886a602627f58ae04da68760da40b5c8d39ded3c"
-        },
-        {
-          "headline": "Alaska Air Advances With the Activation of Alaska Accelerate",
-          "summary": "ALK advances Alaska Accelerate, targeting $1B in incremental profit by 2027 while expanding globally, upgrading loyalty and growing its fleet.",
-          "sentiment": 0.9,
-          "source": "Finnhub",
-          "published": "2026-09-30",
-          "url": "https://finnhub.io/api/news?id=8f28b6ff356f0ba372422d6c70a542b87d21748a9c6f8740a93c0e0dd72ba359"
-        },
-        {
-          "headline": "UPS Strengthens E-Commerce Security With New Secure Commerce Platform",
-          "summary": "United Parcel's Secure Commerce combines insurance, fraud mitigation and AI-driven risk management to protect shipments, revenues and customer relationships.",
-          "sentiment": 0.882,
-          "source": "Finnhub",
-          "published": "2026-10-01",
-          "url": "https://finnhub.io/api/news?id=80a0b6ba28bda447a89dc1dbe27b00bf3bcf8f898de58afa104afeae20522844"
-        }
-      ],
-      "current_price": 200.56
     },
     {
       "symbol": "OXY",
@@ -1056,106 +956,6 @@
         }
       ],
       "current_price": 275.04
-    },
-    {
-      "symbol": "PLTR",
-      "direction": "LONG",
-      "trade_type": "swing",
-      "shares": 1,
-      "entry_price": 197.08,
-      "stop_loss": 180.83,
-      "target": 221.46,
-      "entry_date": "2026-10-22",
-      "entry_time": "18:15",
-      "composite_score": 64.81963794289646,
-      "verdict": "WATCH",
-      "reason": "RSI_PULLBACK setup, score 64.8, RSI 55, EPS growth 225%",
-      "bull_thesis": "",
-      "bear_risks": "",
-      "full_memo": "",
-      "full_news": [
-        {
-          "headline": "Palantir Stock Is Holding Above a Key Technical Level. Why Wall Street Sees 24% Upside.",
-          "summary": "Palantir stock is holding above a key technical level and Wall Street expects third-quarter earnings to move the stock higher.",
-          "sentiment": 0.94,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=92c6830719a490239d8f4d1cf84160dbe76deb0ac5a7620badaaa6e87f8752ed"
-        },
-        {
-          "headline": "Palantir Stock Holds the Line. Wall Street Sees a 24% Gain Ahead.",
-          "summary": "Palantir stock is holding above a key technical level and Wall Street expects third-quarter earnings to move the stock higher.",
-          "sentiment": 0.937,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=44079fcf96008301ddaabdbb178cf9ce98702531792ed0173f2ef329a2e674d2"
-        },
-        {
-          "headline": "Palantir (NASDAQ:PLTR): High Growth Momentum Meets a Breakout Setup",
-          "summary": "Palantir (PLTR) pairs strong growth momentum with technical strength and constructive pullback setup, though volatility and slowing momentum pose risks.",
-          "sentiment": 0.927,
-          "source": "Finnhub",
-          "published": "2026-10-21",
-          "url": "https://finnhub.io/api/news?id=14453b8df51869aa2464a124a5218ab3f758c9bfaf3696a58f3343c621c86b4c"
-        },
-        {
-          "headline": "CPI Aerostructures Secures Up To $12.1M Contract From L3Harris For Next Generation Jammer Low-Band Pod Structures; Deliveries To Begin In 2025 Supporting U.S. Navy EA-18G Growler Fleet Modernization",
-          "summary": "",
-          "sentiment": 0.916,
-          "source": "Finnhub",
-          "published": "2026-10-21",
-          "url": "https://finnhub.io/api/news?id=3df02847df4fafbf88398f31a71c47ea6e80ffdd2a9dda0bd10b370e871d12e3"
-        },
-        {
-          "headline": "Palantir: Higher Fair Value But Not Enough So I Switched From Bullish To Neutral",
-          "summary": "Palantir (PLTR) growth surges in U.S. Gov & enterprise, but stock near $186 looks fairly valued vs $169.",
-          "sentiment": 0.915,
-          "source": "Finnhub",
-          "published": "2026-10-20",
-          "url": "https://finnhub.io/api/news?id=5ddaaeb60b22643af7c032a92dadfa1f0d49dfe38e1f538a29f04353250beb85"
-        },
-        {
-          "headline": "Cathie Wood Adds Netflix After Earnings Selloff, Ark Keeps Selling Palantir Stock",
-          "summary": "Cathie Wood\u2019s Ark Invest picked up Netflix shares and continued trimming its Palantir stake on Wednesday.",
-          "sentiment": -0.908,
-          "source": "Finnhub",
-          "published": "2026-10-21",
-          "url": "https://finnhub.io/api/news?id=284f9db7e89ab4f66c0b0fe7bbd271a8176a38bc9a1e7a71dc6c560a3874fdf0"
-        },
-        {
-          "headline": "Palantir Technologies (PLTR) Signs Knox Partnership, Is The Stock Fully Priced?",
-          "summary": "Palantir Technologies (PLTR) just signed a new partnership with Knox Systems that targets highly secure FedRAMP and IL5 government cloud environments, putting fresh attention on how this contract work might influence the stock. That Knox Systems deal",
-          "sentiment": 0.908,
-          "source": "Finnhub",
-          "published": "2026-10-21",
-          "url": "https://finnhub.io/api/news?id=4f4d49c9f26a81da3c76ad11024ad47d7fc60da283b010ce88561eac2f0643e0"
-        },
-        {
-          "headline": "Stagwell Expands Partnership With Palantir Over AI-Powered Marketing Services",
-          "summary": "Stagwell (NASDAQ:STGW), the global challenger network transforming marketing through AI, and Palantir Technologies Inc. (NASDAQ:PLTR), a leading provider of AI-powered software, today announced an expansion of their",
-          "sentiment": 0.899,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=608e801998d16fdcc0bb472a35f6798618df3f934a96dbd277635d0a630bc6ff"
-        },
-        {
-          "headline": "Stagwell (STGW) and Palantir (PLTR) Expand AI Partnership to Transform Enterprise Marketing",
-          "summary": "Palantir to support on AI-powered marketing solutions, with serving as a premier marketing transformation partner for PalantirNEW YORK, NY AND MIAMI, FL / ACCESS Newswire / October 22, 2026 / (NASDAQ:STGW), the global challenger network transforming",
-          "sentiment": 0.888,
-          "source": "Finnhub",
-          "published": "2026-10-22",
-          "url": "https://finnhub.io/api/news?id=ebd7e2729362d5d119b23d50995d904891826cfe0fc54201e67adb7edfb4a71c"
-        },
-        {
-          "headline": "4 Stocks With Demand So Sticky That the AI Sell-Off Barely Touched Them at All",
-          "summary": "AI hardware stocks slid on demand fears, but Chaikin Analytics says sticky-demand software and chip names like Palantir, ServiceNow, CrowdStrike and AMD could lead a post-midterm rally.",
-          "sentiment": -0.887,
-          "source": "Finnhub",
-          "published": "2026-10-20",
-          "url": "https://finnhub.io/api/news?id=b4f3cc7772bf4e063f1a4777c633f985fbd6e9c834c1f93f027205b24fdd1bae"
-        }
-      ],
-      "current_price": 178.34
     },
     {
       "symbol": "DVA",
