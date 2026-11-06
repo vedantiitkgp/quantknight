@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-06",
+  "runs": [],
+  "entries": [],
+  "exits": [
+    {
+      "symbol": "OXY",
+      "direction": "LONG",
+      "shares": 121,
+      "entry_price": 61.785,
+      "exit_price": 56.835,
+      "pnl_dollars": -598.95,
+      "pnl_pct": -8.01,
+      "reason": "stop-loss hit",
+      "close_date": "2026-11-06"
+    },
+    {
+      "symbol": "CPAY",
+      "direction": "LONG",
+      "shares": 18,
+      "entry_price": 404.125,
+      "exit_price": 454.255,
+      "pnl_dollars": 902.34,
+      "pnl_pct": 12.4,
+      "reason": "target hit",
+      "close_date": "2026-11-06"
+    },
+    {
+      "symbol": "ADI",
+      "direction": "LONG",
+      "shares": 18,
+      "entry_price": 401.85,
+      "exit_price": 365.625,
+      "pnl_dollars": -652.05,
+      "pnl_pct": -9.01,
+      "reason": "stop-loss hit",
+      "close_date": "2026-11-06"
+    },
+    {
+      "symbol": "DVN",
+      "direction": "LONG",
+      "shares": 96,
+      "entry_price": 49.935,
+      "exit_price": 42.415,
+      "pnl_dollars": -721.92,
+      "pnl_pct": -15.06,
+      "reason": "stop-loss hit",
+      "close_date": "2026-11-06"
+    },
+    {
+      "symbol": "PSX",
+      "direction": "LONG",
+      "shares": 22,
+      "entry_price": 282.06,
+      "exit_price": 246.92,
+      "pnl_dollars": -773.08,
+      "pnl_pct": -12.46,
+      "reason": "stop-loss hit",
+      "close_date": "2026-11-06"
+    }
+  ],
+  "realized_pnl": -1843.66,
+  "unrealized_pnl": 0.0,
+  "daily_pnl": 0.0,
+  "cumulative_pnl": -13015.79,
+  "total_equity": 138827.87
+}
