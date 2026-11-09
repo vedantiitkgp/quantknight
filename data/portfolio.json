@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 113248.14,
-  "total_equity": 137460.63,
-  "cumulative_pnl": -12539.37,
-  "as_of": "2026-11-07T00:16:29.530980",
+  "total_equity": 137526.91,
+  "cumulative_pnl": -12473.09,
+  "as_of": "2026-11-09T23:08:01.834602",
   "positions": [
     {
       "symbol": "CNC",
@@ -103,7 +103,7 @@
           "url": "https://finnhub.io/api/news?id=22345f8d1ad854be60116f72739f2b637ddeeeee5cc5e22acf3280b0a30c79f9"
         }
       ],
-      "current_price": 69.74
+      "current_price": 68.54
     },
     {
       "symbol": "NUE",
@@ -203,7 +203,7 @@
           "url": "https://finnhub.io/api/news?id=286910500e3b67b70960c05cc1a786afec86422fe14992353fe353fbbcdc16a2"
         }
       ],
-      "current_price": 244.97
+      "current_price": 249.24
     },
     {
       "symbol": "MRK",
@@ -303,7 +303,7 @@
           "url": "https://finnhub.io/api/news?id=e1edfeb2d3d1b855f41641b69760edc6c7630a45db8b820a950c2052acbfe992"
         }
       ],
-      "current_price": 146.73
+      "current_price": 148.76
     },
     {
       "symbol": "SWKS",
@@ -387,7 +387,7 @@
           "url": "https://finnhub.io/api/news?id=778ceffa164e9c35d0e2b24a8f102c642d824f901e9fc3094deeb6e3b2074f5a"
         }
       ],
-      "current_price": 82.19
+      "current_price": 82.83
     },
     {
       "symbol": "MSFT",
@@ -487,7 +487,7 @@
           "url": "https://finnhub.io/api/news?id=c5435f7f9da4f120c0ff2d4dda20ce408c7d56366267155164de5fdf368b1781"
         }
       ],
-      "current_price": 530.61
+      "current_price": 545.18
     },
     {
       "symbol": "DVA",
@@ -587,7 +587,7 @@
           "url": "https://finnhub.io/api/news?id=6f36a9ca4ba5b97652b34869c72f9d812da30a43b44d13fb572cf06aad7660c3"
         }
       ],
-      "current_price": 191.35
+      "current_price": 185.54
     }
   ]
 }
