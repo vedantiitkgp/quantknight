@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 113248.14,
-  "total_equity": 137137.38,
-  "cumulative_pnl": -12862.62,
-  "as_of": "2026-11-10T21:16:31.425287",
+  "total_equity": 137137.54,
+  "cumulative_pnl": -12862.46,
+  "as_of": "2026-11-10T22:15:54.487398",
   "positions": [
     {
       "symbol": "CNC",
@@ -103,7 +103,7 @@
           "url": "https://finnhub.io/api/news?id=22345f8d1ad854be60116f72739f2b637ddeeeee5cc5e22acf3280b0a30c79f9"
         }
       ],
-      "current_price": 70.21
+      "current_price": 70.19
     },
     {
       "symbol": "NUE",
@@ -303,7 +303,7 @@
           "url": "https://finnhub.io/api/news?id=e1edfeb2d3d1b855f41641b69760edc6c7630a45db8b820a950c2052acbfe992"
         }
       ],
-      "current_price": 148.04
+      "current_price": 148.05
     },
     {
       "symbol": "SWKS",
