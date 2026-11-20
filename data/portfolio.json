@@ -1,9 +1,9 @@
 {
   "total_capital": 150000.0,
   "cash": 113248.14,
-  "total_equity": 134856.72,
-  "cumulative_pnl": -15143.28,
-  "as_of": "2026-11-20T21:27:49.716381",
+  "total_equity": 134856.65,
+  "cumulative_pnl": -15143.35,
+  "as_of": "2026-11-20T22:12:33.770110",
   "positions": [
     {
       "symbol": "CNC",
@@ -203,7 +203,7 @@
           "url": "https://finnhub.io/api/news?id=286910500e3b67b70960c05cc1a786afec86422fe14992353fe353fbbcdc16a2"
         }
       ],
-      "current_price": 239.65
+      "current_price": 239.62
     },
     {
       "symbol": "MRK",
